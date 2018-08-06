@@ -10,15 +10,16 @@
 %         f(p) >= c
 %
 %% user parameters
-degree = 10 ;
+degree = 4 ;
+intParams = FeketeCube(1,degree) ;
 
 % point constraint in the problem description
 p = 0 ; 
-c = 1 ;
+c = 0.25 ;
 
 %% SPOTLESS PROBLEM
 % polynomial variable
-t = msspoly('t',1) ;
+t = intParams.mon_basis.variables ;
 
 % create program
 prog = spotsosprog ;
@@ -35,7 +36,7 @@ mon = monomials(t,0:degree) ;
 % create SOS constraints
 fcon = msubs(f,t,p) ;
 prog = sosOnK(prog, f, t, hT, degree) ;
-prog = sosOnK(prog, fcon - 1, t, hT, degree) ;
+prog = sosOnK(prog, fcon - c, t, hT, degree) ;
 
 % create cost function
 int_T = boxMoments(t,T_range(:,1),T_range(:,2)) ;
@@ -51,12 +52,11 @@ fmosek = sol.eval(fcoeff)'*mon ;
 
 %% ALFONSO PROBLEM
 % create interpolation points
-intParams = FeketeCube(1,degree) ;
 n   = intParams.n;
 d   = intParams.d;
 U   = intParams.U;
 L   = intParams.L;
-P   = intParams.P;
+P   = intParams.P0;
 pts = intParams.pts;
 
 % dimension of the weight polynomial space (should be dimension of d)
@@ -81,17 +81,25 @@ PWts{1}         = diag(sqrt(wtVals(:)))*P(:,1:LWts(1));
 [PWts{1}, ~]    = qr(PWts{1}, 0);     
 gH_Params.PWts = PWts;
 
-% create Vandermonde matrix
-nxi = intParams.nrPoints ;
-nn = intParams.d ;
-V = [ones(nxi,1), repmat(pts,1,nn).^repmat(1:nn,nxi,1)] ;
-[rV,cV] = size(V) ;
+% % create Vandermonde matrix
+% nxi = intParams.nrPoints ;
+% nn = intParams.d ;
+% V = [ones(nxi,1), repmat(pts,1,nn).^repmat(1:nn,nxi,1)] ;
+% [rV,cV] = size(V) ;
 
-% create A,b,c matrices to define conic problem
-% probData.A = sparse([eye(U),[V,zeros(nxi,U-cV)]']) ;
-probData.A = sparse([eye(U),ones(U,1),zeros(U,U-1)]) ;
-probData.b = intParams.w ;
-probData.c = -[zeros(U,1); c; -10000*ones(U-1,1)] ;
+application_matrix = vector_partial_application(1, p, intParams.mon_basis);
+probData.A = sparse([intParams.mon_to_P0 * application_matrix*intParams.P0_to_mon, -1 * eye(intParams.U)]);
+eval_rhs = msspoly(c);
+eval_rhs_vec = msspoly_to_vector(eval_rhs, intParams.mon_basis);
+probData.b = intParams.mon_to_P0 * eval_rhs_vec;
+probData.c = vertcat(intParams.w, zeros(intParams.U, 1))
+size_A = size(probData.A)
+size_b = size(probData.b)
+% % create A,b,c matrices to define conic problem
+% % probData.A = sparse([eye(U),[V,zeros(nxi,U-cV)]']) ;
+% probData.A = sparse([eye(U),ones(U,1),zeros(U,U-1)]) ;
+% probData.b = intParams.w ;
+% probData.c = -[zeros(U,1); c; -10000*ones(U-1,1)] ;
 
 % make initial dual iterate
 y0 = ones(size(probData.c)) ;
@@ -106,6 +114,8 @@ results = alfonso(probData, y0, @alfonso_grad_and_hess, gH_Params, opts);
 
 %% PLOTTING RESULTS
 figure(1) ; cla ; hold on ;
+xlim([-1, 1])
+ylim([-1, 2])
 
 tvec = linspace(-1,1,500) ;
 
@@ -113,9 +123,12 @@ tvec = linspace(-1,1,500) ;
 fvals = msubs(fmosek,t,tvec) ;
 plot(tvec,fvals,'LineWidth',1.5)
 
+
 % alfonso output:
-yvals = -results.y ; % these are the values of the polynomial f at the points "pts"
-plot(pts,yvals,'--','LineWidth',1.5)
+%yvals = -results.y ; % these are the values of the polynomial f at the points "pts"
+mon = (intParams.P0_to_mon * results.x(1:intParams.U, :))' * intParams.mon_basis.monomials
+monvals = msubs(mon,intParams.mon_basis.variables,tvec) ;
+plot(tvec, monvals,'--','LineWidth',2.5)
 
 % %% ALFONSO GRADIENT FUNCTIONS
 % function [in, g, H, L] = gH_SOS_at_a_point(x, params)
