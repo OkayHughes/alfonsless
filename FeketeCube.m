@@ -67,12 +67,12 @@ function intParams = FeketeCube(n,d)
 % - intParams.nrPoints:     number of points in the initial interpolation 
 %                           grid
 % - intParams.mon_basis     basis object returned by monomial_basis
-% - intParams.P_to_monomial change-of-basis matrix taking vectors expressed in
+% - intParams.P0_to_mon change-of-basis matrix taking vectors expressed in
+%                           the columns of P0 into the monomial basis specified
+%                           by mon_basis
+% - intParams.P_to_mon change-of-basis matrix taking vectors expressed in
 %                           the columns of P into the monomial basis specified
 %                           by mon_basis
-% - intParams.monomial_to_P change of basis matrix taking vectors expressed in
-%                           the basis specified in mon_basis into the basis
-%                           specified by P
 % --------------------------------------------------------------------------
 % EXTERNAL FUNCTIONS CALLED IN THIS FUNCTION
 % chebpolyval from Chebfun. Chebfun is an open-source package for  
@@ -91,7 +91,7 @@ function intParams = FeketeCube(n,d)
     intParams.d = d;    
     intParams.L = nchoosek(n+d,n);
     intParams.U = nchoosek(n+2*d,n);
-    intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, 'f');
+    intParams.mon_basis = monomial_basis(intParams.n, intParams.d, 'f');
     
     intParams.nrPoints1D = 2*d+1;
 
@@ -108,20 +108,23 @@ function intParams = FeketeCube(n,d)
     P = ones(intParams.nrPoints,intParams.U);
     m = ones(intParams.U,1);
 
-    prod_polynomials = msspoly(ones(intParams.U, 1));
+    prod_polynomials = msspoly(ones(intParams.L, 1));
     col     = 0;
     lrEye   = fliplr(eye(2*d+1)); %descending T_n
     for t = 0:2*d      % polynomials with total degree up to 2*d
+        t = t
         allDegs = partitions(t, ones(1,n));
         [nrDegs,~] = size(allDegs);
         for i = 1:nrDegs
             col = col+1;
             for j = 1:n
                 dj = allDegs(i,j);
-                prod_polynomials(col) = prod_polynomials(col) * ...
-                                        chebyshev_in_variable(lrEye(:,dj+1), ...
-                                                              j, ...
-                                                              intParams.mon_basis);
+                if col <= intParams.L
+                    prod_polynomials(col) = prod_polynomials(col) * ...
+                                            chebyshev_in_variable(lrEye(:,dj+1), ...
+                                                                  j, ...
+                                                                  intParams.mon_basis);
+                end
                 P(:,col) = P(:,col).*chebpolyval(lrEye(:,dj+1),pts(:,j));
 
 
@@ -141,20 +144,18 @@ function intParams = FeketeCube(n,d)
     % extracts the subset of polynomials up to total degree d
     P = P(ind,1:intParams.L);
 
-    prod_polynomials = prod_polynomials(1:intParams.L);
-
 
 
     %P' should equal P_test
     P_test = msubs(prod_polynomials, intParams.mon_basis.variables, pts');
     assert(norm(P_test - P', 'fro') < 1E-10);
-    
-    [mon_to_interp, interp_to_mon] = monomial_to_interpolant(P, prod_polynomials, )
     intParams.w = w;
     intParams.pts = pts;
     intParams.P0 = P;
     [intParams.P,~] = qr(P,0);
-
+    [P0_to_mon, P_to_mon] = monomial_to_interpolant(intParams.P0, intParams.P, prod_polynomials, intParams.mon_basis);
+    intParams.P0_to_mon = P0_to_mon;
+    intParams.P_to_mon = P_to_mon;
       
 return
     
