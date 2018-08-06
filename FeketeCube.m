@@ -73,6 +73,8 @@ function intParams = FeketeCube(n,d)
 % - intParams.P_to_mon change-of-basis matrix taking vectors expressed in
 %                           the columns of P into the monomial basis specified
 %                           by mon_basis
+% - intParams.mon_to_P0     inverse of P0_to_mon(in some sense)
+% - intParams.mon_to_P      inverse of P_to_mon(in some sense)    
 % --------------------------------------------------------------------------
 % EXTERNAL FUNCTIONS CALLED IN THIS FUNCTION
 % chebpolyval from Chebfun. Chebfun is an open-source package for  
@@ -112,7 +114,6 @@ function intParams = FeketeCube(n,d)
     col     = 0;
     lrEye   = fliplr(eye(2*d+1)); %descending T_n
     for t = 0:2*d      % polynomials with total degree up to 2*d
-        t = t
         allDegs = partitions(t, ones(1,n));
         [nrDegs,~] = size(allDegs);
         for i = 1:nrDegs
@@ -153,9 +154,12 @@ function intParams = FeketeCube(n,d)
     intParams.pts = pts;
     intParams.P0 = P;
     [intParams.P,~] = qr(P,0);
-    [P0_to_mon, P_to_mon] = monomial_to_interpolant(intParams.P0, intParams.P, prod_polynomials, intParams.mon_basis);
+    [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(intParams.P0, intParams.P, prod_polynomials, intParams.mon_basis);
     intParams.P0_to_mon = P0_to_mon;
     intParams.P_to_mon = P_to_mon;
+    intParams.mon_to_P0 = mon_to_P0;
+    intParams.mon_to_P = mon_to_P;
+    
       
 return
     
