@@ -14,8 +14,8 @@ degree = 12 ;
 intParams = FeketeCube(1,degree) ;
 
 % point constraint in the problem description
-p = 0 ; 
-c = 0.25 ;
+p = 0.5; 
+c = 1.5 ;
 
 %% SPOTLESS PROBLEM
 % polynomial variable
@@ -70,7 +70,7 @@ gH_Params.numPolys = 2; % there are two SOS constraints
 
 gH_Params.L     = L;
 gH_Params.LWts  = LWts;
-nu              = 2*(L+sum(LWts)) ;
+nu              = gH_Params.numPolys*(L+sum(LWts)) ;
 gH_Params.bnu   = nu+1 ;
 
 gH_Params.P = P;
@@ -88,13 +88,12 @@ gH_Params.PWts = PWts;
 % [rV,cV] = size(V) ;
 
 application_matrix = vector_partial_application(1, p, intParams.mon_basis);
-probData.A = sparse([intParams.mon_to_P0 * application_matrix*intParams.P0_to_mon, -1 * eye(intParams.U)]);
+probData.A = sparse([-eye(U), intParams.mon_to_P0 * application_matrix*intParams.P0_to_mon]);
 eval_rhs = msspoly(c);
 eval_rhs_vec = msspoly_to_vector(eval_rhs, intParams.mon_basis);
-probData.b = intParams.mon_to_P0 * eval_rhs_vec;
-probData.c = vertcat(intParams.w, zeros(intParams.U, 1))
-size_A = size(probData.A)
-size_b = size(probData.b)
+probData.c = [zeros(U, 1); -intParams.mon_to_P0 * eval_rhs_vec]; 
+probData.b = -intParams.w
+
 % % create A,b,c matrices to define conic problem
 % % probData.A = sparse([eye(U),[V,zeros(nxi,U-cV)]']) ;
 % probData.A = sparse([eye(U),ones(U,1),zeros(U,U-1)]) ;
@@ -123,10 +122,10 @@ tvec = linspace(-1,1,500) ;
 fvals = msubs(fmosek,t,tvec) ;
 plot(tvec,fvals,'LineWidth',1.5)
 
-
+results.y
 % alfonso output:
 %yvals = -results.y ; % these are the values of the polynomial f at the points "pts"
-mon = (intParams.P0_to_mon * results.x(1:intParams.U, :))' * intParams.mon_basis.monomials
+mon = (intParams.P0_to_mon * results.y)' * intParams.mon_basis.monomials
 monvals = msubs(mon,intParams.mon_basis.variables,tvec) ;
 plot(tvec, monvals,'--','LineWidth',2.5)
 
