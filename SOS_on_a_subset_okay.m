@@ -5,7 +5,6 @@
 %
 %   s.t.    f(x,y)  >= -1   for all (x,y) \in X*Y
 %           f(c,.)  >= +1   for all y \in Y
-%           f >= 0
 %
 %% user parameters 
 degree = 12 ;
@@ -66,7 +65,7 @@ LWts = repmat(nchoosek(n+d-1,n),n,1);
 gH_Params.n = n;
 gH_Params.d = d;
 gH_Params.U = U;
-gH_Params.numPolys = 3;
+gH_Params.numPolys = 2;
 gH_Params.L     = L;
 gH_Params.LWts  = LWts;
 nu              = gH_Params.numPolys*(L+sum(LWts)) ;
@@ -95,13 +94,15 @@ gH_Params.PWts = PWts;
 % probData.b = intParams.w ;
 % probData.c = -[-ones(U,1) ; cpval] ;
 application_matrix = vector_partial_application(1, c, intParams.mon_basis);
-probData.A = sparse([eye(U), -1 * eye(U), zeros(U);
-                     intParams.mon_to_P0 * application_matrix * intParams.P0_to_mon, zeros(U), -eye(U)]);
-probData.b = [intParams.mon_to_P0 * msspoly_to_vector(msspoly(-1), intParams.mon_basis);
-              intParams.mon_to_P0 * msspoly_to_vector(msspoly(1), intParams.mon_basis)];
-probData.c = [intParams.w; zeros(intParams.U * (gH_Params.numPolys-1), 1)];
+probData.A = sparse([-eye(U), -intParams.mon_to_P0 * application_matrix * intParams.P0_to_mon]);
+mon_con1 = msspoly(1);
+mon_con1_vec = intParams.mon_to_P0 * msspoly_to_vector(mon_con1, intParams.mon_basis);
+mon_con2 = -mon_con1;
+mon_con2_vec = intParams.mon_to_P0 * msspoly_to_vector(mon_con2, intParams.mon_basis);
+probData.c = [mon_con1_vec; mon_con2_vec];
+probData.b = -[intParams.w];
 % make initial primal iterate
-x0 = ones(gH_Params.numPolys*U, 1) ;
+x0 = ones(gH_Params.numPolys*U, 1);
 [~, g0, ~, ~] = alfonso_grad_and_hess(x0, gH_Params);
 rP = max((1+abs(probData.b))./(1+abs(probData.A*x0)));
 rD = max((1+abs(g0))./(1+abs(probData.c)));
