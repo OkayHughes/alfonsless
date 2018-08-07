@@ -10,7 +10,7 @@
 %         f(p) >= c
 %
 %% user parameters
-degree = 4 ;
+degree = 12 ;
 intParams = FeketeCube(1,degree) ;
 
 % point constraint in the problem description
