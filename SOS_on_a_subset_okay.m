@@ -5,6 +5,7 @@
 %
 %   s.t.    f(x,y)  >= -1   for all (x,y) \in X*Y
 %           f(c,.)  >= +1   for all y \in Y
+%           f >= 0
 %
 %% user parameters 
 degree = 12 ;
@@ -34,6 +35,7 @@ mon = monomials([x;y],0:degree) ;
 xcon = msubs(f,x,c) ;
 prog = sosOnK(prog,f+1,[x;y],[hX;hY],degree) ;
 prog = sosOnK(prog,xcon-1,y,hY,degree) ;
+prog = sosOnK(prog, f, [x;y], [hX; hY], degree)
 
 % create cost function
 int_XY = boxMoments([x;y],[-1;-1],[1;1]) ;
@@ -97,9 +99,9 @@ probData.A = sparse([eye(U), -1 * eye(U), zeros(U);
                      intParams.mon_to_P0 * application_matrix * intParams.P0_to_mon, zeros(U), -eye(U)]);
 probData.b = [intParams.mon_to_P0 * msspoly_to_vector(msspoly(-1), intParams.mon_basis);
               intParams.mon_to_P0 * msspoly_to_vector(msspoly(1), intParams.mon_basis)];
-probData.c = [intParams.w; zeros(intParams.U * 2, 1)];
+probData.c = [intParams.w; zeros(intParams.U * (gH_Params.numPolys-1), 1)];
 % make initial primal iterate
-x0 = ones(gH_Params.numPolys*U,1) ;
+x0 = ones(gH_Params.numPolys*U, 1) ;
 [~, g0, ~, ~] = alfonso_grad_and_hess(x0, gH_Params);
 rP = max((1+abs(probData.b))./(1+abs(probData.A*x0)));
 rD = max((1+abs(g0))./(1+abs(probData.c)));
