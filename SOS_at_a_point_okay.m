@@ -10,8 +10,13 @@
 %         f(p) >= c
 %
 %% user parameters
+
+p = 0.5; 
+c = 1.5;
+
 degree = 12 ;
-intParams = FeketeCube(1,degree) ;
+pts = [p];
+intParams = FeketeCube_man_points(1, degree, pts);
 
 % point constraint in the problem description
 p = 0.5; 
