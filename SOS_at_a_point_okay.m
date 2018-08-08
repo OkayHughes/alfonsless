@@ -92,7 +92,7 @@ probData.A = sparse([-eye(U), intParams.mon_to_P0 * application_matrix*intParams
 eval_rhs = msspoly(c);
 eval_rhs_vec = msspoly_to_vector(eval_rhs, intParams.mon_basis);
 probData.c = [zeros(U, 1); -intParams.mon_to_P0 * eval_rhs_vec]; 
-probData.b = -intParams.w
+probData.b = -intParams.w;
 
 % % create A,b,c matrices to define conic problem
 % % probData.A = sparse([eye(U),[V,zeros(nxi,U-cV)]']) ;
