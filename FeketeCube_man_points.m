@@ -31,7 +31,7 @@
 % -------------------------------------------------------------------------
 
 
-function intParams = FeketeCube(n,d)
+function intParams = FeketeCube(n,d, inp_pts)
 % This method generates parameters for the interpolant basis representation
 % of sum-of-squares polynomials with an arbitrary number of variables.
 % --------------------------------------------------------------------------
@@ -93,7 +93,7 @@ function intParams = FeketeCube(n,d)
     intParams.d = d;    
     intParams.L = nchoosek(n+d,n);
     intParams.U = nchoosek(n+2*d,n);
-    intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, 'f');
+    intParams.mon_basis = monomial_basis(intParams.n, intParams.d, 'f');
     
     intParams.nrPoints1D = 2*d+1;
 
@@ -106,11 +106,12 @@ function intParams = FeketeCube(n,d)
         for i = j+1:n; temp = kron(temp,ones(intParams.nrPoints1D+i-1,1)); end;
         pts(:,j) = temp;
     end
+    pts(size(pts, 1) - size(inp_pts):end, :) = inp_pts;
     
     P = ones(intParams.nrPoints,intParams.U);
     m = ones(intParams.U,1);
-    
-    prod_polynomials = msspoly(ones(intParams.U, 1));
+
+    prod_polynomials = msspoly(ones(intParams.L, 1));
     col     = 0;
     lrEye   = fliplr(eye(2*d+1)); %descending T_n
     for t = 0:2*d      % polynomials with total degree up to 2*d
@@ -120,10 +121,12 @@ function intParams = FeketeCube(n,d)
             col = col+1;
             for j = 1:n
                 dj = allDegs(i,j);
-                prod_polynomials(col) = prod_polynomials(col) * ...
+                if col <= intParams.L
+                    prod_polynomials(col) = prod_polynomials(col) * ...
                                             chebyshev_in_variable(lrEye(:,dj+1), ...
                                                                   j, ...
                                                                   intParams.mon_basis);
+                end
                 P(:,col) = P(:,col).*chebpolyval(lrEye(:,dj+1),pts(:,j));
 
 
@@ -141,24 +144,18 @@ function intParams = FeketeCube(n,d)
     % extracts the subset of points indexed with the support of w
     pts = pts(ind,:);
     % extracts the subset of polynomials up to total degree d
-    P0_large = P(ind, :);
     P = P(ind,1:intParams.L);
 
 
-    
+
     %P' should equal P_test
-    P_test = dmsubs(prod_polynomials, intParams.mon_basis.variables, pts');
-    normm = norm(P_test - P0_large', 'fro');
-    if norm(P_test - P0_large', 'fro') > 1E-8
-        warning('Interpolant basis monomials may not be accurate\n ||P0 - P_test|| = %d, should be very small', normm);
-    end
+    P_test = msubs(prod_polynomials, intParams.mon_basis.variables, pts');
+    assert(norm(P_test - P', 'fro') < 1E-10);
     intParams.w = w;
     intParams.pts = pts;
     intParams.P0 = P;
-    [P_large, ~] = qr(P0_large);
     [intParams.P,~] = qr(P,0);
-
-    [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(P0_large, P_large, prod_polynomials, intParams.mon_basis);
+    [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(intParams.P0, intParams.P, prod_polynomials, intParams.mon_basis);
     intParams.P0_to_mon = P0_to_mon;
     intParams.P_to_mon = P_to_mon;
     intParams.mon_to_P0 = mon_to_P0;

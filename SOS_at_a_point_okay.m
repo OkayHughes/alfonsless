@@ -10,16 +10,11 @@
 %         f(p) >= c
 %
 %% user parameters
-
-p = 0.5; 
-c = 1.5;
-
 degree = 12 ;
-pts = [p];
-intParams = FeketeCube_man_points(1, degree, pts);
+intParams = FeketeCube(1,degree/2) ;
 
 % point constraint in the problem description
-p = 0.5; 
+p = 0.2; 
 c = 1.5 ;
 
 %% SPOTLESS PROBLEM
@@ -93,9 +88,10 @@ gH_Params.PWts = PWts;
 % [rV,cV] = size(V) ;
 
 application_matrix = vector_partial_application(1, p, intParams.mon_basis);
-probData.A = sparse([-eye(U), intParams.mon_to_P0 * application_matrix*intParams.P0_to_mon]);
+probData.A = sparse([-eye(U); -intParams.mon_to_P0 * application_matrix * intParams.P0_to_mon]');
 eval_rhs = msspoly(c);
 eval_rhs_vec = msspoly_to_vector(eval_rhs, intParams.mon_basis);
+
 probData.c = [zeros(U, 1); -intParams.mon_to_P0 * eval_rhs_vec]; 
 probData.b = -intParams.w;
 
@@ -114,6 +110,7 @@ y0 = repmat(sqrt(rP*rD),2*U,1);
 
 % run alfonso
 opts.optimTol = 1e-6 ;
+opts.verbose = 0;
 results = alfonso(probData, y0, @alfonso_grad_and_hess, gH_Params, opts);
 
 %% PLOTTING RESULTS
@@ -127,12 +124,25 @@ tvec = linspace(-1,1,500) ;
 fvals = msubs(fmosek,t,tvec) ;
 plot(tvec,fvals,'LineWidth',1.5)
 
-results.y
 % alfonso output:
 %yvals = -results.y ; % these are the values of the polynomial f at the points "pts"
-mon = (intParams.P0_to_mon * results.y)' * intParams.mon_basis.monomials
-monvals = msubs(mon,intParams.mon_basis.variables,tvec) ;
-plot(tvec, monvals,'--','LineWidth',2.5)
+mon = (intParams.P0_to_mon * results.y)' * intParams.mon_basis.monomials;
+monvals = dmsubs(mon,intParams.mon_basis.variables,tvec);
+scatter(tvec,monvals,'LineWidth',1);
+%results.y)
+% figure(1) ; cla ; hold on ;
+
+% xlim([-1, 1])
+% ylim([-1, 2])
+
+
+
+% scatter(intParams.pts, results.y, 'filled');
+% monvals = dmsubs(mon,intParams.mon_basis.variables,intParams.pts');
+% norm(results.y - monvals')
+% scatter(intParams.pts, monvals);
+
+%plot(intParams.pts, results.y,'--','LineWidth',2.5)
 
 % %% ALFONSO GRADIENT FUNCTIONS
 % function [in, g, H, L] = gH_SOS_at_a_point(x, params)

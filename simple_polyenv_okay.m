@@ -81,7 +81,6 @@ PWts{1}         = diag(sqrt(wtVals(:)))*P(:,1:LWts(1));
 [PWts{1}, ~]    = qr(PWts{1}, 0);     
 gH_Params.PWts = PWts;
 
-
 % create SOS constraints by evaluating the polynomials f1 and f2 at the
 % interpolation points
 f1eval = msubs(f1,t,pts') ;
