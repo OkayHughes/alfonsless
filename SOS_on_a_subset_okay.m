@@ -116,7 +116,6 @@ results = alfonso(probData, x0, @alfonso_grad_and_hess, gH_Params, opts);
 spot_poly_vec = msspoly_to_vector(fspotless, intParams.mon_basis);
 alfonso_poly_vec = intParams.P0_to_mon * results.y;
 falfonso = alfonso_poly_vec' * intParams.mon_basis.monomials;
-normm = norm(spot_poly_vec - alfonso_poly_vec)
 
 [grid_x, grid_y] = meshgrid(linspace(-1, 1, 50), linspace(-1, 1, 50));
 flat = [grid_x(:), grid_y(:)];
