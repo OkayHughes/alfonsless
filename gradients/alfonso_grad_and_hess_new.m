@@ -64,8 +64,6 @@ function [in, g, H, L] = alfonso_grad_and_hess(x, params)
         U = params.U_arr(polyId);
         P = params.P_cell{polyId};
         PWts = params.PWts_cell{polyId};
-        U 
-        off
         size(x)
         xPoly = x(off+(1:U));
         % for the weight 1
