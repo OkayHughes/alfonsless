@@ -153,6 +153,8 @@ COS(:,:,2) = ones(50); % green
 COS(:,:,3) = ones(50); % blue
 
 
+
+
 figure(1) ; cla ; hold on ;
 
 surf(grid_x, grid_y, alf_vals, COA);
