@@ -35,8 +35,8 @@ function basis = monomial_basis(num_variables, max_degree, variables)
     if isa(variables, 'char')
         basis.variables = msspoly(variables, num_variables);
     elseif isa(variables, 'msspoly')
-        if numel(variables) ~= basis.n
-            error('array passed as `variables` has size %d, but n=%d', numel(variables), n)
+        if size(variables, 1) ~= basis.n
+            error('array passed as `variables` has size %d, but n=%d', size(variables, 1), basis.n)
         end
         basis.variables = variables;
     end
