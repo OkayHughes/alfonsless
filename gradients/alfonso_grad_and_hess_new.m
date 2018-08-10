@@ -1,4 +1,4 @@
-function [in, g, H, L] = alfonso_grad_and_hess(x, params)
+function [in, g, H, L] = alfonso_grad_and_hess_new(x, params)
 % This method computes the gradient and Hessian of the barrier function for
 % the problem of polynomial envelopes.
 % --------------------------------------------------------------------------
@@ -15,9 +15,9 @@ function [in, g, H, L] = alfonso_grad_and_hess(x, params)
 % - params.U_arr:           dimension of the space of (params.n)-variate 
 %                       degree-(2*params.d) polynomials
 
-% - params.L:           dimension of the space of (params.n)-variate 
+% - params.L_arr:           dimension of the space of (params.n)-variate 
 %                       degree-(params.d) polynomials.
-% - params.LWts_arr:        dimensions of the "weighted" polynomial spaces. 
+% - params.LWts_cell:        dimensions of the "weighted" polynomial spaces. 
 %                       params.LWts(j) is the dimension of the space of
 %                       (params.n)-variate degree-(params.d-1) polynomials
 %                       for j = 1,...,n.
@@ -58,13 +58,11 @@ function [in, g, H, L] = alfonso_grad_and_hess(x, params)
     % x_1 corresponds to the 1st approximated polynomial, x_2 to the 2nd,...
     
     off = 0;
-
     for polyId = 1:numPolys
         n = params.n_arr(polyId);
         U = params.U_arr(polyId);
         P = params.P_cell{polyId};
         PWts = params.PWts_cell{polyId};
-        size(x)
         xPoly = x(off+(1:U));
         % for the weight 1
         [inPoly, gPoly, HPoly] = gH_SOSWt(xPoly,P);

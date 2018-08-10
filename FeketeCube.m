@@ -31,7 +31,7 @@
 % -------------------------------------------------------------------------
 
 
-function intParams = FeketeCube(n,d)
+function intParams = FeketeCube(n,d, variables)
 % This method generates parameters for the interpolant basis representation
 % of sum-of-squares polynomials with an arbitrary number of variables.
 % --------------------------------------------------------------------------
@@ -93,7 +93,11 @@ function intParams = FeketeCube(n,d)
     intParams.d = d;    
     intParams.L = nchoosek(n+d,n);
     intParams.U = nchoosek(n+2*d,n);
-    intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, 'f');
+    if nargin < 3
+        intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, 'f');
+    else
+        intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, variables);
+    end
     
     intParams.nrPoints1D = 2*d+1;
 
