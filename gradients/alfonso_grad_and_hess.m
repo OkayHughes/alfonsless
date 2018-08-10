@@ -1,31 +1,32 @@
-function [in, g, H, L] = alfonso_grad_and_hess(x, params)
+function [in, g, H, L] = alfonso_grad_and_hess_new(x, params)
 % This method computes the gradient and Hessian of the barrier function for
 % the problem of polynomial envelopes.
 % --------------------------------------------------------------------------
-% USAGE of "gH_polyEnv"
-% [in, g, H, L] = gH_polyEnv(x, params)
+% USAGE of "alfonso_grad_and_hess"
+% [in, g, H, L] = alfonso_grad_and_hess(x, params)
 % --------------------------------------------------------------------------
 % INPUT
 % x:                    primal iterate
 % params:               parameters associated with the method gH
-% - params.n:           number of arguments to the polynomials
-% - params.d:           largest degree of polynomials to be squared
-% - params.U:           dimension of the space of (params.n)-variate 
+% - params.numPolys:    number of decision polynomials
+% - params.bnu:         complexity parameter of the augmented barrier (nu-bar)
+% - params.n_arr:           number of arguments to the polynomials
+% - params.d_arr:           largest degree of polynomials to be squared
+% - params.U_arr:           dimension of the space of (params.n)-variate 
 %                       degree-(2*params.d) polynomials
-% - params.numPolys:    number of approximated polynomials
-% - params.L:           dimension of the space of (params.n)-variate 
+
+% - params.L_arr:           dimension of the space of (params.n)-variate 
 %                       degree-(params.d) polynomials.
-% - params.LWts:        dimensions of the "weighted" polynomial spaces. 
+% - params.LWts_cell:        dimensions of the "weighted" polynomial spaces. 
 %                       params.LWts(j) is the dimension of the space of
 %                       (params.n)-variate degree-(params.d-1) polynomials
 %                       for j = 1,...,n.
-% - params.bnu:         complexity parameter of the augmented barrier (nu-bar)
-% - params.P:           evaluations of the basis for the space of 
+% - params.P_cell:           evaluations of the basis for the space of 
 %                       (params.n)-variate degree-(params.d) polynomials
 %                       at the interpolation points
-% - params.PWts:        evaluations of "weighted" basis polynomials at the
+% - params.PWts_cell:        evaluations of "weighted" basis polynomials at the
 %                       interpolation points. params.PWts{j} is
-%                       the evaluations of the basis for the "weighted"
+%                       the evaluations of the basis   for the "weighted"
 %                       space of (params.n)-variate degree-(params.d-1)
 %                       polynomials at the interpolation points for 
 %                       j = 1,...,n. the weight corresponding to 
@@ -42,16 +43,15 @@ function [in, g, H, L] = alfonso_grad_and_hess(x, params)
 % None.
 % -------------------------------------------------------------------------
 
+
+
+    U_arr = params.U_arr;
     in = 1;
-    n = params.n;
-    U = params.U;
-    numPolys = params.numPolys;
-    P = params.P;
-    PWts = params.PWts;
+    g = zeros(sum(U_arr),1);
+    H = zeros(sum(U_arr)); 
+    L = zeros(sum(U_arr));
     
-    g = zeros(numPolys*U,1);
-    H = zeros(numPolys*U);
-    L = zeros(numPolys*U);
+    numPolys = params.numPolys;
 
     % ORDER OF VARIABLES 
     % x = [x_1; x_2; ...] \in WSOS_(n,2*d)^* x WSOS_(n,2*d)^* x ...
@@ -59,6 +59,10 @@ function [in, g, H, L] = alfonso_grad_and_hess(x, params)
     
     off = 0;
     for polyId = 1:numPolys
+        n = params.n_arr(polyId);
+        U = params.U_arr(polyId);
+        P = params.P_cell{polyId};
+        PWts = params.PWts_cell{polyId};
         xPoly = x(off+(1:U));
         % for the weight 1
         [inPoly, gPoly, HPoly] = gH_SOSWt(xPoly,P);
