@@ -8,7 +8,7 @@ c = 1.5 ;
 %% SPOTLESS PROBLEM
 % polynomial variable
 t = basis.variables;
-%test whether it only holds for one dimension?
+
 for i=1:100
     vec = rand(size(basis.monomials));
     P0 = intParams.mon_to_P0 * vec;
