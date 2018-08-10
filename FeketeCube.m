@@ -159,10 +159,15 @@ function intParams = FeketeCube(n,d, variables)
     intParams.w = w;
     intParams.pts = pts;
     intParams.P0 = P;
+    
     [P_large, ~] = qr(P0_large);
     [intParams.P,~] = qr(P,0);
-
+    
+    intParams.P_full = P_large;
+    intParams.P0_full = P0_large;
+    
     [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(P0_large, P_large, prod_polynomials, intParams.mon_basis);
+    
     intParams.P0_to_mon = P0_to_mon;
     intParams.P_to_mon = P_to_mon;
     intParams.mon_to_P0 = mon_to_P0;
