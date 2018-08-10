@@ -21,7 +21,7 @@ for i=1:size(const_polys, 1)
         matrix_result = vec' * out_basis.monomials;
         direct_result = tests(j) * const_polys(i);
 
-        normm = norm(vec - msspoly_to_vector(direct_result, out_basis))
+        normm = norm(vec - msspoly_to_vector(direct_result, out_basis));
         err = err + normm;
     end
 end
