@@ -56,7 +56,6 @@ function [in, g, H, L] = alfonso_grad_and_hess_new(x, params)
     % ORDER OF VARIABLES 
     % x = [x_1; x_2; ...] \in WSOS_(n,2*d)^* x WSOS_(n,2*d)^* x ...
     % x_1 corresponds to the 1st approximated polynomial, x_2 to the 2nd,...
-    
     off = 0;
     for polyId = 1:numPolys
         n = params.n_arr(polyId);
