@@ -14,10 +14,13 @@ x = msspoly('x');
 variables = [t;x];
 f = variables(2)^2;
 T = 1;
-intParams_w = FeketeCube(size(x, 1), degree/2,x) ;
+intParams_w = FeketeCube(size(x, 1), degree/2, x) ;
+intParams_w = scale_fekete_cube(intParams_w, repmat([-1, 1], ));
+X_T = [-1, 1];
 
 intParams_v_f = FeketeCube(size(variables, 1), degree/2 + ceil(msspoly_degree(f)/2), variables); 
 intParams_arr = [intParams_v_f, intParams_w, intParams_w, intParams_w];
+
 
 intParams_v = FeketeCube(size(variables, 1), degree/2, variables);
 % %% SPOTLESS PROBLEM
@@ -60,6 +63,7 @@ intParams_v = FeketeCube(size(variables, 1), degree/2, variables);
 % create interpolation points
 
 numPolys = 4;
+
 gH_Params.numPolys = numPolys;
 gH_Params.n_arr = zeros(numPolys, 1);
 gH_Params.d_arr = zeros(numPolys, 1);
@@ -78,10 +82,10 @@ for i=1:numPolys
     L   = intParams_i.L;
     P   = intParams_i.P0;
     pts = intParams_i.pts;
+    bounds = intParams_i.bounds;
 
     % dimension of the weight polynomial space (should be dimension of d)
     LWts = repmat(nchoosek(n+d-1,n),n,1);
-
     % parameter object for cone gradient/hessian function
     gH_Params.n_arr(i)      = n;
     gH_Params.d_arr(i)      = d;
@@ -92,9 +96,12 @@ for i=1:numPolys
     gH_Params.bnu           = gH_Params.bnu + nu;
     gH_Params.P_cell{i}     = P;
 
-
+    lb = bounds(:, 1);
+    ub = bounds(:, 2);
     % create polynomial hT (g in the alfonso paper) to define space T = [-1,1]^2
-    wtVals = 1-pts.^2;
+
+    wtVals  = bsxfun(@minus,pts,lb').*bsxfun(@minus,ub',pts);
+
     PWts = cell(n,1);
     for j = 1:n
         PWts{j}         = diag(sqrt(wtVals(:,j)))*P(:,1:LWts(j));
@@ -137,15 +144,15 @@ const4 = zeros(intParams_w.U, 1);
 int1 = zeros(intParams_v.U, 1);
 int2 = intParams_w.w;
 
-A = -[A1, A2;
+probData.A = -[A1, A2;
      B1, B2;
      C1, C2;
      D1, D2]';
-c = -[const1;
+probData.c = -[const1;
       const2;
       const3;
       const4];
-b = -[int1;
+probData.b = -[int1;
       int2];
 
 % find the points where x = c
@@ -158,11 +165,11 @@ b = -[int1;
 % probData.b = intParams.w ;
 % probData.c = -[-ones(U,1) ; cpval] ;
 % make initial primal iterate
-x0 = ones(gH_Params.numPolys*U, 1);
+x0 = ones(sum(gH_Params.U_arr), 1);
 [~, g0, ~, ~] = alfonso_grad_and_hess(x0, gH_Params);
 rP = max((1+abs(probData.b))./(1+abs(probData.A*x0)));
 rD = max((1+abs(g0))./(1+abs(probData.c)));
-x0 = repmat(sqrt(rP*rD),gH_Params.numPolys*U,1);  
+x0 = repmat(sqrt(rP*rD),sum(gH_Params.U_arr),1);  
 
 % run alfonso
 opts.optimTol = 1e-6 ;
