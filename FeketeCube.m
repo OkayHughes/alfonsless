@@ -168,6 +168,8 @@ function intParams = FeketeCube(n,d, variables)
     
     [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(P0_large, P_large, prod_polynomials, intParams.mon_basis);
     
+    intParams.polynomials = prod_polynomials;
+    
     intParams.P0_to_mon = P0_to_mon;
     intParams.P_to_mon = P_to_mon;
     intParams.mon_to_P0 = mon_to_P0;
