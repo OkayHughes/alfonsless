@@ -27,4 +27,8 @@ function scaled_cube = scale_fekete_cube(cube, bounds)
     scaled_cube.P_to_mon = P_to_mon;
     scaled_cube.mon_to_P0 = mon_to_P0;
     scaled_cube.mon_to_P = mon_to_P;
+
+    %prod(scale) = det(Df), where f is the affine change of variables
+    % taking cube.pts to scaled_cube.pts
+    scaled_cube.w = scaled_cube.w * prod(scale); 
 end
