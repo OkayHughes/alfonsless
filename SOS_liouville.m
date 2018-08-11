@@ -13,16 +13,22 @@ t = msspoly('t');
 x = msspoly('x');
 variables = [t;x];
 f = variables(2)^2;
-T = 1;
-intParams_w = FeketeCube(size(x, 1), degree/2, x) ;
-intParams_w = scale_fekete_cube(intParams_w, repmat([-1, 1], ));
+T = 1
+intParams_w = FeketeCube(size(x, 1), degree/2, x);
+intParams_w = scale_fekete_cube(intParams_w, repmat([-1, 1], size(x, 1), 1));
+
 X_T = [-1, 1];
+intParams_w_X_T = FeketeCube(size(x, 1), degree/2, x);
+intParams_w_X_T = scale_fekete_cube(intParams_w_X_T, repmat(X_T, size(x, 1), 1));
+
 
 intParams_v_f = FeketeCube(size(variables, 1), degree/2 + ceil(msspoly_degree(f)/2), variables); 
-intParams_arr = [intParams_v_f, intParams_w, intParams_w, intParams_w];
+intParams_v_f = scale_fekete_cube(intParams_w_X_T, repmat([-1, 1], size(variables, 1), 1));
+intParams_arr = [intParams_v_f, intParams_w_X_T, intParams_w, intParams_w];
 
 
 intParams_v = FeketeCube(size(variables, 1), degree/2, variables);
+intParams_v = scale_fekete_cube(intParams_w, repmat([-1, 1], size(variables, 1), 1));
 % %% SPOTLESS PROBLEM
 % % variables
 % x = intParams.mon_basis.variables(1) ;
@@ -122,10 +128,10 @@ space_der_v = vector_derivative(2, intParams_v.mon_basis);
 A1 = intParams_v_f.mon_to_P0 * (v_to_v_f * time_der_v + mult_mat * space_der_v) * intParams_v.P0_to_mon;
 A2 = zeros(intParams_v_f.U, intParams_w.U);
 
-v_to_w = monomial_to_monomial(intParams_v.mon_basis, intParams_w.mon_basis);
+v_to_w_X_T = monomial_to_monomial(intParams_v.mon_basis, intParams_w_X_T.mon_basis);
 apply_final_time = vector_partial_application(1, T, intParams_v.mon_basis);
 
-B1 = intParams_w.mon_to_P0 * v_to_w * apply_final_time * intParams_v.P0_to_mon;
+B1 = intParams_w_X_F.mon_to_P0 * v_to_w_X_T * apply_final_time * intParams_v.P0_to_mon;
 B2 = zeros(intParams_w.U);
 
 apply_init_time = vector_partial_application(1, -1, intParams_v.mon_basis);
@@ -137,7 +143,7 @@ D1 = zeros(intParams_w.U, intParams_v.U);
 D2 = eye(intParams_w.U);
 
 const1 = zeros(intParams_v_f.U, 1);
-const2 = zeros(intParams_w.U, 1);
+const2 = zeros(intParams_w_X_T.U, 1);
 const3 = ones(intParams_w.U, 1);
 const4 = zeros(intParams_w.U, 1);
 
