@@ -1,72 +1,37 @@
 %% problem description
 %
-%   min     int  f(x,y) dxdy
-%    f      X*Y
-%
-%   s.t.    f(x,y)  >= -1   for all (x,y) \in X*Y
-%           f(c,.)  >= +1   for all y \in Y
-%
-%% user parameters 
+% TODO: Write problem description
 degree = 8 ;
-c = 0 ;
+
 t = msspoly('t');
 x = msspoly('x');
 variables = [t;x];
-f = variables(2)^2;
-T = 1
+'dynamics:'
+f = variables(2)^2
+T_min = 0
+T_max = 1
+
+X_bounds = repmat([-1, 1], size(x, 1), 1)
+
 intParams_w = FeketeCube(size(x, 1), degree/2, x);
-intParams_w = scale_fekete_cube(intParams_w, repmat([-1, 1], size(x, 1), 1));
+intParams_w = scale_fekete_cube(intParams_w, X_bounds);
 
-X_T = [-1, 1];
+X_T_bounds = [-0.1, 0.1]
+
 intParams_w_X_T = FeketeCube(size(x, 1), degree/2, x);
-intParams_w_X_T = scale_fekete_cube(intParams_w_X_T, repmat(X_T, size(x, 1), 1));
+intParams_w_X_T = scale_fekete_cube(intParams_w_X_T, X_T_bounds);
 
+S_bounds = [[T_min, T_max];
+            repmat([-1, 1], size(x, 1), 1)];
 
 intParams_v_f = FeketeCube(size(variables, 1), degree/2 + ceil(msspoly_degree(f)/2), variables); 
-intParams_v_f = scale_fekete_cube(intParams_w_X_T, repmat([-1, 1], size(variables, 1), 1));
+intParams_v_f = scale_fekete_cube(intParams_v_f, S_bounds);
 intParams_arr = [intParams_v_f, intParams_w_X_T, intParams_w, intParams_w];
 
 
 intParams_v = FeketeCube(size(variables, 1), degree/2, variables);
-intParams_v = scale_fekete_cube(intParams_w, repmat([-1, 1], size(variables, 1), 1));
-% %% SPOTLESS PROBLEM
-% % variables
-% x = intParams.mon_basis.variables(1) ;
-% y = intParams.mon_basis.variables(2) ;
+intParams_v = scale_fekete_cube(intParams_v, S_bounds);
 
-% % create program
-% prog = spotsosprog ;
-% prog = prog.withIndeterminate(x) ;
-% prog = prog.withIndeterminate(y) ;
-
-% % bounds on variables
-% hX = (x + 1).*(1 - x) ;
-% hY = (y + 1).*(1 - y) ;
-
-% % create decision variable
-% mon = monomials([x;y],0:degree) ;
-% [prog,f,fcoeff] = prog.newFreePoly(mon) ;
-
-% % create SOS constraints
-% xcon = msubs(f,x,c) ;
-% prog = sosOnK(prog,f+1,[x;y],[hX;hY],degree) ;
-% prog = sosOnK(prog,xcon-1,y,hY,degree) ;
-% prog = sosOnK(prog, f, [x;y], [hX; hY], degree)
-
-% % create cost function
-% int_XY = boxMoments([x;y],[-1;-1],[1;1]) ;
-% obj = int_XY(mon)'*fcoeff ;
-
-% % run solver
-% options = spot_sdp_default_options();
-% options.verbose = 1 ;
-% sol = prog.minimize(obj, @spot_mosek, options);
-
-% % recover f
-% fspotless = sol.eval(fcoeff)'*mon ;
-
-%% ALFONSO PROBLEM
-% create interpolation points
 
 numPolys = 4;
 
@@ -129,12 +94,13 @@ A1 = intParams_v_f.mon_to_P0 * (v_to_v_f * time_der_v + mult_mat * space_der_v) 
 A2 = zeros(intParams_v_f.U, intParams_w.U);
 
 v_to_w_X_T = monomial_to_monomial(intParams_v.mon_basis, intParams_w_X_T.mon_basis);
-apply_final_time = vector_partial_application(1, T, intParams_v.mon_basis);
+apply_final_time = vector_partial_application(1, T_max, intParams_v.mon_basis);
 
-B1 = intParams_w_X_F.mon_to_P0 * v_to_w_X_T * apply_final_time * intParams_v.P0_to_mon;
+B1 = intParams_w_X_T.mon_to_P0 * v_to_w_X_T * apply_final_time * intParams_v.P0_to_mon;
 B2 = zeros(intParams_w.U);
 
-apply_init_time = vector_partial_application(1, -1, intParams_v.mon_basis);
+v_to_w = monomial_to_monomial(intParams_v.mon_basis, intParams_w.mon_basis);
+apply_init_time = vector_partial_application(1, T_min, intParams_v.mon_basis);
 
 C1 = intParams_w.mon_to_P0 * v_to_w * apply_init_time * intParams_v.P0_to_mon;
 C2 = eye(intParams_w.U);
@@ -161,15 +127,7 @@ probData.c = -[const1;
 probData.b = -[int1;
       int2];
 
-% find the points where x = c
-% plog = abs(pts(:,1) - c) < 1e-6 ;
-% cpval = -10*ones(U,1) ;
-% cpval(plog) = 1 ;
 
-% create A,b,c matrices to define conic problem
-% probData.A = sparse(repmat(eye(U),1,2)) ;
-% probData.b = intParams.w ;
-% probData.c = -[-ones(U,1) ; cpval] ;
 % make initial primal iterate
 x0 = ones(sum(gH_Params.U_arr), 1);
 [~, g0, ~, ~] = alfonso_grad_and_hess(x0, gH_Params);
@@ -181,55 +139,32 @@ x0 = repmat(sqrt(rP*rD),sum(gH_Params.U_arr),1);
 opts.optimTol = 1e-6 ;
 results = alfonso(probData, x0, @alfonso_grad_and_hess, gH_Params, opts);
 
-%% RECOVER ALFONSO SOLUTION AS MSSPOLY
-% recover solution
-%zvals = -results.y ;
-%data = msubs(mon,[x;y],pts') ;
-%coeff = data'\zvals ;
-%falfonso = coeff'*mon ;
 
-falfonso = (intParams.P0_to_mon * results.x(1:U, :))' * intParams.mon_basis.monomials;
+hX = -(x-X_bounds(:, 1)).*(x-X_bounds(:, 2));
+hXT = -(t - X_T_bounds(1))*(t-X_T_bounds(2));
+dl=boxMoments(x, X_bounds(:, 1), X_bounds(:, 2));
 
-%% COMPARE SOLUTIONS
-fvals_spotless = msubs(fspotless,[x;y],pts') ;
-
-% fvals_alfonso  = -results.y ; % the direct output from alfonso, should
-%                               % have nearly identical values to the line
-%                               % below
-
-fvals_alfonso =  msubs(falfonso,[x;y],pts') ;
-
-%max(abs(fvals_spotless(:) - fvals_alfonso(:)))
+[w_spotless, spotless_v] = liouvilleSolver(t, x, f, hX, hXT, dl, T_max, degree);
 
 %% PLOTTING POLYNOMIAL (RECOVERED) OUTPUT
-% spotless setup
-[X,Y] = makeContourAxes() ;
-XY = makeContourAxes() ;
 
-% alfonso setup
-xvals = pts(:,1) ;
-yvals = pts(:,2) ;
-tri = delaunay(xvals,yvals);
+spot_poly_vec = msspoly_to_vector(w_spotless, intParams_w.mon_basis);
+alfonso_poly_vec = intParams_w.P0_to_mon * results.y(intParams_v.U+1:end, 1);
+falfonso = alfonso_poly_vec' * intParams_w.mon_basis.monomials;
+
+
+%[grid_x, grid_y] = meshgrid(linspace(-1, 1, 50), linspace(-1, 1, 50));
+%flat = [grid_x(:), grid_y(:)];
+x_grid = linspace(0, 1, 50)';
+alf_vals = dmsubs(falfonso, intParams_w.mon_basis.variables, x_grid')';
+spot_vals = dmsubs(w_spotless, intParams_w.mon_basis.variables, x_grid')';
+
 
 figure(1) ; cla ; hold on ;
 
-% spotless output
-F1 = reshape(full(msubs(fspotless,[x;y],XY)),100,100) ;
-% surf(X,Y,F)
-
-% alfonso output
-F2 = reshape(full(msubs(falfonso,[x;y],XY)),100,100) ;
-
-% plot error between spotless and alfonso on X*Y
-surf(X,Y,F1-F2)
-
-%% PLOTTING COARSE OUTPUT
-figure(2) ; cla ; hold on
-
-% spotless output
-zvals = full(fvals_spotless) ;
-trisurf(tri, xvals,yvals,zvals);
-
-% alfonso output
-zvals = -results.y ;
-trisurf(tri, xvals,yvals,zvals);
+plot(x_grid, spot_vals,'LineWidth',1.5)
+size(x_grid)
+size(alf_vals)
+plot(x_grid,alf_vals,'LineWidth',1);
+%surf(grid_x, grid_y, alf_vals, COA);
+%surf(grid_x, grid_y, spot_vals, COS);
