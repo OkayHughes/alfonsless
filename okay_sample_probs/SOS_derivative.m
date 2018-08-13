@@ -135,10 +135,23 @@ sol = prog.minimize(obj, @spot_mosek, options);
 fspotless = sol.eval(w) ;
 
 
+constraint1 = (mult_mat * time_der * intParams_w.P0_to_mon * results.y)' * intParams_w_f.mon_basis.monomials;
+constraint2 = diff(falfonso, variables) * f;
+
+close all
+figure('Name', 'dw/dt * f') ; cla ; hold on ;
+
+tvec = linspace(-1,2,500) ;
+
+const2_vals = dmsubs(constraint2, variables, tvec);
+const1_vals = dmsubs(constraint1, variables, tvec);
 
 
+plot(tvec, const2_vals, '-k')
+plot(tvec, const1_vals, '--r')
 
-figure(1) ; cla ; hold on ;
+
+figure('Name', 'w') ; cla ; hold on ;
 %xlim([-1, 2])
 %ylim([-1, 2])
 

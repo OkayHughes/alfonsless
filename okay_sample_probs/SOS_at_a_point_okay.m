@@ -108,6 +108,7 @@ rP = max((1+abs(probData.b))./(1+abs(probData.A*y0)));
 rD = max((1+abs(g0))./(1+abs(probData.c)));
 y0 = repmat(sqrt(rP*rD),2*U,1);  
 
+
 % run alfonso
 opts.optimTol = 1e-6 ;
 opts.verbose = 0;
