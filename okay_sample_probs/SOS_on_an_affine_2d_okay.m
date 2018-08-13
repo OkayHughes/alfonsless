@@ -11,17 +11,18 @@
 %           f(c,.)  >= +1   for all y \in A \subset Y
 %
 %% user parameters 
-function SOS_on_an_affine_okay()
+function SOS_on_an_affine_2d_okay()
 
 degree = 12;
-c = 0.5 ;
+c = 0 ;
 
-sp_bounds = [-1, 1; -2, 2];
-A_bounds = [-0.5, 1];
+sp_bounds = [-1, 1; -1, 1];
+A_bounds = [-0.2, 0.2;
+            -0.2, 0.2];
 
 intParams = FeketeCube(2,degree/2) ;
 intParams = scale_fekete_cube(intParams, sp_bounds);
-sintParams = FeketeCube(1, degree/2, intParams.mon_basis.variables(2));
+sintParams = FeketeCube(2, degree/2, intParams.mon_basis.variables);
 sintParams = scale_fekete_cube(sintParams, A_bounds);
 
 intParams_arr = [intParams, sintParams];
@@ -40,7 +41,7 @@ vars = [x;y]
 hs = -(vars-sp_bounds(:, 1)).*(vars-sp_bounds(:, 2));
 hX = hs(1);
 hY = hs(2);
-hA = -(y - msspoly(A_bounds(1))) * (y-msspoly(A_bounds(2)));
+ha = -(vars-A_bounds(:, 1)).*(vars-A_bounds(:, 2));
 
 
 % create decision variable
@@ -48,9 +49,8 @@ mon = monomials([x;y],0:degree) ;
 [prog,f,fcoeff] = prog.newFreePoly(mon) ;
 
 % create SOS constraints
-xcon = msubs(f,x,c) ;
 %prog = sosOnK(prog,f+1,[x;y],[hX;hY],degree) ;
-prog = sosOnK(prog,xcon-1,y,hA,degree) ;
+prog = sosOnK(prog,xcon-1,vars,ha,degree) ;
 prog = sosOnK(prog, f+1, [x;y], [hX; hY], degree)
 
 % create cost function
@@ -129,7 +129,8 @@ gH_Params.bnu = gH_Params.bnu + 1;
 % probData.c = -[-ones(U,1) ; cpval] ;
 application_matrix = vector_partial_application(1, c, intParams.mon_basis);
 l2s = monomial_to_monomial(intParams.mon_basis, sintParams.mon_basis);
-probData.A = sparse([-eye(gH_Params.U_arr(1)); -sintParams.mon_to_P0 * l2s * application_matrix * intParams.P0_to_mon]');
+
+probData.A = sparse([-eye(gH_Params.U_arr(1)); -sintParams.mon_to_P0 * l2s *  intParams.P0_to_mon]');
 mon_con1 = msspoly(-1);
 mon_con1_vec = intParams.mon_to_P0 * msspoly_to_vector(mon_con1, intParams.mon_basis);
 mon_con2 = msspoly(1);
@@ -148,16 +149,11 @@ opts.optimTol = 1e-6 ;
 %opts.verbose = 0;
 results = alfonso(probData, x0, @alfonso_grad_and_hess, gH_Params, opts);
 
-if sum(imag(results.y)) > 0
-    warning("Result of optimization is complex");
-end
-results.y = real(results.y);
-
 spot_poly_vec = msspoly_to_vector(fspotless, intParams.mon_basis);
 alfonso_poly_vec = intParams.P0_to_mon * results.y;
 falfonso = alfonso_poly_vec' * intParams.mon_basis.monomials;
 
-[grid_x, grid_y] = meshgrid(linspace(sp_bounds(1, 1), sp_bounds(1, 2), 50), linspace(sp_bounds(2, 1), sp_bounds(2, 2), 50));
+[grid_x, grid_y] = meshgrid(linspace(-1, 1, 50), linspace(-1, 1, 50));
 flat = [grid_x(:), grid_y(:)];
 alf_vals = reshape(dmsubs(falfonso, intParams.mon_basis.variables, flat')', 50, 50);
 spot_vals = reshape(dmsubs(fspotless, intParams.mon_basis.variables, flat')', 50, 50);
@@ -173,23 +169,11 @@ COS(:,:,1) = ones(50); % red
 COS(:,:,2) = ones(50); % green
 COS(:,:,3) = ones(50); % blue
 
-close all;
-figure ; cla ; hold on;
-xlim([-1, 1])
-ylim([0, 2])
-pts = linspace(-1, 1, 100);
-yvals = dmsubs(fspotless, [x;y], [c*ones(1, 100); pts]);
-yvals2 = dmsubs(falfonso, [x;y], [c*ones(1, 100); pts]);
 
-int_spotless = def_int_on_box(fspotless, sp_bounds(:, 1), sp_bounds(:, 2), vars)
-int_alfonso = def_int_on_box(falfonso, sp_bounds(:, 1), sp_bounds(:, 2), vars)
-
-plot(pts, yvals)
-plot(pts, yvals2)
-plot(pts, ones(1, 100))
 
 
 figure ; cla ; hold on;
+
 surf(grid_x, grid_y, alf_vals, COA);
 surf(grid_x, grid_y, spot_vals, COS);
 
