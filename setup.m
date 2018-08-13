@@ -4,7 +4,6 @@ addpath /Users/okayhughes/Documents/MATLAB/partitions;
 addpath /Users/okayhughes/Documents/MATLAB/spotless;
 addpath /Users/okayhughes/Documents/MATLAB/alfonso-master/
 addpath ./okay_poly_utils
-addpath ./plotting
 addpath ./spotless_utils
 addpath ./alfonso_utils
 addpath .
