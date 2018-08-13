@@ -15,24 +15,20 @@ T_max = 1
 
 X_bounds = repmat([-1, 1], size(x, 1), 1)
 
-intParams_w = FeketeCube(size(x, 1), degree/2, x);
-intParams_w = scale_fekete_cube(intParams_w, X_bounds);
+intParams_w = AffineFeketeCube(x, degree, X_bounds);
 
 X_T_bounds = [0.8, 1]
 
-intParams_w_X_T = FeketeCube(size(x, 1), degree/2, x);
-intParams_w_X_T = scale_fekete_cube(intParams_w_X_T, X_T_bounds);
+intParams_w_X_T = AffineFeketeCube(x, degree, X_T_bounds);
 
 S_bounds = [[T_min, T_max];
             X_bounds];
 
-intParams_v_f = FeketeCube(size(variables, 1), degree/2 + ceil(msspoly_degree(f)/2 + 4), variables); 
-intParams_v_f = scale_fekete_cube(intParams_v_f, S_bounds);
+intParams_v_f = AffineFeketeCube(variables, degree + ceil(msspoly_degree(f)/2) * 2, S_bounds);
+
 intParams_arr = [intParams_v_f, intParams_w_X_T, intParams_w, intParams_w];
 
-
-intParams_v = FeketeCube(size(variables, 1), degree/2, variables);
-intParams_v = scale_fekete_cube(intParams_v, S_bounds);
+intParams_v = AffineFeketeCube(variables, degree, S_bounds);
 
 gH_Params = gen_grad_params(intParams_arr);
 
