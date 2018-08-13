@@ -50,7 +50,7 @@ mon = monomials([x;y],0:degree) ;
 
 % create SOS constraints
 %prog = sosOnK(prog,f+1,[x;y],[hX;hY],degree) ;
-prog = sosOnK(prog,xcon-1,vars,ha,degree) ;
+prog = sosOnK(prog,f-1,vars,ha,degree) ;
 prog = sosOnK(prog, f+1, [x;y], [hX; hY], degree)
 
 % create cost function
