@@ -34,65 +34,14 @@ intParams_arr = [intParams_v_f, intParams_w_X_T, intParams_w, intParams_w];
 intParams_v = FeketeCube(size(variables, 1), degree/2, variables);
 intParams_v = scale_fekete_cube(intParams_v, S_bounds);
 
-
-numPolys = 4;
-
-gH_Params.numPolys = numPolys;
-gH_Params.n_arr = zeros(numPolys, 1);
-gH_Params.d_arr = zeros(numPolys, 1);
-gH_Params.U_arr = zeros(numPolys, 1);
-gH_Params.L_arr = zeros(numPolys, 1);
-gH_Params.LWts_cell = cell(numPolys, 1);
-gH_Params.P_cell = cell(numPolys, 1);
-gH_Params.PWts_cell = cell(numPolys, 1);
-gH_Params.bnu = 0;
-
-for i=1:numPolys
-    intParams_i = intParams_arr(i);
-    n   = intParams_i.n;
-    d   = intParams_i.d;
-    U   = intParams_i.U;
-    L   = intParams_i.L;
-    P   = intParams_i.P0;
-    pts = intParams_i.pts;
-    bounds = intParams_i.bounds;
-    lb = bounds(:, 1);
-    ub = bounds(:, 2);
-
-    % dimension of the weight polynomial space (should be dimension of d)
-    LWts = repmat(nchoosek(n+d-1,n),n,1);
-    % parameter object for cone gradient/hessian function
-    gH_Params.n_arr(i)      = n;
-    gH_Params.d_arr(i)      = d;
-    gH_Params.U_arr(i)      = U;
-    gH_Params.L_arr(i)      = L;
-    gH_Params.LWts_cell{i}  = LWts;
-    nu                      = L+sum(LWts) ;
-    gH_Params.bnu           = gH_Params.bnu + nu;
-    gH_Params.P_cell{i}     = P;
-
-    % create polynomial hT (g in the alfonso paper) to define space T = [-1,1]^2
-
-    wtVals  = bsxfun(@minus,pts,lb').*bsxfun(@minus,ub',pts);
-
-    PWts = cell(n,1);
-    for j = 1:n
-        PWts{j}         = diag(sqrt(wtVals(:,j)))*P(:,1:LWts(j));
-        [PWts{j}, ~]    = qr(PWts{j}, 0);
-        % associated positive semidefinite cone constraints: 
-        % PWts{j}'*diag(x_1)*PWts{j} >= 0,
-        % PWts{j}'*diag(x_2)*PWts{j} >= 0,...
-    end
-    gH_Params.PWts_cell{i} = PWts;
-end
-gH_Params.bnu = gH_Params.bnu + 1;
+gH_Params = gen_grad_params(intParams_arr);
 
 v_to_v_f = monomial_to_monomial(intParams_v.mon_basis, intParams_v_f.mon_basis);
 time_der_v = vector_derivative(1, intParams_v.mon_basis);
 mult_mat = vector_poly_multiply(f, intParams_v.mon_basis, intParams_v_f.mon_basis);
 space_der_v = vector_derivative(2, intParams_v.mon_basis);
 
-A1 = -intParams_v_f.mon_to_P0 * ((v_to_v_f * time_der_v) + (mult_mat * space_der_v)) * intParams_v.P0_to_mon;
+A1 = -intParams_v_f.mon_to_P0 * liouville_operator(f, intParams_v.mon_basis, intParams_v_f.mon_basis) * intParams_v.P0_to_mon;
 A2 = zeros(intParams_v_f.U, intParams_w.U);
 
 v_to_w_X_T = monomial_to_monomial(intParams_v.mon_basis, intParams_w_X_T.mon_basis);
@@ -134,6 +83,7 @@ probData.b = -[int1;
 
 % make initial primal iterate
 x0 = ones(sum(gH_Params.U_arr), 1);
+
 [~, g0, ~, ~] = alfonso_grad_and_hess(x0, gH_Params);
 rP = max((1+abs(probData.b))./(1+abs(probData.A*x0)));
 rD = max((1+abs(g0))./(1+abs(probData.c)));
