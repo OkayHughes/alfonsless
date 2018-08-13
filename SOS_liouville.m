@@ -1,6 +1,8 @@
 %% problem description
 %
-% TODO: Write problem description
+% TODO: Write problem 
+function SOS_liouville()
+
 degree = 8 ;
 
 t = msspoly('t');
@@ -16,7 +18,7 @@ X_bounds = repmat([-1, 1], size(x, 1), 1)
 intParams_w = FeketeCube(size(x, 1), degree/2, x);
 intParams_w = scale_fekete_cube(intParams_w, X_bounds);
 
-X_T_bounds = [-0.1, 0.1]
+X_T_bounds = [-0.4, 0.4]
 
 intParams_w_X_T = FeketeCube(size(x, 1), degree/2, x);
 intParams_w_X_T = scale_fekete_cube(intParams_w_X_T, X_T_bounds);
@@ -54,6 +56,8 @@ for i=1:numPolys
     P   = intParams_i.P0;
     pts = intParams_i.pts;
     bounds = intParams_i.bounds;
+    lb = bounds(:, 1);
+    ub = bounds(:, 2);
 
     % dimension of the weight polynomial space (should be dimension of d)
     LWts = repmat(nchoosek(n+d-1,n),n,1);
@@ -67,8 +71,6 @@ for i=1:numPolys
     gH_Params.bnu           = gH_Params.bnu + nu;
     gH_Params.P_cell{i}     = P;
 
-    lb = bounds(:, 1);
-    ub = bounds(:, 2);
     % create polynomial hT (g in the alfonso paper) to define space T = [-1,1]^2
 
     wtVals  = bsxfun(@minus,pts,lb').*bsxfun(@minus,ub',pts);
@@ -108,6 +110,8 @@ C2 = eye(intParams_w.U);
 D1 = zeros(intParams_w.U, intParams_v.U);
 D2 = eye(intParams_w.U);
 
+
+
 const1 = zeros(intParams_v_f.U, 1);
 const2 = zeros(intParams_w_X_T.U, 1);
 const3 = ones(intParams_w.U, 1);
@@ -139,7 +143,6 @@ x0 = repmat(sqrt(rP*rD),sum(gH_Params.U_arr),1);
 opts.optimTol = 1e-6 ;
 results = alfonso(probData, x0, @alfonso_grad_and_hess, gH_Params, opts);
 
-
 hX = -(x-X_bounds(:, 1)).*(x-X_bounds(:, 2));
 hXT = -(t - X_T_bounds(1))*(t-X_T_bounds(2));
 dl=boxMoments(x, X_bounds(:, 1), X_bounds(:, 2));
@@ -148,6 +151,7 @@ dl=boxMoments(x, X_bounds(:, 1), X_bounds(:, 2));
 
 %% PLOTTING POLYNOMIAL (RECOVERED) OUTPUT
 
+results.y
 spot_poly_vec = msspoly_to_vector(w_spotless, intParams_w.mon_basis);
 alfonso_poly_vec = intParams_w.P0_to_mon * results.y(intParams_v.U+1:end, 1);
 falfonso = alfonso_poly_vec' * intParams_w.mon_basis.monomials;
@@ -155,7 +159,7 @@ falfonso = alfonso_poly_vec' * intParams_w.mon_basis.monomials;
 
 %[grid_x, grid_y] = meshgrid(linspace(-1, 1, 50), linspace(-1, 1, 50));
 %flat = [grid_x(:), grid_y(:)];
-x_grid = linspace(0, 1, 50)';
+x_grid = linspace(-1, 1, 50)';
 alf_vals = dmsubs(falfonso, intParams_w.mon_basis.variables, x_grid')';
 spot_vals = dmsubs(w_spotless, intParams_w.mon_basis.variables, x_grid')';
 
@@ -163,8 +167,8 @@ spot_vals = dmsubs(w_spotless, intParams_w.mon_basis.variables, x_grid')';
 figure(1) ; cla ; hold on ;
 
 plot(x_grid, spot_vals,'LineWidth',1.5)
-size(x_grid)
-size(alf_vals)
 plot(x_grid,alf_vals,'LineWidth',1);
+
+end
 %surf(grid_x, grid_y, alf_vals, COA);
 %surf(grid_x, grid_y, spot_vals, COS);
