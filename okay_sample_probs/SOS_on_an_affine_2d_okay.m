@@ -17,7 +17,7 @@ degree = 12;
 c = 0 ;
 
 sp_bounds = [-1, 1; -1, 1];
-A_bounds = [-0.2, 0.2;
+A_bounds = [-0.6, 0.2;
             -0.2, 0.2];
 
 intParams = FeketeCube(2,degree/2) ;
@@ -170,12 +170,15 @@ COS(:,:,2) = ones(50); % green
 COS(:,:,3) = ones(50); % blue
 
 
-
+int_spotless = def_int_on_box(fspotless, sp_bounds(:, 1), sp_bounds(:, 2), vars)
+int_alfonso = def_int_on_box(falfonso, sp_bounds(:, 1), sp_bounds(:, 2), vars)
 
 figure ; cla ; hold on;
 
-surf(grid_x, grid_y, alf_vals, COA);
-surf(grid_x, grid_y, spot_vals, COS);
+surf_a = surf(grid_x, grid_y, alf_vals, COA, 'FaceAlpha',0.5);
+surf_s = surf(grid_x, grid_y, spot_vals, 'FaceAlpha',0);
+surf_s.EdgeColor = 'white';
+
 
 end
 
