@@ -92,7 +92,7 @@ time_der_v = vector_derivative(1, intParams_v.mon_basis);
 mult_mat = vector_poly_multiply(f, intParams_v.mon_basis, intParams_v_f.mon_basis);
 space_der_v = vector_derivative(2, intParams_v.mon_basis);
 
-A1 = intParams_v_f.mon_to_P0 * (v_to_v_f * time_der_v + mult_mat * space_der_v) * intParams_v.P0_to_mon;
+A1 = -intParams_v_f.mon_to_P0 * (v_to_v_f * time_der_v + mult_mat * space_der_v) * intParams_v.P0_to_mon;
 A2 = zeros(intParams_v_f.U, intParams_w.U);
 
 v_to_w_X_T = monomial_to_monomial(intParams_v.mon_basis, intParams_w_X_T.mon_basis);
@@ -104,7 +104,7 @@ B2 = zeros(intParams_w.U);
 v_to_w = monomial_to_monomial(intParams_v.mon_basis, intParams_w.mon_basis);
 apply_init_time = vector_partial_application(1, T_min, intParams_v.mon_basis);
 
-C1 = intParams_w.mon_to_P0 * v_to_w * apply_init_time * intParams_v.P0_to_mon;
+C1 = -intParams_w.mon_to_P0 * v_to_w * apply_init_time * intParams_v.P0_to_mon;
 C2 = eye(intParams_w.U);
 
 D1 = zeros(intParams_w.U, intParams_v.U);
@@ -147,24 +147,75 @@ hX = -(x-X_bounds(:, 1)).*(x-X_bounds(:, 2));
 hXT = -(t - X_T_bounds(1))*(t-X_T_bounds(2));
 dl=boxMoments(x, X_bounds(:, 1), X_bounds(:, 2));
 
-[w_spotless, spotless_v] = liouvilleSolver(t, x, f, hX, hXT, dl, T_max, degree);
+[w_spotless, v_spotless] = liouvilleSolver(t, x, f, hX, hXT, dl, T_max, degree);
 
 %% PLOTTING POLYNOMIAL (RECOVERED) OUTPUT
 
-results.y
-spot_poly_vec = msspoly_to_vector(w_spotless, intParams_w.mon_basis);
-alfonso_poly_vec = intParams_w.P0_to_mon * results.y(intParams_v.U+1:end, 1);
-falfonso = alfonso_poly_vec' * intParams_w.mon_basis.monomials;
+spot_w_vec = msspoly_to_vector(w_spotless, intParams_w.mon_basis);
+alfonso_w_vec = intParams_w.P0_to_mon * results.y(intParams_v.U+1:end, 1);
+alfonso_v_vec = intParams_v.P0_to_mon * results.y(1:intParams_v.U, 1);
+w_alfonso = alfonso_w_vec' * intParams_w.mon_basis.monomials;
+v_alfonso = alfonso_v_vec' * intParams_v.mon_basis.monomials;
 
+%PLOTTING ALL CONSTRAINTS
+space_der_v = vector_derivative(1, intParams_v.mon_basis);
+time_der_v = vector_derivative(2, intParams_v.mon_basis);
+mult_mat = vector_poly_multiply(f, intParams_v.mon_basis, intParams_v_f.mon_basis);
+
+constraint_1 = (-(v_to_v_f * time_der_v + mult_mat * space_der_v) * alfonso_v_vec)' * intParams_v_f.mon_basis.monomials;
+
+v_to_w_X_T = monomial_to_monomial(intParams_v.mon_basis, intParams_w_X_T.mon_basis);
+apply_final_time = vector_partial_application(1, T_max, intParams_v.mon_basis);
+
+constraint_2 = (v_to_w_X_T * apply_final_time * alfonso_v_vec)' * intParams_w.mon_basis.monomials;
+
+v_to_w = monomial_to_monomial(intParams_v.mon_basis, intParams_w.mon_basis);
+apply_init_time = vector_partial_application(1, T_min, intParams_v.mon_basis);
+
+constraint_3 = (-(v_to_w * apply_init_time * alfonso_v_vec) + alfonso_w_vec)' * intParams_w.mon_basis.monomials + msspoly(-1);
+
+constraint_4 = w_alfonso;
+
+figure('Name','-(\mathcal{L}_f v)(x)') ; cla ; hold on ;
+[grid_x, grid_y] = meshgrid(linspace(S_bounds(1, 1), S_bounds(1, 2), 50), linspace(S_bounds(2, 1), S_bounds(2, 2), 50));
+flat = [grid_x(:), grid_y(:)];
+const_1_vals = reshape(dmsubs(constraint_1, intParams_v_f.mon_basis.variables, flat')', 50, 50);
+surf_a = surf(grid_x, grid_y, const_1_vals, 'FaceAlpha',0.5);
+
+
+figure('Name','v(T, x)') ; cla ; hold on ;
+xlim(X_T_bounds);
+ylim([-1, 1]);
+pts = linspace(X_T_bounds(1, 1), X_T_bounds(1, 2), 100);
+yvals = dmsubs(constraint_2, x, pts);
+plot(pts, yvals)
+
+figure('Name', '-v(0, x) + w(x) - 1') ; cla ; hold on ;
+xlim(X_bounds);
+ylim([-1, 1]);
+pts = linspace(X_bounds(1, 1), X_bounds(1, 2), 100);
+yvals = dmsubs(constraint_3, x, pts);
+plot(pts, yvals)
+
+figure('Name','w(x)') ; cla ; hold on ;
+xlim(X_bounds);
+ylim([-1, 1]);
+pts = linspace(X_bounds(1, 1), X_bounds(1, 2), 100);
+yvals = dmsubs(constraint_4, x, pts);
+plot(pts, yvals)
+
+int_spotless = def_int_on_box(w_spotless, X_bounds(:, 1), X_bounds(:, 2), variables)
+int_alfonso = def_int_on_box(w_alfonso, X_bounds(:, 1), X_bounds(:, 2), variables)
 
 %[grid_x, grid_y] = meshgrid(linspace(-1, 1, 50), linspace(-1, 1, 50));
 %flat = [grid_x(:), grid_y(:)];
-x_grid = linspace(-1, 1, 50)';
-alf_vals = dmsubs(falfonso, intParams_w.mon_basis.variables, x_grid')';
+x_grid = linspace(X_bounds(1, 1), X_bounds(1, 2), 50)';
+alf_vals = dmsubs(w_alfonso, intParams_w.mon_basis.variables, x_grid')';
 spot_vals = dmsubs(w_spotless, intParams_w.mon_basis.variables, x_grid')';
 
 
-figure(1) ; cla ; hold on ;
+
+figure('Name','w_s(x) and w_a(x)') ; cla ; hold on ;
 
 plot(x_grid, spot_vals,'LineWidth',1.5)
 plot(x_grid,alf_vals,'LineWidth',1);
