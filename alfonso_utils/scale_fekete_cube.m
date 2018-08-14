@@ -6,6 +6,7 @@ function scaled_cube = scale_fekete_cube(cube, bounds)
     ub = bounds(:, 2);
     scale   = (ub-lb)/2;
     shift   = (lb+ub)/2;
+    
     scaled_cube.pts = bsxfun(@plus,bsxfun(@times,scaled_cube.pts,scale'),shift');
     %P' should equal P_test
 

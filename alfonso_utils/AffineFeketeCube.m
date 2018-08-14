@@ -1,9 +1,10 @@
 function affine_fekete_cube = AffineFeketeCube(variables, max_degree, box_scale)
     name = "FeketeCube";
-    if check_for_basis(name, size(variables, 1), max_degree)
+    if check_for_basis(name, size(variables, 1), max_degree/2)
         fekete_cube = read_basis(name, size(variables, 1), max_degree/2);
     else
-        fekete_cube = FeketeCube(size(variables, 1), max_degree/2, variables);
+        sprintf('Creating new %s with n=%d, d=%d', name, size(variables, 1), max_degree);
+        fekete_cube = FeketeCube(size(variables, 1), max_degree/2);
         write_basis(fekete_cube);
     end
 

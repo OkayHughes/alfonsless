@@ -88,33 +88,44 @@ function intParams = FeketeCube(n,d)
 % Exchange post which is available at
 % https://www.mathworks.com/matlabcentral/fileexchange/12009-partitions-of-an-integer.
 % -------------------------------------------------------------------------
-    intParams.name = 'FeketeCube';
+    intParams.name = "FeketeCube";
     intParams.n = n;
     intParams.d = d;    
     intParams.L = nchoosek(n+d,n);
     intParams.U = nchoosek(n+2*d,n);
     
+    'creating monomial basis'
+
     intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, '@#_.');
+
+    'monomial basis generated'
     
     intParams.nrPoints1D = 2*d+1;
 
+    'creating original point grid'
     intParams.nrPoints = prod(intParams.nrPoints1D:intParams.nrPoints1D+n-1);
     pts = zeros(intParams.nrPoints,n);
     for j = 1:n
+        sprintf('starting x_%d', j)
         temp = 1;
         for i = 1:j-1; temp = kron(temp,ones(intParams.nrPoints1D+i-1,1)); end;
         temp = kron(temp,chebpts(intParams.nrPoints1D+j-1));
         for i = j+1:n; temp = kron(temp,ones(intParams.nrPoints1D+i-1,1)); end;
         pts(:,j) = temp;
     end
+
+    'point grid generated'
     
     P = ones(intParams.nrPoints,intParams.U);
     m = ones(intParams.U,1);
     
+    'evaluating product chebyshev polynomials'
+
     prod_polynomials = msspoly(ones(intParams.U, 1));
     col     = 0;
     lrEye   = fliplr(eye(2*d+1)); %descending T_n
     for t = 0:2*d      % polynomials with total degree up to 2*d
+        sprintf('starting d = %d', t)
         allDegs = partitions(t, ones(1,n));
         [nrDegs,~] = size(allDegs);
         for i = 1:nrDegs
