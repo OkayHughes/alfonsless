@@ -31,7 +31,7 @@
 % -------------------------------------------------------------------------
 
 
-function intParams = FeketeCube(n,d, variables)
+function intParams = FeketeCube(n,d)
 % This method generates parameters for the interpolant basis representation
 % of sum-of-squares polynomials with an arbitrary number of variables.
 % --------------------------------------------------------------------------
@@ -88,16 +88,13 @@ function intParams = FeketeCube(n,d, variables)
 % Exchange post which is available at
 % https://www.mathworks.com/matlabcentral/fileexchange/12009-partitions-of-an-integer.
 % -------------------------------------------------------------------------
-  
+    intParams.name = 'FeketeCube';
     intParams.n = n;
     intParams.d = d;    
     intParams.L = nchoosek(n+d,n);
     intParams.U = nchoosek(n+2*d,n);
-    if nargin < 3
-        intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, 'f');
-    else
-        intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, variables);
-    end
+    
+    intParams.mon_basis = monomial_basis(intParams.n, intParams.d*2, '@#_.');
     
     intParams.nrPoints1D = 2*d+1;
 
@@ -156,6 +153,7 @@ function intParams = FeketeCube(n,d, variables)
     if norm(P_test - P0_large', 'fro') > 1E-8
         warning('Interpolant basis monomials may not be accurate\n ||P0 - P_test|| = %d, should be very small', normm);
     end
+
     intParams.w = w;
     intParams.pts = pts;
     intParams.P0 = P;
@@ -166,15 +164,10 @@ function intParams = FeketeCube(n,d, variables)
     intParams.P_full = P_large;
     intParams.P0_full = P0_large;
     
-    [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(P0_large, P_large, prod_polynomials, intParams.mon_basis);
+
     
     intParams.polynomials = prod_polynomials;
-    
-    intParams.P0_to_mon = P0_to_mon;
-    intParams.P_to_mon = P_to_mon;
-    intParams.mon_to_P0 = mon_to_P0;
-    intParams.mon_to_P = mon_to_P;
-    
+
       
 return
     
