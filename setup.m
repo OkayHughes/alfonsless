@@ -6,6 +6,7 @@ addpath /Users/okayhughes/Documents/MATLAB/alfonso-master/
 addpath ./okay_poly_utils
 addpath ./spotless_utils
 addpath ./alfonso_utils
+addpath ./interpolant_bases
 addpath .
 cwd = pwd;
 cd /Users/okayhughes/Documents/MATLAB/spotless
