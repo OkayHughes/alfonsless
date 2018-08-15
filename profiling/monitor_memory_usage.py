@@ -5,7 +5,7 @@ import csv
 import time
 
 
-def monitor_memory_usage(pid, sleep_time, filename):
+def monitor_memory_usage(pid, sleep_time=None, filename = None):
 
     # pull args out
     p = psutil.Process(pid)
@@ -18,17 +18,19 @@ def monitor_memory_usage(pid, sleep_time, filename):
         year = str(now.year)
         month = '{:02d}'.format(now.month)
         day = '{:02d}'.format(now.day)
-        filename = str(args.pid) + '_' + year + month + day + '.csv'
+        filename = str(pid) + '_' + year + month + day + '.csv'
 
     t = 1
     while t:
         mem = p.memory_info()
-        with open('./memlog/'+filename, 'a', newline='') as csvfile:
+        with open(filename, 'a', newline='') as csvfile:
             now = datetime.datetime.now()
             writer = csv.writer(csvfile)
-            writer.writerow([args.pid, now.hour, now.minute, now.second, mem.rss,
+            writer.writerow([pid, now.hour, now.minute, now.second, mem.rss,
                              mem.vms])
         time.sleep(sleep_time)
+        if p.status() == 'zombie':
+            t = 0
 
 
 if __name__ == "__main__":
