@@ -2,7 +2,7 @@ clear
 close all
 
 % options
-degree = 4 ;
+degree = 8 ;
 solver = 'mosek' ;
 sostype = 'sos' ;
 visualize = 1 ;

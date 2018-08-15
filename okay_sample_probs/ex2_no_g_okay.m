@@ -42,8 +42,7 @@ int_XK = boxMoments([x;k], [X_range(:,1); K_range(:,1)], [X_range(:,2); K_range(
 prob.t = t ;
 prob.z = x ;
 prob.k = k ;
-p
-rob.f = f ;
+prob.f = f ;
 %prog.g = g ;
 prob.hZ = hX ;
 prob.hZ0 = hX0 ;
