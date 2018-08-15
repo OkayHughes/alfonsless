@@ -14,7 +14,7 @@ function write_basis(basis)
     write = false;
     if ex == 0
         manifest = [n, d];
-        fnames = {fname};
+        fnames = {string(fname)};
         save(fullfile(prefix, name, 'manifest.mat'), 'manifest', 'fnames');
         write = true;
     elseif ex ~= 2
@@ -25,7 +25,7 @@ function write_basis(basis)
             rd.manifest = [rd.manifest;
                            [n, d]];
             rd.fnames = [rd.fnames;
-                         fname];
+                         string(fname)];
             write = true;
         end
     end

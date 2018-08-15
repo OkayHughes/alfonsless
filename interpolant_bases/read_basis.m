@@ -9,6 +9,6 @@ function basis = read_basis(name, n, d)
     manifest = rd.manifest;
     [~, idx] = ismember([n, d], manifest, 'rows');
     fnames = rd.fnames;
-    obj = matfile(fullfile(prefix, name, fnames{idx, 1}));
+    obj = matfile(fullfile(prefix, name, char(fnames{idx, 1})));
     basis = obj.basis;
 end
