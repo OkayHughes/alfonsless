@@ -37,7 +37,7 @@ time_der_v = vector_derivative(1, intParams_v.mon_basis);
 mult_mat = vector_poly_multiply(f, intParams_v.mon_basis, intParams_v_f.mon_basis);
 space_der_v = vector_derivative(2, intParams_v.mon_basis);
 
-A1 = -intParams_v_f.mon_to_P0 * liouville_operator(f, 1, 2, 2, intParams_v.mon_basis, intParams_v_f.mon_basis) * intParams_v.P0_to_mon;
+A1 = -intParams_v_f.mon_to_P0 * liouville_operator(f, 1, 2, intParams_v.mon_basis, intParams_v_f.mon_basis) * intParams_v.P0_to_mon;
 A2 = zeros(intParams_v_f.U, intParams_w.U);
 
 v_to_w_X_T = monomial_to_monomial(intParams_v.mon_basis, intParams_w_X_T.mon_basis);
