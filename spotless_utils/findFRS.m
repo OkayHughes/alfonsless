@@ -153,7 +153,6 @@ function out = findFRS(prob)
             prog = sosOnK(prog, q(qidx) - Lgv(qidx), [t;z;k], [hT;hZ;hK], degree) ;
             prog = sosOnK(prog, q(qidx) + Lgv(qidx), [t;z;k], [hT;hZ;hK], degree) ;
             prog = sosOnK(prog, q(qidx), [t;z;k], [hT;hZ;hK], degree) ;
-        end
     end    
 
     toc
