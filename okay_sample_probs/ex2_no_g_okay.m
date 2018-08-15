@@ -2,7 +2,7 @@ clear
 % close all
 
 % options
-degree = 10 ;
+degree = 4 ;
 solver = 'mosek' ;
 sostype = 'sos' ;
 visualize = 1 ;
@@ -25,6 +25,7 @@ K_range = repmat([-1,1], size(k)) ;
 %% dynamics
 % system dynamics
 f = 0.5*k ;
+%g = 0*k;
 
 %% create domain
 hX = (x - X_range(:,1)).*(X_range(:,2) - x) ;
@@ -41,7 +42,9 @@ int_XK = boxMoments([x;k], [X_range(:,1); K_range(:,1)], [X_range(:,2); K_range(
 prob.t = t ;
 prob.z = x ;
 prob.k = k ;
-prob.f = f ;
+p
+rob.f = f ;
+%prog.g = g ;
 prob.hZ = hX ;
 prob.hZ0 = hX0 ;
 prob.hK = hK ;
@@ -53,18 +56,22 @@ prob.reduce_vmon = reduce_vmon ;
 prob.run_solver = 1 ;
 
 %% solve the problem
-%out = findFRS(prob) ;   
+out = findFRS(prob) ;   
+
 prob_a.degree = degree;
 prob_a.t = t;
 prob_a.x = x;
 prob_a.k = k;
 prob_a.f = f;
+%prob_a.g = g;
 prob_a.X_bounds = X_range;
 prob_a.X0_bounds = X0_range;
 prob_a.K_bounds = K_range;
 prob_a.T = T;
 
 out_a = find_FRS_alfonso(prob_a);
+Y_bounds = [X_range; K_range];
+l2_dist = l2_dist_on_box(out.w, out_a.w, Y_bounds(:, 1), Y_bounds(:, 2), [x;k])
 
 %% set up variables for visualization
 N = 100 ;
@@ -108,4 +115,19 @@ if visualize
 %         contour(xvec, kvec, W,[1 1],'LineWidth',1.5,'Color',[0 0 0])
     contour(xvec, kvec, W,[1 1],'LineWidth',1.5,'Color',[reduce_vmon 0 1-reduce_vmon])
     hold on
+
+    figure('Name','w_a vs w_s') ; cla ; hold on ;
+
+    [grid_x, grid_y] = meshgrid(linspace(X_range(1, 1), X_range(1, 2), 50), linspace(K_range(1, 1), K_range(1, 2), 50));
+    flat = [grid_x(:), grid_y(:)];
+    spot_vals = reshape(dmsubs(out.w, [x; k], flat')', 50, 50);
+    alf_vals = reshape(dmsubs(out_a.w, [x; k], flat')', 50, 50);
+
+    COS(:,:,1) = zeros(50); % red
+    COS(:,:,2) = zeros(50); % green
+    COS(:,:,3) = zeros(50); % blue
+
+    surf_a = surf(grid_x, grid_y, alf_vals, COS, 'FaceAlpha',0.5);
+    surf_c = surf(grid_x, grid_y, spot_vals, 'FaceAlpha',0);
+    surf_c.EdgeColor="red";
 end
