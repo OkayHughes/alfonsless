@@ -1,4 +1,4 @@
-base_path = '/Users/okayhughes/Documents/MATLAB';
+base_path = '/home/owhughes/matlab';
 addpath(fullfile(base_path, 'chebfun-master'));
 addpath(fullfile(base_path, 'Padua2DM'));
 addpath(fullfile(base_path, 'partitions'));
