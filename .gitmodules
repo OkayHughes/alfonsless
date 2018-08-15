@@ -1,0 +1,3 @@
+[submodule "interpolant_bases/FeketeCube"]
+	path = interpolant_bases/FeketeCube
+	url = https://github.com/OkayHughes/FeketeCube
