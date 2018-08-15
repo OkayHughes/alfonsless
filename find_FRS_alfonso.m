@@ -9,6 +9,7 @@ t = prob.t;
 x = prob.x;
 k = prob.k;
 
+
 f = prob.f;
 deg_f = ceil(max(arrayfun(@msspoly_degree, f))/2) * 2;
 
@@ -65,7 +66,10 @@ mon_basis_Y = int_params_Y.mon_basis;
 mon_basis_Y0 = int_params_Y0.mon_basis;
 mon_basis_Z = int_params_Z.mon_basis;
 mon_basis_Zf = int_params_Zf.mon_basis;
-mon_basis_Zg = int_params_Zg.mon_basis;
+
+if error_dynamics
+  mon_basis_Zg = int_params_Zg.mon_basis;
+end
 
 %add intparams
 g_h_params = gen_grad_params(int_params_arr);
@@ -94,7 +98,7 @@ prob_data.c = c1;
 %constraint 2 (optional)
 
 if error_dynamics
-    L_g = liouville_operator(g, time_index, first_sp_index, mon_basis_Z, mon_basis_Zg);
+    L_g = liouville_operator_g(g, first_sp_ind, mon_basis_Z, mon_basis_Zg);
     V2 = int_params_Zg.mon_to_P0 * L_g * int_params_Z.P0_to_mon;
     W2 = zero_operator(mon_basis_Y, mon_basis_Zg);
 
@@ -127,7 +131,7 @@ if error_dynamics
     V4 = zero_operator(mon_basis_Z, mon_basis_Z);
     W4 = zero_operator(mon_basis_Y, mon_basis_Z);
     Q4 = eye(size(mon_basis_Z.monomials, 1));
-    c4 = zeros(size(mon_basis_Zg.monomials));
+    c4 = zeros(size(mon_basis_Z.monomials));
     prob_data.A = [prob_data.A; 
                    [V4, W4, Q4]];
     prob_data.c = [prob_data.c;
@@ -163,7 +167,7 @@ W6 = eye(size(mon_basis_Y.monomials, 1));
 if error_dynamics
     Q6 = zero_operator(mon_basis_Z, mon_basis_Y);
     prob_data.A = [prob_data.A;
-                   [V6; W6; Q6]];
+                   [V6, W6, Q6]];
 else
     prob_data.A = [prob_data.A;
                    [V6, W6]];
@@ -190,7 +194,7 @@ else
                    [V7, W7]];
 end
 
-c7 = zeros(size(mon_basis_Z.monomials));
+c7 = ones(size(mon_basis_Z.monomials));
 
 prob_data.c = [prob_data.c;
                c7];
@@ -210,13 +214,14 @@ if error_dynamics
 end
 
 % -Af + s = -c => Af >= c
-prob_data.A = -prob_data.A;
+prob_data.A = -transpose(prob_data.A);
 prob_data.c = -prob_data.c;
 
 
 % make initial primal iterate
 x0 = ones(sum(g_h_params.U_arr), 1);
 [~, g0, ~, ~] = alfonso_grad_and_hess(x0, g_h_params);
+
 rP = max((1+abs(prob_data.b))./(1+abs(prob_data.A*x0)));
 rD = max((1+abs(g0))./(1+abs(prob_data.c)));
 x0 = repmat(sqrt(rP*rD),sum(g_h_params.U_arr),1);  
