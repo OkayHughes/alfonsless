@@ -27,7 +27,7 @@ for i=1:size(const_polys, 1)
 end
 
 if err > 1
-    error("Multiplication matrix is totally fucked")
+    error('Multiplication matrix is totally fucked')
 elseif err > 1E-8
-    error("Multiplication matrix is not precise")
+    error('Multiplication matrix is not precise')
 end

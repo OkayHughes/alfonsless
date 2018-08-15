@@ -8,7 +8,7 @@ for i=1:size(sc.P0_full, 2)
 end
 
 if err > 1
-    error("scaled COB matrix is hot trash")
+    error('scaled COB matrix is hot trash')
 elseif err > 1E-6
-    warning("Scaled COB matrix may be inaccurate")
+    warning('Scaled COB matrix may be inaccurate')
 end

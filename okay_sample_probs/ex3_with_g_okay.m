@@ -146,5 +146,5 @@ if visualize
 
     surf_a = surf(grid_x, grid_y, alf_vals, COS, 'FaceAlpha',0.5);
     surf_c = surf(grid_x, grid_y, spot_vals, 'FaceAlpha',0);
-    surf_c.EdgeColor="red";
+    surf_c.EdgeColor='red';
 end

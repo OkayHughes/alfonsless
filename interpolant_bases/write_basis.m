@@ -7,7 +7,7 @@ function write_basis(basis)
     if ex == 0
         mkdir(name);
     elseif ex ~= 7
-        error("%s is a non-directory", name);
+        error('%s is a non-directory', name);
     end
     ex = exist(fullfile(prefix, name, 'manifest.mat'));
     fname = sprintf("%d,%d.mat", n, d);
@@ -18,7 +18,7 @@ function write_basis(basis)
         save(fullfile(prefix, name, 'manifest.mat'), 'manifest', 'fnames');
         write = true;
     elseif ex ~= 2
-        error("%s is the wrong format", fullfile(name, 'manifest.mat'));
+        error('%s is the wrong format', fullfile(name, 'manifest.mat'));
     else
         rd = matfile(fullfile(prefix, name, 'manifest.mat'), 'writable', true);
         if ~ismember([n, d], rd.manifest, 'rows')

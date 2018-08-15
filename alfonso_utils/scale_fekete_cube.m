@@ -17,7 +17,7 @@ function scaled_cube = scale_fekete_cube(cube, bounds)
 
     err = dmsubs(scaled_cube.polynomials, scaled_cube.mon_basis.variables, scaled_cube.pts')' - scaled_cube.P0_full;
     if norm(err) > 1E-5
-        warning("something may be wrong with polynomial composition\n average subtitution error = %d", mean(mean(err)))
+        warning('something may be wrong with polynomial composition\n average subtitution error = %d', mean(mean(err)))
     end
     %scaled_cube.P_full = P_large;
     %scaled_cube.P0_full = P_stupid;

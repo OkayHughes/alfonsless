@@ -24,11 +24,11 @@ function [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(in
     cond_num = cond(full(M));
     M_inv = inv(M);
     if cond_num > 1E10
-        warning("Condition number of polynomial basis is large (cond(M) = %d)\nCOB matrices may be inaccurate.", cond_num);
+        warning('Condition number of polynomial basis is large (cond(M) = %d)\nCOB matrices may be inaccurate.', cond_num);
     end
     cond_num = cond(full(interpolant_basis));
     if cond_num > 1E10
-        warning("Condition number of P0 is large (cond(P0) = %d)\nCOB matrices may be inaccurate.", cond_num);
+        warning('Condition number of P0 is large (cond(P0) = %d)\nCOB matrices may be inaccurate.', cond_num);
     end
 
 

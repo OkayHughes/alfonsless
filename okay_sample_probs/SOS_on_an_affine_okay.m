@@ -149,7 +149,7 @@ opts.optimTol = 1e-6 ;
 results = alfonso(probData, x0, @alfonso_grad_and_hess, gH_Params, opts);
 
 if sum(imag(results.y)) > 0
-    warning("Result of optimization is complex");
+    warning('Result of optimization is complex');
 end
 results.y = real(results.y);
 

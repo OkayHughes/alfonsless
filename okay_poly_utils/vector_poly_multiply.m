@@ -40,7 +40,7 @@ function mult_matrix = vector_poly_multiply(poly, in_basis, out_basis)
 
             [~, index] = ismember(row_poly + row_mon, out_basis.power_matrix, 'rows');
             if index == 0
-                error("Product matrix cannot be represented using `out_basis`")
+                error('Product matrix cannot be represented using `out_basis`')
             end
             A(index, col_ind) = coeffs_poly(1, term_ind);
         end

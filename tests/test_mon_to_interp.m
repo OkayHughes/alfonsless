@@ -44,5 +44,5 @@ end
 % end
 
 if warn_flag
-    warning("P0_to_mon may be badly behaved\n err = %d, should be very small", err)
+    warning('P0_to_mon may be badly behaved\n err = %d, should be very small', err)
 end

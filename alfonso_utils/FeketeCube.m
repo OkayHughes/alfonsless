@@ -88,7 +88,7 @@ function intParams = FeketeCube(n,d)
 % Exchange post which is available at
 % https://www.mathworks.com/matlabcentral/fileexchange/12009-partitions-of-an-integer.
 % -------------------------------------------------------------------------
-    intParams.name = "FeketeCube";
+    intParams.name = 'FeketeCube';
     intParams.n = n;
     intParams.d = d;    
     intParams.L = nchoosek(n+d,n);
