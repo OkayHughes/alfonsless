@@ -1,11 +1,9 @@
-clear
-clc
-close all
-
+function segway_FRS_solver_okay(in_degree)
+setup()
 % options
-degree = 8 ;
+degree = in_degree ;
 solver = 'mosek' ;
-notes = '_vmax0p5_D1p5_withUnc_scaledByX0' ;
+notes = '' ;
 run_solver = 1 ;
 
 filename = ['segwayFRS_deg', num2str(degree), notes,'.mat'] ; 
@@ -100,9 +98,10 @@ prob_a.T = T;
 
 out_a = find_FRS_alfonso(prob_a);
 
-Y_bounds = [Z_range; K_range];
-l2_error_per_unit = l2_dist_on_box(out.w, out_a.w, Y_bounds(:, 1), Y_bounds(:, 2), [z;k]) / prod(Y_bounds(:, 2) - Y_bounds(:, 1))
+% Y_bounds = [Z_range; K_range];
+% l2_error_per_unit = l2_dist_on_box(out.w, out_a.w, Y_bounds(:, 1), Y_bounds(:, 2), [z;k]) / prod(Y_bounds(:, 2) - Y_bounds(:, 1))
 
 
 
-save(filename)
+%save(filename)
+end
