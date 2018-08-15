@@ -10,7 +10,7 @@ function write_basis(basis)
         error('%s is a non-directory', name);
     end
     ex = exist(fullfile(prefix, name, 'manifest.mat'));
-    fname = sprintf("%d,%d.mat", n, d);
+    fname = sprintf('%d,%d.mat', n, d);
     write = false;
     if ex == 0
         manifest = [n, d];
