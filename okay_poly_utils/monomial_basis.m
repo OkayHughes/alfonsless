@@ -1,4 +1,4 @@
-function basis = monomial_basis(num_variables, max_degree, variables)
+function basis = monomial_basis(num_variables, max_degree, variables, coeff_vars)
     %monomial_basis(num_variables, max_degree, var_array)
     %Takes:
     %   num_variables: integer
@@ -39,6 +39,9 @@ function basis = monomial_basis(num_variables, max_degree, variables)
             error('array passed as `variables` has size %d, but n=%d', size(variables, 1), basis.n)
         end
         basis.variables = variables;
+    end
+    if nargin > 3
+        basis.coeff_vars = coeff_vars;
     end
     basis.monomials = monomials(basis.variables, 0:max_degree);
     basis.num_monomials = size(basis.monomials, 1);
