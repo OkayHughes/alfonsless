@@ -162,11 +162,14 @@ function intParams = FeketeCube(n,d)
             end
         end
     end
+    'generating prod_polynomials'
 
     prod_polynomials = msspoly(ones(intParams.U, 1));
     for col_ind=1:intParams.U
         prod_polynomials(col_ind) = prod_polynomial_vecs(:, col_ind)' * intParams.mon_basis.monomials;
     end
+
+    'Solving for weights'
     
     w = P'\m;
     ind = abs(w)>0;
@@ -180,7 +183,7 @@ function intParams = FeketeCube(n,d)
     P = P(ind,1:intParams.L);
 
 
-    
+    'testing polynomials'
     %P' should equal P_test
     P_test = dmsubs(prod_polynomials, intParams.mon_basis.variables, pts');
     normm = norm(P_test - P0_large', 'fro');
@@ -188,9 +191,12 @@ function intParams = FeketeCube(n,d)
         warning('Interpolant basis monomials may not be accurate\n ||P0 - P_test|| = %d, should be very small', normm);
     end
 
+
     intParams.w = w;
     intParams.pts = pts;
     intParams.P0 = P;
+
+    'Doing QR nonsense'
     
     [P_large, ~] = qr(P0_large);
     [intParams.P,~] = qr(P,0);
