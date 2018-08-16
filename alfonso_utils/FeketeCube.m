@@ -129,7 +129,9 @@ function intParams = FeketeCube(n,d)
 
     mult_mats = cell(n, 2*d + 1);
     for var_ind = 1:n
+        sprintf('generating variable %d', var_ind)
         for deg_ind=1:2*d + 1
+            sprintf('generating degree %d', degree_ind)
             pol = chebyshev_in_variable(lrEye(:,deg_ind), ...
                               var_ind, ...
                               intParams.mon_basis);
