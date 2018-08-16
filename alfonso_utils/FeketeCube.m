@@ -129,7 +129,7 @@ function intParams = FeketeCube(n,d)
         allDegs = partitions(t, ones(1,n));
         [nrDegs,~] = size(allDegs);
         for i = 1:nrDegs
-            sprintf('starting comb %d/%d', i, nrDegs);
+            sprintf('starting comb %d/%d', i, nrDegs)
             col = col+1;
             for j = 1:n
                 dj = allDegs(i,j);
