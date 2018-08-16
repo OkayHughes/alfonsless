@@ -95,6 +95,7 @@ prob_a.X_bounds = Z_range;
 prob_a.X0_bounds = Z0_range;
 prob_a.K_bounds = K_range;
 prob_a.T = T;
+prob_a.verbose = true;
 
 out_a = find_FRS_alfonso(prob_a);
 

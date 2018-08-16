@@ -121,9 +121,27 @@ function intParams = FeketeCube(n,d)
     
     'evaluating product chebyshev polynomials'
 
-    prod_polynomials = msspoly(ones(intParams.U, 1));
+    %prod_poly_vecs = 
+
     col     = 0;
     lrEye   = fliplr(eye(2*d+1)); %descending T_n
+
+
+    mult_mats = cell(n, 2*d + 1);
+    for var_ind = 1:n
+        for deg_ind=1:2*d + 1
+            pol = chebyshev_in_variable(lrEye(:,deg_ind), ...
+                              var_ind, ...
+                              intParams.mon_basis);
+            mult_mats{var_ind, deg_ind} = vector_poly_multiply_hack(pol, intParams.mon_basis, intParams.mon_basis);
+
+        end
+    end
+
+    one_vec = msspoly_to_vector(msspoly(1), intParams.mon_basis);
+
+    prod_polynomial_vecs = repmat(one_vec, 1, intParams.U);
+
     for t = 0:2*d      % polynomials with total degree up to 2*d
         sprintf('starting d = %d', t)
         allDegs = partitions(t, ones(1,n));
@@ -133,10 +151,7 @@ function intParams = FeketeCube(n,d)
             col = col+1;
             for j = 1:n
                 dj = allDegs(i,j);
-                prod_polynomials(col) = prod_polynomials(col) * ...
-                                            chebyshev_in_variable(lrEye(:,dj+1), ...
-                                                                  j, ...
-                                                                  intParams.mon_basis);
+                prod_polynomial_vecs(:, col) = mult_mats{j, dj+1}  * prod_polynomial_vecs(:, col);
                 P(:,col) = P(:,col).*chebpolyval(lrEye(:,dj+1),pts(:,j));
 
 
@@ -144,6 +159,11 @@ function intParams = FeketeCube(n,d)
                 else; m(col) = m(col)*(((-1)^dj+1)/(1-dj^2)); end;
             end
         end
+    end
+
+    prod_polynomials = msspoly(ones(intParams.U, 1));
+    for col_ind=1:intParams.U
+        prod_polynomials(col_ind) = prod_polynomial_vecs(:, col_ind)' * intParams.mon_basis.monomials;
     end
     
     w = P'\m;
@@ -181,5 +201,6 @@ function intParams = FeketeCube(n,d)
     intParams.polynomials = prod_polynomials;
 
       
+    'Finished generating fekete cube'
 return
     

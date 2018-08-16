@@ -13,6 +13,12 @@ k = prob.k;
 f = prob.f;
 deg_f = ceil(max(arrayfun(@msspoly_degree, f))/2) * 2;
 
+if isfield(prob, 'verbose')
+  verbose = prob.verbose;
+else
+  verbose = false;
+end
+
 error_dynamics = isfield(prob, 'g');
 if error_dynamics
     g = prob.g;
@@ -44,20 +50,32 @@ Z_bounds = [[T_min, T_max];
             X_bounds;
             K_bounds];
 
+if verbose
+  'Generating interpolant bases for Y, Y0'
+end
+
 int_params_Y = AffineFeketeCube(Y_vars, degree, Y_bounds);
 int_params_Y0 = AffineFeketeCube(Y_vars, degree, Y0_bounds);
+
+if verbose
+  'Generating interpolant bases for Z, Zf'
+end
 
 int_params_Z = AffineFeketeCube(Z_vars, degree, Z_bounds);
 %Zf basis spans f_i*v
 int_params_Zf = AffineFeketeCube(Z_vars, degree + deg_f, Z_bounds);
 %Zf basis spans g_i*v
 if error_dynamics
+  if verbose
+  'Generating interpolant bases for Zgs'
+  end
   int_params_Zgs = repmat(int_params_Zf, 1, num_gs);
   for g_ind=1:num_gs
     deg_g_i = ceil(max(arrayfun(@msspoly_degree, g(:, g_ind)))/2) * 2;
     int_params_Zgs(g_ind) = AffineFeketeCube(Z_vars, degree + deg_g_i, Z_bounds);
   end
 end
+
 if error_dynamics
     int_params_arr = int_params_Zf;
     for g_ind=1:num_gs
@@ -81,6 +99,9 @@ if error_dynamics
   end
 end
 
+if verbose
+  'Generating g_h_params'
+end
 %add intparams
 g_h_params = gen_grad_params(int_params_arr);
 
@@ -93,6 +114,9 @@ W1 = zero_operator(mon_basis_Y, mon_basis_Zf);
 
 
 %constraint 1
+if verbose
+  'Defining constraint 1'
+end
 
 if error_dynamics
     Z_to_Zf = monomial_to_monomial(mon_basis_Z, mon_basis_Zf);
@@ -108,8 +132,14 @@ prob_data.c = c1;
 
 
 if error_dynamics
+  if verbose
+  'Defining q constraints (2-4 in the paper)'
+  end
 
   for g_ind=1:num_gs
+      if verbose
+       sprintf('Defining constraints for g_%d', g_ind)
+      end
   %constraint 2
       int_params_Zg = int_params_Zgs(g_ind);
       mon_basis_Zg = mon_basis_Zgs(g_ind);
@@ -157,6 +187,10 @@ if error_dynamics
   end
 end
 
+if verbose
+  'Defining constraint 5'
+end
+
 %constraint 5
 
 apply_init_time = vector_partial_application(time_index, T_min, mon_basis_Z);
@@ -179,6 +213,10 @@ c5 = zeros(size(mon_basis_Y0.monomials));
 prob_data.c = [prob_data.c;
                c5];
 
+if verbose
+  'Defining constraint 6'
+end
+
 %constraint 6
 
 V6 = zero_operator(mon_basis_Z, mon_basis_Y);
@@ -198,6 +236,10 @@ c6 = zeros(size(mon_basis_Y.monomials));
 
 prob_data.c = [prob_data.c;
                c6];
+
+if verbose
+  'Defining constraint 7'
+end
 
 %constraint 7
 
@@ -221,6 +263,9 @@ c7 = ones(size(mon_basis_Z.monomials));
 prob_data.c = [prob_data.c;
                c7];
 
+if verbose
+  'Defining cost function'
+end
 
 b1 = zeros(size(mon_basis_Z.monomials));
 prob_data.b = b1;
@@ -241,6 +286,9 @@ end
 prob_data.A = -transpose(prob_data.A);
 prob_data.c = -prob_data.c;
 
+if verbose
+  'Creating primal iterate'
+end
 
 % make initial primal iterate
 x0 = ones(sum(g_h_params.U_arr), 1);
@@ -248,11 +296,19 @@ x0 = ones(sum(g_h_params.U_arr), 1);
 
 rP = max((1+abs(prob_data.b))./(1+abs(prob_data.A*x0)));
 rD = max((1+abs(g0))./(1+abs(prob_data.c)));
-x0 = repmat(sqrt(rP*rD),sum(g_h_params.U_arr),1);  
+x0 = repmat(sqrt(rP*rD),sum(g_h_params.U_arr),1);
+
+if verbose
+  'Running alfonso'
+end
 
 % run alfonso
 opts.optimTol = 1e-6 ;
 results = alfonso(prob_data, x0, @alfonso_grad_and_hess, g_h_params, opts);
+
+if verbose
+  'Extracting results'
+end
 
 alfonso_w_vec = int_params_Y.P0_to_mon * results.y(int_params_Z.U+1:int_params_Z.U+int_params_Y.U, 1);
 alfonso_v_vec = int_params_Z.P0_to_mon * results.y(1:int_params_Z.U, 1);
@@ -274,6 +330,10 @@ end
 
 out.w = w_alfonso;
 out.v = v_alfonso;
+
+if verbose
+  'Done'
+end
 
 end
 
