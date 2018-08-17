@@ -15,22 +15,27 @@ function write_basis(basis)
     if ex == 0
         manifest = [n, d];
         fnames = {string(fname)};
-        save(fullfile(prefix, name, 'manifest.mat'), 'manifest', 'fnames');
+        rd = matfile(fullfile(prefix, name, 'manifest.mat'), 'writable', true);
         write = true;
     elseif ex ~= 2
         error('%s is the wrong format', fullfile(name, 'manifest.mat'));
     else
         rd = matfile(fullfile(prefix, name, 'manifest.mat'), 'writable', true);
         if ~ismember([n, d], rd.manifest, 'rows')
-            rd.manifest = [rd.manifest;
-                           [n, d]];
-            rd.fnames = [rd.fnames;
-                         string(fname)];
-            write = true;
+             fnames = [rd.fnames; string(fname)];
+             manifest = [rd.manifest; [n, d]];
+             write = true;
         end
     end
 
     if write
-        save(fullfile(prefix, name, fname),'basis');
+      try
+        save(fullfile(prefix, name, fname),'basis', '-v7.3');
+      catch ME
+        return 
+      end
+      rd.manifest = manifest;
+      rd.fnames = fnames;
+
     end
 end
