@@ -1,4 +1,8 @@
-function affine_fekete_cube = AffineFeketeCube(variables, max_degree, box_scale)
+
+function affine_fekete_cube = AffineFeketeCube(variables, max_degree, box_scale, coeff_vars)
+    if numel(size(coeff_var_id)) == 0
+        coeff_var_id = 1;
+    end
     name = 'FeketeCube';
     if check_for_basis(name, size(variables, 1), max_degree/2)
         fekete_cube = read_basis(name, size(variables, 1), max_degree/2);
@@ -9,5 +13,6 @@ function affine_fekete_cube = AffineFeketeCube(variables, max_degree, box_scale)
     end
 
     affine_fekete_cube = scale_fekete_cube(fekete_cube, box_scale);
-    affine_fekete_cube = sub_vars_fekete_cube(affine_fekete_cube, variables);
+    affine_fekete_cube = sub_vars_fekete_cube(affine_fekete_cube, variables, coeff_vars);
+
 end

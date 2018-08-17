@@ -1,8 +1,8 @@
-function cube = sub_vars_fekete_cube(fekete_cube, variables)
+function cube = sub_vars_fekete_cube(fekete_cube, variables, coeff_vars)
     assert(all(size(fekete_cube.mon_basis.variables) == size(variables)));
     cube = fekete_cube;
     cube.polynomials = subs(cube.polynomials, cube.mon_basis.variables, variables);
-    cube.mon_basis = sub_vars_mon_basis(cube.mon_basis, variables);
+    cube.mon_basis = sub_vars_mon_basis(cube.mon_basis, variables, coeff_vars);
 
     [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(cube.P0_full, cube.P_full, cube.polynomials, cube.mon_basis);
     

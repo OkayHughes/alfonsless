@@ -9,6 +9,7 @@ addpath ./okay_poly_utils
 addpath ./spotless_utils
 addpath ./alfonso_utils
 addpath ./interpolant_bases
+addpath ./alfonsless
 addpath .
 cwd = pwd;
 cd(fullfile(base_path, 'spotless'));

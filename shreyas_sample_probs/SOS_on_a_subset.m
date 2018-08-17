@@ -1,4 +1,4 @@
-%% problem description
+mons %% problem description
 %
 %   min     int  f(x,y) dxdy
 %    f      X*Y
