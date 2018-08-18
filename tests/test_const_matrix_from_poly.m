@@ -32,3 +32,7 @@ for i=1:num_dec_polys
 end
 
 normm_c = norm(c - c_old)
+
+cost_vector = sum(in_basis_Y.coeff_vars) + sum(in_basis_Z.coeff_vars);
+
+normm_b = norm(cost_vector_from_poly(cost_vector, dec_var_bases) - ones(in_basis_Y.num_monomials + in_basis_Z.num_monomials, 1))

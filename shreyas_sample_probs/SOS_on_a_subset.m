@@ -1,4 +1,4 @@
-mons %% problem description
+%% problem description
 %
 %   min     int  f(x,y) dxdy
 %    f      X*Y
@@ -36,8 +36,7 @@ prog = sosOnK(prog,xcon-1,y,hY,degree) ;
 % create cost function
 int_XY = boxMoments([x;y],[-1;-1],[1;1]) ;
 obj = int_XY(mon)'*fcoeff ;
-int_XY
-assert 0;
+
 
 % run solver
 options = spot_sdp_default_options();

@@ -1,4 +1,4 @@
-function [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(interpolant_basis, interpolant_basis_orth, mss_chebyshev, basis)
+function [P0_to_mon, mon_to_P0] = monomial_to_interpolant(interpolant_basis, mss_chebyshev, basis)
     %Takes:
     %   interpolant_basis: U X L real matrix
     %       interpolant basis as calculated in FeketeCube
@@ -30,11 +30,8 @@ function [P0_to_mon, P_to_mon, mon_to_P0, mon_to_P] = monomial_to_interpolant(in
     if cond_num > 1E10
         warning('Condition number of P0 is large (cond(P0) = %d)\nCOB matrices may be inaccurate.', cond_num);
     end
-
-
+    
     P0_to_mon = M * inv(interpolant_basis);
-    P_to_mon = M * inv(interpolant_basis_orth);
-    mon_to_P = interpolant_basis_orth * M_inv;
     mon_to_P0 = interpolant_basis * M_inv;
 end
 

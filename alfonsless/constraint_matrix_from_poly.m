@@ -1,4 +1,4 @@
-function [As, c] = constraint_matrix_from_poly(pol, dec_var_bases, out_basis)
+function [As, c, out_basis] = constraint_matrix_from_poly(pol, dec_var_bases, out_basis)
     num_decs = size(dec_var_bases, 2);
     [vars, pows, coeffs] = decomp(pol);
     if nargin < 3
@@ -12,9 +12,7 @@ function [As, c] = constraint_matrix_from_poly(pol, dec_var_bases, out_basis)
 
         space_vars = var_set_minus(vars, dec_var_coeffs);
 
-        n = size(space_vars, 1);
-
-        out_basis = monomial_basis(n, d, space_vars);
+        out_basis = MonomialBasis(space_vars, d);
     end
 
     As = cell(1, num_decs);

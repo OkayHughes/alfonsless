@@ -15,7 +15,8 @@ function gH_Params = gen_grad_params(intParams_arr)
     for i=1:numPolys
         intParams_i = intParams_arr(i);
         n   = intParams_i.n;
-        d   = intParams_i.d;
+        %NOTE: FOLLOWING LINE MAY BE PROBLEM
+        d   = intParams_i.d/2;
         U   = intParams_i.U;
         L   = intParams_i.L;
         P   = intParams_i.P0;
