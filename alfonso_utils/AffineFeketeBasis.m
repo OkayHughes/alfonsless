@@ -1,14 +1,10 @@
-classdef AffineFeketeBasis < FeketeBasis
+classdef AffineFeketeBasis < FeketeBasis & handle
 
 methods
     function aff_cube = AffineFeketeBasis(variables, max_degree, box_scale)
-
-        name = 'AffineFeketeCube';
-            
         aff_cube = aff_cube@FeketeBasis(size(variables, 1), max_degree);
         aff_cube = aff_cube.scale_fekete_cube(box_scale);
         aff_cube = aff_cube.sub_vars_fekete_cube(variables);
-        aff_cube.name = 'AffineFeketeCube';
 
     end
 

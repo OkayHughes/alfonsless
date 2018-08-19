@@ -1,6 +1,5 @@
-classdef FeketeBasis < InterpolantBasis & RectangularInterpolantBasis
+classdef FeketeBasis < InterpolantBasis & RectangularInterpolantBasis & handle & SerializableBasis
 properties
-    name char;
     n double;
     d double;
     L double;
@@ -14,8 +13,12 @@ properties
     bounds double;
 end
 
+properties (Constant)
+    name = 'FeketeCube';
+end
+
 methods
-    function intParams = FeketeBasis(n,d)
+    function int_params = FeketeBasis(n,d)
     % This method generates parameters for the interpolant basis representation
     % of sum-of-squares polynomials with an arbitrary number of variables.
     % --------------------------------------------------------------------------
@@ -59,20 +62,86 @@ methods
     % Exchange post which is available at
     % https://www.mathworks.com/matlabcentral/fileexchange/12009-partitions-of-an-integer.
     % -------------------------------------------------------------------------
-        name = 'FeketeCube';
-        if mod(d, 2) == 1
-            error('Degree passed to FeketeCube() should be even');
-        end
-        if check_for_basis(name, n, d)
-            intParams = read_basis(name, n, d);
+        
+        if check_for_basis(FeketeBasis.name, n, d)
+            intParams = read_basis(FeketeBasis.name, n, d);
+            int_params.populate_from_struct(intParams);
             return
         end
 
+        intParams = FeketeBasis.generate_fekete_cube(n, d);
+        'Writing to disk'
+        write_basis(intParams);
+        'Finished writing to disk'
+        
+        int_params.populate_from_struct(intParams)
+        
+    end
+    
+    
+    function populate_from_struct(cube, dat)
+        cube.n = dat.n;
+        cube.L = dat.L;
+        cube.U = dat.U;
+        cube.pts = dat.pts;
+        cube.P0_full = dat.P0_full;
+        cube.P0 = dat.P0;
+        cube.polynomials = dat.polynomials;
+        cube.w = dat.w;
+
+        if isfield(dat, 'mon_basis')
+            cube.variables = dat.mon_basis.variables;
+            dat.bounds = repmat([-1, 1], dat.mon_basis.n, 1);
+            dat.d = dat.d * 2;
+            cube.d = dat.d;
+            cube.bounds = dat.bounds;
+            dat.variables = dat.mon_basis.variables;
+            dat = rmfield(dat, {'mon_basis', 'nrPoints', 'nrPoints1D', 'P', 'P_full'});
+            overwrite_basis(dat);
+        else
+            cube.variables = dat.variables;
+            cube.bounds = dat.bounds;
+            cube.d = dat.d;
+
+        end
+        
+    end
+
+    function evaluations = eval_weight_polys(cube, pts)
+        if size(pts, 2) ~= size(cube.vars)
+            error('cube is %d dimensional, but pts is %d dimensional', size(pts, 2), size(cube.vars));
+        end
+        lb = -1 * ones(size(pts, 2), 1);
+        ub = ones(size(pts, 2), 1);
+        evaluations = bsxfun(@minus,pts,lb').*bsxfun(@minus,ub',pts);
+
+    end
+
+    function [P0_to_mon, mon_to_P0] = inter_to_mon(cube, mon_basis)
+        if ~isequal(cube.variables, mon_basis.variables)
+            error('AffineFeketeCube.variables does not match the provided monomial basis');
+        end
+        [P0_to_mon, mon_to_P0] = monomial_to_interpolant(cube.P0_full, cube.polynomials, mon_basis);
+    
+        % cube.P0_to_mon = P0_to_mon;
+        % cube.P_to_mon = P_to_mon;
+        % cube.mon_to_P0 = mon_to_P0;
+        % cube.mon_to_P = mon_to_P;
+    end
+
+
+end
+
+methods (Static)
+    function intParams = generate_fekete_cube( n, d)
+        if mod(d, 2) == 1
+            error('Degree passed to FeketeCube() should be even');
+        end
+        name = 'FeketeCube';
         d = d/2;
-        class(intParams)
         sprintf('Creating new %s with n=%d, d=%d', name, n, d)
 
-        intParams.name = name;
+        intParams.name = FeketeBasis.name;
         intParams.n = n;
         intParams.bounds = repmat([-1, 1], n, 1);
         intParams.d = 2*d;
@@ -192,40 +261,10 @@ methods
 
         
         intParams.polynomials = prod_polynomials;
-
-          
-        'Finished generating fekete cube'
-        'Writing to disk'
-        write_basis(intParams);
-        'Finished writing to disk'
-    end
-
-    function evaluations = eval_weight_polys(cube, pts)
-        if size(pts, 2) ~= size(cube.vars)
-            error('cube is %d dimensional, but pts is %d dimensional', size(pts, 2), size(cube.vars));
-        end
-        lb = -1 * ones(size(pts, 2), 1);
-        ub = ones(size(pts, 2), 1);
-        evaluations = bsxfun(@minus,pts,lb').*bsxfun(@minus,ub',pts);
-
-    end
-
-    function [P0_to_mon, mon_to_P0] = inter_to_mon(cube, mon_basis)
-        if ~isequal(cube.variables, mon_basis.variables)
-            error('AffineFeketeCube.variables does not match the provided monomial basis');
-        end
-        [P0_to_mon, mon_to_P0] = monomial_to_interpolant(cube.P0_full, cube.polynomials, mon_basis);
-    
-        % cube.P0_to_mon = P0_to_mon;
-        % cube.P_to_mon = P_to_mon;
-        % cube.mon_to_P0 = mon_to_P0;
-        % cube.mon_to_P = mon_to_P;
-    end
-
-
-end
-
-
-
-end
         
+        'Finished generating fekete cube'
+    end
+
+end
+
+end

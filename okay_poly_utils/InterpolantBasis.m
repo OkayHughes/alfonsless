@@ -1,7 +1,6 @@
-classdef (Abstract) InterpolantBasis
+classdef (Abstract) InterpolantBasis < handle
 
 properties(Abstract)
-    name char;
     n double;
     d double;
     L double;

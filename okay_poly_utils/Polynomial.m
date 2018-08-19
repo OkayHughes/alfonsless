@@ -6,7 +6,7 @@ properties
 end
 
 methods
-    function pol = MonomialBasis(mon_basis, coeff_vars)
+    function pol = Polynomial(mon_basis, coeff_vars)
         if nargin > 1
             pol.mon_basis = mon_basis;
             pol.coeff_vars = coeff_vars;
@@ -21,11 +21,15 @@ methods
         pol = msubs(pol, in_pol.coeff_vars, coeffs);
     end
 
+    function pol = to_msspoly(in_pol)
+        pol = (in_pol.coeff_vars)' * in_pol.mon_basis.monomials;
+    end
+
 end
 
 methods (Static)
     function coeff_vars = new_coeff_vars(arg)
-        id = MonomialBasis.new_unique_id();
+        id = Polynomial.new_unique_id();
         if isa(arg, 'msspoly')
             coeff_vars = msspoly(sprintf('@%s', id), size(arg, 1));
         elseif isa(arg, 'double')

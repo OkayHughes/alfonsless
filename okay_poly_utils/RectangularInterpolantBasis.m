@@ -1,4 +1,4 @@
-classdef (Abstract) RectangularInterpolantBasis
+classdef (Abstract) RectangularInterpolantBasis < handle
 
 properties (Abstract)
     bounds double;
