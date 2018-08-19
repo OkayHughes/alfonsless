@@ -1,5 +1,5 @@
 function out = findFRS(prob)
-%% extract parameters
+%% extract parameter
     disp('Extracting parameters')
     t = prob.t ;
     z = prob.z ;
@@ -153,6 +153,7 @@ function out = findFRS(prob)
             prog = sosOnK(prog, q(qidx) - Lgv(qidx), [t;z;k], [hT;hZ;hK], degree) ;
             prog = sosOnK(prog, q(qidx) + Lgv(qidx), [t;z;k], [hT;hZ;hK], degree) ;
             prog = sosOnK(prog, q(qidx), [t;z;k], [hT;hZ;hK], degree) ;
+        end
     end    
 
     toc
@@ -264,6 +265,9 @@ function out = findFRS(prob)
         out.w = sol.eval(w) ;
         out.final_cost = sol.eval(obj) ;
         out.duration = end_time ;
+        if exist('g','var')
+            out.qs = sol.eval(q);
+        end
 
         disp([num2str(end_time/3600), ' hrs elapsed solving problem'])
     end
