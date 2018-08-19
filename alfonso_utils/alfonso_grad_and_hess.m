@@ -1,4 +1,4 @@
-function [in, g, H, L] = alfonso_grad_and_hess_new(x, params)
+function [in, g, H, L] = alfonso_grad_and_hess(x, params)
 % This method computes the gradient and Hessian of the barrier function for
 % the problem of polynomial envelopes.
 % --------------------------------------------------------------------------
