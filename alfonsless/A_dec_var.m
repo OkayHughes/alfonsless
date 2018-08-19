@@ -1,6 +1,6 @@
-function A = A_dec_var(pow_mat, coeff_mat, full_vars,  in_basis, out_basis)
+function A = A_dec_var(pow_mat, coeff_mat, full_vars,  in_poly, out_basis)
     coeff_mat = coeff_mat';
-    coeff_vars = in_basis.coeff_vars;
+    coeff_vars = in_poly.coeff_vars;
 
     ind_full_vars = @(variable) var_to_index(variable, full_vars);
 
@@ -31,7 +31,7 @@ function A = A_dec_var(pow_mat, coeff_mat, full_vars,  in_basis, out_basis)
     pow_mat_out_vars = pow_mat_out_vars(row_inds, :);
     coeff_mat_filt = coeff_mat(row_inds, :);
 
-    A = zeros(out_basis.num_monomials, in_basis.num_monomials);
+    A = zeros(out_basis.num_monomials, in_poly.mon_basis.num_monomials);
 
     pow_mat_out_inds = zeros(size(pow_mat_out_vars, 1), 1);
 
@@ -44,7 +44,7 @@ function A = A_dec_var(pow_mat, coeff_mat, full_vars,  in_basis, out_basis)
         error('the basis passed cannot represent the linear operator given by pow_mat');
     end
 
-    for mon_ind=1:in_basis.num_monomials
+    for mon_ind=1:in_poly.mon_basis.num_monomials
         mon_present_inds = find(pow_mat_coeff_vars(:, mon_ind));
         out_mon_inds = pow_mat_out_inds(mon_present_inds);
 
