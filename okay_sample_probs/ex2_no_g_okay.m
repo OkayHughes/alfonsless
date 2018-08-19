@@ -2,7 +2,7 @@ clear
 % close all
 
 % options
-degree = 4 ;
+degree = 6 ;
 solver = 'mosek' ;
 sostype = 'sos' ;
 visualize = 1 ;
@@ -16,11 +16,11 @@ k = msspoly('k', 1);
 %% set up spaces
 T = 1 ;
 
-X_range = repmat([-1, 1], size(x)) ;
+X_range = repmat([-1, 1], size(x, 1), 1) ;
 
-X0_range = repmat([-0.2, 0.2], size(x)) ;
+X0_range = repmat([-0.2, 0.2], size(x), 1) ;
 
-K_range = repmat([-1,1], size(k)) ;
+K_range = repmat([-1,1], size(k, 1), 1) ;
 
 %% dynamics
 % system dynamics
@@ -70,6 +70,7 @@ prob_a.T = T;
 
 out_a = find_FRS_alfonso(prob_a);
 Y_bounds = [X_range; K_range];
+size([x;k], 1)
 l2_dist = l2_dist_on_box(out.w, out_a.w, Y_bounds(:, 1), Y_bounds(:, 2), [x;k])
 
 %% set up variables for visualization

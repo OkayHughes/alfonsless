@@ -2,7 +2,7 @@ clear
 close all
 
 % options
-degree = 8 ;
+degree = 6 ;
 solver = 'mosek' ;
 sostype = 'sos' ;
 visualize = 1 ;
@@ -78,8 +78,38 @@ prob_a.T = T;
 
 out_a = find_FRS_alfonso(prob_a);
 
+
 Y_bounds = [X_range; K_range];
 l2_dist = l2_dist_on_box(out.w, out_a.w, Y_bounds(:, 1), Y_bounds(:, 2), [x;k])
+
+% size(out_a_new.b)
+% size(out_a.b)
+% norm_c = norm(out_a_new.c - out_a.c)
+% norm_A = sum(out_a_new.A - out_a.A, 2)
+% norm_A = norm(out_a_new.A - out_a.A)
+% norm_b = norm(out_a_new.b - out_a.b)
+
+kvals = [-1, -0.5, 0, 0.5, 1];
+for k_ind=1:length(kvals)
+    figure('Name','const1 ') ; cla ; hold on ;
+    lvf = diff(out_a.v, t) + diff(out_a.v, x) * f;
+    lvg = diff(out_a.v, x) * g;
+    const = -lvg + out_a.qs(1);
+
+    [grid_x, grid_y] = meshgrid(linspace(0, 1, 50), linspace(X_range(1, 1), X_range(1, 2), 50));
+    flat = [grid_x(:), grid_y(:), kvals(k_ind) * ones(50^2, 1)];
+    %spot_vals = reshape(dmsubs(out.qs(1), [x; k], flat')', 50, 50);
+    alf_vals = reshape(dmsubs(const, [t; x; k], flat')', 50, 50);
+
+    COS(:,:,1) = zeros(50); % red
+    COS(:,:,2) = zeros(50); % green
+    COS(:,:,3) = zeros(50); % blue
+
+    surf_a = surf(grid_x, grid_y, alf_vals, COS, 'FaceAlpha',0.5);
+    surf_c = surf(grid_x, grid_y, zeros(50, 50), 'FaceAlpha',0);
+    surf_c.EdgeColor='red';
+end
+
             
 
 %% set up variables for visualization
@@ -118,7 +148,7 @@ if visualize
 %     toc
 
     %% w visualization
-    figure(1) ;
+    figure ; cla;
     
     w = out.w ;
     N = 100 ;
