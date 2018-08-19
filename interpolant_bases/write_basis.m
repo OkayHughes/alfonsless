@@ -27,11 +27,12 @@ function write_basis(basis)
              write = true;
         end
     end
-
+    
     if write
       try
         save(fullfile(prefix, name, fname),'basis', '-v7.3');
       catch ME
+        warning('%s with n=%d, d=%d', name, n, d);
         return 
       end
       rd.manifest = manifest;
