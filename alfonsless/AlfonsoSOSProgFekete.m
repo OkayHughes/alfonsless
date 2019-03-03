@@ -66,16 +66,16 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
             interp_params_arr = const_interp_bases';
             g_h_params = gen_grad_params(interp_params_arr);
 
-            size(A)
-            size(b)
-            size(c)
+            size(A);
+            size(b);
+            size(c);
             % create A,b,c matrices to define conic problem
             prog.A = A';
             prog.b = b;
             prog.c = c;
             results = prog.solve_alfonso(g_h_params);
 
-            res_polys = msspoly(zeros(size(prog.dec_polys, 1)));
+            res_polys = msspoly(zeros(size(prog.dec_polys, 1), 1));
             sm = 1;
             for i=1:size(prog.dec_polys, 1)
                 res_polys(i) = prog.dec_polys(i).eval(dec_interp_to_mons{i} * results.y(sm:sm - 1 + prog.dec_polys(i).mon_basis.num_monomials, 1));
