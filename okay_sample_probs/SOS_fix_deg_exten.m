@@ -18,8 +18,9 @@ prog.with_indeterminate(variables);
 [w, wcoeff, w_monomial] = prog.new_free_poly(variables, degree) ;
 [v, vcoeff, v_monomial] = prog.new_free_poly(variables, degree) ;
 [q, qcoeff, q_monomial] = prog.new_free_poly(variables, degree) ;
+[r, rcoeff, r_monomial] = prog.new_free_poly(variables, degree) ;
 for i=1:size(mats, 1)
-	pol = (mats{i, 1} * (wcoeff .* w_monomial) + mats{i, 2} * (vcoeff .* v_monomial) + mats{i, 3} * (qcoeff .* q_monomial))' * ones(nchoosek(dimension_param + degree, dimension_param), 1)
+	pol = (mats{i, 1} * (wcoeff .* w_monomial) + mats{i, 2} * (vcoeff .* v_monomial) + mats{i, 3} * (qcoeff .* q_monomial) +  mats{i, 4} * (rcoeff .* r_monomial))' * ones(nchoosek(dimension_param + degree, dimension_param), 1);
 
 	prog.sos_on_K(pol, variables, S_bounds, degree);
 end
