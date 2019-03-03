@@ -5,7 +5,7 @@ function res = test_framework(deg, num_consts, defectiveness)
 	consts = cell(num_consts, 3);
     
 	val = nchoosek(deg + 5, 5);
-	for i=1:3
+	for i=1:4
 		for j=1:num_consts
 			if (defectiveness == 0)
 				A = rand(val);
