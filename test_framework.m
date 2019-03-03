@@ -1,6 +1,6 @@
 function res = test_framework(deg, num_consts, defectiveness)
 	addpath('okay_sample_probs');
-	setup_particles;
+	setup;
 
 	consts = cell(2, num_consts);
 	
