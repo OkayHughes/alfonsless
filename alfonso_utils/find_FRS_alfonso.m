@@ -164,7 +164,7 @@ end
 % run alfonso
 res = prog.minimize(obj);
 
-
+res.polys;
 out.v = res.polys(1);
 out.w = res.polys(2);
 out.qs = res.polys(3:end);
