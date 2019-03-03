@@ -1,4 +1,4 @@
-function test_framewirj(deg, num_consts, defectiveness)
+function res = test_framework(deg, num_consts, defectiveness)
 	addpath('okay_sample_probs');
 	setup_particles;
 
@@ -22,7 +22,7 @@ function test_framewirj(deg, num_consts, defectiveness)
 		end
 	end
 
-       	SOS_fix_deg_test(deg, rand(nchoosek(deg + 5, 5), nchoosek(deg + 5, 5)));
+       	res = SOS_fix_deg_test(deg, rand(nchoosek(deg + 5, 5), nchoosek(deg + 5, 5)));
 end
 
 
