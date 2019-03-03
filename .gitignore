@@ -3,3 +3,4 @@
 segway/*.mat
 *.log
 setup.m
+logs
