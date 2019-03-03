@@ -1,5 +1,5 @@
 function out_a = segway_FRS_solver_okay(in_degree)
-setup_particles()
+setup()
 % options
 degree = in_degree ;
 solver = 'mosek' ;
