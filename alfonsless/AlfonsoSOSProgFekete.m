@@ -40,6 +40,7 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
                 b = [b; -b_i']; 
                 size(b_i)
             end
+            
 
             const_interp_bases = [];
             const_mon_to_interps = {};
