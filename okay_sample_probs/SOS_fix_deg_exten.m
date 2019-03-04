@@ -32,7 +32,7 @@ for i=1:size(mats, 1)
     pol = msspoly(0);
 	fprintf("defining const %d\n", i);
     for j=1:num_polys
-        pol = pol + ((mats{i, j} * coeffs(j, :)')' * mons(j, :)');
+        pol = pol + ((mats{i, j}' .* coeffs(j, :)')' * mons(j, :)');
     end
     fprintf("adding to program\n")
 	prog.sos_on_K(pol, variables, S_bounds, degree);

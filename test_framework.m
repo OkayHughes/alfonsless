@@ -7,7 +7,7 @@ function res = test_framework(num_polys, deg, num_consts)
 	val = nchoosek(deg + 5, 5);
 	for i=1:num_polys
 		for j=1:num_consts
-			A = rand(val);
+			A = rand(val, 1);
 			consts{j, i} = A;
 		end
     end
