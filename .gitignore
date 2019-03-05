@@ -5,3 +5,4 @@ segway/*.mat
 setup.m
 logs
 *.swp
+*.m~

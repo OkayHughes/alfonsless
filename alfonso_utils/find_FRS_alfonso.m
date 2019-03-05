@@ -161,6 +161,7 @@ if verbose
   'Running alfonso'
 end
 
+prog.problem_chars(2);
 % run alfonso
 res = prog.minimize(obj);
 
