@@ -87,7 +87,7 @@ classdef AlfonsoSOSProg < handle
         end
         
         
-        function res = solve_alfonso(prog, g_h_params)
+        function res = solve_alfonso(prog, g_h_params, in_opts)
             prob_data.A = prog.A;
             prob_data.b = prog.b;
             prob_data.c = prog.c;
@@ -103,6 +103,10 @@ classdef AlfonsoSOSProg < handle
 
             % run alfonso
             opts.optimTol = 1e-6 ;
+            if isfield(in_opts, "verbose")
+                opts.verbose = in_opts.verbose;
+            end
+            
             res = alfonso(prob_data, x0, @alfonso_grad_and_hess, g_h_params, opts);
         end
 
