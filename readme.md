@@ -5,8 +5,6 @@ This repository contains matlab software that provides an interface for the SOS 
 
 ## Dependencies
 The file `setup.m` in the base directory is referenced by the example problems and provides an outline of which directories in the dependencies need to be added to the path. If there is a more idiomatic way to handle the path variable in Matlab, either make an issue that explains best practices to me, shoot [me](mailto:owhughes@umich.edu) an email, or ideally make a PR. 
-  
-----
 
 * [Chebfun](https://github.com/chebfun/chebfun)
 * [Alfonso](https://github.com/dpapp-github/alfonso)
