@@ -215,6 +215,10 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
                 
             end
             
+            if detail_level > 1
+                fprintf("\nsize(A): %dx%d\n", size(cell2mat(As_int)));
+            end
+            
             
             
         end
