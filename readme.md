@@ -12,10 +12,12 @@ The file `setup.m` in the base directory is referenced by the example problems a
 * [Padua2DM](http://www.netlib.org/numeralgo/): Search for Padua2DM to find the download link.
 * [spotless](https://github.com/spot-toolbox/spotless) this is included because I use their polynomial utilities. Eventually if this succeeds, spotless 
 ## Basic usage:
-We will illustrate the basic usage of the program by coding up the problem:
-$minimize \int_{[-1, 2]} w(x) dx
-s.t. (u^3 + 3)w_x(u) \geq 0 for u \in [-1, 2]
-		w(u) \geq 1 for u \in [-1, 2]$
+We will illustrate the basic usage of the program by coding up the problem:   
+$minimize \int_{[-1, 2]} w(x) dx    
+s.t. (u^3 + 3)w_x(u) \geq 0 for u \in [-1, 2]  
+      w(u) \geq 1 for u \in [-1, 2]$
+
 where w_x is the derivative of w with respect to x. You can see the full code in `sample_problems/SOS_derivative.m`. 
-*Run the program to see an illustration of the major functionality that Alfonsless provides.*
+
+**Run the program to see an illustration of the major functionality that Alfonsless provides.**
 
