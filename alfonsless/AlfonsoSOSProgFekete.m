@@ -11,7 +11,12 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
 
         end
         
-        function sol = minimize(prog, cost)
+        function sol = minimize(prog, cost, opts)
+            if isfield(opts, "verbose")
+                verbose = opts.verbose;
+            else
+                verbose = 1;
+            end
             
             bounds = cell(size(prog.dec_polys));
             for i=1:size(prog.dec_polys, 1)
@@ -26,7 +31,7 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
             for i=1:size(prog.dec_polys, 1)
                 pol = prog.dec_polys(i);
                 dec_interp_basis = AffineFeketeBasis(pol.mon_basis.variables, ...
-                                                    pol.mon_basis.d, bounds{i});
+                                                    pol.mon_basis.d, bounds{i}, verbose);
                 dec_interp_bases = [dec_interp_bases; dec_interp_basis];
 
                 [dec_interp_to_mon, dec_mon_to_interp] = dec_interp_basis.inter_to_mon(prog.dec_polys(i).mon_basis);
@@ -49,7 +54,7 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
             for i=1:size(const_bases, 1)
                 const_interp_basis = AffineFeketeBasis(const_bases(i).variables, ...
                                                       const_bases(i).d, ...
-                                                      prog.K_wts{i});
+                                                      prog.K_wts{i}, verbose);
                 const_interp_bases = [const_interp_bases; const_interp_basis];
                 [const_interp_to_mon, const_mon_to_interp] = const_interp_basis.inter_to_mon(const_bases(i));
                 const_mon_to_interps = [const_mon_to_interps; const_mon_to_interp];
@@ -76,7 +81,11 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
             prog.A = A';
             prog.b = b;
             prog.c = c;
-            results = prog.solve_alfonso(g_h_params);
+            if exist("opts")
+                results = prog.solve_alfonso(g_h_params, opts);
+            else
+                results = prog.solve_alfonso(g_h_params, struct());
+            end
 
             res_polys = msspoly(zeros(size(prog.dec_polys, 1), 1));
             sm = 1;

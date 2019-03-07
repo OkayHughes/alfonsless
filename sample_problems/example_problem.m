@@ -63,7 +63,7 @@ prog.sos_on_K(bad_operator-1, variables, S_bounds, degree+ceil(msspoly_degree(f)
 
 
 fprintf("`dl=boxMoments(variables, S_bounds(:, 1), S_bounds(:, 2));`\n")
-fprintf("dl is a function which will take monomials with indeterminates in `variables` and return a real vector `v` with which `v'*wcoeff` calculates \int_{S} w(x) dx\n;")
+fprintf("dl is a function which will take monomials with indeterminates in `variables` and return a real vector `v` with which `v'*wcoeff` calculates \\int_{S} w(x) dx\n;")
 fprintf("In particular, v'*coeff is our")
 dl=boxMoments(variables, S_bounds(:, 1), S_bounds(:, 2));
 fprintf("In particular, `v'*coeff` is the objective function we seek to optimize in this problem.")
