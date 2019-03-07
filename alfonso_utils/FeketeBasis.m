@@ -18,7 +18,7 @@ properties (Constant)
 end
 
 methods
-    function int_params = FeketeBasis(n,d)
+    function int_params = FeketeBasis(n,d, verbose)
     % This method generates parameters for the interpolant basis representation
     % of sum-of-squares polynomials with an arbitrary number of variables.
     % --------------------------------------------------------------------------
@@ -70,9 +70,13 @@ methods
         end
 
         intParams = FeketeBasis.generate_fekete_cube(n, d);
-        'Writing to disk'
+        if verbose
+            fprintf('Writing to disk')
+        end
         write_basis(intParams);
-        'Finished writing to disk'
+        if verbose
+            fprintf('Finished writing to disk')
+        end
         
         int_params.populate_from_struct(intParams)
         
@@ -133,7 +137,7 @@ methods
 end
 
 methods (Static)
-    function intParams = generate_fekete_cube( n, d)
+    function intParams = generate_fekete_cube( n, d, verbose)
         if mod(d, 2) == 1
             error('Degree passed to FeketeCube() should be even');
         end
@@ -147,34 +151,44 @@ methods (Static)
         intParams.d = 2*d;
         intParams.L = nchoosek(n+d,n);
         intParams.U = nchoosek(n+2*d,n);
-        
-        'creating monomial basis'
+        if verbose
+            fprintf('creating monomial basis')
+        end
 
         mon_basis = MonomialBasis(intParams.n, intParams.d*2);
         intParams.variables = mon_basis.variables;
 
-        'monomial basis generated'
+        if verbose
+            fprintf('monomial basis generated')
+        end
         
         nrPoints1D = 2*d+1;
-
-        'creating original point grid'
+        
+        
+        if verbose
+            fprintf('creating original point grid')
+        end
         nrPoints = prod(nrPoints1D:nrPoints1D+n-1);
         pts = zeros(nrPoints,n);
         for j = 1:n
-            sprintf('starting x_%d', j)
+            if verbose
+                sprintf('starting x_%d', j)
+            end
             temp = 1;
             for i = 1:j-1; temp = kron(temp,ones(nrPoints1D+i-1,1)); end;
             temp = kron(temp,chebpts(nrPoints1D+j-1));
             for i = j+1:n; temp = kron(temp,ones(nrPoints1D+i-1,1)); end;
             pts(:,j) = temp;
         end
-
-        'point grid generated'
+        if verbose
+            fprintf('point grid generated')
+        end
         
         P = ones(nrPoints,intParams.U);
         m = ones(intParams.U,1);
-        
-        'evaluating product chebyshev polynomials'
+        if verbose
+            'evaluating product chebyshev polynomials'
+        end
 
         %prod_poly_vecs = 
 
@@ -184,9 +198,13 @@ methods (Static)
 
         mult_mats = cell(n, 2*d + 1);
         for var_ind = 1:n
-            sprintf('generating variable %d', var_ind)
+            if verbose
+                sprintf('generating variable %d', var_ind)
+            end
             for deg_ind=1:2*d + 1
-                sprintf('generating degree %d', deg_ind)
+                if verbose
+                    sprintf('generating degree %d', deg_ind)
+                end
                 pol = chebyshev_in_variable(lrEye(:,deg_ind), ...
                                   var_ind, ...
                                   mon_basis);
@@ -200,11 +218,15 @@ methods (Static)
         prod_polynomial_vecs = repmat(one_vec, 1, intParams.U);
 
         for t = 0:2*d      % polynomials with total degree up to 2*d
-            sprintf('starting d = %d', t)
+            if verbose
+                sprintf('starting d = %d', t)
+            end
             allDegs = partitions(t, ones(1,n));
             [nrDegs,~] = size(allDegs);
             for i = 1:nrDegs
-                sprintf('starting comb %d/%d', i, nrDegs)
+                if verbose
+                    sprintf('starting comb %d/%d', i, nrDegs)
+                end
                 col = col+1;
                 for j = 1:n
                     dj = allDegs(i,j);
@@ -217,14 +239,18 @@ methods (Static)
                 end
             end
         end
-        'generating prod_polynomials'
+        if verbose
+            fprintf('generating prod_polynomials')
+        end
 
         prod_polynomials = msspoly(ones(intParams.U, 1));
         for col_ind=1:intParams.U
             prod_polynomials(col_ind) = prod_polynomial_vecs(:, col_ind)' * mon_basis.monomials;
         end
-
-        'Solving for weights'
+        
+        if verbose
+            fprintf('Solving for weights')
+        end
         
         w = P'\m;
         ind = abs(w)>0;
@@ -236,8 +262,11 @@ methods (Static)
         % extracts the subset of polynomials up to total degree d
         P0_large = P(ind, :);
         P = P(ind,1:intParams.L);
-
-        'testing polynomials'
+        
+        
+        if verbose
+            fprintf('testing polynomials')
+        end
         %P' should equal P_test
         P_test = dmsubs(prod_polynomials, mon_basis.variables, pts');
         normm = norm(P_test - P0_large', 'fro');
@@ -249,8 +278,10 @@ methods (Static)
         intParams.w = w;
         intParams.pts = pts;
         intParams.P0 = P;
-
-        'Doing QR nonsense'
+        
+        if verbose
+            fprintf('Doing QR nonsense')
+        end
         
         %[P_large, ~] = qr(P0_large);
         %[intParams.P,~] = qr(P,0);
@@ -261,8 +292,9 @@ methods (Static)
 
         
         intParams.polynomials = prod_polynomials;
-        
-        'Finished generating fekete cube'
+        if verbose
+            fprintf('Finished generating fekete cube')
+        end
     end
 
 end
