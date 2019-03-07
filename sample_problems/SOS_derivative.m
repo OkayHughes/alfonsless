@@ -11,36 +11,16 @@
 
 %% ALFONSO PROBLEM
 % create interpolation points
-function SOS_derivative_class()
+function example_program()
 
 variables = msspoly('x');
+fprintf("
 f=variables(1)^3+3;
 degree = 10;
 S_bounds = [-1, 2];
 
 
-%run spotless problem
 hS = -(variables-S_bounds(:, 1)).*(variables-S_bounds(:, 2));
-dl=boxMoments(variables, S_bounds(:, 1), S_bounds(:, 2));
-prog = spotsosprog;
-prog = prog.withIndeterminate(variables);
-wmonom = monomials(variables, 0:degree) ;
-[prog, w, wcoeff] = prog.newFreePoly(wmonom) ;
-bad_operator = diff(w, variables) * f;
-prog = sosOnK(prog, bad_operator-1, variables, hS, degree) ;
-prog = sosOnK(prog, w, variables, hS, degree);
-obj = dl(wmonom)' * wcoeff ;
-
-options = spot_sdp_default_options();
-options.verbose = 1;
-sol = prog.minimize(obj, @spot_mosek, options);
-
-fspotless = sol.eval(w) ;
-
-%l2_dist = l2_dist_on_box(fspotless, falfonso, S_bounds(:, 1), S_bounds(:, 2), variables)
-
-
-%new alfonsless
 
 
 dl=boxMoments(variables, S_bounds(:, 1), S_bounds(:, 2));
