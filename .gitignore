@@ -1,7 +1,8 @@
 *.DS_Store
 *.pyc
 segway/*.mat
-*.log
 setup.m
 *.swp
 *.m~
+/*.log
+!logs/**/*.log
