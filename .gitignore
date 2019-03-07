@@ -6,3 +6,4 @@ logs
 *.swp
 *.m~
 setup_*
+setup.m
