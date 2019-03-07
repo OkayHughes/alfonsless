@@ -2,7 +2,6 @@
 *.pyc
 segway/*.mat
 *.log
-setup.m
 logs
 *.swp
 *.m~
