@@ -41,9 +41,7 @@ end
 obj = dl(mons(1, :)')' * coeffs(1, :)';
 
 fprintf("Running alfonsless\n");
-prog.problem_chars(2)
-assert(1==0);
-
+%prog.problem_chars(2)
 sol_alfonsless = prog.minimize(obj);
 
 end

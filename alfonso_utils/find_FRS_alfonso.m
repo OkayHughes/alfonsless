@@ -163,6 +163,7 @@ end
 
 prog.problem_chars(2);
 % run alfonso
+exit
 res = prog.minimize(obj);
 
 res.polys;
