@@ -10,7 +10,7 @@ The file `setup.m` in the base directory is referenced by the example problems a
 * [Alfonso](https://github.com/dpapp-github/alfonso)
 * [partitions](https://www.mathworks.com/matlabcentral/fileexchange/12009-partitions-of-an-integer)
 * [Padua2DM](http://www.netlib.org/numeralgo/): Search for Padua2DM to find the download link.
-* [spotless](https://github.com/spot-toolbox/spotless) this is included because I use their polynomial utilities. Eventually if this succeeds, spotless 
+* [spotless](https://github.com/spot-toolbox/spotless) this is included because I use their polynomial utilities.
 ## Basic usage:
 We will illustrate the basic usage of the program by coding up the problem:   
 $minimize \int_{[-1, 2]} w(x) dx    
