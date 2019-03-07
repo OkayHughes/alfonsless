@@ -1,0 +1,246 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (glnxa64)
+                              August 28, 2018
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+defining const 1
+adding to program
+defining const 2
+adding to program
+defining const 3
+adding to program
+defining const 4
+adding to program
+defining const 5
+adding to program
+Running alfonsless
+
+ans =
+
+     1   126
+
+
+ans =
+
+     1   126
+
+1: pObj=0 pIn=8.931991e-01 dIn=3.089226e-03 gap=0 tau=1 kap=1 mu=1.000000e+00
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:54
+
+2: pObj=0 pIn=6.884681e-01 dIn=2.381142e-03 gap=9.533513e-02 tau=8.913061e-01 kap=8.647165e-01 mu=7.706010e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:55
+
+3: pObj=0 pIn=5.306637e-01 dIn=1.835358e-03 gap=1.725877e-01 tau=7.837760e-01 kap=7.576016e-01 mu=5.938351e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:56
+
+4: pObj=0 pIn=4.090298e-01 dIn=1.414674e-03 gap=2.476363e-01 tau=6.732885e-01 kap=6.795471e-01 mu=4.576346e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:57
+
+5: pObj=0 pIn=3.152757e-01 dIn=1.090415e-03 gap=3.246058e-01 tau=5.647257e-01 kap=6.243903e-01 mu=3.526890e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:58
+
+6: pObj=0 pIn=2.430111e-01 dIn=8.404803e-04 gap=4.031065e-01 tau=4.641541e-01 kap=5.855303e-01 mu=2.718214e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:59
+
+7: pObj=0 pIn=1.873103e-01 dIn=6.478331e-04 gap=4.811774e-01 tau=3.754629e-01 kap=5.579270e-01 mu=2.095030e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:01
+
+8: pObj=0 pIn=1.259766e-01 dIn=4.357039e-04 gap=5.937846e-01 tau=2.658719e-01 kap=5.296776e-01 mu=1.408697e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:02
+
+9: pObj=0 pIn=8.472632e-02 dIn=2.930352e-04 gap=6.931401e-01 tau=1.848528e-01 kap=5.124058e-01 mu=9.473248e-02
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:04
+
+10: pObj=0 pIn=5.698318e-02 dIn=1.970826e-04 gap=7.750025e-01 tau=1.270507e-01 kap=5.014220e-01 mu=6.370973e-02
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:05
+
+11: pObj=0 pIn=3.032774e-02 dIn=1.048918e-04 gap=8.688521e-01 tau=6.901386e-02 kap=4.911694e-01 mu=3.390268e-02
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:07
+
+12: pObj=0 pIn=1.614111e-02 dIn=5.582579e-05 gap=9.265120e-01 tau=3.711939e-02 kap=4.860600e-01 mu=1.804302e-02
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:09
+
+13: pObj=0 pIn=5.354759e-03 dIn=1.852002e-05 gap=9.745891e-01 tau=1.241328e-02 kap=4.820842e-01 mu=5.984952e-03
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:11
+
+14: pObj=0 pIn=1.776423e-03 dIn=6.143954e-06 gap=9.914531e-01 tau=4.128533e-03 kap=4.809058e-01 mu=1.985461e-03
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:12
+
+15: pObj=0 pIn=5.893225e-04 dIn=2.038236e-06 gap=9.971464e-01 tau=1.373186e-03 kap=4.804954e-01 mu=6.586700e-04
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:13
+
+16: pObj=0 pIn=1.955058e-04 dIn=6.761780e-07 gap=9.990546e-01 tau=4.543522e-04 kap=4.803592e-01 mu=2.185114e-04
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:14
+
+17: pObj=0 pIn=6.485838e-05 dIn=2.243198e-07 gap=9.996854e-01 tau=1.511328e-04 kap=4.803138e-01 mu=7.249038e-05
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:15
+
+18: pObj=0 pIn=2.151655e-05 dIn=7.441734e-08 gap=9.998959e-01 tau=5.000220e-05 kap=4.802985e-01 mu=2.404843e-05
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:17
+
+19: pObj=0 pIn=7.138044e-06 dIn=2.468770e-08 gap=9.999654e-01 tau=1.663369e-05 kap=4.802932e-01 mu=7.977980e-06
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:18
+
+20: pObj=0 pIn=2.368022e-06 dIn=8.190063e-09 gap=9.999885e-01 tau=5.502817e-06 kap=4.802912e-01 mu=2.646666e-06
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:19
+
+21: pObj=0 pIn=7.855834e-07 dIn=2.717026e-09 gap=9.999962e-01 tau=1.830708e-06 kap=4.802904e-01 mu=8.780221e-07
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:20
+
+22: pObj=0 pIn=2.606147e-07 dIn=9.013642e-10 gap=9.999987e-01 tau=6.055926e-07 kap=4.802898e-01 mu=2.912807e-07
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:21
+
+23: pObj=0 pIn=8.645804e-08 dIn=2.990245e-10 gap=9.999996e-01 tau=2.014884e-07 kap=4.802894e-01 mu=9.663132e-08
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:22
+
+24: pObj=0 pIn=2.868216e-08 dIn=9.920040e-11 gap=9.999999e-01 tau=6.664622e-08 kap=4.802890e-01 mu=3.205709e-08
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:23
+
+25: pObj=0 pIn=9.515212e-09 dIn=3.290940e-11 gap=1.000000e+00 tau=2.217591e-08 kap=4.802886e-01 mu=1.063483e-08
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:24
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.968759e-17.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 106)
+  In AlfonsoSOSProgFekete/minimize (line 77)
+  In SOS_fix_deg_exten (line 45)
+  In test_framework (line 14)
+  In run (line 91)
+  In try_exit (line 3)
+] 
+Done in 25 iterations.
+Status = Problem nearly primal or dual infeasible.

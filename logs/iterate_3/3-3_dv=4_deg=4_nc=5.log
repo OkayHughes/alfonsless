@@ -1,0 +1,247 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (glnxa64)
+                              August 28, 2018
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+defining const 1
+adding to program
+defining const 2
+adding to program
+defining const 3
+adding to program
+defining const 4
+adding to program
+defining const 5
+adding to program
+Running alfonsless
+
+ans =
+
+     1   126
+
+
+ans =
+
+     1   126
+
+
+ans =
+
+     1   126
+
+
+ans =
+
+     1   126
+
+1: pObj=0 pIn=1.721610e+00 dIn=1.782486e-03 gap=0 tau=1 kap=1 mu=1.000000e+00
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:55
+
+2: pObj=0 pIn=1.326998e+00 dIn=1.373921e-03 gap=2.305958e-01 tau=7.696630e-01 kap=1.001463e+00 mu=7.707053e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:56
+
+3: pObj=0 pIn=1.022836e+00 dIn=1.059003e-03 gap=4.074046e-01 tau=5.929922e-01 kap=1.001793e+00 mu=5.940043e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:48:58
+
+4: pObj=0 pIn=6.879140e-01 dIn=7.122388e-04 gap=6.011879e-01 tau=3.989896e-01 kap=1.001031e+00 mu=3.993995e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:00
+
+5: pObj=0 pIn=4.626606e-01 dIn=4.790204e-04 gap=7.315315e-01 tau=2.685135e-01 kap=1.000391e+00 mu=2.685945e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:02
+
+6: pObj=0 pIn=2.462385e-01 dIn=2.549455e-04 gap=8.568788e-01 tau=1.430377e-01 kap=9.994070e-01 mu=1.429225e-01
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:03
+
+7: pObj=0 pIn=1.310537e-01 dIn=1.356878e-04 gap=9.236932e-01 tau=7.618937e-02 kap=9.983950e-01 mu=7.606339e-02
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:05
+
+8: pObj=0 pIn=4.347662e-02 dIn=4.501396e-05 gap=9.746587e-01 tau=2.528793e-02 kap=9.978581e-01 mu=2.523053e-02
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:07
+
+9: pObj=0 pIn=1.442322e-02 dIn=1.493323e-05 gap=9.915872e-01 tau=8.391502e-03 kap=9.974552e-01 mu=8.370064e-03
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:09
+
+10: pObj=0 pIn=6.541271e-04 dIn=6.772571e-07 gap=9.996185e-01 tau=3.805330e-04 kap=9.975488e-01 mu=3.794849e-04
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:10
+
+11: pObj=0 pIn=2.170045e-04 dIn=2.246778e-07 gap=9.998734e-01 tau=1.262930e-04 kap=9.972087e-01 mu=1.258926e-04
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:12
+
+12: pObj=0 pIn=7.199050e-05 dIn=7.453610e-08 gap=9.999580e-01 tau=4.187964e-05 kap=9.970948e-01 mu=4.176440e-05
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:13
+
+13: pObj=0 pIn=2.388261e-05 dIn=2.472710e-08 gap=9.999861e-01 tau=1.389936e-05 kap=9.970562e-01 mu=1.385518e-05
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:14
+
+14: pObj=0 pIn=7.922975e-06 dIn=8.203133e-09 gap=9.999954e-01 tau=4.609073e-06 kap=9.970422e-01 mu=4.596401e-06
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:15
+
+15: pObj=0 pIn=2.628420e-06 dIn=2.721362e-09 gap=9.999985e-01 tau=1.529714e-06 kap=9.970367e-01 mu=1.524838e-06
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:17
+
+16: pObj=0 pIn=8.719696e-07 dIn=9.028026e-10 gap=9.999995e-01 tau=5.072524e-07 kap=9.970336e-01 mu=5.058591e-07
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:18
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.566905e-17.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 106)
+  In AlfonsoSOSProgFekete/minimize (line 77)
+  In SOS_fix_deg_exten (line 45)
+  In test_framework (line 14)
+  In run (line 91)
+  In try_exit (line 3)
+] 
+17: pObj=0 pIn=2.892730e-07 dIn=2.995018e-10 gap=9.999998e-01 tau=1.683549e-07 kap=9.970317e-01 mu=1.678167e-07
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:19
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.028275e-18.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 106)
+  In AlfonsoSOSProgFekete/minimize (line 77)
+  In SOS_fix_deg_exten (line 45)
+  In test_framework (line 14)
+  In run (line 91)
+  In try_exit (line 3)
+] 
+18: pObj=0 pIn=9.596535e-08 dIn=9.935871e-11 gap=9.999999e-01 tau=5.582575e-08 kap=9.970297e-01 mu=5.567255e-08
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:21
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.531940e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 106)
+  In AlfonsoSOSProgFekete/minimize (line 77)
+  In SOS_fix_deg_exten (line 45)
+  In test_framework (line 14)
+  In run (line 91)
+  In try_exit (line 3)
+] 
+19: pObj=0 pIn=3.183618e-08 dIn=3.296193e-11 gap=1.000000e+00 tau=1.852855e-08 kap=9.970282e-01 mu=1.846915e-08
+
+ans = 
+
+  datetime
+
+   03-Mar-2019 22:49:22
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.090592e-20.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 106)
+  In AlfonsoSOSProgFekete/minimize (line 77)
+  In SOS_fix_deg_exten (line 45)
+  In test_framework (line 14)
+  In run (line 91)
+  In try_exit (line 3)
+] 
+Done in 19 iterations.
+Status = Problem nearly primal or dual infeasible.

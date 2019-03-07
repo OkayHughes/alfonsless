@@ -1,0 +1,5889 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (glnxa64)
+                              August 28, 2018
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+
+ans =
+
+    'Generating interpolant bases for Y, Y0'
+
+
+ans =
+
+    'Defining constraint 1'
+
+
+ans =
+
+    'Defining q constraints (2-4 in the paper)'
+
+
+ans =
+
+    'Defining constraints for g_1'
+
+
+ans =
+
+    'Defining constraints for g_2'
+
+
+ans =
+
+    'Defining constraint 5'
+
+
+ans =
+
+    'Defining constraint 6'
+
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+ans =
+
+    'Creating new FeketeCube with n=4, d=5'
+
+
+ans =
+
+    'creating monomial basis'
+
+
+ans =
+
+    'monomial basis generated'
+
+
+ans =
+
+    'creating original point grid'
+
+
+ans =
+
+    'starting x_1'
+
+
+ans =
+
+    'starting x_2'
+
+
+ans =
+
+    'starting x_3'
+
+
+ans =
+
+    'starting x_4'
+
+
+ans =
+
+    'point grid generated'
+
+
+ans =
+
+    'evaluating product chebyshev polynomials'
+
+
+ans =
+
+    'generating variable 1'
+
+
+ans =
+
+    'generating degree 1'
+
+
+ans =
+
+    'generating degree 2'
+
+
+ans =
+
+    'generating degree 3'
+
+
+ans =
+
+    'generating degree 4'
+
+
+ans =
+
+    'generating degree 5'
+
+
+ans =
+
+    'generating degree 6'
+
+
+ans =
+
+    'generating degree 7'
+
+
+ans =
+
+    'generating degree 8'
+
+
+ans =
+
+    'generating degree 9'
+
+
+ans =
+
+    'generating degree 10'
+
+
+ans =
+
+    'generating degree 11'
+
+
+ans =
+
+    'generating variable 2'
+
+
+ans =
+
+    'generating degree 1'
+
+
+ans =
+
+    'generating degree 2'
+
+
+ans =
+
+    'generating degree 3'
+
+
+ans =
+
+    'generating degree 4'
+
+
+ans =
+
+    'generating degree 5'
+
+
+ans =
+
+    'generating degree 6'
+
+
+ans =
+
+    'generating degree 7'
+
+
+ans =
+
+    'generating degree 8'
+
+
+ans =
+
+    'generating degree 9'
+
+
+ans =
+
+    'generating degree 10'
+
+
+ans =
+
+    'generating degree 11'
+
+
+ans =
+
+    'generating variable 3'
+
+
+ans =
+
+    'generating degree 1'
+
+
+ans =
+
+    'generating degree 2'
+
+
+ans =
+
+    'generating degree 3'
+
+
+ans =
+
+    'generating degree 4'
+
+
+ans =
+
+    'generating degree 5'
+
+
+ans =
+
+    'generating degree 6'
+
+
+ans =
+
+    'generating degree 7'
+
+
+ans =
+
+    'generating degree 8'
+
+
+ans =
+
+    'generating degree 9'
+
+
+ans =
+
+    'generating degree 10'
+
+
+ans =
+
+    'generating degree 11'
+
+
+ans =
+
+    'generating variable 4'
+
+
+ans =
+
+    'generating degree 1'
+
+
+ans =
+
+    'generating degree 2'
+
+
+ans =
+
+    'generating degree 3'
+
+
+ans =
+
+    'generating degree 4'
+
+
+ans =
+
+    'generating degree 5'
+
+
+ans =
+
+    'generating degree 6'
+
+
+ans =
+
+    'generating degree 7'
+
+
+ans =
+
+    'generating degree 8'
+
+
+ans =
+
+    'generating degree 9'
+
+
+ans =
+
+    'generating degree 10'
+
+
+ans =
+
+    'generating degree 11'
+
+
+ans =
+
+    'starting d = 0'
+
+
+ans =
+
+    'starting comb 1/1'
+
+
+ans =
+
+    'starting d = 1'
+
+
+ans =
+
+    'starting comb 1/4'
+
+
+ans =
+
+    'starting comb 2/4'
+
+
+ans =
+
+    'starting comb 3/4'
+
+
+ans =
+
+    'starting comb 4/4'
+
+
+ans =
+
+    'starting d = 2'
+
+
+ans =
+
+    'starting comb 1/10'
+
+
+ans =
+
+    'starting comb 2/10'
+
+
+ans =
+
+    'starting comb 3/10'
+
+
+ans =
+
+    'starting comb 4/10'
+
+
+ans =
+
+    'starting comb 5/10'
+
+
+ans =
+
+    'starting comb 6/10'
+
+
+ans =
+
+    'starting comb 7/10'
+
+
+ans =
+
+    'starting comb 8/10'
+
+
+ans =
+
+    'starting comb 9/10'
+
+
+ans =
+
+    'starting comb 10/10'
+
+
+ans =
+
+    'starting d = 3'
+
+
+ans =
+
+    'starting comb 1/20'
+
+
+ans =
+
+    'starting comb 2/20'
+
+
+ans =
+
+    'starting comb 3/20'
+
+
+ans =
+
+    'starting comb 4/20'
+
+
+ans =
+
+    'starting comb 5/20'
+
+
+ans =
+
+    'starting comb 6/20'
+
+
+ans =
+
+    'starting comb 7/20'
+
+
+ans =
+
+    'starting comb 8/20'
+
+
+ans =
+
+    'starting comb 9/20'
+
+
+ans =
+
+    'starting comb 10/20'
+
+
+ans =
+
+    'starting comb 11/20'
+
+
+ans =
+
+    'starting comb 12/20'
+
+
+ans =
+
+    'starting comb 13/20'
+
+
+ans =
+
+    'starting comb 14/20'
+
+
+ans =
+
+    'starting comb 15/20'
+
+
+ans =
+
+    'starting comb 16/20'
+
+
+ans =
+
+    'starting comb 17/20'
+
+
+ans =
+
+    'starting comb 18/20'
+
+
+ans =
+
+    'starting comb 19/20'
+
+
+ans =
+
+    'starting comb 20/20'
+
+
+ans =
+
+    'starting d = 4'
+
+
+ans =
+
+    'starting comb 1/35'
+
+
+ans =
+
+    'starting comb 2/35'
+
+
+ans =
+
+    'starting comb 3/35'
+
+
+ans =
+
+    'starting comb 4/35'
+
+
+ans =
+
+    'starting comb 5/35'
+
+
+ans =
+
+    'starting comb 6/35'
+
+
+ans =
+
+    'starting comb 7/35'
+
+
+ans =
+
+    'starting comb 8/35'
+
+
+ans =
+
+    'starting comb 9/35'
+
+
+ans =
+
+    'starting comb 10/35'
+
+
+ans =
+
+    'starting comb 11/35'
+
+
+ans =
+
+    'starting comb 12/35'
+
+
+ans =
+
+    'starting comb 13/35'
+
+
+ans =
+
+    'starting comb 14/35'
+
+
+ans =
+
+    'starting comb 15/35'
+
+
+ans =
+
+    'starting comb 16/35'
+
+
+ans =
+
+    'starting comb 17/35'
+
+
+ans =
+
+    'starting comb 18/35'
+
+
+ans =
+
+    'starting comb 19/35'
+
+
+ans =
+
+    'starting comb 20/35'
+
+
+ans =
+
+    'starting comb 21/35'
+
+
+ans =
+
+    'starting comb 22/35'
+
+
+ans =
+
+    'starting comb 23/35'
+
+
+ans =
+
+    'starting comb 24/35'
+
+
+ans =
+
+    'starting comb 25/35'
+
+
+ans =
+
+    'starting comb 26/35'
+
+
+ans =
+
+    'starting comb 27/35'
+
+
+ans =
+
+    'starting comb 28/35'
+
+
+ans =
+
+    'starting comb 29/35'
+
+
+ans =
+
+    'starting comb 30/35'
+
+
+ans =
+
+    'starting comb 31/35'
+
+
+ans =
+
+    'starting comb 32/35'
+
+
+ans =
+
+    'starting comb 33/35'
+
+
+ans =
+
+    'starting comb 34/35'
+
+
+ans =
+
+    'starting comb 35/35'
+
+
+ans =
+
+    'starting d = 5'
+
+
+ans =
+
+    'starting comb 1/56'
+
+
+ans =
+
+    'starting comb 2/56'
+
+
+ans =
+
+    'starting comb 3/56'
+
+
+ans =
+
+    'starting comb 4/56'
+
+
+ans =
+
+    'starting comb 5/56'
+
+
+ans =
+
+    'starting comb 6/56'
+
+
+ans =
+
+    'starting comb 7/56'
+
+
+ans =
+
+    'starting comb 8/56'
+
+
+ans =
+
+    'starting comb 9/56'
+
+
+ans =
+
+    'starting comb 10/56'
+
+
+ans =
+
+    'starting comb 11/56'
+
+
+ans =
+
+    'starting comb 12/56'
+
+
+ans =
+
+    'starting comb 13/56'
+
+
+ans =
+
+    'starting comb 14/56'
+
+
+ans =
+
+    'starting comb 15/56'
+
+
+ans =
+
+    'starting comb 16/56'
+
+
+ans =
+
+    'starting comb 17/56'
+
+
+ans =
+
+    'starting comb 18/56'
+
+
+ans =
+
+    'starting comb 19/56'
+
+
+ans =
+
+    'starting comb 20/56'
+
+
+ans =
+
+    'starting comb 21/56'
+
+
+ans =
+
+    'starting comb 22/56'
+
+
+ans =
+
+    'starting comb 23/56'
+
+
+ans =
+
+    'starting comb 24/56'
+
+
+ans =
+
+    'starting comb 25/56'
+
+
+ans =
+
+    'starting comb 26/56'
+
+
+ans =
+
+    'starting comb 27/56'
+
+
+ans =
+
+    'starting comb 28/56'
+
+
+ans =
+
+    'starting comb 29/56'
+
+
+ans =
+
+    'starting comb 30/56'
+
+
+ans =
+
+    'starting comb 31/56'
+
+
+ans =
+
+    'starting comb 32/56'
+
+
+ans =
+
+    'starting comb 33/56'
+
+
+ans =
+
+    'starting comb 34/56'
+
+
+ans =
+
+    'starting comb 35/56'
+
+
+ans =
+
+    'starting comb 36/56'
+
+
+ans =
+
+    'starting comb 37/56'
+
+
+ans =
+
+    'starting comb 38/56'
+
+
+ans =
+
+    'starting comb 39/56'
+
+
+ans =
+
+    'starting comb 40/56'
+
+
+ans =
+
+    'starting comb 41/56'
+
+
+ans =
+
+    'starting comb 42/56'
+
+
+ans =
+
+    'starting comb 43/56'
+
+
+ans =
+
+    'starting comb 44/56'
+
+
+ans =
+
+    'starting comb 45/56'
+
+
+ans =
+
+    'starting comb 46/56'
+
+
+ans =
+
+    'starting comb 47/56'
+
+
+ans =
+
+    'starting comb 48/56'
+
+
+ans =
+
+    'starting comb 49/56'
+
+
+ans =
+
+    'starting comb 50/56'
+
+
+ans =
+
+    'starting comb 51/56'
+
+
+ans =
+
+    'starting comb 52/56'
+
+
+ans =
+
+    'starting comb 53/56'
+
+
+ans =
+
+    'starting comb 54/56'
+
+
+ans =
+
+    'starting comb 55/56'
+
+
+ans =
+
+    'starting comb 56/56'
+
+
+ans =
+
+    'starting d = 6'
+
+
+ans =
+
+    'starting comb 1/84'
+
+
+ans =
+
+    'starting comb 2/84'
+
+
+ans =
+
+    'starting comb 3/84'
+
+
+ans =
+
+    'starting comb 4/84'
+
+
+ans =
+
+    'starting comb 5/84'
+
+
+ans =
+
+    'starting comb 6/84'
+
+
+ans =
+
+    'starting comb 7/84'
+
+
+ans =
+
+    'starting comb 8/84'
+
+
+ans =
+
+    'starting comb 9/84'
+
+
+ans =
+
+    'starting comb 10/84'
+
+
+ans =
+
+    'starting comb 11/84'
+
+
+ans =
+
+    'starting comb 12/84'
+
+
+ans =
+
+    'starting comb 13/84'
+
+
+ans =
+
+    'starting comb 14/84'
+
+
+ans =
+
+    'starting comb 15/84'
+
+
+ans =
+
+    'starting comb 16/84'
+
+
+ans =
+
+    'starting comb 17/84'
+
+
+ans =
+
+    'starting comb 18/84'
+
+
+ans =
+
+    'starting comb 19/84'
+
+
+ans =
+
+    'starting comb 20/84'
+
+
+ans =
+
+    'starting comb 21/84'
+
+
+ans =
+
+    'starting comb 22/84'
+
+
+ans =
+
+    'starting comb 23/84'
+
+
+ans =
+
+    'starting comb 24/84'
+
+
+ans =
+
+    'starting comb 25/84'
+
+
+ans =
+
+    'starting comb 26/84'
+
+
+ans =
+
+    'starting comb 27/84'
+
+
+ans =
+
+    'starting comb 28/84'
+
+
+ans =
+
+    'starting comb 29/84'
+
+
+ans =
+
+    'starting comb 30/84'
+
+
+ans =
+
+    'starting comb 31/84'
+
+
+ans =
+
+    'starting comb 32/84'
+
+
+ans =
+
+    'starting comb 33/84'
+
+
+ans =
+
+    'starting comb 34/84'
+
+
+ans =
+
+    'starting comb 35/84'
+
+
+ans =
+
+    'starting comb 36/84'
+
+
+ans =
+
+    'starting comb 37/84'
+
+
+ans =
+
+    'starting comb 38/84'
+
+
+ans =
+
+    'starting comb 39/84'
+
+
+ans =
+
+    'starting comb 40/84'
+
+
+ans =
+
+    'starting comb 41/84'
+
+
+ans =
+
+    'starting comb 42/84'
+
+
+ans =
+
+    'starting comb 43/84'
+
+
+ans =
+
+    'starting comb 44/84'
+
+
+ans =
+
+    'starting comb 45/84'
+
+
+ans =
+
+    'starting comb 46/84'
+
+
+ans =
+
+    'starting comb 47/84'
+
+
+ans =
+
+    'starting comb 48/84'
+
+
+ans =
+
+    'starting comb 49/84'
+
+
+ans =
+
+    'starting comb 50/84'
+
+
+ans =
+
+    'starting comb 51/84'
+
+
+ans =
+
+    'starting comb 52/84'
+
+
+ans =
+
+    'starting comb 53/84'
+
+
+ans =
+
+    'starting comb 54/84'
+
+
+ans =
+
+    'starting comb 55/84'
+
+
+ans =
+
+    'starting comb 56/84'
+
+
+ans =
+
+    'starting comb 57/84'
+
+
+ans =
+
+    'starting comb 58/84'
+
+
+ans =
+
+    'starting comb 59/84'
+
+
+ans =
+
+    'starting comb 60/84'
+
+
+ans =
+
+    'starting comb 61/84'
+
+
+ans =
+
+    'starting comb 62/84'
+
+
+ans =
+
+    'starting comb 63/84'
+
+
+ans =
+
+    'starting comb 64/84'
+
+
+ans =
+
+    'starting comb 65/84'
+
+
+ans =
+
+    'starting comb 66/84'
+
+
+ans =
+
+    'starting comb 67/84'
+
+
+ans =
+
+    'starting comb 68/84'
+
+
+ans =
+
+    'starting comb 69/84'
+
+
+ans =
+
+    'starting comb 70/84'
+
+
+ans =
+
+    'starting comb 71/84'
+
+
+ans =
+
+    'starting comb 72/84'
+
+
+ans =
+
+    'starting comb 73/84'
+
+
+ans =
+
+    'starting comb 74/84'
+
+
+ans =
+
+    'starting comb 75/84'
+
+
+ans =
+
+    'starting comb 76/84'
+
+
+ans =
+
+    'starting comb 77/84'
+
+
+ans =
+
+    'starting comb 78/84'
+
+
+ans =
+
+    'starting comb 79/84'
+
+
+ans =
+
+    'starting comb 80/84'
+
+
+ans =
+
+    'starting comb 81/84'
+
+
+ans =
+
+    'starting comb 82/84'
+
+
+ans =
+
+    'starting comb 83/84'
+
+
+ans =
+
+    'starting comb 84/84'
+
+
+ans =
+
+    'starting d = 7'
+
+
+ans =
+
+    'starting comb 1/120'
+
+
+ans =
+
+    'starting comb 2/120'
+
+
+ans =
+
+    'starting comb 3/120'
+
+
+ans =
+
+    'starting comb 4/120'
+
+
+ans =
+
+    'starting comb 5/120'
+
+
+ans =
+
+    'starting comb 6/120'
+
+
+ans =
+
+    'starting comb 7/120'
+
+
+ans =
+
+    'starting comb 8/120'
+
+
+ans =
+
+    'starting comb 9/120'
+
+
+ans =
+
+    'starting comb 10/120'
+
+
+ans =
+
+    'starting comb 11/120'
+
+
+ans =
+
+    'starting comb 12/120'
+
+
+ans =
+
+    'starting comb 13/120'
+
+
+ans =
+
+    'starting comb 14/120'
+
+
+ans =
+
+    'starting comb 15/120'
+
+
+ans =
+
+    'starting comb 16/120'
+
+
+ans =
+
+    'starting comb 17/120'
+
+
+ans =
+
+    'starting comb 18/120'
+
+
+ans =
+
+    'starting comb 19/120'
+
+
+ans =
+
+    'starting comb 20/120'
+
+
+ans =
+
+    'starting comb 21/120'
+
+
+ans =
+
+    'starting comb 22/120'
+
+
+ans =
+
+    'starting comb 23/120'
+
+
+ans =
+
+    'starting comb 24/120'
+
+
+ans =
+
+    'starting comb 25/120'
+
+
+ans =
+
+    'starting comb 26/120'
+
+
+ans =
+
+    'starting comb 27/120'
+
+
+ans =
+
+    'starting comb 28/120'
+
+
+ans =
+
+    'starting comb 29/120'
+
+
+ans =
+
+    'starting comb 30/120'
+
+
+ans =
+
+    'starting comb 31/120'
+
+
+ans =
+
+    'starting comb 32/120'
+
+
+ans =
+
+    'starting comb 33/120'
+
+
+ans =
+
+    'starting comb 34/120'
+
+
+ans =
+
+    'starting comb 35/120'
+
+
+ans =
+
+    'starting comb 36/120'
+
+
+ans =
+
+    'starting comb 37/120'
+
+
+ans =
+
+    'starting comb 38/120'
+
+
+ans =
+
+    'starting comb 39/120'
+
+
+ans =
+
+    'starting comb 40/120'
+
+
+ans =
+
+    'starting comb 41/120'
+
+
+ans =
+
+    'starting comb 42/120'
+
+
+ans =
+
+    'starting comb 43/120'
+
+
+ans =
+
+    'starting comb 44/120'
+
+
+ans =
+
+    'starting comb 45/120'
+
+
+ans =
+
+    'starting comb 46/120'
+
+
+ans =
+
+    'starting comb 47/120'
+
+
+ans =
+
+    'starting comb 48/120'
+
+
+ans =
+
+    'starting comb 49/120'
+
+
+ans =
+
+    'starting comb 50/120'
+
+
+ans =
+
+    'starting comb 51/120'
+
+
+ans =
+
+    'starting comb 52/120'
+
+
+ans =
+
+    'starting comb 53/120'
+
+
+ans =
+
+    'starting comb 54/120'
+
+
+ans =
+
+    'starting comb 55/120'
+
+
+ans =
+
+    'starting comb 56/120'
+
+
+ans =
+
+    'starting comb 57/120'
+
+
+ans =
+
+    'starting comb 58/120'
+
+
+ans =
+
+    'starting comb 59/120'
+
+
+ans =
+
+    'starting comb 60/120'
+
+
+ans =
+
+    'starting comb 61/120'
+
+
+ans =
+
+    'starting comb 62/120'
+
+
+ans =
+
+    'starting comb 63/120'
+
+
+ans =
+
+    'starting comb 64/120'
+
+
+ans =
+
+    'starting comb 65/120'
+
+
+ans =
+
+    'starting comb 66/120'
+
+
+ans =
+
+    'starting comb 67/120'
+
+
+ans =
+
+    'starting comb 68/120'
+
+
+ans =
+
+    'starting comb 69/120'
+
+
+ans =
+
+    'starting comb 70/120'
+
+
+ans =
+
+    'starting comb 71/120'
+
+
+ans =
+
+    'starting comb 72/120'
+
+
+ans =
+
+    'starting comb 73/120'
+
+
+ans =
+
+    'starting comb 74/120'
+
+
+ans =
+
+    'starting comb 75/120'
+
+
+ans =
+
+    'starting comb 76/120'
+
+
+ans =
+
+    'starting comb 77/120'
+
+
+ans =
+
+    'starting comb 78/120'
+
+
+ans =
+
+    'starting comb 79/120'
+
+
+ans =
+
+    'starting comb 80/120'
+
+
+ans =
+
+    'starting comb 81/120'
+
+
+ans =
+
+    'starting comb 82/120'
+
+
+ans =
+
+    'starting comb 83/120'
+
+
+ans =
+
+    'starting comb 84/120'
+
+
+ans =
+
+    'starting comb 85/120'
+
+
+ans =
+
+    'starting comb 86/120'
+
+
+ans =
+
+    'starting comb 87/120'
+
+
+ans =
+
+    'starting comb 88/120'
+
+
+ans =
+
+    'starting comb 89/120'
+
+
+ans =
+
+    'starting comb 90/120'
+
+
+ans =
+
+    'starting comb 91/120'
+
+
+ans =
+
+    'starting comb 92/120'
+
+
+ans =
+
+    'starting comb 93/120'
+
+
+ans =
+
+    'starting comb 94/120'
+
+
+ans =
+
+    'starting comb 95/120'
+
+
+ans =
+
+    'starting comb 96/120'
+
+
+ans =
+
+    'starting comb 97/120'
+
+
+ans =
+
+    'starting comb 98/120'
+
+
+ans =
+
+    'starting comb 99/120'
+
+
+ans =
+
+    'starting comb 100/120'
+
+
+ans =
+
+    'starting comb 101/120'
+
+
+ans =
+
+    'starting comb 102/120'
+
+
+ans =
+
+    'starting comb 103/120'
+
+
+ans =
+
+    'starting comb 104/120'
+
+
+ans =
+
+    'starting comb 105/120'
+
+
+ans =
+
+    'starting comb 106/120'
+
+
+ans =
+
+    'starting comb 107/120'
+
+
+ans =
+
+    'starting comb 108/120'
+
+
+ans =
+
+    'starting comb 109/120'
+
+
+ans =
+
+    'starting comb 110/120'
+
+
+ans =
+
+    'starting comb 111/120'
+
+
+ans =
+
+    'starting comb 112/120'
+
+
+ans =
+
+    'starting comb 113/120'
+
+
+ans =
+
+    'starting comb 114/120'
+
+
+ans =
+
+    'starting comb 115/120'
+
+
+ans =
+
+    'starting comb 116/120'
+
+
+ans =
+
+    'starting comb 117/120'
+
+
+ans =
+
+    'starting comb 118/120'
+
+
+ans =
+
+    'starting comb 119/120'
+
+
+ans =
+
+    'starting comb 120/120'
+
+
+ans =
+
+    'starting d = 8'
+
+
+ans =
+
+    'starting comb 1/165'
+
+
+ans =
+
+    'starting comb 2/165'
+
+
+ans =
+
+    'starting comb 3/165'
+
+
+ans =
+
+    'starting comb 4/165'
+
+
+ans =
+
+    'starting comb 5/165'
+
+
+ans =
+
+    'starting comb 6/165'
+
+
+ans =
+
+    'starting comb 7/165'
+
+
+ans =
+
+    'starting comb 8/165'
+
+
+ans =
+
+    'starting comb 9/165'
+
+
+ans =
+
+    'starting comb 10/165'
+
+
+ans =
+
+    'starting comb 11/165'
+
+
+ans =
+
+    'starting comb 12/165'
+
+
+ans =
+
+    'starting comb 13/165'
+
+
+ans =
+
+    'starting comb 14/165'
+
+
+ans =
+
+    'starting comb 15/165'
+
+
+ans =
+
+    'starting comb 16/165'
+
+
+ans =
+
+    'starting comb 17/165'
+
+
+ans =
+
+    'starting comb 18/165'
+
+
+ans =
+
+    'starting comb 19/165'
+
+
+ans =
+
+    'starting comb 20/165'
+
+
+ans =
+
+    'starting comb 21/165'
+
+
+ans =
+
+    'starting comb 22/165'
+
+
+ans =
+
+    'starting comb 23/165'
+
+
+ans =
+
+    'starting comb 24/165'
+
+
+ans =
+
+    'starting comb 25/165'
+
+
+ans =
+
+    'starting comb 26/165'
+
+
+ans =
+
+    'starting comb 27/165'
+
+
+ans =
+
+    'starting comb 28/165'
+
+
+ans =
+
+    'starting comb 29/165'
+
+
+ans =
+
+    'starting comb 30/165'
+
+
+ans =
+
+    'starting comb 31/165'
+
+
+ans =
+
+    'starting comb 32/165'
+
+
+ans =
+
+    'starting comb 33/165'
+
+
+ans =
+
+    'starting comb 34/165'
+
+
+ans =
+
+    'starting comb 35/165'
+
+
+ans =
+
+    'starting comb 36/165'
+
+
+ans =
+
+    'starting comb 37/165'
+
+
+ans =
+
+    'starting comb 38/165'
+
+
+ans =
+
+    'starting comb 39/165'
+
+
+ans =
+
+    'starting comb 40/165'
+
+
+ans =
+
+    'starting comb 41/165'
+
+
+ans =
+
+    'starting comb 42/165'
+
+
+ans =
+
+    'starting comb 43/165'
+
+
+ans =
+
+    'starting comb 44/165'
+
+
+ans =
+
+    'starting comb 45/165'
+
+
+ans =
+
+    'starting comb 46/165'
+
+
+ans =
+
+    'starting comb 47/165'
+
+
+ans =
+
+    'starting comb 48/165'
+
+
+ans =
+
+    'starting comb 49/165'
+
+
+ans =
+
+    'starting comb 50/165'
+
+
+ans =
+
+    'starting comb 51/165'
+
+
+ans =
+
+    'starting comb 52/165'
+
+
+ans =
+
+    'starting comb 53/165'
+
+
+ans =
+
+    'starting comb 54/165'
+
+
+ans =
+
+    'starting comb 55/165'
+
+
+ans =
+
+    'starting comb 56/165'
+
+
+ans =
+
+    'starting comb 57/165'
+
+
+ans =
+
+    'starting comb 58/165'
+
+
+ans =
+
+    'starting comb 59/165'
+
+
+ans =
+
+    'starting comb 60/165'
+
+
+ans =
+
+    'starting comb 61/165'
+
+
+ans =
+
+    'starting comb 62/165'
+
+
+ans =
+
+    'starting comb 63/165'
+
+
+ans =
+
+    'starting comb 64/165'
+
+
+ans =
+
+    'starting comb 65/165'
+
+
+ans =
+
+    'starting comb 66/165'
+
+
+ans =
+
+    'starting comb 67/165'
+
+
+ans =
+
+    'starting comb 68/165'
+
+
+ans =
+
+    'starting comb 69/165'
+
+
+ans =
+
+    'starting comb 70/165'
+
+
+ans =
+
+    'starting comb 71/165'
+
+
+ans =
+
+    'starting comb 72/165'
+
+
+ans =
+
+    'starting comb 73/165'
+
+
+ans =
+
+    'starting comb 74/165'
+
+
+ans =
+
+    'starting comb 75/165'
+
+
+ans =
+
+    'starting comb 76/165'
+
+
+ans =
+
+    'starting comb 77/165'
+
+
+ans =
+
+    'starting comb 78/165'
+
+
+ans =
+
+    'starting comb 79/165'
+
+
+ans =
+
+    'starting comb 80/165'
+
+
+ans =
+
+    'starting comb 81/165'
+
+
+ans =
+
+    'starting comb 82/165'
+
+
+ans =
+
+    'starting comb 83/165'
+
+
+ans =
+
+    'starting comb 84/165'
+
+
+ans =
+
+    'starting comb 85/165'
+
+
+ans =
+
+    'starting comb 86/165'
+
+
+ans =
+
+    'starting comb 87/165'
+
+
+ans =
+
+    'starting comb 88/165'
+
+
+ans =
+
+    'starting comb 89/165'
+
+
+ans =
+
+    'starting comb 90/165'
+
+
+ans =
+
+    'starting comb 91/165'
+
+
+ans =
+
+    'starting comb 92/165'
+
+
+ans =
+
+    'starting comb 93/165'
+
+
+ans =
+
+    'starting comb 94/165'
+
+
+ans =
+
+    'starting comb 95/165'
+
+
+ans =
+
+    'starting comb 96/165'
+
+
+ans =
+
+    'starting comb 97/165'
+
+
+ans =
+
+    'starting comb 98/165'
+
+
+ans =
+
+    'starting comb 99/165'
+
+
+ans =
+
+    'starting comb 100/165'
+
+
+ans =
+
+    'starting comb 101/165'
+
+
+ans =
+
+    'starting comb 102/165'
+
+
+ans =
+
+    'starting comb 103/165'
+
+
+ans =
+
+    'starting comb 104/165'
+
+
+ans =
+
+    'starting comb 105/165'
+
+
+ans =
+
+    'starting comb 106/165'
+
+
+ans =
+
+    'starting comb 107/165'
+
+
+ans =
+
+    'starting comb 108/165'
+
+
+ans =
+
+    'starting comb 109/165'
+
+
+ans =
+
+    'starting comb 110/165'
+
+
+ans =
+
+    'starting comb 111/165'
+
+
+ans =
+
+    'starting comb 112/165'
+
+
+ans =
+
+    'starting comb 113/165'
+
+
+ans =
+
+    'starting comb 114/165'
+
+
+ans =
+
+    'starting comb 115/165'
+
+
+ans =
+
+    'starting comb 116/165'
+
+
+ans =
+
+    'starting comb 117/165'
+
+
+ans =
+
+    'starting comb 118/165'
+
+
+ans =
+
+    'starting comb 119/165'
+
+
+ans =
+
+    'starting comb 120/165'
+
+
+ans =
+
+    'starting comb 121/165'
+
+
+ans =
+
+    'starting comb 122/165'
+
+
+ans =
+
+    'starting comb 123/165'
+
+
+ans =
+
+    'starting comb 124/165'
+
+
+ans =
+
+    'starting comb 125/165'
+
+
+ans =
+
+    'starting comb 126/165'
+
+
+ans =
+
+    'starting comb 127/165'
+
+
+ans =
+
+    'starting comb 128/165'
+
+
+ans =
+
+    'starting comb 129/165'
+
+
+ans =
+
+    'starting comb 130/165'
+
+
+ans =
+
+    'starting comb 131/165'
+
+
+ans =
+
+    'starting comb 132/165'
+
+
+ans =
+
+    'starting comb 133/165'
+
+
+ans =
+
+    'starting comb 134/165'
+
+
+ans =
+
+    'starting comb 135/165'
+
+
+ans =
+
+    'starting comb 136/165'
+
+
+ans =
+
+    'starting comb 137/165'
+
+
+ans =
+
+    'starting comb 138/165'
+
+
+ans =
+
+    'starting comb 139/165'
+
+
+ans =
+
+    'starting comb 140/165'
+
+
+ans =
+
+    'starting comb 141/165'
+
+
+ans =
+
+    'starting comb 142/165'
+
+
+ans =
+
+    'starting comb 143/165'
+
+
+ans =
+
+    'starting comb 144/165'
+
+
+ans =
+
+    'starting comb 145/165'
+
+
+ans =
+
+    'starting comb 146/165'
+
+
+ans =
+
+    'starting comb 147/165'
+
+
+ans =
+
+    'starting comb 148/165'
+
+
+ans =
+
+    'starting comb 149/165'
+
+
+ans =
+
+    'starting comb 150/165'
+
+
+ans =
+
+    'starting comb 151/165'
+
+
+ans =
+
+    'starting comb 152/165'
+
+
+ans =
+
+    'starting comb 153/165'
+
+
+ans =
+
+    'starting comb 154/165'
+
+
+ans =
+
+    'starting comb 155/165'
+
+
+ans =
+
+    'starting comb 156/165'
+
+
+ans =
+
+    'starting comb 157/165'
+
+
+ans =
+
+    'starting comb 158/165'
+
+
+ans =
+
+    'starting comb 159/165'
+
+
+ans =
+
+    'starting comb 160/165'
+
+
+ans =
+
+    'starting comb 161/165'
+
+
+ans =
+
+    'starting comb 162/165'
+
+
+ans =
+
+    'starting comb 163/165'
+
+
+ans =
+
+    'starting comb 164/165'
+
+
+ans =
+
+    'starting comb 165/165'
+
+
+ans =
+
+    'starting d = 9'
+
+
+ans =
+
+    'starting comb 1/220'
+
+
+ans =
+
+    'starting comb 2/220'
+
+
+ans =
+
+    'starting comb 3/220'
+
+
+ans =
+
+    'starting comb 4/220'
+
+
+ans =
+
+    'starting comb 5/220'
+
+
+ans =
+
+    'starting comb 6/220'
+
+
+ans =
+
+    'starting comb 7/220'
+
+
+ans =
+
+    'starting comb 8/220'
+
+
+ans =
+
+    'starting comb 9/220'
+
+
+ans =
+
+    'starting comb 10/220'
+
+
+ans =
+
+    'starting comb 11/220'
+
+
+ans =
+
+    'starting comb 12/220'
+
+
+ans =
+
+    'starting comb 13/220'
+
+
+ans =
+
+    'starting comb 14/220'
+
+
+ans =
+
+    'starting comb 15/220'
+
+
+ans =
+
+    'starting comb 16/220'
+
+
+ans =
+
+    'starting comb 17/220'
+
+
+ans =
+
+    'starting comb 18/220'
+
+
+ans =
+
+    'starting comb 19/220'
+
+
+ans =
+
+    'starting comb 20/220'
+
+
+ans =
+
+    'starting comb 21/220'
+
+
+ans =
+
+    'starting comb 22/220'
+
+
+ans =
+
+    'starting comb 23/220'
+
+
+ans =
+
+    'starting comb 24/220'
+
+
+ans =
+
+    'starting comb 25/220'
+
+
+ans =
+
+    'starting comb 26/220'
+
+
+ans =
+
+    'starting comb 27/220'
+
+
+ans =
+
+    'starting comb 28/220'
+
+
+ans =
+
+    'starting comb 29/220'
+
+
+ans =
+
+    'starting comb 30/220'
+
+
+ans =
+
+    'starting comb 31/220'
+
+
+ans =
+
+    'starting comb 32/220'
+
+
+ans =
+
+    'starting comb 33/220'
+
+
+ans =
+
+    'starting comb 34/220'
+
+
+ans =
+
+    'starting comb 35/220'
+
+
+ans =
+
+    'starting comb 36/220'
+
+
+ans =
+
+    'starting comb 37/220'
+
+
+ans =
+
+    'starting comb 38/220'
+
+
+ans =
+
+    'starting comb 39/220'
+
+
+ans =
+
+    'starting comb 40/220'
+
+
+ans =
+
+    'starting comb 41/220'
+
+
+ans =
+
+    'starting comb 42/220'
+
+
+ans =
+
+    'starting comb 43/220'
+
+
+ans =
+
+    'starting comb 44/220'
+
+
+ans =
+
+    'starting comb 45/220'
+
+
+ans =
+
+    'starting comb 46/220'
+
+
+ans =
+
+    'starting comb 47/220'
+
+
+ans =
+
+    'starting comb 48/220'
+
+
+ans =
+
+    'starting comb 49/220'
+
+
+ans =
+
+    'starting comb 50/220'
+
+
+ans =
+
+    'starting comb 51/220'
+
+
+ans =
+
+    'starting comb 52/220'
+
+
+ans =
+
+    'starting comb 53/220'
+
+
+ans =
+
+    'starting comb 54/220'
+
+
+ans =
+
+    'starting comb 55/220'
+
+
+ans =
+
+    'starting comb 56/220'
+
+
+ans =
+
+    'starting comb 57/220'
+
+
+ans =
+
+    'starting comb 58/220'
+
+
+ans =
+
+    'starting comb 59/220'
+
+
+ans =
+
+    'starting comb 60/220'
+
+
+ans =
+
+    'starting comb 61/220'
+
+
+ans =
+
+    'starting comb 62/220'
+
+
+ans =
+
+    'starting comb 63/220'
+
+
+ans =
+
+    'starting comb 64/220'
+
+
+ans =
+
+    'starting comb 65/220'
+
+
+ans =
+
+    'starting comb 66/220'
+
+
+ans =
+
+    'starting comb 67/220'
+
+
+ans =
+
+    'starting comb 68/220'
+
+
+ans =
+
+    'starting comb 69/220'
+
+
+ans =
+
+    'starting comb 70/220'
+
+
+ans =
+
+    'starting comb 71/220'
+
+
+ans =
+
+    'starting comb 72/220'
+
+
+ans =
+
+    'starting comb 73/220'
+
+
+ans =
+
+    'starting comb 74/220'
+
+
+ans =
+
+    'starting comb 75/220'
+
+
+ans =
+
+    'starting comb 76/220'
+
+
+ans =
+
+    'starting comb 77/220'
+
+
+ans =
+
+    'starting comb 78/220'
+
+
+ans =
+
+    'starting comb 79/220'
+
+
+ans =
+
+    'starting comb 80/220'
+
+
+ans =
+
+    'starting comb 81/220'
+
+
+ans =
+
+    'starting comb 82/220'
+
+
+ans =
+
+    'starting comb 83/220'
+
+
+ans =
+
+    'starting comb 84/220'
+
+
+ans =
+
+    'starting comb 85/220'
+
+
+ans =
+
+    'starting comb 86/220'
+
+
+ans =
+
+    'starting comb 87/220'
+
+
+ans =
+
+    'starting comb 88/220'
+
+
+ans =
+
+    'starting comb 89/220'
+
+
+ans =
+
+    'starting comb 90/220'
+
+
+ans =
+
+    'starting comb 91/220'
+
+
+ans =
+
+    'starting comb 92/220'
+
+
+ans =
+
+    'starting comb 93/220'
+
+
+ans =
+
+    'starting comb 94/220'
+
+
+ans =
+
+    'starting comb 95/220'
+
+
+ans =
+
+    'starting comb 96/220'
+
+
+ans =
+
+    'starting comb 97/220'
+
+
+ans =
+
+    'starting comb 98/220'
+
+
+ans =
+
+    'starting comb 99/220'
+
+
+ans =
+
+    'starting comb 100/220'
+
+
+ans =
+
+    'starting comb 101/220'
+
+
+ans =
+
+    'starting comb 102/220'
+
+
+ans =
+
+    'starting comb 103/220'
+
+
+ans =
+
+    'starting comb 104/220'
+
+
+ans =
+
+    'starting comb 105/220'
+
+
+ans =
+
+    'starting comb 106/220'
+
+
+ans =
+
+    'starting comb 107/220'
+
+
+ans =
+
+    'starting comb 108/220'
+
+
+ans =
+
+    'starting comb 109/220'
+
+
+ans =
+
+    'starting comb 110/220'
+
+
+ans =
+
+    'starting comb 111/220'
+
+
+ans =
+
+    'starting comb 112/220'
+
+
+ans =
+
+    'starting comb 113/220'
+
+
+ans =
+
+    'starting comb 114/220'
+
+
+ans =
+
+    'starting comb 115/220'
+
+
+ans =
+
+    'starting comb 116/220'
+
+
+ans =
+
+    'starting comb 117/220'
+
+
+ans =
+
+    'starting comb 118/220'
+
+
+ans =
+
+    'starting comb 119/220'
+
+
+ans =
+
+    'starting comb 120/220'
+
+
+ans =
+
+    'starting comb 121/220'
+
+
+ans =
+
+    'starting comb 122/220'
+
+
+ans =
+
+    'starting comb 123/220'
+
+
+ans =
+
+    'starting comb 124/220'
+
+
+ans =
+
+    'starting comb 125/220'
+
+
+ans =
+
+    'starting comb 126/220'
+
+
+ans =
+
+    'starting comb 127/220'
+
+
+ans =
+
+    'starting comb 128/220'
+
+
+ans =
+
+    'starting comb 129/220'
+
+
+ans =
+
+    'starting comb 130/220'
+
+
+ans =
+
+    'starting comb 131/220'
+
+
+ans =
+
+    'starting comb 132/220'
+
+
+ans =
+
+    'starting comb 133/220'
+
+
+ans =
+
+    'starting comb 134/220'
+
+
+ans =
+
+    'starting comb 135/220'
+
+
+ans =
+
+    'starting comb 136/220'
+
+
+ans =
+
+    'starting comb 137/220'
+
+
+ans =
+
+    'starting comb 138/220'
+
+
+ans =
+
+    'starting comb 139/220'
+
+
+ans =
+
+    'starting comb 140/220'
+
+
+ans =
+
+    'starting comb 141/220'
+
+
+ans =
+
+    'starting comb 142/220'
+
+
+ans =
+
+    'starting comb 143/220'
+
+
+ans =
+
+    'starting comb 144/220'
+
+
+ans =
+
+    'starting comb 145/220'
+
+
+ans =
+
+    'starting comb 146/220'
+
+
+ans =
+
+    'starting comb 147/220'
+
+
+ans =
+
+    'starting comb 148/220'
+
+
+ans =
+
+    'starting comb 149/220'
+
+
+ans =
+
+    'starting comb 150/220'
+
+
+ans =
+
+    'starting comb 151/220'
+
+
+ans =
+
+    'starting comb 152/220'
+
+
+ans =
+
+    'starting comb 153/220'
+
+
+ans =
+
+    'starting comb 154/220'
+
+
+ans =
+
+    'starting comb 155/220'
+
+
+ans =
+
+    'starting comb 156/220'
+
+
+ans =
+
+    'starting comb 157/220'
+
+
+ans =
+
+    'starting comb 158/220'
+
+
+ans =
+
+    'starting comb 159/220'
+
+
+ans =
+
+    'starting comb 160/220'
+
+
+ans =
+
+    'starting comb 161/220'
+
+
+ans =
+
+    'starting comb 162/220'
+
+
+ans =
+
+    'starting comb 163/220'
+
+
+ans =
+
+    'starting comb 164/220'
+
+
+ans =
+
+    'starting comb 165/220'
+
+
+ans =
+
+    'starting comb 166/220'
+
+
+ans =
+
+    'starting comb 167/220'
+
+
+ans =
+
+    'starting comb 168/220'
+
+
+ans =
+
+    'starting comb 169/220'
+
+
+ans =
+
+    'starting comb 170/220'
+
+
+ans =
+
+    'starting comb 171/220'
+
+
+ans =
+
+    'starting comb 172/220'
+
+
+ans =
+
+    'starting comb 173/220'
+
+
+ans =
+
+    'starting comb 174/220'
+
+
+ans =
+
+    'starting comb 175/220'
+
+
+ans =
+
+    'starting comb 176/220'
+
+
+ans =
+
+    'starting comb 177/220'
+
+
+ans =
+
+    'starting comb 178/220'
+
+
+ans =
+
+    'starting comb 179/220'
+
+
+ans =
+
+    'starting comb 180/220'
+
+
+ans =
+
+    'starting comb 181/220'
+
+
+ans =
+
+    'starting comb 182/220'
+
+
+ans =
+
+    'starting comb 183/220'
+
+
+ans =
+
+    'starting comb 184/220'
+
+
+ans =
+
+    'starting comb 185/220'
+
+
+ans =
+
+    'starting comb 186/220'
+
+
+ans =
+
+    'starting comb 187/220'
+
+
+ans =
+
+    'starting comb 188/220'
+
+
+ans =
+
+    'starting comb 189/220'
+
+
+ans =
+
+    'starting comb 190/220'
+
+
+ans =
+
+    'starting comb 191/220'
+
+
+ans =
+
+    'starting comb 192/220'
+
+
+ans =
+
+    'starting comb 193/220'
+
+
+ans =
+
+    'starting comb 194/220'
+
+
+ans =
+
+    'starting comb 195/220'
+
+
+ans =
+
+    'starting comb 196/220'
+
+
+ans =
+
+    'starting comb 197/220'
+
+
+ans =
+
+    'starting comb 198/220'
+
+
+ans =
+
+    'starting comb 199/220'
+
+
+ans =
+
+    'starting comb 200/220'
+
+
+ans =
+
+    'starting comb 201/220'
+
+
+ans =
+
+    'starting comb 202/220'
+
+
+ans =
+
+    'starting comb 203/220'
+
+
+ans =
+
+    'starting comb 204/220'
+
+
+ans =
+
+    'starting comb 205/220'
+
+
+ans =
+
+    'starting comb 206/220'
+
+
+ans =
+
+    'starting comb 207/220'
+
+
+ans =
+
+    'starting comb 208/220'
+
+
+ans =
+
+    'starting comb 209/220'
+
+
+ans =
+
+    'starting comb 210/220'
+
+
+ans =
+
+    'starting comb 211/220'
+
+
+ans =
+
+    'starting comb 212/220'
+
+
+ans =
+
+    'starting comb 213/220'
+
+
+ans =
+
+    'starting comb 214/220'
+
+
+ans =
+
+    'starting comb 215/220'
+
+
+ans =
+
+    'starting comb 216/220'
+
+
+ans =
+
+    'starting comb 217/220'
+
+
+ans =
+
+    'starting comb 218/220'
+
+
+ans =
+
+    'starting comb 219/220'
+
+
+ans =
+
+    'starting comb 220/220'
+
+
+ans =
+
+    'starting d = 10'
+
+
+ans =
+
+    'starting comb 1/286'
+
+
+ans =
+
+    'starting comb 2/286'
+
+
+ans =
+
+    'starting comb 3/286'
+
+
+ans =
+
+    'starting comb 4/286'
+
+
+ans =
+
+    'starting comb 5/286'
+
+
+ans =
+
+    'starting comb 6/286'
+
+
+ans =
+
+    'starting comb 7/286'
+
+
+ans =
+
+    'starting comb 8/286'
+
+
+ans =
+
+    'starting comb 9/286'
+
+
+ans =
+
+    'starting comb 10/286'
+
+
+ans =
+
+    'starting comb 11/286'
+
+
+ans =
+
+    'starting comb 12/286'
+
+
+ans =
+
+    'starting comb 13/286'
+
+
+ans =
+
+    'starting comb 14/286'
+
+
+ans =
+
+    'starting comb 15/286'
+
+
+ans =
+
+    'starting comb 16/286'
+
+
+ans =
+
+    'starting comb 17/286'
+
+
+ans =
+
+    'starting comb 18/286'
+
+
+ans =
+
+    'starting comb 19/286'
+
+
+ans =
+
+    'starting comb 20/286'
+
+
+ans =
+
+    'starting comb 21/286'
+
+
+ans =
+
+    'starting comb 22/286'
+
+
+ans =
+
+    'starting comb 23/286'
+
+
+ans =
+
+    'starting comb 24/286'
+
+
+ans =
+
+    'starting comb 25/286'
+
+
+ans =
+
+    'starting comb 26/286'
+
+
+ans =
+
+    'starting comb 27/286'
+
+
+ans =
+
+    'starting comb 28/286'
+
+
+ans =
+
+    'starting comb 29/286'
+
+
+ans =
+
+    'starting comb 30/286'
+
+
+ans =
+
+    'starting comb 31/286'
+
+
+ans =
+
+    'starting comb 32/286'
+
+
+ans =
+
+    'starting comb 33/286'
+
+
+ans =
+
+    'starting comb 34/286'
+
+
+ans =
+
+    'starting comb 35/286'
+
+
+ans =
+
+    'starting comb 36/286'
+
+
+ans =
+
+    'starting comb 37/286'
+
+
+ans =
+
+    'starting comb 38/286'
+
+
+ans =
+
+    'starting comb 39/286'
+
+
+ans =
+
+    'starting comb 40/286'
+
+
+ans =
+
+    'starting comb 41/286'
+
+
+ans =
+
+    'starting comb 42/286'
+
+
+ans =
+
+    'starting comb 43/286'
+
+
+ans =
+
+    'starting comb 44/286'
+
+
+ans =
+
+    'starting comb 45/286'
+
+
+ans =
+
+    'starting comb 46/286'
+
+
+ans =
+
+    'starting comb 47/286'
+
+
+ans =
+
+    'starting comb 48/286'
+
+
+ans =
+
+    'starting comb 49/286'
+
+
+ans =
+
+    'starting comb 50/286'
+
+
+ans =
+
+    'starting comb 51/286'
+
+
+ans =
+
+    'starting comb 52/286'
+
+
+ans =
+
+    'starting comb 53/286'
+
+
+ans =
+
+    'starting comb 54/286'
+
+
+ans =
+
+    'starting comb 55/286'
+
+
+ans =
+
+    'starting comb 56/286'
+
+
+ans =
+
+    'starting comb 57/286'
+
+
+ans =
+
+    'starting comb 58/286'
+
+
+ans =
+
+    'starting comb 59/286'
+
+
+ans =
+
+    'starting comb 60/286'
+
+
+ans =
+
+    'starting comb 61/286'
+
+
+ans =
+
+    'starting comb 62/286'
+
+
+ans =
+
+    'starting comb 63/286'
+
+
+ans =
+
+    'starting comb 64/286'
+
+
+ans =
+
+    'starting comb 65/286'
+
+
+ans =
+
+    'starting comb 66/286'
+
+
+ans =
+
+    'starting comb 67/286'
+
+
+ans =
+
+    'starting comb 68/286'
+
+
+ans =
+
+    'starting comb 69/286'
+
+
+ans =
+
+    'starting comb 70/286'
+
+
+ans =
+
+    'starting comb 71/286'
+
+
+ans =
+
+    'starting comb 72/286'
+
+
+ans =
+
+    'starting comb 73/286'
+
+
+ans =
+
+    'starting comb 74/286'
+
+
+ans =
+
+    'starting comb 75/286'
+
+
+ans =
+
+    'starting comb 76/286'
+
+
+ans =
+
+    'starting comb 77/286'
+
+
+ans =
+
+    'starting comb 78/286'
+
+
+ans =
+
+    'starting comb 79/286'
+
+
+ans =
+
+    'starting comb 80/286'
+
+
+ans =
+
+    'starting comb 81/286'
+
+
+ans =
+
+    'starting comb 82/286'
+
+
+ans =
+
+    'starting comb 83/286'
+
+
+ans =
+
+    'starting comb 84/286'
+
+
+ans =
+
+    'starting comb 85/286'
+
+
+ans =
+
+    'starting comb 86/286'
+
+
+ans =
+
+    'starting comb 87/286'
+
+
+ans =
+
+    'starting comb 88/286'
+
+
+ans =
+
+    'starting comb 89/286'
+
+
+ans =
+
+    'starting comb 90/286'
+
+
+ans =
+
+    'starting comb 91/286'
+
+
+ans =
+
+    'starting comb 92/286'
+
+
+ans =
+
+    'starting comb 93/286'
+
+
+ans =
+
+    'starting comb 94/286'
+
+
+ans =
+
+    'starting comb 95/286'
+
+
+ans =
+
+    'starting comb 96/286'
+
+
+ans =
+
+    'starting comb 97/286'
+
+
+ans =
+
+    'starting comb 98/286'
+
+
+ans =
+
+    'starting comb 99/286'
+
+
+ans =
+
+    'starting comb 100/286'
+
+
+ans =
+
+    'starting comb 101/286'
+
+
+ans =
+
+    'starting comb 102/286'
+
+
+ans =
+
+    'starting comb 103/286'
+
+
+ans =
+
+    'starting comb 104/286'
+
+
+ans =
+
+    'starting comb 105/286'
+
+
+ans =
+
+    'starting comb 106/286'
+
+
+ans =
+
+    'starting comb 107/286'
+
+
+ans =
+
+    'starting comb 108/286'
+
+
+ans =
+
+    'starting comb 109/286'
+
+
+ans =
+
+    'starting comb 110/286'
+
+
+ans =
+
+    'starting comb 111/286'
+
+
+ans =
+
+    'starting comb 112/286'
+
+
+ans =
+
+    'starting comb 113/286'
+
+
+ans =
+
+    'starting comb 114/286'
+
+
+ans =
+
+    'starting comb 115/286'
+
+
+ans =
+
+    'starting comb 116/286'
+
+
+ans =
+
+    'starting comb 117/286'
+
+
+ans =
+
+    'starting comb 118/286'
+
+
+ans =
+
+    'starting comb 119/286'
+
+
+ans =
+
+    'starting comb 120/286'
+
+
+ans =
+
+    'starting comb 121/286'
+
+
+ans =
+
+    'starting comb 122/286'
+
+
+ans =
+
+    'starting comb 123/286'
+
+
+ans =
+
+    'starting comb 124/286'
+
+
+ans =
+
+    'starting comb 125/286'
+
+
+ans =
+
+    'starting comb 126/286'
+
+
+ans =
+
+    'starting comb 127/286'
+
+
+ans =
+
+    'starting comb 128/286'
+
+
+ans =
+
+    'starting comb 129/286'
+
+
+ans =
+
+    'starting comb 130/286'
+
+
+ans =
+
+    'starting comb 131/286'
+
+
+ans =
+
+    'starting comb 132/286'
+
+
+ans =
+
+    'starting comb 133/286'
+
+
+ans =
+
+    'starting comb 134/286'
+
+
+ans =
+
+    'starting comb 135/286'
+
+
+ans =
+
+    'starting comb 136/286'
+
+
+ans =
+
+    'starting comb 137/286'
+
+
+ans =
+
+    'starting comb 138/286'
+
+
+ans =
+
+    'starting comb 139/286'
+
+
+ans =
+
+    'starting comb 140/286'
+
+
+ans =
+
+    'starting comb 141/286'
+
+
+ans =
+
+    'starting comb 142/286'
+
+
+ans =
+
+    'starting comb 143/286'
+
+
+ans =
+
+    'starting comb 144/286'
+
+
+ans =
+
+    'starting comb 145/286'
+
+
+ans =
+
+    'starting comb 146/286'
+
+
+ans =
+
+    'starting comb 147/286'
+
+
+ans =
+
+    'starting comb 148/286'
+
+
+ans =
+
+    'starting comb 149/286'
+
+
+ans =
+
+    'starting comb 150/286'
+
+
+ans =
+
+    'starting comb 151/286'
+
+
+ans =
+
+    'starting comb 152/286'
+
+
+ans =
+
+    'starting comb 153/286'
+
+
+ans =
+
+    'starting comb 154/286'
+
+
+ans =
+
+    'starting comb 155/286'
+
+
+ans =
+
+    'starting comb 156/286'
+
+
+ans =
+
+    'starting comb 157/286'
+
+
+ans =
+
+    'starting comb 158/286'
+
+
+ans =
+
+    'starting comb 159/286'
+
+
+ans =
+
+    'starting comb 160/286'
+
+
+ans =
+
+    'starting comb 161/286'
+
+
+ans =
+
+    'starting comb 162/286'
+
+
+ans =
+
+    'starting comb 163/286'
+
+
+ans =
+
+    'starting comb 164/286'
+
+
+ans =
+
+    'starting comb 165/286'
+
+
+ans =
+
+    'starting comb 166/286'
+
+
+ans =
+
+    'starting comb 167/286'
+
+
+ans =
+
+    'starting comb 168/286'
+
+
+ans =
+
+    'starting comb 169/286'
+
+
+ans =
+
+    'starting comb 170/286'
+
+
+ans =
+
+    'starting comb 171/286'
+
+
+ans =
+
+    'starting comb 172/286'
+
+
+ans =
+
+    'starting comb 173/286'
+
+
+ans =
+
+    'starting comb 174/286'
+
+
+ans =
+
+    'starting comb 175/286'
+
+
+ans =
+
+    'starting comb 176/286'
+
+
+ans =
+
+    'starting comb 177/286'
+
+
+ans =
+
+    'starting comb 178/286'
+
+
+ans =
+
+    'starting comb 179/286'
+
+
+ans =
+
+    'starting comb 180/286'
+
+
+ans =
+
+    'starting comb 181/286'
+
+
+ans =
+
+    'starting comb 182/286'
+
+
+ans =
+
+    'starting comb 183/286'
+
+
+ans =
+
+    'starting comb 184/286'
+
+
+ans =
+
+    'starting comb 185/286'
+
+
+ans =
+
+    'starting comb 186/286'
+
+
+ans =
+
+    'starting comb 187/286'
+
+
+ans =
+
+    'starting comb 188/286'
+
+
+ans =
+
+    'starting comb 189/286'
+
+
+ans =
+
+    'starting comb 190/286'
+
+
+ans =
+
+    'starting comb 191/286'
+
+
+ans =
+
+    'starting comb 192/286'
+
+
+ans =
+
+    'starting comb 193/286'
+
+
+ans =
+
+    'starting comb 194/286'
+
+
+ans =
+
+    'starting comb 195/286'
+
+
+ans =
+
+    'starting comb 196/286'
+
+
+ans =
+
+    'starting comb 197/286'
+
+
+ans =
+
+    'starting comb 198/286'
+
+
+ans =
+
+    'starting comb 199/286'
+
+
+ans =
+
+    'starting comb 200/286'
+
+
+ans =
+
+    'starting comb 201/286'
+
+
+ans =
+
+    'starting comb 202/286'
+
+
+ans =
+
+    'starting comb 203/286'
+
+
+ans =
+
+    'starting comb 204/286'
+
+
+ans =
+
+    'starting comb 205/286'
+
+
+ans =
+
+    'starting comb 206/286'
+
+
+ans =
+
+    'starting comb 207/286'
+
+
+ans =
+
+    'starting comb 208/286'
+
+
+ans =
+
+    'starting comb 209/286'
+
+
+ans =
+
+    'starting comb 210/286'
+
+
+ans =
+
+    'starting comb 211/286'
+
+
+ans =
+
+    'starting comb 212/286'
+
+
+ans =
+
+    'starting comb 213/286'
+
+
+ans =
+
+    'starting comb 214/286'
+
+
+ans =
+
+    'starting comb 215/286'
+
+
+ans =
+
+    'starting comb 216/286'
+
+
+ans =
+
+    'starting comb 217/286'
+
+
+ans =
+
+    'starting comb 218/286'
+
+
+ans =
+
+    'starting comb 219/286'
+
+
+ans =
+
+    'starting comb 220/286'
+
+
+ans =
+
+    'starting comb 221/286'
+
+
+ans =
+
+    'starting comb 222/286'
+
+
+ans =
+
+    'starting comb 223/286'
+
+
+ans =
+
+    'starting comb 224/286'
+
+
+ans =
+
+    'starting comb 225/286'
+
+
+ans =
+
+    'starting comb 226/286'
+
+
+ans =
+
+    'starting comb 227/286'
+
+
+ans =
+
+    'starting comb 228/286'
+
+
+ans =
+
+    'starting comb 229/286'
+
+
+ans =
+
+    'starting comb 230/286'
+
+
+ans =
+
+    'starting comb 231/286'
+
+
+ans =
+
+    'starting comb 232/286'
+
+
+ans =
+
+    'starting comb 233/286'
+
+
+ans =
+
+    'starting comb 234/286'
+
+
+ans =
+
+    'starting comb 235/286'
+
+
+ans =
+
+    'starting comb 236/286'
+
+
+ans =
+
+    'starting comb 237/286'
+
+
+ans =
+
+    'starting comb 238/286'
+
+
+ans =
+
+    'starting comb 239/286'
+
+
+ans =
+
+    'starting comb 240/286'
+
+
+ans =
+
+    'starting comb 241/286'
+
+
+ans =
+
+    'starting comb 242/286'
+
+
+ans =
+
+    'starting comb 243/286'
+
+
+ans =
+
+    'starting comb 244/286'
+
+
+ans =
+
+    'starting comb 245/286'
+
+
+ans =
+
+    'starting comb 246/286'
+
+
+ans =
+
+    'starting comb 247/286'
+
+
+ans =
+
+    'starting comb 248/286'
+
+
+ans =
+
+    'starting comb 249/286'
+
+
+ans =
+
+    'starting comb 250/286'
+
+
+ans =
+
+    'starting comb 251/286'
+
+
+ans =
+
+    'starting comb 252/286'
+
+
+ans =
+
+    'starting comb 253/286'
+
+
+ans =
+
+    'starting comb 254/286'
+
+
+ans =
+
+    'starting comb 255/286'
+
+
+ans =
+
+    'starting comb 256/286'
+
+
+ans =
+
+    'starting comb 257/286'
+
+
+ans =
+
+    'starting comb 258/286'
+
+
+ans =
+
+    'starting comb 259/286'
+
+
+ans =
+
+    'starting comb 260/286'
+
+
+ans =
+
+    'starting comb 261/286'
+
+
+ans =
+
+    'starting comb 262/286'
+
+
+ans =
+
+    'starting comb 263/286'
+
+
+ans =
+
+    'starting comb 264/286'
+
+
+ans =
+
+    'starting comb 265/286'
+
+
+ans =
+
+    'starting comb 266/286'
+
+
+ans =
+
+    'starting comb 267/286'
+
+
+ans =
+
+    'starting comb 268/286'
+
+
+ans =
+
+    'starting comb 269/286'
+
+
+ans =
+
+    'starting comb 270/286'
+
+
+ans =
+
+    'starting comb 271/286'
+
+
+ans =
+
+    'starting comb 272/286'
+
+
+ans =
+
+    'starting comb 273/286'
+
+
+ans =
+
+    'starting comb 274/286'
+
+
+ans =
+
+    'starting comb 275/286'
+
+
+ans =
+
+    'starting comb 276/286'
+
+
+ans =
+
+    'starting comb 277/286'
+
+
+ans =
+
+    'starting comb 278/286'
+
+
+ans =
+
+    'starting comb 279/286'
+
+
+ans =
+
+    'starting comb 280/286'
+
+
+ans =
+
+    'starting comb 281/286'
+
+
+ans =
+
+    'starting comb 282/286'
+
+
+ans =
+
+    'starting comb 283/286'
+
+
+ans =
+
+    'starting comb 284/286'
+
+
+ans =
+
+    'starting comb 285/286'
+
+
+ans =
+
+    'starting comb 286/286'
+
+
+ans =
+
+    'generating prod_polynomials'
+
+
+ans =
+
+    'Solving for weights'
+
+
+ans =
+
+    'testing polynomials'
+
+
+ans =
+
+    'Doing QR nonsense'
+
+
+ans =
+
+    'Finished generating fekete cube'
+
+
+ans =
+
+    'Writing to disk'
+
+
+ans =
+
+    'Finished writing to disk'
+
+
+ans =
+
+    'struct'
+
+[Warning: Condition number of polynomial basis is large (cond(M) = 7.515099e+10)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 124)
+  In AlfonsoSOSProgFekete/problem_chars (line 154)
+  In find_FRS_alfonso (line 164)
+  In segway_FRS_solver_okay (line 100)
+  In test_segway (line 5)
+  In run (line 91)
+  In try_exit (line 3)] 
+[Warning: Condition number of polynomial basis is large (cond(M) = 7.515099e+10)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 124)
+  In AlfonsoSOSProgFekete/problem_chars (line 154)
+  In find_FRS_alfonso (line 164)
+  In segway_FRS_solver_okay (line 100)
+  In test_segway (line 5)
+  In run (line 91)
+  In try_exit (line 3)] 
+[Warning: Condition number of polynomial basis is large (cond(M) = 7.515099e+10)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 124)
+  In AlfonsoSOSProgFekete/problem_chars (line 154)
+  In find_FRS_alfonso (line 164)
+  In segway_FRS_solver_okay (line 100)
+  In test_segway (line 5)
+  In run (line 91)
+  In try_exit (line 3)] 
+[Warning: Condition number of polynomial basis is large (cond(M) = 7.515099e+10)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 124)
+  In AlfonsoSOSProgFekete/problem_chars (line 154)
+  In find_FRS_alfonso (line 164)
+  In segway_FRS_solver_okay (line 100)
+  In test_segway (line 5)
+  In run (line 91)
+  In try_exit (line 3)] 
+[Warning: Condition number of polynomial basis is large (cond(M) = 1.937610e+13)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 124)
+  In AlfonsoSOSProgFekete/problem_chars (line 154)
+  In find_FRS_alfonso (line 164)
+  In segway_FRS_solver_okay (line 100)
+  In test_segway (line 5)
+  In run (line 91)
+  In try_exit (line 3)] 
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 2:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+* Polynomial 3:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 4:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+Total number of SOS constraints: 10
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 12
+
+ size(A) for Decision Poly 1: 6188x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 3.536323e+15
+
+ size(A) for Decision Poly 2: 6188x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 6188x3003
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 2.060640e+09
+
+ size(A) for Decision Poly 4: 6188x3003
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 2.060640e+09
+
+ Constraint A size: 6188x10010
+
+ Cond(A): 6.090724e+20
+
+* Constraint 2
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 14
+
+ size(A) for Decision Poly 1: 11628x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 10813328527945768
+
+ size(A) for Decision Poly 2: 11628x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 11628x3003
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 1.562701e+09
+
+ size(A) for Decision Poly 4: 11628x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 11628x10010
+
+ Cond(A):   Inf
+
+* Constraint 3
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 14
+
+ size(A) for Decision Poly 1: 11628x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 10813328527945768
+
+ size(A) for Decision Poly 2: 11628x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 11628x3003
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 1.562701e+09
+
+ size(A) for Decision Poly 4: 11628x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 11628x10010
+
+ Cond(A):   Inf
+
+* Constraint 4
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 3003x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 8.650506e+09
+
+ size(A) for Decision Poly 4: 3003x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 3003x10010
+
+ Cond(A): 8.650506e+09
+
+* Constraint 5
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 14
+
+ size(A) for Decision Poly 1: 11628x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 21910924057715456
+
+ size(A) for Decision Poly 2: 11628x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 11628x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 11628x3003
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 1.562701e+09
+
+ Constraint A size: 11628x10010
+
+ Cond(A): 2.961170e+36
+
+* Constraint 6
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 14
+
+ size(A) for Decision Poly 1: 11628x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 21910924057715456
+
+ size(A) for Decision Poly 2: 11628x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 11628x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 11628x3003
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 1.562701e+09
+
+ Constraint A size: 11628x10010
+
+ Cond(A): 2.961170e+36
+
+* Constraint 7
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 3003x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 3003x3003
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 8.650506e+09
+
+ Constraint A size: 3003x10010
+
+ Cond(A): 8.650506e+09
+
+* Constraint 8
+
+ Variables / bounds :
+
+ z1 [-0.63, -0.37]
+ z2 [-0.13, 0.13]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x3003
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 1.069775e+15
+
+ size(A) for Decision Poly 2: 1001x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 1001x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 1001x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 1001x10010
+
+ Cond(A): 1.070588e+15
+
+* Constraint 9
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 1001x1001
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 1.000000e+00
+
+ size(A) for Decision Poly 3: 1001x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 1001x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 1001x10010
+
+ Cond(A): 1.000000e+00
+
+* Constraint 10
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x3003
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 8.650506e+09
+
+ size(A) for Decision Poly 2: 3003x1001
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 8.934328e+01
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 3003x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 3003x10010
+
+ Cond(A): 7.641347e+09
+
+[?1l>

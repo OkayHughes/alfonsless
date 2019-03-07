@@ -1,0 +1,1779 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (glnxa64)
+                              August 28, 2018
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+
+ans =
+
+    'Generating interpolant bases for Y, Y0'
+
+
+ans =
+
+    'Defining constraint 1'
+
+
+ans =
+
+    'Defining q constraints (2-4 in the paper)'
+
+
+ans =
+
+    'Defining constraints for g_1'
+
+
+ans =
+
+    'Defining constraints for g_2'
+
+
+ans =
+
+    'Defining constraint 5'
+
+
+ans =
+
+    'Defining constraint 6'
+
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+ans =
+
+    'Creating new FeketeCube with n=4, d=3'
+
+
+ans =
+
+    'creating monomial basis'
+
+
+ans =
+
+    'monomial basis generated'
+
+
+ans =
+
+    'creating original point grid'
+
+
+ans =
+
+    'starting x_1'
+
+
+ans =
+
+    'starting x_2'
+
+
+ans =
+
+    'starting x_3'
+
+
+ans =
+
+    'starting x_4'
+
+
+ans =
+
+    'point grid generated'
+
+
+ans =
+
+    'evaluating product chebyshev polynomials'
+
+
+ans =
+
+    'generating variable 1'
+
+
+ans =
+
+    'generating degree 1'
+
+
+ans =
+
+    'generating degree 2'
+
+
+ans =
+
+    'generating degree 3'
+
+
+ans =
+
+    'generating degree 4'
+
+
+ans =
+
+    'generating degree 5'
+
+
+ans =
+
+    'generating degree 6'
+
+
+ans =
+
+    'generating degree 7'
+
+
+ans =
+
+    'generating variable 2'
+
+
+ans =
+
+    'generating degree 1'
+
+
+ans =
+
+    'generating degree 2'
+
+
+ans =
+
+    'generating degree 3'
+
+
+ans =
+
+    'generating degree 4'
+
+
+ans =
+
+    'generating degree 5'
+
+
+ans =
+
+    'generating degree 6'
+
+
+ans =
+
+    'generating degree 7'
+
+
+ans =
+
+    'generating variable 3'
+
+
+ans =
+
+    'generating degree 1'
+
+
+ans =
+
+    'generating degree 2'
+
+
+ans =
+
+    'generating degree 3'
+
+
+ans =
+
+    'generating degree 4'
+
+
+ans =
+
+    'generating degree 5'
+
+
+ans =
+
+    'generating degree 6'
+
+
+ans =
+
+    'generating degree 7'
+
+
+ans =
+
+    'generating variable 4'
+
+
+ans =
+
+    'generating degree 1'
+
+
+ans =
+
+    'generating degree 2'
+
+
+ans =
+
+    'generating degree 3'
+
+
+ans =
+
+    'generating degree 4'
+
+
+ans =
+
+    'generating degree 5'
+
+
+ans =
+
+    'generating degree 6'
+
+
+ans =
+
+    'generating degree 7'
+
+
+ans =
+
+    'starting d = 0'
+
+
+ans =
+
+    'starting comb 1/1'
+
+
+ans =
+
+    'starting d = 1'
+
+
+ans =
+
+    'starting comb 1/4'
+
+
+ans =
+
+    'starting comb 2/4'
+
+
+ans =
+
+    'starting comb 3/4'
+
+
+ans =
+
+    'starting comb 4/4'
+
+
+ans =
+
+    'starting d = 2'
+
+
+ans =
+
+    'starting comb 1/10'
+
+
+ans =
+
+    'starting comb 2/10'
+
+
+ans =
+
+    'starting comb 3/10'
+
+
+ans =
+
+    'starting comb 4/10'
+
+
+ans =
+
+    'starting comb 5/10'
+
+
+ans =
+
+    'starting comb 6/10'
+
+
+ans =
+
+    'starting comb 7/10'
+
+
+ans =
+
+    'starting comb 8/10'
+
+
+ans =
+
+    'starting comb 9/10'
+
+
+ans =
+
+    'starting comb 10/10'
+
+
+ans =
+
+    'starting d = 3'
+
+
+ans =
+
+    'starting comb 1/20'
+
+
+ans =
+
+    'starting comb 2/20'
+
+
+ans =
+
+    'starting comb 3/20'
+
+
+ans =
+
+    'starting comb 4/20'
+
+
+ans =
+
+    'starting comb 5/20'
+
+
+ans =
+
+    'starting comb 6/20'
+
+
+ans =
+
+    'starting comb 7/20'
+
+
+ans =
+
+    'starting comb 8/20'
+
+
+ans =
+
+    'starting comb 9/20'
+
+
+ans =
+
+    'starting comb 10/20'
+
+
+ans =
+
+    'starting comb 11/20'
+
+
+ans =
+
+    'starting comb 12/20'
+
+
+ans =
+
+    'starting comb 13/20'
+
+
+ans =
+
+    'starting comb 14/20'
+
+
+ans =
+
+    'starting comb 15/20'
+
+
+ans =
+
+    'starting comb 16/20'
+
+
+ans =
+
+    'starting comb 17/20'
+
+
+ans =
+
+    'starting comb 18/20'
+
+
+ans =
+
+    'starting comb 19/20'
+
+
+ans =
+
+    'starting comb 20/20'
+
+
+ans =
+
+    'starting d = 4'
+
+
+ans =
+
+    'starting comb 1/35'
+
+
+ans =
+
+    'starting comb 2/35'
+
+
+ans =
+
+    'starting comb 3/35'
+
+
+ans =
+
+    'starting comb 4/35'
+
+
+ans =
+
+    'starting comb 5/35'
+
+
+ans =
+
+    'starting comb 6/35'
+
+
+ans =
+
+    'starting comb 7/35'
+
+
+ans =
+
+    'starting comb 8/35'
+
+
+ans =
+
+    'starting comb 9/35'
+
+
+ans =
+
+    'starting comb 10/35'
+
+
+ans =
+
+    'starting comb 11/35'
+
+
+ans =
+
+    'starting comb 12/35'
+
+
+ans =
+
+    'starting comb 13/35'
+
+
+ans =
+
+    'starting comb 14/35'
+
+
+ans =
+
+    'starting comb 15/35'
+
+
+ans =
+
+    'starting comb 16/35'
+
+
+ans =
+
+    'starting comb 17/35'
+
+
+ans =
+
+    'starting comb 18/35'
+
+
+ans =
+
+    'starting comb 19/35'
+
+
+ans =
+
+    'starting comb 20/35'
+
+
+ans =
+
+    'starting comb 21/35'
+
+
+ans =
+
+    'starting comb 22/35'
+
+
+ans =
+
+    'starting comb 23/35'
+
+
+ans =
+
+    'starting comb 24/35'
+
+
+ans =
+
+    'starting comb 25/35'
+
+
+ans =
+
+    'starting comb 26/35'
+
+
+ans =
+
+    'starting comb 27/35'
+
+
+ans =
+
+    'starting comb 28/35'
+
+
+ans =
+
+    'starting comb 29/35'
+
+
+ans =
+
+    'starting comb 30/35'
+
+
+ans =
+
+    'starting comb 31/35'
+
+
+ans =
+
+    'starting comb 32/35'
+
+
+ans =
+
+    'starting comb 33/35'
+
+
+ans =
+
+    'starting comb 34/35'
+
+
+ans =
+
+    'starting comb 35/35'
+
+
+ans =
+
+    'starting d = 5'
+
+
+ans =
+
+    'starting comb 1/56'
+
+
+ans =
+
+    'starting comb 2/56'
+
+
+ans =
+
+    'starting comb 3/56'
+
+
+ans =
+
+    'starting comb 4/56'
+
+
+ans =
+
+    'starting comb 5/56'
+
+
+ans =
+
+    'starting comb 6/56'
+
+
+ans =
+
+    'starting comb 7/56'
+
+
+ans =
+
+    'starting comb 8/56'
+
+
+ans =
+
+    'starting comb 9/56'
+
+
+ans =
+
+    'starting comb 10/56'
+
+
+ans =
+
+    'starting comb 11/56'
+
+
+ans =
+
+    'starting comb 12/56'
+
+
+ans =
+
+    'starting comb 13/56'
+
+
+ans =
+
+    'starting comb 14/56'
+
+
+ans =
+
+    'starting comb 15/56'
+
+
+ans =
+
+    'starting comb 16/56'
+
+
+ans =
+
+    'starting comb 17/56'
+
+
+ans =
+
+    'starting comb 18/56'
+
+
+ans =
+
+    'starting comb 19/56'
+
+
+ans =
+
+    'starting comb 20/56'
+
+
+ans =
+
+    'starting comb 21/56'
+
+
+ans =
+
+    'starting comb 22/56'
+
+
+ans =
+
+    'starting comb 23/56'
+
+
+ans =
+
+    'starting comb 24/56'
+
+
+ans =
+
+    'starting comb 25/56'
+
+
+ans =
+
+    'starting comb 26/56'
+
+
+ans =
+
+    'starting comb 27/56'
+
+
+ans =
+
+    'starting comb 28/56'
+
+
+ans =
+
+    'starting comb 29/56'
+
+
+ans =
+
+    'starting comb 30/56'
+
+
+ans =
+
+    'starting comb 31/56'
+
+
+ans =
+
+    'starting comb 32/56'
+
+
+ans =
+
+    'starting comb 33/56'
+
+
+ans =
+
+    'starting comb 34/56'
+
+
+ans =
+
+    'starting comb 35/56'
+
+
+ans =
+
+    'starting comb 36/56'
+
+
+ans =
+
+    'starting comb 37/56'
+
+
+ans =
+
+    'starting comb 38/56'
+
+
+ans =
+
+    'starting comb 39/56'
+
+
+ans =
+
+    'starting comb 40/56'
+
+
+ans =
+
+    'starting comb 41/56'
+
+
+ans =
+
+    'starting comb 42/56'
+
+
+ans =
+
+    'starting comb 43/56'
+
+
+ans =
+
+    'starting comb 44/56'
+
+
+ans =
+
+    'starting comb 45/56'
+
+
+ans =
+
+    'starting comb 46/56'
+
+
+ans =
+
+    'starting comb 47/56'
+
+
+ans =
+
+    'starting comb 48/56'
+
+
+ans =
+
+    'starting comb 49/56'
+
+
+ans =
+
+    'starting comb 50/56'
+
+
+ans =
+
+    'starting comb 51/56'
+
+
+ans =
+
+    'starting comb 52/56'
+
+
+ans =
+
+    'starting comb 53/56'
+
+
+ans =
+
+    'starting comb 54/56'
+
+
+ans =
+
+    'starting comb 55/56'
+
+
+ans =
+
+    'starting comb 56/56'
+
+
+ans =
+
+    'starting d = 6'
+
+
+ans =
+
+    'starting comb 1/84'
+
+
+ans =
+
+    'starting comb 2/84'
+
+
+ans =
+
+    'starting comb 3/84'
+
+
+ans =
+
+    'starting comb 4/84'
+
+
+ans =
+
+    'starting comb 5/84'
+
+
+ans =
+
+    'starting comb 6/84'
+
+
+ans =
+
+    'starting comb 7/84'
+
+
+ans =
+
+    'starting comb 8/84'
+
+
+ans =
+
+    'starting comb 9/84'
+
+
+ans =
+
+    'starting comb 10/84'
+
+
+ans =
+
+    'starting comb 11/84'
+
+
+ans =
+
+    'starting comb 12/84'
+
+
+ans =
+
+    'starting comb 13/84'
+
+
+ans =
+
+    'starting comb 14/84'
+
+
+ans =
+
+    'starting comb 15/84'
+
+
+ans =
+
+    'starting comb 16/84'
+
+
+ans =
+
+    'starting comb 17/84'
+
+
+ans =
+
+    'starting comb 18/84'
+
+
+ans =
+
+    'starting comb 19/84'
+
+
+ans =
+
+    'starting comb 20/84'
+
+
+ans =
+
+    'starting comb 21/84'
+
+
+ans =
+
+    'starting comb 22/84'
+
+
+ans =
+
+    'starting comb 23/84'
+
+
+ans =
+
+    'starting comb 24/84'
+
+
+ans =
+
+    'starting comb 25/84'
+
+
+ans =
+
+    'starting comb 26/84'
+
+
+ans =
+
+    'starting comb 27/84'
+
+
+ans =
+
+    'starting comb 28/84'
+
+
+ans =
+
+    'starting comb 29/84'
+
+
+ans =
+
+    'starting comb 30/84'
+
+
+ans =
+
+    'starting comb 31/84'
+
+
+ans =
+
+    'starting comb 32/84'
+
+
+ans =
+
+    'starting comb 33/84'
+
+
+ans =
+
+    'starting comb 34/84'
+
+
+ans =
+
+    'starting comb 35/84'
+
+
+ans =
+
+    'starting comb 36/84'
+
+
+ans =
+
+    'starting comb 37/84'
+
+
+ans =
+
+    'starting comb 38/84'
+
+
+ans =
+
+    'starting comb 39/84'
+
+
+ans =
+
+    'starting comb 40/84'
+
+
+ans =
+
+    'starting comb 41/84'
+
+
+ans =
+
+    'starting comb 42/84'
+
+
+ans =
+
+    'starting comb 43/84'
+
+
+ans =
+
+    'starting comb 44/84'
+
+
+ans =
+
+    'starting comb 45/84'
+
+
+ans =
+
+    'starting comb 46/84'
+
+
+ans =
+
+    'starting comb 47/84'
+
+
+ans =
+
+    'starting comb 48/84'
+
+
+ans =
+
+    'starting comb 49/84'
+
+
+ans =
+
+    'starting comb 50/84'
+
+
+ans =
+
+    'starting comb 51/84'
+
+
+ans =
+
+    'starting comb 52/84'
+
+
+ans =
+
+    'starting comb 53/84'
+
+
+ans =
+
+    'starting comb 54/84'
+
+
+ans =
+
+    'starting comb 55/84'
+
+
+ans =
+
+    'starting comb 56/84'
+
+
+ans =
+
+    'starting comb 57/84'
+
+
+ans =
+
+    'starting comb 58/84'
+
+
+ans =
+
+    'starting comb 59/84'
+
+
+ans =
+
+    'starting comb 60/84'
+
+
+ans =
+
+    'starting comb 61/84'
+
+
+ans =
+
+    'starting comb 62/84'
+
+
+ans =
+
+    'starting comb 63/84'
+
+
+ans =
+
+    'starting comb 64/84'
+
+
+ans =
+
+    'starting comb 65/84'
+
+
+ans =
+
+    'starting comb 66/84'
+
+
+ans =
+
+    'starting comb 67/84'
+
+
+ans =
+
+    'starting comb 68/84'
+
+
+ans =
+
+    'starting comb 69/84'
+
+
+ans =
+
+    'starting comb 70/84'
+
+
+ans =
+
+    'starting comb 71/84'
+
+
+ans =
+
+    'starting comb 72/84'
+
+
+ans =
+
+    'starting comb 73/84'
+
+
+ans =
+
+    'starting comb 74/84'
+
+
+ans =
+
+    'starting comb 75/84'
+
+
+ans =
+
+    'starting comb 76/84'
+
+
+ans =
+
+    'starting comb 77/84'
+
+
+ans =
+
+    'starting comb 78/84'
+
+
+ans =
+
+    'starting comb 79/84'
+
+
+ans =
+
+    'starting comb 80/84'
+
+
+ans =
+
+    'starting comb 81/84'
+
+
+ans =
+
+    'starting comb 82/84'
+
+
+ans =
+
+    'starting comb 83/84'
+
+
+ans =
+
+    'starting comb 84/84'
+
+
+ans =
+
+    'generating prod_polynomials'
+
+
+ans =
+
+    'Solving for weights'
+
+
+ans =
+
+    'testing polynomials'
+
+
+ans =
+
+    'Doing QR nonsense'
+
+
+ans =
+
+    'Finished generating fekete cube'
+
+
+ans =
+
+    'Writing to disk'
+
+
+ans =
+
+    'Finished writing to disk'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 6
+ Dimension: 462
+
+* Polynomial 2:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 6
+ Dimension: 210
+
+* Polynomial 3:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 6
+ Dimension: 462
+
+* Polynomial 4:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 6
+ Dimension: 462
+
+Total number of SOS constraints: 10
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 8
+
+ size(A) for Decision Poly 1: 1287x462
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 23233373657760084
+
+ size(A) for Decision Poly 2: 1287x210
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 1287x462
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 3.981502e+05
+
+ size(A) for Decision Poly 4: 1287x462
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 3.981502e+05
+
+ Constraint A size: 1287x1596
+
+ Cond(A): 3679460125662324736
+
+* Constraint 2
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x462
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 56897619670568072
+
+ size(A) for Decision Poly 2: 3003x210
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x462
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 3.197679e+05
+
+ size(A) for Decision Poly 4: 3003x462
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 3003x1596
+
+ Cond(A):   Inf
+
+* Constraint 3
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x462
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 56897619670568072
+
+ size(A) for Decision Poly 2: 3003x210
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x462
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 3.197679e+05
+
+ size(A) for Decision Poly 4: 3003x462
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 3003x1596
+
+ Cond(A):   Inf
+
+* Constraint 4
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 6
+
+ size(A) for Decision Poly 1: 462x462
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 462x210
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 462x462
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 6.302465e+05
+
+ size(A) for Decision Poly 4: 462x462
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 462x1596
+
+ Cond(A): 6.302465e+05
+
+* Constraint 5
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x462
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 76438002567431520
+
+ size(A) for Decision Poly 2: 3003x210
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x462
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 3003x462
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 3.197679e+05
+
+ Constraint A size: 3003x1596
+
+ Cond(A): 4.100858e+38
+
+* Constraint 6
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x462
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 76438002567431520
+
+ size(A) for Decision Poly 2: 3003x210
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x462
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 3003x462
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 3.197679e+05
+
+ Constraint A size: 3003x1596
+
+ Cond(A): 4.100858e+38
+
+* Constraint 7
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 6
+
+ size(A) for Decision Poly 1: 462x462
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 462x210
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 462x462
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 462x462
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 6.302465e+05
+
+ Constraint A size: 462x1596
+
+ Cond(A): 6.302465e+05
+
+* Constraint 8
+
+ Variables / bounds :
+
+ z1 [-0.63, -0.37]
+ z2 [-0.13, 0.13]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 6
+
+ size(A) for Decision Poly 1: 210x462
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 1.183736e+09
+
+ size(A) for Decision Poly 2: 210x210
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 210x462
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 210x462
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 210x1596
+
+ Cond(A): 1.183736e+09
+
+* Constraint 9
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 6
+
+ size(A) for Decision Poly 1: 210x462
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 210x210
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 1.000000e+00
+
+ size(A) for Decision Poly 3: 210x462
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 210x462
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 210x1596
+
+ Cond(A): 1.000000e+00
+
+* Constraint 10
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 6
+
+ size(A) for Decision Poly 1: 462x462
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 6.302465e+05
+
+ size(A) for Decision Poly 2: 462x210
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 2.840346e+01
+
+ size(A) for Decision Poly 3: 462x462
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 462x462
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 462x1596
+
+ Cond(A): 5.457258e+05
+
+[?1l>

@@ -1,0 +1,422 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (glnxa64)
+                              August 28, 2018
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+defining const 1
+adding to program
+defining const 2
+adding to program
+defining const 3
+adding to program
+defining const 4
+adding to program
+defining const 5
+adding to program
+defining const 6
+adding to program
+defining const 7
+adding to program
+defining const 8
+adding to program
+defining const 9
+adding to program
+defining const 10
+adding to program
+Running alfonsless
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 4
+ Dimension: 126
+
+* Polynomial 2:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 4
+ Dimension: 126
+
+* Polynomial 3:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 4
+ Dimension: 126
+
+* Polynomial 4:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 4
+ Dimension: 126
+
+Total number of SOS constraints: 10
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 2.149518e+02
+ Cond(A_interp) for Decision Poly 1: 7.271995e+04
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 8.533952e+01
+ Cond(A_interp) for Decision Poly 2: 1.399980e+04
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 1.099895e+02
+ Cond(A_interp) for Decision Poly 3: 1.990608e+04
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 4.643946e+02
+ Cond(A_interp) for Decision Poly 4: 4.367450e+04
+
+ Constraint A size: 126x504
+
+ Cond(A): 2.055699e+02
+
+* Constraint 2
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 6.360583e+01
+ Cond(A_interp) for Decision Poly 1: 1.170038e+04
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 2.155130e+02
+ Cond(A_interp) for Decision Poly 2: 1.813135e+04
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 2.286474e+02
+ Cond(A_interp) for Decision Poly 3: 1.969596e+04
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 2.270032e+02
+ Cond(A_interp) for Decision Poly 4: 4.418987e+04
+
+ Constraint A size: 126x504
+
+ Cond(A): 1.813571e+02
+
+* Constraint 3
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 6.451038e+01
+ Cond(A_interp) for Decision Poly 1: 2.366721e+04
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 8.175633e+02
+ Cond(A_interp) for Decision Poly 2: 1.076023e+06
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 1.000375e+03
+ Cond(A_interp) for Decision Poly 3: 8.996824e+04
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 7.716124e+01
+ Cond(A_interp) for Decision Poly 4: 1.819946e+04
+
+ Constraint A size: 126x504
+
+ Cond(A): 2.179647e+02
+
+* Constraint 4
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 8.537052e+02
+ Cond(A_interp) for Decision Poly 1: 2.876937e+05
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 9.064647e+01
+ Cond(A_interp) for Decision Poly 2: 3.201002e+04
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 4.450644e+01
+ Cond(A_interp) for Decision Poly 3: 8.414976e+03
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 4.275672e+03
+ Cond(A_interp) for Decision Poly 4: 9.002555e+05
+
+ Constraint A size: 126x504
+
+ Cond(A): 2.761455e+02
+
+* Constraint 5
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 1.902281e+03
+ Cond(A_interp) for Decision Poly 1: 6.885395e+05
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 7.043248e+02
+ Cond(A_interp) for Decision Poly 2: 2.714618e+05
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 5.520645e+02
+ Cond(A_interp) for Decision Poly 3: 3.448316e+05
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 4.250875e+02
+ Cond(A_interp) for Decision Poly 4: 7.137626e+04
+
+ Constraint A size: 126x504
+
+ Cond(A): 1.580534e+02
+
+* Constraint 6
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 7.524479e+01
+ Cond(A_interp) for Decision Poly 1: 4.402239e+04
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 2.926618e+03
+ Cond(A_interp) for Decision Poly 2: 1.115978e+05
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 1.651860e+02
+ Cond(A_interp) for Decision Poly 3: 4.792288e+04
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 7.714341e+01
+ Cond(A_interp) for Decision Poly 4: 1.560480e+04
+
+ Constraint A size: 126x504
+
+ Cond(A): 3.827956e+02
+
+* Constraint 7
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 1.241128e+02
+ Cond(A_interp) for Decision Poly 1: 1.250887e+04
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 1.706079e+02
+ Cond(A_interp) for Decision Poly 2: 8.756516e+03
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 1.598792e+02
+ Cond(A_interp) for Decision Poly 3: 7.751322e+03
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 2.073664e+02
+ Cond(A_interp) for Decision Poly 4: 1.135982e+04
+
+ Constraint A size: 126x504
+
+ Cond(A): 9.156772e+01
+
+* Constraint 8
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 4.854958e+01
+ Cond(A_interp) for Decision Poly 1: 5.918109e+03
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 6.813494e+01
+ Cond(A_interp) for Decision Poly 2: 1.770604e+04
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 9.926250e+01
+ Cond(A_interp) for Decision Poly 3: 1.102317e+04
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 2.531104e+02
+ Cond(A_interp) for Decision Poly 4: 3.402946e+04
+
+ Constraint A size: 126x504
+
+ Cond(A): 1.235876e+02
+
+* Constraint 9
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 1.016252e+02
+ Cond(A_interp) for Decision Poly 1: 3.113926e+04
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 1.501798e+03
+ Cond(A_interp) for Decision Poly 2: 1.347524e+05
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 6.800213e+02
+ Cond(A_interp) for Decision Poly 3: 5.376584e+04
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 9.881076e+02
+ Cond(A_interp) for Decision Poly 4: 2.258013e+05
+
+ Constraint A size: 126x504
+
+ Cond(A): 2.014365e+02
+
+* Constraint 10
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 5.180120e+01
+ Cond(A_interp) for Decision Poly 1: 7.787695e+03
+
+ size(A) for Decision Poly 2: 126x126
+ Cond(A) for Decision Poly 2: 7.214882e+02
+ Cond(A_interp) for Decision Poly 2: 6.757292e+04
+
+ size(A) for Decision Poly 3: 126x126
+ Cond(A) for Decision Poly 3: 4.373533e+01
+ Cond(A_interp) for Decision Poly 3: 6.246196e+03
+
+ size(A) for Decision Poly 4: 126x126
+ Cond(A) for Decision Poly 4: 3.032697e+03
+ Cond(A_interp) for Decision Poly 4: 8.363229e+05
+
+ Constraint A size: 126x504
+
+ Cond(A): 9.703536e+01
+
