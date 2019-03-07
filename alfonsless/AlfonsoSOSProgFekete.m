@@ -63,7 +63,6 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
             end
 
             
-            assert(0)
             A = cell2mat(As);
             c = cell2mat(cs);
 
