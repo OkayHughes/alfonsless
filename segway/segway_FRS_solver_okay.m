@@ -1,4 +1,4 @@
-function out_a = segway_FRS_solver_okay(in_degree, knockout_index)
+function out_a = segway_FRS_solver_okay(in_degree, knockout_indices)
 setup()
 % options
 degree = in_degree ;
@@ -97,7 +97,7 @@ prob_a.K_bounds = K_range;
 prob_a.T = T;
 prob_a.verbose = true;
 prob_a.mask = ones(7);
-prob_a.mask(knockout_index) = 0;
+prob_a.mask = knockout_indices;
 
 out_a = find_FRS_alfonso_experimental(prob_a);
 
