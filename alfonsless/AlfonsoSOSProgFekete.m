@@ -141,7 +141,7 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
                 for i=1:size(prog.dec_polys, 1)
                     pol = prog.dec_polys(i);
                     dec_interp_basis = AffineFeketeBasis(pol.mon_basis.variables, ...
-                                                        pol.mon_basis.d, bounds{i});
+                                                        pol.mon_basis.d, bounds{i}, 0);
                     dec_interp_bases = [dec_interp_bases; dec_interp_basis];
 
                     [dec_interp_to_mon, dec_mon_to_interp] = dec_interp_basis.inter_to_mon(prog.dec_polys(i).mon_basis);
@@ -157,7 +157,7 @@ classdef AlfonsoSOSProgFekete < AlfonsoSOSProg & handle
                 for i=1:size(const_bases, 1)
                     const_interp_basis = AffineFeketeBasis(const_bases(i).variables, ...
                                                           const_bases(i).d, ...
-                                                          prog.K_wts{i});
+                                                          prog.K_wts{i}, 0);
                     const_interp_bases = [const_interp_bases; const_interp_basis];
                     [const_interp_to_mon, const_mon_to_interp] = const_interp_basis.inter_to_mon(const_bases(i));
                     const_mon_to_interps = [const_mon_to_interps; const_mon_to_interp];
