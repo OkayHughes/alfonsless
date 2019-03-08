@@ -1,4 +1,4 @@
-function out_a = segway_FRS_solver_okay(in_degree)
+function out_a = segway_FRS_solver_okay(in_degree, knockout_index)
 setup()
 % options
 degree = in_degree ;
@@ -96,8 +96,10 @@ prob_a.X0_bounds = Z0_range;
 prob_a.K_bounds = K_range;
 prob_a.T = T;
 prob_a.verbose = true;
+prob_a.mask = ones(7);
+prob_a.mask(knockout_index) = 0;
 
-out_a = find_FRS_alfonso(prob_a);
+out_a = find_FRS_alfonso_experimental(prob_a);
 
 % Y_bounds = [Z_range; K_range];
 % l2_error_per_unit = l2_dist_on_box(out.w, out_a.w, Y_bounds(:, 1), Y_bounds(:, 2), [z;k]) / prod(Y_bounds(:, 2) - Y_bounds(:, 1))
