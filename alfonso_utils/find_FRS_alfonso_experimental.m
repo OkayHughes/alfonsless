@@ -67,20 +67,22 @@ end
 time_index = 1;
 first_sp_ind = 2;
 
+
+if any(constraint_mask([1, 2, 3, 5, 7]))
 [v, vcoeff] = prog.new_free_poly(Z_vars, degree);
+end
 [w, wcoeff, mon_w] = prog.new_free_poly(Y_vars, degree);
 
+
 if error_dynamics
+  if any(constraint_mask([1, 2, 3, 4]))
   q = msspoly(zeros([num_gs,1])) ;
   for qidx = 1:length(q)
       [q(qidx), ~] = prog.new_free_poly(Z_vars, degree) ;
   end
 end
 
-Lvf = diff(v, t) + diff(v, x) * f;
-if error_dynamics
-  Lvg = diff(v, x) * g;
-end
+
 
 
 %constraint 1
@@ -89,6 +91,7 @@ if verbose
 end
 
 if constraint_mask(1)
+    Lvf = diff(v, t) + diff(v, x) * f;
     if error_dynamics
         const1 = -(Lvf + ones(size(q))'*q);
         prog.sos_on_K(const1, Z_vars, Z_bounds,  degree + deg_f);
@@ -103,6 +106,10 @@ end
 if error_dynamics
   if verbose
     fprintf('Defining q constraints (2-4 in the paper)')
+  end
+  
+  if any(constraint_mask([2, 3]))
+      Lvg = diff(v, x) * g;
   end
 
   for g_ind=1:num_gs
@@ -143,9 +150,9 @@ end
 
 %constraint 6
 
-if constraint_mask(6)
+%if constraint_mask(6)
 prog.sos_on_K(w, Y_vars, Y_bounds, degree);
-end
+%end
 
 if verbose
   'Defining constraint 7'
