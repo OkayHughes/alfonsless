@@ -1,0 +1,313 @@
+segway_FRS_solver_okay(10, knockout)
+Generating interpolant bases for Y, Y0Defining constraint 1Defining q constraints (2-4 in the paper)
+ans =
+
+    'Defining constraints for g_1'
+
+
+ans =
+
+    'Defining constraints for g_2'
+
+
+ans =
+
+    'Defining constraint 5'
+
+
+ans =
+
+    'Defining constraint 6'
+
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 2:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+* Polynomial 3:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 4:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+Total number of SOS constraints: 4
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 3003x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 8.650506e+09
+
+ size(A) for Decision Poly 4: 3003x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 3003x10010
+
+ Cond(A): 8.650506e+09
+
+* Constraint 2
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 3003x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 3003x3003
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 8.650506e+09
+
+ Constraint A size: 3003x10010
+
+ Cond(A): 8.650506e+09
+
+* Constraint 3
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 1001x1001
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 1.000000e+00
+
+ size(A) for Decision Poly 3: 1001x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 1001x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 1001x10010
+
+ Cond(A): 1.000000e+00
+
+* Constraint 4
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x3003
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 8.650506e+09
+
+ size(A) for Decision Poly 2: 3003x1001
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 8.934328e+01
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 3003x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 3003x10010
+
+ Cond(A): 7.641347e+09
+
+
+size(A): 10010x10010
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        1001
+
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        3003
+
+1: pObj=-3.776662e+03 pIn=4.756973e-02 dIn=2.482138e-03 gap=3.776662e+03 tau=1 kap=1 mu=1.000000e+00
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 17:36:44
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.725543e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 173)
+  In segway_FRS_solver_okay (line 102)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.512770e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 173)
+  In segway_FRS_solver_okay (line 102)
+] 
+2: pObj=-2.110379e+03 pIn=4.305257e-02 dIn=2.246437e-03 gap=1.726787e+03 tau=1.619631e+00 kap=5.454604e-01 mu=9.050315e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 17:38:52
+
+{Operation terminated by user during alfonso>pred (line 261)
+
+
+In alfonso (line 173)
+            pred(soln, probData, gH, gH_Params, myLinSolve, algParams, opts);
+
+In AlfonsoSOSProg/solve_alfonso (line 110)
+            res = alfonso(prob_data, x0, @alfonso_grad_and_hess, g_h_params,
+            opts);
+
+In AlfonsoSOSProgFekete/minimize (line 85)
+                results = prog.solve_alfonso(g_h_params, opts);
+
+In find_FRS_alfonso_experimental (line 173)
+res = prog.minimize(obj, struct());
+
+In segway_FRS_solver_okay (line 102)
+out_a = find_FRS_alfonso_experimental(prob_a);
+} 
+exit

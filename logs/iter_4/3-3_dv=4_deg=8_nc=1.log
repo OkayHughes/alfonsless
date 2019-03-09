@@ -1,0 +1,219 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (glnxa64)
+                              August 28, 2018
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+defining const 1
+adding to program
+Running alfonsless
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 8
+ Dimension: 1287
+
+* Polynomial 2:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 8
+ Dimension: 1287
+
+* Polynomial 3:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 8
+ Dimension: 1287
+
+* Polynomial 4:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 8
+ Dimension: 1287
+
+Total number of SOS constraints: 1
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 8
+
+ size(A) for Decision Poly 1: 1287x1287
+ Cond(A) for Decision Poly 1: 1.913359e+03
+ Cond(A_interp) for Decision Poly 1: 2.392891e+08
+
+ size(A) for Decision Poly 2: 1287x1287
+ Cond(A) for Decision Poly 2: 2.927053e+03
+ Cond(A_interp) for Decision Poly 2: 2.231573e+09
+
+ size(A) for Decision Poly 3: 1287x1287
+ Cond(A) for Decision Poly 3: 1.000375e+03
+ Cond(A_interp) for Decision Poly 3: 5.253688e+08
+
+ size(A) for Decision Poly 4: 1287x1287
+ Cond(A) for Decision Poly 4: 4.320974e+03
+ Cond(A_interp) for Decision Poly 4: 9.038058e+08
+
+ Constraint A size: 1287x5148
+
+ Cond(A): 1.441519e+05
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 8
+ Dimension: 1287
+
+* Polynomial 2:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 8
+ Dimension: 1287
+
+* Polynomial 3:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 8
+ Dimension: 1287
+
+* Polynomial 4:
+
+ Variables:
+
+[   x1  ]
+[   x2  ]
+[   x3  ]
+[   x4  ]
+[   x5  ]
+
+ Degree: 8
+ Dimension: 1287
+
+Total number of SOS constraints: 1
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ x1 [-1.00, 1.00]
+ x2 [-1.00, 1.00]
+ x3 [-1.00, 1.00]
+ x4 [-1.00, 1.00]
+ x5 [-1.00, 1.00]
+
+ SOS Cone Degree: 8
+
+ size(A) for Decision Poly 1: 1287x1287
+ Cond(A) for Decision Poly 1: 1.913359e+03
+ Cond(A_interp) for Decision Poly 1: 2.392891e+08
+
+ size(A) for Decision Poly 2: 1287x1287
+ Cond(A) for Decision Poly 2: 2.927053e+03
+ Cond(A_interp) for Decision Poly 2: 2.231573e+09
+
+ size(A) for Decision Poly 3: 1287x1287
+ Cond(A) for Decision Poly 3: 1.000375e+03
+ Cond(A_interp) for Decision Poly 3: 5.253688e+08
+
+ size(A) for Decision Poly 4: 1287x1287
+ Cond(A) for Decision Poly 4: 4.320974e+03
+ Cond(A_interp) for Decision Poly 4: 9.038058e+08
+
+ Constraint A size: 1287x5148
+
+ Cond(A): 1.441519e+05
+

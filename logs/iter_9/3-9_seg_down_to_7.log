@@ -1,0 +1,211 @@
+knockout(7) = 1
+
+knockout =
+
+     0
+     0
+     0
+     0
+     0
+     0
+     1
+
+segway_FRS_solver_okay(10, knockout)
+Generating interpolant bases for Y, Y0Defining constraint 1Defining q constraints (2-4 in the paper)
+ans =
+
+    'Defining constraints for g_1'
+
+
+ans =
+
+    'Defining constraints for g_2'
+
+
+ans =
+
+    'Defining constraint 5'
+
+
+ans =
+
+    'Defining constraint 6'
+
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 2:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+* Polynomial 3:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 4:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+Total number of SOS constraints: 1
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x3003
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 8.650506e+09
+
+ size(A) for Decision Poly 2: 3003x1001
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 8.934328e+01
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 3003x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 3003x10010
+
+ Cond(A): 7.641347e+09
+
+
+size(A): 3003x10010
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        1001
+
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        3003
+
+1: pObj=-2.569949e+03 pIn=3.244195e-02 dIn=2.725866e-03 gap=2.569949e+03 tau=1 kap=1 mu=1
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 17:24:18
+
+[Warning: Matrix is singular to working precision.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 173)
+  In segway_FRS_solver_okay (line 102)
+] 
+Predictor could not improve the solution.
+Done in 1 iterations.
+Status = UNKNOWN
+
+ans =
+
+    'Done'
+
+
+ans = 
+
+  struct with fields:
+
+     v: [1x1 msspoly]
+     w: [1x1 msspoly]
+    qs: [2x1 msspoly]
+     A: [10010x3003 double]
+     b: [10010x1 double]
+     c: [3003x1 double]
+
+diary off

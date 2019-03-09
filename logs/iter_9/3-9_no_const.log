@@ -1,0 +1,146 @@
+
+segway_FRS_solver_okay   segway_FRS_solver_shrey  
+segway_FRS_solver_okay(10, knockout)
+Generating interpolant bases for Y, Y0Defining constraint 1Defining q constraints (2-4 in the paper)
+ans =
+
+    'Defining constraints for g_1'
+
+
+ans =
+
+    'Defining constraints for g_2'
+
+
+ans =
+
+    'Defining constraint 5'
+
+
+ans =
+
+    'Defining constraint 6'
+
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 2:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+* Polynomial 3:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 4:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+Total number of SOS constraints: 0
+--------------------------------
+
+
+size(A): 0x0
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        1001
+
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        3003
+
+{Error using ./
+Matrix dimensions must agree.
+
+Error in AlfonsoSOSProg/solve_alfonso (line 99)
+            rP = max((1+abs(prob_data.b))./(1+abs(prob_data.A*x0)));
+
+Error in AlfonsoSOSProgFekete/minimize (line 85)
+                results = prog.solve_alfonso(g_h_params, opts);
+
+Error in find_FRS_alfonso_experimental (line 173)
+res = prog.minimize(obj, struct());
+
+Error in segway_FRS_solver_okay (line 102)
+out_a = find_FRS_alfonso_experimental(prob_a);
+} 
+exit
