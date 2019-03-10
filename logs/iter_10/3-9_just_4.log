@@ -1,0 +1,1179 @@
+Generating interpolant bases for Y, Y0Defining constraint 1Defining q constraints (2-4 in the paper)
+ans =
+
+    'Defining constraints for g_1'
+
+
+ans =
+
+    'Defining constraints for g_2'
+
+
+ans =
+
+    'Defining constraint 5'
+
+
+ans =
+
+    'Defining constraint 6'
+
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 3
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+* Polynomial 2:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 3:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+Total number of SOS constraints: 3
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x1001
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 3003x3003
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 8.650506e+09
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ Constraint A size: 3003x7007
+
+ Cond(A): 8.650506e+09
+
+* Constraint 2
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 3003x1001
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 3003x3003
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 3003x3003
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 8.650506e+09
+
+ Constraint A size: 3003x7007
+
+ Cond(A): 8.650506e+09
+
+* Constraint 3
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x1001
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 1.000000e+00
+
+ size(A) for Decision Poly 2: 1001x3003
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 1001x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ Constraint A size: 1001x7007
+
+ Cond(A): 1.000000e+00
+
+
+size(A): 7007x7007
+
+ans =
+
+           1        1001
+
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        3003
+
+1: pObj=0 pIn=6.423188e-02 dIn=9.255025e-04 gap=0 tau=1 kap=1 mu=1
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:46:58
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.239087e-18.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.271926e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+2: pObj=0 pIn=5.916934e-02 dIn=8.525575e-04 gap=1.725808e-01 tau=1.491313e+00 kap=6.101294e-01 mu=9.211764e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:48:03
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.166080e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.260468e-18.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+3: pObj=0 pIn=5.450582e-02 dIn=7.853618e-04 gap=1.723177e-01 tau=2.416447e+00 kap=3.454914e-01 mu=8.485566e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:49:08
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.244157e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.979300e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+4: pObj=0 pIn=5.149864e-02 dIn=7.420321e-04 gap=1.435455e-01 tau=3.365883e+00 kap=2.376249e-01 mu=8.017346e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:50:20
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  9.244348e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.838049e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+5: pObj=0 pIn=4.743969e-02 dIn=6.835476e-04 gap=1.055024e-01 tau=5.016098e+00 kap=1.469409e-01 mu=7.385402e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:51:33
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.131072e-18.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.982901e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+6: pObj=0 pIn=4.370065e-02 dIn=6.296727e-04 gap=7.803080e-02 tau=6.869092e+00 kap=9.899248e-02 mu=6.803290e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:52:44
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.454515e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.089961e-18.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+7: pObj=0 pIn=3.878017e-02 dIn=5.587746e-04 gap=5.276185e-02 tau=9.725425e+00 kap=6.203941e-02 mu=6.037241e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:54:00
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.131596e-18.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.532592e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+8: pObj=0 pIn=3.441371e-02 dIn=4.958593e-04 gap=3.750053e-02 tau=1.266593e+01 kap=4.228788e-02 mu=5.357458e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:55:02
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.587628e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.433143e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+9: pObj=0 pIn=3.053889e-02 dIn=4.400279e-04 gap=2.768773e-02 tau=1.562817e+01 kap=3.041704e-02 mu=4.754221e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:56:08
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.044805e-18.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.057949e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+10: pObj=0 pIn=2.562670e-02 dIn=3.692493e-04 gap=1.864823e-02 tau=1.994322e+01 kap=1.999868e-02 mu=3.989475e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:57:17
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.259817e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.540480e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+11: pObj=0 pIn=2.150464e-02 dIn=3.098554e-04 gap=1.311289e-02 tau=2.415415e+01 kap=1.385794e-02 mu=3.347744e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:58:24
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.010896e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.295885e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+12: pObj=0 pIn=1.804561e-02 dIn=2.600151e-04 gap=9.519287e-03 tau=2.819566e+01 kap=9.962640e-03 mu=2.809245e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:59:30
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  9.415415e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.953354e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+13: pObj=0 pIn=1.514297e-02 dIn=2.181916e-04 gap=7.082342e-03 tau=3.201982e+01 kap=7.361916e-03 mu=2.357370e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:00:35
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.462280e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.629298e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+14: pObj=0 pIn=1.270722e-02 dIn=1.830954e-04 gap=5.373016e-03 tau=3.559319e+01 kap=5.557624e-03 mu=1.978182e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:01:38
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.250176e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.202953e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+15: pObj=0 pIn=1.066326e-02 dIn=1.536445e-04 gap=4.141147e-03 tau=3.889610e+01 kap=4.267691e-03 mu=1.659987e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:02:51
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.807522e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.202690e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+16: pObj=0 pIn=8.948073e-03 dIn=1.289307e-04 gap=3.233405e-03 tau=4.192061e+01 kap=3.322866e-03 mu=1.392977e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:04:04
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.477129e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.272796e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+17: pObj=0 pIn=7.508773e-03 dIn=1.081922e-04 gap=2.551997e-03 tau=4.466795e+01 kap=2.616888e-03 mu=1.168916e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:05:16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.583391e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.078858e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+18: pObj=0 pIn=5.783361e-03 dIn=8.333113e-05 gap=1.823609e-03 tau=4.826287e+01 kap=1.865416e-03 mu=9.003135e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:06:37
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.144944e-19.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.687049e-20.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+19: pObj=0 pIn=4.454425e-03 dIn=6.418279e-05 gap=1.323556e-03 tau=5.130694e+01 kap=1.351531e-03 mu=6.934333e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:07:39
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.078016e-20.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.279945e-20.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+20: pObj=0 pIn=3.430860e-03 dIn=4.943448e-05 gap=9.724318e-04 tau=5.385568e+01 kap=9.917061e-04 mu=5.340916e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:08:36
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.693348e-20.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.016628e-20.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+21: pObj=0 pIn=2.642496e-03 dIn=3.807512e-05 gap=7.213907e-04 tau=5.596942e+01 kap=7.349801e-04 mu=4.113646e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:09:51
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.192344e-20.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.179782e-20.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+22: pObj=0 pIn=2.035287e-03 dIn=2.932599e-05 gap=5.392823e-04 tau=5.770767e+01 kap=5.490406e-04 mu=3.168387e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:11:03
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.010285e-21.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.800027e-21.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+23: pObj=0 pIn=1.367172e-03 dIn=1.969927e-05 gap=3.500963e-04 tau=5.975917e+01 kap=3.561478e-04 mu=2.128313e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:12:44
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.835126e-21.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.372097e-21.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+24: pObj=0 pIn=9.183761e-04 dIn=1.323267e-05 gap=2.296032e-04 tau=6.124108e+01 kap=2.334477e-04 mu=1.429660e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:14:43
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.632385e-21.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.390269e-21.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+25: pObj=0 pIn=6.169046e-04 dIn=8.888837e-06 gap=1.516746e-04 tau=6.229614e+01 kap=1.541590e-04 mu=9.603512e-03
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:15:50
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.877173e-22.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.761502e-22.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+26: pObj=0 pIn=4.143959e-04 dIn=5.970935e-06 gap=1.007109e-04 tau=6.303770e+01 kap=1.023357e-04 mu=6.451005e-03
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:17:24
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.627874e-22.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.225828e-22.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+27: pObj=0 pIn=2.200644e-04 dIn=3.170858e-06 gap=5.287335e-05 tau=6.377884e+01 kap=5.371370e-05 mu=3.425798e-03
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:19:28
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.582276e-23.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.794949e-23.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+28: pObj=0 pIn=1.168649e-04 dIn=1.683880e-06 gap=2.790375e-05 tau=6.418597e+01 kap=2.834366e-05 mu=1.819265e-03
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:21:10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.161325e-23.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.628119e-24.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+29: pObj=0 pIn=3.857358e-05 dIn=5.557978e-07 gap=9.165952e-06 tau=6.450189e+01 kap=9.309560e-06 mu=6.004842e-04
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:22:08
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.665446e-24.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.482158e-25.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+30: pObj=0 pIn=1.273197e-05 dIn=1.834520e-07 gap=3.020549e-06 tau=6.460760e+01 kap=3.067776e-06 mu=1.982016e-04
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:23:06
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.252689e-25.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+31: pObj=0 pIn=4.202437e-06 dIn=6.055195e-08 gap=9.964795e-07 tau=6.464262e+01 kap=1.010917e-06 mu=6.542035e-05
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 19:23:45
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.879135e-26.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.263030e-29.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>corr (line 373)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+Done in 31 iterations.
+Status = Feasible and approximate optimal solution found.
+
+ans =
+
+    'Done'
+

@@ -1,0 +1,392 @@
+Generating interpolant bases for Y, Y0Defining constraint 1Defining q constraints (2-4 in the paper)
+ans =
+
+    'Defining constraints for g_1'
+
+
+ans =
+
+    'Defining constraints for g_2'
+
+
+ans =
+
+    'Defining constraint 5'
+
+
+ans =
+
+    'Defining constraint 6'
+
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 1
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+Total number of SOS constraints: 1
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x1001
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 1.000000e+00
+
+ Constraint A size: 1001x1001
+
+ Cond(A): 1.000000e+00
+
+
+size(A): 1001x1001
+
+ans =
+
+           1        1001
+
+1: pObj=0 pIn=8.727505e-01 dIn=2.374485e-01 gap=0 tau=1 kap=1 mu=1
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:33:55
+
+2: pObj=0 pIn=7.949771e-01 dIn=2.162887e-01 gap=1.833469e-01 tau=1.644374e+00 kap=5.417083e-01 mu=9.108090e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:33:58
+
+3: pObj=0 pIn=7.453871e-01 dIn=2.027968e-01 gap=1.720370e-01 tau=2.428454e+00 kap=3.494740e-01 mu=8.539415e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:00
+
+4: pObj=0 pIn=6.988906e-01 dIn=1.901465e-01 gap=1.418944e-01 tau=3.436135e+00 kap=2.325995e-01 mu=8.006537e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:02
+
+5: pObj=0 pIn=6.366104e-01 dIn=1.732020e-01 gap=1.025210e-01 tau=5.147085e+00 kap=1.414674e-01 mu=7.292813e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:03
+
+6: pObj=0 pIn=5.798801e-01 dIn=1.577675e-01 gap=7.512506e-02 tau=7.014454e+00 kap=9.466342e-02 mu=6.642819e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:05
+
+7: pObj=0 pIn=5.060589e-01 dIn=1.376830e-01 gap=5.022233e-02 tau=9.853745e+00 kap=5.879757e-02 mu=5.796964e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:08
+
+8: pObj=0 pIn=4.416355e-01 dIn=1.201554e-01 gap=3.530086e-02 tau=1.274413e+01 kap=3.968631e-02 mu=5.058859e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:10
+
+9: pObj=0 pIn=3.854134e-01 dIn=1.048591e-01 gap=2.576362e-02 tau=1.563127e+01 kap=2.823979e-02 mu=4.414766e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:11
+
+10: pObj=0 pIn=3.363486e-01 dIn=9.151008e-02 gap=1.934466e-02 tau=1.848007e+01 kap=2.084645e-02 mu=3.852695e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:13
+
+11: pObj=0 pIn=2.935300e-01 dIn=7.986046e-02 gap=1.485055e-02 tau=2.126219e+01 kap=1.581243e-02 mu=3.362197e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:15
+
+12: pObj=0 pIn=2.401477e-01 dIn=6.533678e-02 gap=1.038064e-02 tau=2.519119e+01 kap=1.091816e-02 mu=2.750653e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:17
+
+13: pObj=0 pIn=1.964737e-01 dIn=5.345442e-02 gap=7.472274e-03 tau=2.886683e+01 kap=7.795352e-03 mu=2.250363e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:18
+
+14: pObj=0 pIn=1.607423e-01 dIn=4.373303e-02 gap=5.503337e-03 tau=3.225105e+01 kap=5.708478e-03 mu=1.841080e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:20
+
+15: pObj=0 pIn=1.315092e-01 dIn=3.577960e-02 gap=4.127742e-03 tau=3.532571e+01 kap=4.263830e-03 mu=1.506243e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:21
+
+16: pObj=0 pIn=1.075925e-01 dIn=2.927261e-02 gap=3.141864e-03 tau=3.808798e+01 kap=3.235405e-03 mu=1.232306e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:23
+
+17: pObj=0 pIn=8.802541e-02 dIn=2.394900e-02 gap=2.420332e-03 tau=4.054615e+01 kap=2.486523e-03 mu=1.008192e-01
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:24
+
+18: pObj=0 pIn=7.201683e-02 dIn=1.959356e-02 gap=1.883005e-03 tau=4.271597e+01 kap=1.930978e-03 mu=8.248371e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:26
+
+19: pObj=0 pIn=5.330653e-02 dIn=1.450306e-02 gap=1.311939e-03 tau=4.547296e+01 kap=1.342635e-03 mu=6.105373e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:28
+
+20: pObj=0 pIn=3.945725e-02 dIn=1.073510e-02 gap=9.269767e-04 tau=4.770551e+01 kap=9.473022e-04 mu=4.519157e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:29
+
+21: pObj=0 pIn=2.920607e-02 dIn=7.946071e-03 gap=6.620588e-04 tau=4.949232e+01 kap=6.758734e-04 mu=3.345055e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:31
+
+22: pObj=0 pIn=2.161820e-02 dIn=5.881645e-03 gap=4.767895e-04 tau=5.090769e+01 kap=4.863691e-04 mu=2.475993e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:32
+
+23: pObj=0 pIn=1.600169e-02 dIn=4.353567e-03 gap=3.455748e-04 tau=5.201840e+01 kap=3.523211e-04 mu=1.832718e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:34
+
+24: pObj=0 pIn=1.006267e-02 dIn=2.737743e-03 gap=2.123521e-04 tau=5.326563e+01 kap=2.163694e-04 mu=1.152505e-02
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:36
+
+25: pObj=0 pIn=6.327919e-03 dIn=1.721631e-03 gap=1.315338e-04 tau=5.409744e+01 kap=1.339719e-04 mu=7.247535e-03
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:37
+
+26: pObj=0 pIn=3.979316e-03 dIn=1.082649e-03 gap=8.190803e-05 tau=5.464346e+01 kap=8.340644e-05 mu=4.557617e-03
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:38
+
+27: pObj=0 pIn=1.869429e-03 dIn=5.086139e-04 gap=3.813291e-05 tau=5.515170e+01 kap=3.882214e-05 mu=2.141107e-03
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:41
+
+28: pObj=0 pIn=8.782326e-04 dIn=2.389400e-04 gap=1.783683e-05 tau=5.539699e+01 kap=1.815736e-05 mu=1.005863e-03
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:42
+
+29: pObj=0 pIn=2.130173e-04 dIn=5.795542e-05 gap=4.313642e-06 tau=5.556416e+01 kap=4.390859e-06 mu=2.439744e-04
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:44
+
+30: pObj=0 pIn=5.166783e-05 dIn=1.405722e-05 gap=1.045532e-06 tau=5.560503e+01 kap=1.064230e-06 mu=5.917653e-05
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:45
+
+31: pObj=0 pIn=1.253215e-05 dIn=3.409610e-06 gap=2.535545e-07 tau=5.561496e+01 kap=2.579413e-07 mu=1.435340e-05
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:46
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.858388e-17.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+32: pObj=0 pIn=3.039715e-06 dIn=8.270084e-07 gap=6.149775e-08 tau=5.561737e+01 kap=6.255305e-08 mu=3.481449e-06
+
+ans = 
+
+  datetime
+
+   09-Mar-2019 18:34:46
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.036081e-18.] 
+[> In alfonso>linSolve3 (line 506)
+  In alfonso>linSolveMain (line 427)
+  In alfonso>pred (line 265)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 110)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+  In call_exp (line 7)
+] 
+Done in 32 iterations.
+Status = Feasible and approximate optimal solution found.
+{Index exceeds the number of array elements (1).
+
+Error in msspoly/indexinto (line 5)
+    Q=subsref(reshape(pp,p.dim),struct('type','()','subs',{varargin}));
+
+Error in msspoly/subsref (line 5)
+    q = indexinto(p,s.subs{:});
+
+Error in find_FRS_alfonso_experimental (line 184)
+out.w = res.polys(2);
+
+Error in segway_FRS_solver_okay (line 102)
+out_a = find_FRS_alfonso_experimental(prob_a);
+
+Error in call_exp (line 7)
+    out = segway_FRS_solver_okay(degree, knockout);
+} 
+exit
