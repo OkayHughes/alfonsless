@@ -69,7 +69,7 @@ methods
             return
         end
 
-        intParams = FeketeBasis.generate_fekete_cube(n, d);
+        intParams = FeketeBasis.generate_fekete_cube(n, d, verbose);
         if verbose
             fprintf('Writing to disk')
         end
