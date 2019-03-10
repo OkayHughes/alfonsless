@@ -1,8 +1,9 @@
 %% problem description
 %
 % TODO: Write problem 
-function out = FRS_minimal_case(degree)
+function out = FRS_minimal_case(degree, name)
 
+diary(name);
 setup()
 verbose = 1;
 % options
@@ -105,5 +106,6 @@ if verbose
   'Done'
 end
 
+diary off;
 end
 
