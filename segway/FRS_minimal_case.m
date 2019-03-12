@@ -76,7 +76,7 @@ end
 
 prog.sos_on_K(w, Y_vars, Y_bounds, degree);
 
-%constraint 7
+% %constraint 7
 const7 = w + v - 1;
 prog.sos_on_K(const7, Z_vars, Z_bounds, degree);
 
