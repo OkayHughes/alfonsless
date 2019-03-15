@@ -66,7 +66,7 @@ prog.with_indeterminate([t;x;k]);
 
 
 [v, vcoeff] = prog.new_free_poly(Z_vars, degree);
-[w, wcoeff, mon_w] = prog.new_free_poly(Z_vars, degree);
+[w, wcoeff, mon_w] = prog.new_free_poly(Y_vars, degree);
 
 
 
@@ -74,19 +74,19 @@ if verbose
   'Defining constraint 7'
 end
 
-prog.sos_on_K(subs(w, t, 0), Y_vars, Y_bounds, degree);
+prog.sos_on_K(w, Y_vars, Y_bounds, degree);
 
 %constraint 7
-const7 = subs(w, t, 0) + v - 1;
-prog.sos_on_K(const7, Z_vars, Z_bounds, degree);
+const7 = w + subs(v, t, 0) - 1;
+prog.sos_on_K(const7, Y_vars, Y_bounds, degree);
 
 if verbose
   'Defining cost function'
 end
 
 int_Y0 = boxMoments(Y_vars,Y_bounds(:,1),Y_bounds(:,2)) ;
-obj = int_Y0(subs(mon_w, t, 0))'*(wcoeff)
-pause
+obj = int_Y0(subs(mon_w, t, 0))'*(wcoeff);
+
 if verbose
   'Running alfonso'
 end
