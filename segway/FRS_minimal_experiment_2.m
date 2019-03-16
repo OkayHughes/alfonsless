@@ -70,7 +70,7 @@ prog.with_indeterminate([t;x;k]);
 
 
 const5 = -subs(v, t, 0);
-prog.sos_on_K(v, Y_vars, Y0_bounds, degree);
+prog.sos_on_K(const5, Y_vars, Y0_bounds, degree);
 if verbose
   'Defining constraint 7'
 end
@@ -82,7 +82,7 @@ if verbose
 end
 
 int_Y0 = boxMoments(Y_vars,Y_bounds(:,1),Y_bounds(:,2)) ;
-obj = int_Y0(subs(mon_w, t, 0))'*(wcoeff);
+obj = int_Y0(mon_w)'*(wcoeff);
 
 if verbose
   'Running alfonso'
