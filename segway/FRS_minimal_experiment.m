@@ -65,7 +65,7 @@ prog = AlfonsoSOSProgFekete;
 prog.with_indeterminate([t;x;k]);
 
 
-[v, vcoeff] = prog.new_free_poly(Z_vars, degree);
+[v, vcoeff] = prog.new_free_poly(Y_vars, degree);
 [w, wcoeff, mon_w] = prog.new_free_poly(Y_vars, degree);
 
 
@@ -77,7 +77,7 @@ end
 prog.sos_on_K(w, Y_vars, Y_bounds, degree);
 
 %constraint 7
-const7 = w + subs(v, t, 0) - 1;
+const7 = w + v - 1;
 prog.sos_on_K(const7, Y_vars, Y_bounds, degree);
 
 if verbose
