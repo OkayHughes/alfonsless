@@ -1,0 +1,800 @@
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 2
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+* Polynomial 2:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+Total number of SOS constraints: 2
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x1001
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 1001x1001
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 1.000000e+00
+
+ Constraint A size: 1001x2002
+
+ Cond(A): 1.000000e+00
+
+* Constraint 2
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x1001
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 1.000000e+00
+
+ size(A) for Decision Poly 2: 1001x1001
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 1.000000e+00
+
+ Constraint A size: 1001x2002
+
+ Cond(A): 1.000000e+00
+
+
+size(A): 2002x2002
+
+ans =
+
+           1        1001
+
+
+ans =
+
+           1        1001
+
+1: pObj=-8.619443e+02 pIn=8.028054e-01 dIn=3.902096e-01 gap=8.619443e+02 tau=1 kap=1 mu=1.000000e+00
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:31:12
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.344769e+05
+cond(Hmat) = 9.617058e+04
+cond(hmat product) = 1.196383e+18
+cond(LHS) = 1.811548e+08
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.338420e+05
+cond(Hmat) = 9.612337e+04
+cond(hmat product) = 2.851415e+18
+cond(LHS) = 2.619564e+08
+2: pObj=-5.615298e+02 pIn=7.521632e-01 dIn=3.655946e-01 gap=4.672394e+02 tau=1.438163e+00 kap=6.473123e-01 mu=9.369062e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:32:26
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.336928e+05
+cond(Hmat) = 9.612012e+04
+cond(hmat product) = 1.615456e+21
+cond(LHS) = 2.889273e+08
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.329393e+05
+cond(Hmat) = 9.618708e+04
+cond(hmat product) = 1.808303e+18
+cond(LHS) = 3.896143e+08
+3: pObj=-3.583921e+02 pIn=7.047156e-01 dIn=3.425323e-01 gap=2.936292e+02 tau=2.111176e+00 kap=4.137553e-01 mu=8.777885e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:33:26
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.328114e+05
+cond(Hmat) = 9.622126e+04
+cond(hmat product) = 1.067812e+18
+cond(LHS) = 4.166710e+08
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.322450e+05
+cond(Hmat) = 9.661717e+04
+cond(hmat product) = 1.282963e+18
+cond(LHS) = 5.112640e+08
+4: pObj=-2.371389e+02 pIn=6.602611e-01 dIn=3.209249e-01 gap=2.002579e+02 tau=2.989384e+00 kap=2.746308e-01 mu=8.224066e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:35:08
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.322066e+05
+cond(Hmat) = 9.668875e+04
+cond(hmat product) = 7.119103e+18
+cond(LHS) = 5.290940e+08
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.324750e+05
+cond(Hmat) = 9.812297e+04
+cond(hmat product) = 7.170063e+17
+cond(LHS) = 6.367888e+08
+5: pObj=-1.439537e+02 pIn=6.007607e-01 dIn=2.920043e-01 gap=1.273005e+02 tau=4.480717e+00 kap=1.667366e-01 mu=7.482817e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:36:57
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.325862e+05
+cond(Hmat) = 9.831860e+04
+cond(hmat product) = 3.030303e+18
+cond(LHS) = 6.575779e+08
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.349970e+05
+cond(Hmat) = 1.012673e+05
+cond(hmat product) = 2.546058e+18
+cond(LHS) = 7.575755e+08
+6: pObj=-9.608536e+01 pIn=5.466223e-01 dIn=2.656899e-01 gap=8.780570e+01 tau=6.108000e+00 kap=1.114206e-01 mu=6.808432e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:38:17
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.352144e+05
+cond(Hmat) = 1.014928e+05
+cond(hmat product) = 1.254625e+18
+cond(LHS) = 7.718956e+08
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.438999e+05
+cond(Hmat) = 1.094206e+05
+cond(hmat product) = 1.641885e+18
+cond(LHS) = 9.252078e+08
+7: pObj=-5.957551e+01 pIn=4.762513e-01 dIn=2.314855e-01 gap=5.608908e+01 tau=8.582964e+00 kap=6.907135e-02 mu=5.931823e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:40:17
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.446366e+05
+cond(Hmat) = 1.100497e+05
+cond(hmat product) = 5.708973e+18
+cond(LHS) = 9.504999e+08
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.618416e+05
+cond(Hmat) = 1.241670e+05
+cond(hmat product) = 9.719123e+17
+cond(LHS) = 1.148567e+09
+8: pObj=-4.012221e+01 pIn=4.149398e-01 dIn=2.016846e-01 gap=3.845115e+01 tau=1.110373e+01 kap=4.653203e-02 mu=5.168103e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:42:15
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.628640e+05
+cond(Hmat) = 1.249855e+05
+cond(hmat product) = 5.092013e+18
+cond(LHS) = 1.173809e+09
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.911349e+05
+cond(Hmat) = 1.472163e+05
+cond(hmat product) = 1.128794e+18
+cond(LHS) = 1.445872e+09
+9: pObj=-2.849417e+01 pIn=3.615213e-01 dIn=1.757202e-01 gap=2.761756e+01 tau=1.362219e+01 kap=3.305001e-02 mu=4.502728e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:44:20
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.924476e+05
+cond(Hmat) = 1.482351e+05
+cond(hmat product) = 1.763785e+18
+cond(LHS) = 1.473203e+09
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.348635e+05
+cond(Hmat) = 1.807719e+05
+cond(hmat product) = 8.444645e+17
+cond(LHS) = 1.856862e+09
+10: pObj=-2.099577e+01 pIn=3.149799e-01 dIn=1.530983e-01 gap=2.050446e+01 tau=1.610720e+01 kap=2.435392e-02 mu=3.923028e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:46:35
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.364739e+05
+cond(Hmat) = 1.819955e+05
+cond(hmat product) = 6.689421e+19
+cond(LHS) = 1.887677e+09
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.972695e+05
+cond(Hmat) = 2.277625e+05
+cond(hmat product) = 3.427835e+18
+cond(LHS) = 2.432578e+09
+11: pObj=-1.589806e+01 pIn=2.744301e-01 dIn=1.333888e-01 gap=1.560826e+01 tau=1.853346e+01 kap=1.844133e-02 mu=3.417967e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:48:27
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.991893e+05
+cond(Hmat) = 2.291964e+05
+cond(hmat product) = 7.627249e+18
+cond(LHS) = 2.467923e+09
+cond(At) = 2.618034e+00
+cond(HiAt) = 3.843057e+05
+cond(Hmat) = 2.922874e+05
+cond(hmat product) = 2.272577e+18
+cond(LHS) = 3.239342e+09
+12: pObj=-1.229491e+01 pIn=2.391005e-01 dIn=1.162166e-01 gap=1.211677e+01 tau=2.087969e+01 kap=1.426197e-02 mu=2.977933e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:49:45
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 3.865543e+05
+cond(Hmat) = 2.939435e+05
+cond(hmat product) = 1.830104e+18
+cond(LHS) = 3.280145e+09
+cond(At) = 2.618034e+00
+cond(HiAt) = 5.722146e+05
+cond(Hmat) = 4.295181e+05
+cond(hmat product) = 1.649748e+18
+cond(LHS) = 4.980043e+09
+13: pObj=-8.672402e+00 pIn=1.951273e-01 dIn=9.484308e-02 gap=8.580003e+00 tau=2.415725e+01 kap=1.005939e-02 mu=2.430229e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:52:24
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 5.783671e+05
+cond(Hmat) = 4.339819e+05
+cond(hmat product) = 3.249112e+18
+cond(LHS) = 5.091401e+09
+cond(At) = 2.618034e+00
+cond(HiAt) = 8.731729e+05
+cond(Hmat) = 6.467391e+05
+cond(hmat product) = 9.548165e+19
+cond(LHS) = 7.863111e+09
+14: pObj=-6.288973e+00 pIn=1.592412e-01 dIn=7.740038e-02 gap=6.238104e+00 tau=2.718596e+01 kap=7.294945e-03 mu=1.983265e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:54:26
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 8.807520e+05
+cond(Hmat) = 6.521883e+05
+cond(hmat product) = 3.520740e+18
+cond(LHS) = 8.001870e+09
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.343405e+06
+cond(Hmat) = 9.838859e+05
+cond(hmat product) = 2.336347e+18
+cond(LHS) = 1.244679e+10
+15: pObj=-4.659632e+00 pIn=1.299550e-01 dIn=6.316559e-02 gap=4.630212e+00 tau=2.994402e+01 kap=5.405033e-03 mu=1.618511e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:56:11
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.352623e+06
+cond(Hmat) = 9.904827e+05
+cond(hmat product) = 1.561334e+18
+cond(LHS) = 1.261817e+10
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.072344e+06
+cond(Hmat) = 1.504841e+06
+cond(hmat product) = 5.147254e+18
+cond(LHS) = 1.965174e+10
+16: pObj=-3.511656e+00 pIn=1.060548e-01 dIn=5.154873e-02 gap=3.493912e+00 tau=3.242555e+01 kap=4.073433e-03 mu=1.320845e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 15:57:50
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.083502e+06
+cond(Hmat) = 1.512809e+06
+cond(hmat product) = 6.739471e+18
+cond(LHS) = 1.986248e+10
+cond(At) = 2.618034e+00
+cond(HiAt) = 3.195474e+06
+cond(Hmat) = 2.306621e+06
+cond(hmat product) = 2.057911e+18
+cond(LHS) = 3.087492e+10
+17: pObj=-2.682950e+00 pIn=8.655014e-02 dIn=4.206835e-02 gap=2.671851e+00 tau=3.463570e+01 kap=3.112161e-03 mu=1.077924e-01
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:00:08
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 3.208930e+06
+cond(Hmat) = 2.316226e+06
+cond(hmat product) = 2.065002e+20
+cond(LHS) = 3.113284e+10
+cond(At) = 2.618034e+00
+cond(HiAt) = 4.917575e+06
+cond(Hmat) = 3.536305e+06
+cond(hmat product) = 1.740023e+18
+cond(LHS) = 4.823034e+10
+18: pObj=-2.072740e+00 pIn=7.063260e-02 dIn=3.433151e-02 gap=2.065570e+00 tau=3.658721e+01 kap=2.404333e-03 mu=8.796807e-02
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:02:14
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 4.933744e+06
+cond(Hmat) = 3.547854e+06
+cond(hmat product) = 1.306148e+19
+cond(LHS) = 4.854440e+10
+cond(At) = 2.618034e+00
+cond(HiAt) = 7.547753e+06
+cond(Hmat) = 5.415337e+06
+cond(hmat product) = 5.090062e+18
+cond(LHS) = 7.491194e+10
+19: pObj=-1.616000e+00 pIn=5.764248e-02 dIn=2.801756e-02 gap=1.611232e+00 tau=3.829749e+01 kap=1.874525e-03 mu=7.178970e-02
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:04:10
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 7.567111e+06
+cond(Hmat) = 5.429168e+06
+cond(hmat product) = 6.365724e+20
+cond(LHS) = 7.529225e+10
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.424150e+07
+cond(Hmat) = 1.019862e+07
+cond(hmat product) = 9.436028e+18
+cond(LHS) = 1.429095e+11
+20: pObj=-1.127909e+00 pIn=4.249806e-02 dIn=2.065650e-02 gap=1.125197e+00 tau=4.045423e+01 kap=1.308345e-03 mu=5.292827e-02
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:06:14
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.430066e+07
+cond(Hmat) = 1.024090e+07
+cond(hmat product) = 7.265905e+18
+cond(LHS) = 1.440872e+11
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.679865e+07
+cond(Hmat) = 1.917312e+07
+cond(hmat product) = 2.880079e+19
+cond(LHS) = 2.716231e+11
+21: pObj=-7.974646e-01 pIn=3.133253e-02 dIn=1.522941e-02 gap=7.958425e-01 tau=4.218451e+01 kap=9.250389e-04 mu=3.902237e-02
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:07:56
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.687500e+07
+cond(Hmat) = 1.922770e+07
+cond(hmat product) = 1.402695e+20
+cond(LHS) = 2.731594e+11
+cond(At) = 2.618034e+00
+cond(HiAt) = 5.016730e+07
+cond(Hmat) = 3.587622e+07
+cond(hmat product) = 6.712325e+18
+cond(LHS) = 5.120044e+11
+22: pObj=-5.694187e-01 pIn=2.310053e-02 dIn=1.122819e-02 gap=5.684064e-01 tau=4.355712e+01 kap=6.605115e-04 mu=2.877000e-02
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:10:05
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 5.026437e+07
+cond(Hmat) = 3.594560e+07
+cond(hmat product) = 4.180487e+18
+cond(LHS) = 5.139728e+11
+cond(At) = 2.618034e+00
+cond(HiAt) = 9.352352e+07
+cond(Hmat) = 6.686793e+07
+cond(hmat product) = 1.513123e+18
+cond(LHS) = 9.589856e+11
+23: pObj=-4.096757e-01 pIn=1.703132e-02 dIn=8.278203e-03 gap=4.090210e-01 tau=4.463516e+01 kap=4.752137e-04 mu=2.121124e-02
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:11:52
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 9.364481e+07
+cond(Hmat) = 6.695463e+07
+cond(hmat product) = 1.356293e+19
+cond(LHS) = 9.614601e+11
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.737825e+08
+cond(Hmat) = 1.242409e+08
+cond(hmat product) = 7.017401e+19
+cond(LHS) = 1.787549e+12
+24: pObj=-2.964690e-01 pIn=1.255668e-02 dIn=6.103269e-03 gap=2.960331e-01 tau=4.547413e+01 kap=3.438967e-04 mu=1.563841e-02
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:13:51
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.739309e+08
+cond(Hmat) = 1.243470e+08
+cond(hmat product) = 1.207774e+21
+cond(LHS) = 1.790588e+12
+cond(At) = 2.618034e+00
+cond(HiAt) = 4.498256e+08
+cond(Hmat) = 3.215753e+08
+cond(hmat product) = 6.821714e+18
+cond(LHS) = 4.636744e+12
+25: pObj=-1.814703e-01 pIn=7.843796e-03 dIn=3.812536e-03 gap=1.812270e-01 tau=4.640764e+01 kap=2.105011e-04 mu=9.768860e-03
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:15:56
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 4.503419e+08
+cond(Hmat) = 3.219443e+08
+cond(hmat product) = 1.297354e+19
+cond(LHS) = 4.647366e+12
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.161033e+09
+cond(Hmat) = 8.300010e+08
+cond(hmat product) = 4.698389e+18
+cond(LHS) = 1.198875e+13
+26: pObj=-1.118772e-01 pIn=4.899793e-03 dIn=2.381581e-03 gap=1.117359e-01 tau=4.702244e+01 kap=1.297747e-04 mu=6.102324e-03
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:17:29
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.161675e+09
+cond(Hmat) = 8.304600e+08
+cond(hmat product) = 8.187230e+18
+cond(LHS) = 1.200202e+13
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.988622e+09
+cond(Hmat) = 2.136506e+09
+cond(hmat product) = 3.201427e+19
+cond(LHS) = 3.088604e+13
+27: pObj=-6.929868e-02 pIn=3.060759e-03 dIn=1.487705e-03 gap=6.921453e-02 tau=4.742126e+01 kap=8.038474e-05 mu=3.811946e-03
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:19:15
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.989374e+09
+cond(Hmat) = 2.137044e+09
+cond(hmat product) = 4.349476e+18
+cond(LHS) = 3.090137e+13
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.394472e+10
+cond(Hmat) = 9.968796e+09
+cond(hmat product) = 1.213680e+19
+cond(LHS) = 1.441597e+14
+28: pObj=-3.189503e-02 pIn=1.419629e-03 dIn=6.900212e-04 gap=3.185765e-02 tau=4.778820e+01 kap=3.699744e-05 mu=1.768041e-03
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:21:04
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.394787e+10
+cond(Hmat) = 9.971049e+09
+cond(hmat product) = 2.156800e+19
+cond(LHS) = 1.442105e+14
+cond(At) = 2.618034e+00
+cond(HiAt) = 6.494545e+10
+cond(Hmat) = 4.642818e+10
+cond(hmat product) = 9.416811e+18
+cond(LHS) = 6.717363e+14
+29: pObj=-1.473972e-02 pIn=6.584464e-04 dIn=3.200428e-04 gap=1.472273e-02 tau=4.796231e+01 kap=1.709771e-05 mu=8.200455e-04
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:22:59
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 6.494894e+10
+cond(Hmat) = 4.643067e+10
+cond(hmat product) = 1.919140e+19
+cond(LHS) = 6.715993e+14
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.187264e+12
+cond(Hmat) = 8.487511e+11
+cond(hmat product) = 6.401879e+18
+cond(LHS) = 1.228880e+16
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.186075e-17.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_experiment (line 96)
+] 
+30: pObj=-3.441047e-03 pIn=1.540914e-04 dIn=7.489729e-05 gap=3.437124e-03 tau=4.807914e+01 kap=3.991529e-06 mu=1.919093e-04
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:24:38
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.187294e+12
+cond(Hmat) = 8.487722e+11
+cond(hmat product) = 3.078792e+18
+cond(LHS) = 1.230455e+16
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.185966e-17.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_experiment (line 96)
+] 
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.168500e+13
+cond(Hmat) = 1.550216e+13
+cond(hmat product) = 5.938123e+18
+cond(LHS) = 2.208601e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.196872e-18.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_experiment (line 96)
+] 
+31: pObj=-8.048225e-04 pIn=3.606089e-05 dIn=1.752767e-05 gap=8.039075e-04 tau=4.810666e+01 kap=9.335740e-07 mu=4.491113e-05
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:27:15
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.168503e+13
+cond(Hmat) = 1.550218e+13
+cond(hmat product) = 2.961235e+18
+cond(LHS) = 2.335721e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.196869e-18.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_experiment (line 96)
+] 
+32: pObj=-1.883215e-04 pIn=8.439068e-06 dIn=4.101872e-06 gap=1.881075e-04 tau=4.811310e+01 kap=2.183524e-07 mu=1.051022e-05
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:27:56
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 3.959781e+14
+cond(Hmat) = 2.830768e+14
+cond(hmat product) = 5.479039e+18
+cond(LHS) = 2.139145e+18
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.554453e-20.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_experiment (line 96)
+] 
+33: pObj=-4.407013e-05 pIn=1.974938e-06 dIn=9.599312e-07 gap=4.402006e-05 tau=4.811461e+01 kap=5.109259e-08 mu=2.459631e-06
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:28:45
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 7.230632e+15
+cond(Hmat) = 5.168859e+15
+cond(hmat product) = 8.803270e+18
+cond(LHS) = 5.406280e+18
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  3.589604e-21.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_experiment (line 96)
+] 
+34: pObj=-1.031334e-05 pIn=4.621852e-07 dIn=2.246457e-07 gap=1.030162e-05 tau=4.811496e+01 kap=1.195645e-08 mu=5.756097e-07
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:29:25
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 1.320098e+17
+cond(Hmat) = 9.438006e+16
+cond(hmat product) = 1.680366e+18
+cond(LHS) = 3.732589e+18
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.965883e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_experiment (line 96)
+] 
+35: pObj=-2.413539e-06 pIn=1.081651e-07 dIn=5.257221e-08 gap=2.410798e-06 tau=4.811526e+01 kap=2.798006e-09 mu=1.347047e-07
+
+ans = 
+
+  datetime
+
+   16-Mar-2019 16:30:23
+
+cond(At) = 2.618034e+00
+cond(HiAt) = 2.432671e+18
+cond(Hmat) = 1.723329e+18
+cond(hmat product) = 3.922917e+19
+cond(LHS) = 3.063426e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.076614e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_experiment (line 96)
+] 
+Done in 35 iterations.
+Status = Feasible and approximate optimal solution found.
+
+ans =
+
+    'Done'
+
