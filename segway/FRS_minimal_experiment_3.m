@@ -69,7 +69,7 @@ prog.with_indeterminate([t;x;k]);
 
 
 prog.sos_on_K(v, Z_vars, Z_bounds, degree);
-prog.sos_on_K(-v, Y_vars, Y_bounds, degree);
+prog.sos_on_K(subs(v, t, 0), Y_vars, Y_bounds, degree);
 if verbose
   'Defining constraint 7'
 end
