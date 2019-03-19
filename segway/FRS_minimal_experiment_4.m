@@ -4,7 +4,7 @@
 function out = FRS_minimal_case(degree, name)
 
 diary(name);
-fprintf("min 0 s.t. v \geq 0 on Z, v(0, x, k) \geq 0 on Y")
+fprintf("min 0 s.t. v geq 0 on Z, v(0, x, k) geq 0 on Y")
 setup()
 verbose = 1;
 % options
