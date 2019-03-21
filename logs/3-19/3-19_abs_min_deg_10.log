@@ -1,0 +1,1261 @@
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Running alfonso'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 1
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+Total number of SOS constraints: 1
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x3003
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 1.860146e+03
+
+ Constraint A size: 1001x3003
+
+ Cond(A): 1.860146e+03
+
+
+size(A): 1001x3003
+
+ans =
+
+           1        3003
+
+1: pObj=0 pIn=2.923736e-01 dIn=9.433314e-04 gap=0 tau=1 kap=1 mu=1
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:38:26
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.336465e+03
+cond(Hmat) = 9.336465e+03
+cond(hmat product) =   Inf
+cond(LHS) = 4.583011e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.939080e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.413106e+03
+cond(Hmat) = 9.413106e+03
+cond(hmat product) =   Inf
+cond(LHS) = 5.177681e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.878545e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+2: pObj=0 pIn=2.663193e-01 dIn=8.592683e-04 gap=1.760422e-01 tau=1.537165e+00 kap=5.824651e-01 mu=9.108373e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:38:45
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.444322e+03
+cond(Hmat) = 9.444322e+03
+cond(hmat product) =   Inf
+cond(LHS) = 1.149016e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.791679e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.563443e+03
+cond(Hmat) = 9.563443e+03
+cond(hmat product) =   Inf
+cond(LHS) = 5.193883e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.849927e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+3: pObj=0 pIn=2.497065e-01 dIn=8.056680e-04 gap=1.751872e-01 tau=2.247037e+00 kap=3.768045e-01 mu=8.539748e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:39:03
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.601348e+03
+cond(Hmat) = 9.601348e+03
+cond(hmat product) =   Inf
+cond(LHS) = 2.671039e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.483545e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.816929e+03
+cond(Hmat) = 9.816929e+03
+cond(hmat product) =   Inf
+cond(LHS) = 9.287022e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.509313e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+4: pObj=0 pIn=2.341301e-01 dIn=7.554111e-04 gap=1.450463e-01 tau=3.293651e+00 kap=2.420100e-01 mu=8.006736e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:39:24
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.863880e+03
+cond(Hmat) = 9.863880e+03
+cond(hmat product) =   Inf
+cond(LHS) = 6.831359e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.349550e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.020616e+04
+cond(Hmat) = 1.020616e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.328069e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.993068e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+5: pObj=0 pIn=2.195253e-01 dIn=7.082893e-04 gap=1.129008e-01 tau=4.626423e+00 kap=1.620353e-01 mu=7.507128e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:39:56
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.024961e+04
+cond(Hmat) = 1.024961e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.520992e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.612718e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.095134e+04
+cond(Hmat) = 1.095134e+04
+cond(hmat product) =   Inf
+cond(LHS) = 9.081924e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.244591e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+6: pObj=0 pIn=1.999627e-01 dIn=6.451715e-04 gap=7.854611e-02 tau=6.854665e+00 kap=9.962689e-02 mu=6.837948e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:41:20
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.102380e+04
+cond(Hmat) = 1.102380e+04
+cond(hmat product) =   Inf
+cond(LHS) = 4.490838e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.039012e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.199169e+04
+cond(Hmat) = 1.199169e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.196709e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.296637e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+7: pObj=0 pIn=1.821434e-01 dIn=5.876784e-04 gap=5.659891e-02 tau=9.263672e+00 kap=6.721213e-02 mu=6.228504e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:42:07
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.205204e+04
+cond(Hmat) = 1.205204e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.638293e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.013041e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.391356e+04
+cond(Hmat) = 1.391356e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.779223e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.010636e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+8: pObj=0 pIn=1.589558e-01 dIn=5.128644e-04 gap=3.740433e-02 tau=1.290827e+01 kap=4.208700e-02 mu=5.435415e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:42:43
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.403583e+04
+cond(Hmat) = 1.403583e+04
+cond(hmat product) =   Inf
+cond(LHS) = 2.229230e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.188031e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.655223e+04
+cond(Hmat) = 1.655223e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.019375e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.180382e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+9: pObj=0 pIn=1.387201e-01 dIn=4.475746e-04 gap=2.615025e-02 tau=1.660568e+01 kap=2.855845e-02 mu=4.743351e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:43:14
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.667935e+04
+cond(Hmat) = 1.667935e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.189923e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.537052e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.997324e+04
+cond(Hmat) = 1.997324e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.813821e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.755571e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+10: pObj=0 pIn=1.210604e-01 dIn=3.905964e-04 gap=1.903247e-02 tau=2.029003e+01 kap=2.039904e-02 mu=4.139430e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:43:39
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.010921e+04
+cond(Hmat) = 2.010921e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.237007e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  9.510481e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.433478e+04
+cond(Hmat) = 2.433478e+04
+cond(hmat product) =   Inf
+cond(LHS) = 7.615695e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.609921e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+11: pObj=0 pIn=1.056489e-01 dIn=3.408719e-04 gap=1.426986e-02 tau=2.391793e+01 kap=1.510245e-02 mu=3.612417e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:44:17
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.448034e+04
+cond(Hmat) = 2.448034e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.316061e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.206891e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.981630e+04
+cond(Hmat) = 2.981630e+04
+cond(hmat product) =   Inf
+cond(LHS) = 3.922850e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  9.427419e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+12: pObj=0 pIn=9.219935e-02 dIn=2.974774e-04 gap=1.094689e-02 tau=2.745428e+01 kap=1.148235e-02 mu=3.152510e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:44:35
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.997045e+04
+cond(Hmat) = 2.997045e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.642706e+22
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  9.700244e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 4.017025e+04
+cond(Hmat) = 4.017025e+04
+cond(hmat product) =   Inf
+cond(LHS) = 2.132464e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.220606e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+13: pObj=0 pIn=7.543168e-02 dIn=2.433772e-04 gap=7.649464e-03 tau=3.243817e+01 kap=7.950205e-03 mu=2.579109e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:44:50
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 4.053186e+04
+cond(Hmat) = 4.053186e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.189481e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.899850e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 5.436033e+04
+cond(Hmat) = 5.436033e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.998963e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.336801e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+14: pObj=0 pIn=6.171343e-02 dIn=1.991159e-04 gap=5.506995e-03 tau=3.709058e+01 kap=5.688617e-03 mu=2.110021e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:45:09
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 5.474044e+04
+cond(Hmat) = 5.474044e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.265908e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.638585e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 7.323417e+04
+cond(Hmat) = 7.323417e+04
+cond(hmat product) =   Inf
+cond(LHS) = 7.927920e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.030027e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+15: pObj=0 pIn=5.049003e-02 dIn=1.629040e-04 gap=4.057242e-03 tau=4.136637e+01 kap=4.173033e-03 mu=1.726264e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:45:28
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 7.362869e+04
+cond(Hmat) = 7.362869e+04
+cond(hmat product) =   Inf
+cond(LHS) = 2.093722e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.422628e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.803271e+04
+cond(Hmat) = 9.803271e+04
+cond(hmat product) =   Inf
+cond(LHS) = 2.741576e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.805833e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+16: pObj=0 pIn=4.130775e-02 dIn=1.332778e-04 gap=3.044348e-03 tau=4.524518e+01 kap=3.121430e-03 mu=1.412309e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:45:50
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 9.843611e+04
+cond(Hmat) = 9.843611e+04
+cond(hmat product) =   Inf
+cond(LHS) = 3.949893e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.914137e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.299754e+05
+cond(Hmat) = 1.299754e+05
+cond(hmat product) =   Inf
+cond(LHS) = 5.058118e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.866221e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+17: pObj=0 pIn=3.379539e-02 dIn=1.090394e-04 gap=2.318212e-03 tau=4.872547e+01 kap=2.371350e-03 mu=1.155456e-01
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:46:30
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.303799e+05
+cond(Hmat) = 1.303799e+05
+cond(hmat product) =   Inf
+cond(LHS) = 3.150310e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.286258e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.702997e+05
+cond(Hmat) = 1.702997e+05
+cond(hmat product) =   Inf
+cond(LHS) = 3.343719e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.051401e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+18: pObj=0 pIn=2.764925e-02 dIn=8.920918e-05 gap=1.786561e-03 tau=5.181927e+01 kap=1.824256e-03 mu=9.453184e-02
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:47:17
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.706986e+05
+cond(Hmat) = 1.706986e+05
+cond(hmat product) =   Inf
+cond(LHS) = 1.204199e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.457810e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.207202e+05
+cond(Hmat) = 2.207202e+05
+cond(hmat product) =   Inf
+cond(LHS) = 8.119023e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.867793e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+19: pObj=0 pIn=2.262087e-02 dIn=7.298531e-05 gap=1.390460e-03 tau=5.454764e+01 kap=1.417838e-03 mu=7.733983e-02
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:48:24
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.211150e+05
+cond(Hmat) = 2.211150e+05
+cond(hmat product) =   Inf
+cond(LHS) = 1.015566e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.023568e-21.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 3.190458e+05
+cond(Hmat) = 3.190458e+05
+cond(hmat product) =   Inf
+cond(LHS) = 2.044107e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.690295e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+20: pObj=0 pIn=1.674386e-02 dIn=5.402339e-05 gap=9.692543e-04 tau=5.801095e+01 kap=9.868164e-04 mu=5.724629e-02
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:49:01
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 3.199161e+05
+cond(Hmat) = 3.199161e+05
+cond(hmat product) =   Inf
+cond(LHS) = 2.207335e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.216573e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 4.496081e+05
+cond(Hmat) = 4.496081e+05
+cond(hmat product) =   Inf
+cond(LHS) = 1.174437e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.495831e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+21: pObj=0 pIn=1.239373e-02 dIn=3.998787e-05 gap=6.851324e-04 tau=6.081263e+01 kap=6.967844e-04 mu=4.237333e-02
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:49:34
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 4.503845e+05
+cond(Hmat) = 4.503845e+05
+cond(hmat product) =   Inf
+cond(LHS) = 2.410056e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.908218e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 6.094411e+05
+cond(Hmat) = 6.094411e+05
+cond(hmat product) =   Inf
+cond(LHS) = 2.232381e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.191619e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+22: pObj=0 pIn=9.173784e-03 dIn=2.959884e-05 gap=4.894991e-04 tau=6.305298e+01 kap=4.974308e-04 mu=3.136451e-02
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:50:11
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 6.100808e+05
+cond(Hmat) = 6.100808e+05
+cond(hmat product) =   Inf
+cond(LHS) = 1.428404e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.444411e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 7.954566e+05
+cond(Hmat) = 7.954566e+05
+cond(hmat product) =   Inf
+cond(LHS) = 4.771522e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.407444e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+23: pObj=0 pIn=6.790393e-03 dIn=2.190892e-05 gap=3.526174e-04 tau=6.482626e+01 kap=3.581241e-04 mu=2.321585e-02
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:50:34
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 7.959523e+05
+cond(Hmat) = 7.959523e+05
+cond(hmat product) =   Inf
+cond(LHS) = 1.629739e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.944720e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.001432e+06
+cond(Hmat) = 1.001432e+06
+cond(hmat product) =   Inf
+cond(LHS) = 2.994527e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.911508e-24.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+24: pObj=0 pIn=5.026217e-03 dIn=1.621688e-05 gap=2.556333e-04 tau=6.621687e+01 kap=2.595148e-04 mu=1.718426e-02
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:51:00
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.001795e+06
+cond(Hmat) = 1.001795e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.191042e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  6.242496e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.334684e+06
+cond(Hmat) = 1.334684e+06
+cond(hmat product) =   Inf
+cond(LHS) = 3.181491e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.966781e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+25: pObj=0 pIn=3.160740e-03 dIn=1.019800e-05 gap=1.571252e-04 tau=6.777720e+01 kap=1.594390e-04 mu=1.080633e-02
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:51:22
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.335180e+06
+cond(Hmat) = 1.335180e+06
+cond(hmat product) =   Inf
+cond(LHS) = 3.620301e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.810981e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.644013e+06
+cond(Hmat) = 1.644013e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.374170e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.925892e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+26: pObj=0 pIn=1.987633e-03 dIn=6.413017e-06 gap=9.734324e-05 tau=6.881695e+01 kap=9.874842e-05 mu=6.795565e-03
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:51:40
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.644228e+06
+cond(Hmat) = 1.644228e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.506234e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.095332e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.899853e+06
+cond(Hmat) = 1.899853e+06
+cond(hmat product) =   Inf
+cond(LHS) = 2.406598e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.402440e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+27: pObj=0 pIn=1.249924e-03 dIn=4.032829e-06 gap=6.062460e-05 tau=6.949900e+01 kap=6.148858e-05 mu=4.273395e-03
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:52:08
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 1.899933e+06
+cond(Hmat) = 1.899933e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.220740e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.882705e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.186737e+06
+cond(Hmat) = 2.186737e+06
+cond(hmat product) =   Inf
+cond(LHS) = 8.808389e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.427927e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+28: pObj=0 pIn=5.871976e-04 dIn=1.894569e-06 gap=2.822762e-05 tau=7.013345e+01 kap=2.862519e-05 mu=2.007583e-03
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:52:36
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.186781e+06
+cond(Hmat) = 2.186781e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.648404e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  9.265247e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.345493e+06
+cond(Hmat) = 2.345493e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.255665e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.032974e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+29: pObj=0 pIn=2.758576e-04 dIn=8.900431e-07 gap=1.320437e-05 tau=7.043950e+01 kap=1.338930e-05 mu=9.431357e-04
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:53:03
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.345499e+06
+cond(Hmat) = 2.345499e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.123151e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.489054e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.462321e+06
+cond(Hmat) = 2.462321e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.636274e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.183694e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+30: pObj=0 pIn=6.690986e-05 dIn=2.158819e-07 gap=3.193463e-06 tau=7.064802e+01 kap=3.238020e-06 mu=2.287597e-04
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:53:36
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.462322e+06
+cond(Hmat) = 2.462322e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.391827e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.032402e-23.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.492025e+06
+cond(Hmat) = 2.492025e+06
+cond(hmat product) =   Inf
+cond(LHS) = 2.991217e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.752565e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 193)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+31: pObj=0 pIn=1.622914e-05 dIn=5.236265e-08 gap=7.740331e-07 tau=7.069899e+01 kap=7.848226e-07 mu=5.548617e-05
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:54:07
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.492025e+06
+cond(Hmat) = 2.492025e+06
+cond(hmat product) =   Inf
+cond(LHS) = 1.474612e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.509478e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+32: pObj=0 pIn=3.936418e-06 dIn=1.270068e-08 gap=1.877126e-07 tau=7.071137e+01 kap=1.902230e-07 mu=1.345829e-05
+
+ans = 
+
+  datetime
+
+   19-Mar-2019 16:54:34
+
+cond(At) = 1.860146e+03
+cond(HiAt) = 2.499313e+06
+cond(Hmat) = 2.499313e+06
+cond(hmat product) =   Inf
+cond(LHS) = 2.306549e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.577845e-22.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_minimal_one_poly_one_const (line 81)
+] 
+Done in 32 iterations.
+Status = Feasible and approximate optimal solution found.
+
+ans =
+
+    'Done'
+
