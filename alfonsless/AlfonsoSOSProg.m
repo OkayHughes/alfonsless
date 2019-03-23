@@ -108,7 +108,7 @@ classdef AlfonsoSOSProg < handle
             end
             %opts.maxItRefineSteps = 2;
             
-            res = alfonso(prob_data, x0, @alfonso_grad_and_hess, g_h_params, opts);
+            res = alfonso(prob_data, x0, @alfonso_grad_and_hess_verbose, g_h_params, opts);
         end
 
         
