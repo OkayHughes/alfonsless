@@ -65,7 +65,7 @@ prog = AlfonsoSOSProgFekete;
 prog.with_indeterminate([t;x;k]);
 
 
-[v, vcoeff] = prog.new_free_poly(Y_vars, degree);
+[v, vcoeff] = prog.new_free_poly(Z_vars, degree);
 [w, wcoeff, mon_w] = prog.new_free_poly(Y_vars, degree);
 
 
@@ -85,7 +85,7 @@ if verbose
 end
 
 int_Y0 = boxMoments(Y_vars,Y_bounds(:,1),Y_bounds(:,2)) ;
-obj = int_Y0(subs(mon_w, t, 0))'*(wcoeff);
+obj = int_Y0(mon_w)'*(wcoeff);
 
 if verbose
   'Running alfonso'

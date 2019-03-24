@@ -64,13 +64,13 @@ prog.with_indeterminate([t;x;k]);
 
 [v, vcoeff, v_mon] = prog.new_free_poly(Z_vars, degree);
 
-prog.sos_on_K(subs(v, t, 0), Y_vars, Y_bounds, degree);
+prog.sos_on_K(v, Y_vars, Y_bounds, degree);
 if verbose
   'Defining constraint 7'
 end
 
-int_Y = boxMoments(Y_vars, Y_bounds(:,1), Y_bounds(:,2)) ;
-obj = subs(int_Y(v_mon), t, 0)'*(vcoeff);
+int_Z = boxMoments(Z_vars, Z_bounds(:,1), Z_bounds(:,2)) ;
+obj = int_Z(v_mon)'*(vcoeff);
 
 if verbose
   'Running alfonso'
