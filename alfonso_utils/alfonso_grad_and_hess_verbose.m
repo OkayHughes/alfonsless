@@ -68,13 +68,13 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
         PWts = params.PWts_cell{polyId};
         xPoly = x(off+(1:U));
         % for the weight 1
-                fprintf("H_i(x) where i = %d:\n", n);
-                fprintf("--------------------\n\n");
+        fprintf("H_1(x):\n");
+        fprintf("--------------------\n\n");
         [inPoly, gPoly, HPoly] = gH_SOSWt(xPoly,P);
 
         if inPoly == 1
             for j = 1:n
-                fprintf("H_i(x) where i = %d:\n", n);
+                fprintf("H_%d(x):\n", j);
                 fprintf("--------------------\n\n");
                 % for the weight 1-t_j^2
                 [inPolyWt, gPolyWt, HPolyWt] = gH_SOSWt(xPoly,PWts{j});
@@ -82,7 +82,7 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
                 if inPoly == 1
                     gPoly   = gPoly+gPolyWt;
                     HPoly   = HPoly+HPolyWt;
-                    fprintf("Cond(H_{1..n}(x)):  %d\n", cond(HPoly));
+                    fprintf("Cond(H_{1..%d}(x)):  %d\n", j, cond(HPoly));
                 else
                     gPoly   = NaN;
                     HPoly   = NaN;
@@ -153,11 +153,12 @@ function [in, g, H] = gH_SOSWt(x, P)
         H = NaN;
     else
         in = 1;
+        fprintf("Cond(L): %5d\n", cond(L));
         V = L\P';
         VtV = V'*V;
 
         g = -diag(VtV);
         H = VtV.^2;
-        fprintf("Cond(H_i(x)): %5d\n\n", cond(H));
+        fprintf("Cond(H_i(x)): %5d\n", cond(H));
     end
 end
