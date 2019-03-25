@@ -113,6 +113,8 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
             return;
         end
     end
+    fprintf("Cond(H(x)) total: %5d\n ", Cond(H));
+    fprintf("Cond(L) total: %5d\n\n ", Cond(L));
 end
 
 function [in, g, H] = gH_SOSWt(x, P)
