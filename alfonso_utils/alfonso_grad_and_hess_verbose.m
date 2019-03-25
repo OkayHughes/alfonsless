@@ -82,7 +82,7 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
                 if inPoly == 1
                     gPoly   = gPoly+gPolyWt;
                     HPoly   = HPoly+HPolyWt;
-                    fprintf("Cond(H_{1..%d}(x)):  %d\n", j, cond(HPoly));
+                    fprintf("Cond(H_{1..%d}(x)):  %d\n\n", j, cond(HPoly));
                 else
                     gPoly   = NaN;
                     HPoly   = NaN;
@@ -113,8 +113,8 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
             return;
         end
     end
-    fprintf("Cond(H(x)) total: %5d\n ", Cond(H));
-    fprintf("Cond(L) total: %5d\n\n ", Cond(L));
+    fprintf("Cond(H(x)) total: %5d\n", cond(H));
+    fprintf("Cond(L) total: %5d\n\n", cond(L));
 end
 
 function [in, g, H] = gH_SOSWt(x, P)
@@ -144,6 +144,7 @@ function [in, g, H] = gH_SOSWt(x, P)
 % -------------------------------------------------------------------------
 
     Y = P'*diag(x)*P;
+    fprintf("F(x): %5d\n", log(det(Y)));
     if ~issymmetric(Y)
         Y = (Y+Y')/2;
     end
