@@ -5,7 +5,6 @@ try
     addpath(fullfile(base_path, 'Padua2DM'));
     addpath(fullfile(base_path, 'partitions'));
     addpath(fullfile(base_path, 'spotless'));
-    addpath(fullfile(base_path, 'alfonso-master')); 
     addpath(fullfile(base_path, '/mosek/8/toolbox/r2014a')); 
 
     addpath ./okay_poly_utils
@@ -13,6 +12,7 @@ try
     addpath ./alfonso_utils
     addpath ./interpolant_bases
     addpath ./alfonsless
+    addpath ./alfonso
     addpath .
     cd(fullfile(base_path, 'spotless'));
     spot_install_lite
