@@ -1,7 +1,7 @@
 %% problem description
 %
 % TODO: Write problem 
-function out = FRS_minimal_case(degree, name)
+function out = FRS_minimal_case(degree, tbound, name)
 
 diary(name);
 fprintf("min int_{T times X} v d mu s.t. v geq 0 on Z, v) geq 0 on Z0 \n")
@@ -19,7 +19,7 @@ k = msspoly('k', 2) ;
 
 T_min = 0;
 T_max = T;
-T_smol=0.1;
+T_smol=tbound;
 X_bounds = [-1, 1; -1, 1];
 K_bounds = [-1, 1; -1, 1];
 
