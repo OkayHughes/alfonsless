@@ -1,0 +1,366 @@
+segway_FRS_solver_okay(10, [1, 0, 0, 0, 0, 0, 0])
+Generating interpolant bases for Y, Y0Defining constraint 1Defining q constraints (2-4 in the paper)
+ans =
+
+    'Defining constraints for g_1'
+
+
+ans =
+
+    'Defining constraints for g_2'
+
+
+ans =
+
+    'Defining constraint 5'
+
+
+ans =
+
+    'Defining constraint 6'
+
+
+ans =
+
+    'Defining constraint 7'
+
+
+ans =
+
+    'Defining cost function'
+
+
+ans =
+
+    'Running alfonso'
+
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 4
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 2:
+
+ Variables:
+
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 1001
+
+* Polynomial 3:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+* Polynomial 4:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 10
+ Dimension: 3003
+
+Total number of SOS constraints: 2
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 12
+
+ size(A) for Decision Poly 1: 6188x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: 3.536323e+15
+
+ size(A) for Decision Poly 2: 6188x1001
+ Cond(A) for Decision Poly 2: Inf
+ Cond(A_interp) for Decision Poly 2: Inf
+
+ size(A) for Decision Poly 3: 6188x3003
+ Cond(A) for Decision Poly 3: 1
+ Cond(A_interp) for Decision Poly 3: 2.060640e+09
+
+ size(A) for Decision Poly 4: 6188x3003
+ Cond(A) for Decision Poly 4: 1
+ Cond(A_interp) for Decision Poly 4: 2.060640e+09
+
+ Constraint A size: 6188x10010
+
+ Cond(A): 6.090724e+20
+
+* Constraint 2
+
+ Variables / bounds :
+
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 10
+
+ size(A) for Decision Poly 1: 1001x3003
+ Cond(A) for Decision Poly 1: Inf
+ Cond(A_interp) for Decision Poly 1: Inf
+
+ size(A) for Decision Poly 2: 1001x1001
+ Cond(A) for Decision Poly 2: 1
+ Cond(A_interp) for Decision Poly 2: 1.000000e+00
+
+ size(A) for Decision Poly 3: 1001x3003
+ Cond(A) for Decision Poly 3: Inf
+ Cond(A_interp) for Decision Poly 3: Inf
+
+ size(A) for Decision Poly 4: 1001x3003
+ Cond(A) for Decision Poly 4: Inf
+ Cond(A_interp) for Decision Poly 4: Inf
+
+ Constraint A size: 1001x10010
+
+ Cond(A): 1.000000e+00
+
+
+size(A): 7189x10010
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        1001
+
+
+ans =
+
+           1        3003
+
+
+ans =
+
+           1        3003
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 4.765792e+01
+Cond(L): 6.903472e+00
+Cond(H_i(x)): 3.653784e+06
+H_1(x):
+--------------------
+
+F(x): 4.948794e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  4.504578e+06
+
+H_2(x):
+--------------------
+
+F(x): 4.948794e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  4.166937e+06
+
+H_3(x):
+--------------------
+
+F(x): 4.948794e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  3.569904e+06
+
+H_4(x):
+--------------------
+
+F(x): 4.948794e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  2.990840e+06
+
+H_5(x):
+--------------------
+
+F(x): 4.948794e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  2.587413e+06
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 1.785044e+01
+Cond(L): 4.224978e+00
+Cond(H_i(x)): 8.917711e+04
+H_1(x):
+--------------------
+
+F(x): 1.374665e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.149120e+05
+
+H_2(x):
+--------------------
+
+F(x): 1.374665e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.940769e+04
+
+H_3(x):
+--------------------
+
+F(x): 1.374665e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  7.800074e+04
+
+H_4(x):
+--------------------
+
+F(x): 1.374665e+01
+Cond(Lambda(x)): 1.000000e+00
+Cond(L): 1.000000e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  5.136561e+04
+
+Cond(H(x)) total: 3.787448e+06
+Cond(L) total: 1.946137e+03
+
+1: pObj=0 pIn=3.420641e-01 dIn=2.840207e-05 gap=0 tau=1 kap=1 mu=1.000000e+00
+
+ans = 
+
+  datetime
+
+   27-Mar-2019 01:15:17
+
+cond(At) = 2.131555e+19
+cond(HiAt) = 1.201996e+21
+cond(Hmat) = 1.214634e+21
+cond(hmat product) =   Inf
+cond(LHS) = 6.759025e+38
+[Warning: Matrix is singular to working precision.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 173)
+  In AlfonsoSOSProg/solve_alfonso (line 111)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In find_FRS_alfonso_experimental (line 180)
+  In segway_FRS_solver_okay (line 102)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   NaN
+{Error using svd
+Input to SVD must not contain NaN or Inf.
+
+Error in cond (line 35)
+    s = svd(A);
+
+Error in alfonso_grad_and_hess_verbose>gH_SOSWt (line 151)
+    fprintf("Cond(Lambda(x)): %5d\n", cond(Y));
+
+Error in alfonso_grad_and_hess_verbose (line 73)
+        [inPoly, gPoly, HPoly] = gH_SOSWt(xPoly,P);
+
+Error in pred (line 66)
+        [solnAlpha.in, solnAlpha.g, solnAlpha.H, solnAlpha.L] = gH(solnAlpha.x,
+        gH_Params);
+
+Error in alfonso (line 173)
+            pred(soln, probData, gH, gH_Params, myLinSolve, algParams, opts);
+
+Error in AlfonsoSOSProg/solve_alfonso (line 111)
+            res = alfonso(prob_data, x0, @alfonso_grad_and_hess_verbose,
+            g_h_params, opts);
+
+Error in AlfonsoSOSProgFekete/minimize (line 85)
+                results = prog.solve_alfonso(g_h_params, opts);
+
+Error in find_FRS_alfonso_experimental (line 180)
+res = prog.minimize(obj, struct());
+
+Error in segway_FRS_solver_okay (line 102)
+out_a = find_FRS_alfonso_experimental(prob_a);
+} 
+exit
