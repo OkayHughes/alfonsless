@@ -99,7 +99,9 @@ classdef AlfonsoSOSProg < handle
             rP = max((1+abs(prob_data.b))./(1+abs(prob_data.A*x0)));
             rD = max((1+abs(g0))./(1+abs(prob_data.c)));
             x0 = repmat(sqrt(rP*rD),sum(g_h_params.U_arr),1);
-
+            if isfield(in_opts, "save_dir")
+                opts.save_dir = fullfile(pwd(), in_opts.save_dir);
+            end
 
             % run alfonso
             opts.optimTol = 1e-6 ;

@@ -157,7 +157,7 @@ methods (Static)
 
         mon_basis = MonomialBasis(intParams.n, intParams.d*2);
         intParams.variables = mon_basis.variables;
-
+        
         if verbose
             fprintf('monomial basis generated')
         end
