@@ -4616,4 +4616,1996 @@ H_2(x):
 
 F(x): -3.306220e+01
 Cond(Lambda(x)): 4.842964e+00
-Cond(L):
+Cond(L): 2.200673e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.181911e+06
+
+H_3(x):
+--------------------
+
+F(x): -3.307629e+01
+Cond(Lambda(x)): 4.772963e+00
+Cond(L): 2.184711e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.044292e+06
+
+H_4(x):
+--------------------
+
+F(x): -3.313840e+01
+Cond(Lambda(x)): 4.808652e+00
+Cond(L): 2.192864e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  8.720963e+05
+
+H_5(x):
+--------------------
+
+F(x): -3.306491e+01
+Cond(Lambda(x)): 4.804522e+00
+Cond(L): 2.191922e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  6.691303e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.625114e+01
+Cond(L): 5.123586e+00
+Cond(H_i(x)): 8.902511e+05
+H_1(x):
+--------------------
+
+F(x): -4.722989e+01
+Cond(Lambda(x)): 1.863931e+00
+Cond(L): 1.365259e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.498767e+05
+
+H_2(x):
+--------------------
+
+F(x): -4.619947e+01
+Cond(Lambda(x)): 1.823325e+00
+Cond(L): 1.350305e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.289818e+05
+
+H_3(x):
+--------------------
+
+F(x): -4.624107e+01
+Cond(Lambda(x)): 1.834579e+00
+Cond(L): 1.354466e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.187077e+05
+
+H_4(x):
+--------------------
+
+F(x): -4.627363e+01
+Cond(Lambda(x)): 1.813470e+00
+Cond(L): 1.346651e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  6.776761e+05
+
+H_5(x):
+--------------------
+
+F(x): -4.637099e+01
+Cond(Lambda(x)): 1.809366e+00
+Cond(L): 1.345127e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.248671e+05
+
+Cond(H(x)) total: 7.284395e+05
+Cond(L) total: 8.534867e+02
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 1.662752e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 4.503339e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.826142e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 208)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.646254e+01
+Cond(L): 5.144175e+00
+Cond(H_i(x)): 1.104142e+06
+H_1(x):
+--------------------
+
+F(x): -2.836718e+01
+Cond(Lambda(x)): 5.385132e+00
+Cond(L): 2.320589e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.198851e+06
+
+H_2(x):
+--------------------
+
+F(x): -2.987415e+01
+Cond(Lambda(x)): 4.392925e+00
+Cond(L): 2.095931e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.146508e+06
+
+H_3(x):
+--------------------
+
+F(x): -2.988578e+01
+Cond(Lambda(x)): 4.331162e+00
+Cond(L): 2.081144e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.011284e+06
+
+H_4(x):
+--------------------
+
+F(x): -2.994443e+01
+Cond(Lambda(x)): 4.363326e+00
+Cond(L): 2.088858e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  8.426860e+05
+
+H_5(x):
+--------------------
+
+F(x): -2.987510e+01
+Cond(Lambda(x)): 4.359756e+00
+Cond(L): 2.088003e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  6.451554e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.621925e+01
+Cond(L): 5.120474e+00
+Cond(H_i(x)): 8.777045e+05
+H_1(x):
+--------------------
+
+F(x): -4.275992e+01
+Cond(Lambda(x)): 1.804203e+00
+Cond(L): 1.343206e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.465201e+05
+
+H_2(x):
+--------------------
+
+F(x): -4.195517e+01
+Cond(Lambda(x)): 1.739723e+00
+Cond(L): 1.318985e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.256553e+05
+
+H_3(x):
+--------------------
+
+F(x): -4.199191e+01
+Cond(Lambda(x)): 1.749600e+00
+Cond(L): 1.322724e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.151968e+05
+
+H_4(x):
+--------------------
+
+F(x): -4.202270e+01
+Cond(Lambda(x)): 1.730464e+00
+Cond(L): 1.315471e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  6.739555e+05
+
+H_5(x):
+--------------------
+
+F(x): -4.211417e+01
+Cond(Lambda(x)): 1.727431e+00
+Cond(L): 1.314318e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.207660e+05
+
+Cond(H(x)) total: 7.011966e+05
+Cond(L) total: 8.373748e+02
+
+10: pObj=0 pIn=9.326334e-02 dIn=3.231429e-04 gap=1.498747e-02 tau=3.372779e+01 kap=1.567273e-02 mu=5.287927e-01
+
+ans = 
+
+  datetime
+
+   29-Mar-2019 10:47:46
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 1.660426e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 5.725486e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.665925e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 187)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.673558e+01
+Cond(L): 5.170646e+00
+Cond(H_i(x)): 1.237873e+06
+H_1(x):
+--------------------
+
+F(x): -3.351655e+01
+Cond(Lambda(x)): 7.281566e+00
+Cond(L): 2.698438e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.310022e+06
+
+H_2(x):
+--------------------
+
+F(x): -3.536967e+01
+Cond(Lambda(x)): 5.670041e+00
+Cond(L): 2.381185e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.250035e+06
+
+H_3(x):
+--------------------
+
+F(x): -3.539436e+01
+Cond(Lambda(x)): 5.592265e+00
+Cond(L): 2.364797e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.108393e+06
+
+H_4(x):
+--------------------
+
+F(x): -3.545995e+01
+Cond(Lambda(x)): 5.640198e+00
+Cond(L): 2.374910e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  9.295431e+05
+
+H_5(x):
+--------------------
+
+F(x): -3.538316e+01
+Cond(Lambda(x)): 5.635528e+00
+Cond(L): 2.373927e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  7.165449e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.626963e+01
+Cond(L): 5.125390e+00
+Cond(H_i(x)): 9.027234e+05
+H_1(x):
+--------------------
+
+F(x): -5.239706e+01
+Cond(Lambda(x)): 1.902792e+00
+Cond(L): 1.379417e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.570812e+05
+
+H_2(x):
+--------------------
+
+F(x): -5.077653e+01
+Cond(Lambda(x)): 1.931284e+00
+Cond(L): 1.389707e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.353787e+05
+
+H_3(x):
+--------------------
+
+F(x): -5.082439e+01
+Cond(Lambda(x)): 1.944113e+00
+Cond(L): 1.394314e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.250056e+05
+
+H_4(x):
+--------------------
+
+F(x): -5.085854e+01
+Cond(Lambda(x)): 1.921168e+00
+Cond(L): 1.386062e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  6.843851e+05
+
+H_5(x):
+--------------------
+
+F(x): -5.096141e+01
+Cond(Lambda(x)): 1.914853e+00
+Cond(L): 1.383782e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.322705e+05
+
+Cond(H(x)) total: 7.852362e+05
+Cond(L) total: 8.861355e+02
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.688840e+01
+Cond(L): 5.185403e+00
+Cond(H_i(x)): 1.307879e+06
+H_1(x):
+--------------------
+
+F(x): -3.590483e+01
+Cond(Lambda(x)): 8.294134e+00
+Cond(L): 2.879954e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.367074e+06
+
+H_2(x):
+--------------------
+
+F(x): -3.791237e+01
+Cond(Lambda(x)): 6.306885e+00
+Cond(L): 2.511351e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.303198e+06
+
+H_3(x):
+--------------------
+
+F(x): -3.794243e+01
+Cond(Lambda(x)): 6.220898e+00
+Cond(L): 2.494173e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.158304e+06
+
+H_4(x):
+--------------------
+
+F(x): -3.801100e+01
+Cond(Lambda(x)): 6.275661e+00
+Cond(L): 2.505127e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  9.741485e+05
+
+H_5(x):
+--------------------
+
+F(x): -3.793091e+01
+Cond(Lambda(x)): 6.270045e+00
+Cond(L): 2.504006e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  7.533250e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.629649e+01
+Cond(L): 5.128010e+00
+Cond(H_i(x)): 9.157255e+05
+H_1(x):
+--------------------
+
+F(x): -5.677309e+01
+Cond(Lambda(x)): 1.951330e+00
+Cond(L): 1.396900e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.624113e+05
+
+H_2(x):
+--------------------
+
+F(x): -5.477359e+01
+Cond(Lambda(x)): 2.025648e+00
+Cond(L): 1.423253e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.402382e+05
+
+H_3(x):
+--------------------
+
+F(x): -5.482670e+01
+Cond(Lambda(x)): 2.039943e+00
+Cond(L): 1.428266e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.299015e+05
+
+H_4(x):
+--------------------
+
+F(x): -5.486228e+01
+Cond(Lambda(x)): 2.015146e+00
+Cond(L): 1.419558e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  6.895754e+05
+
+H_5(x):
+--------------------
+
+F(x): -5.497043e+01
+Cond(Lambda(x)): 2.007026e+00
+Cond(L): 1.416695e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.379620e+05
+
+Cond(H(x)) total: 8.269013e+05
+Cond(L) total: 9.093412e+02
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 1.822350e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 6.184255e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.594849e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 208)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.673881e+01
+Cond(L): 5.170958e+00
+Cond(H_i(x)): 1.243493e+06
+H_1(x):
+--------------------
+
+F(x): -3.314811e+01
+Cond(Lambda(x)): 7.338648e+00
+Cond(L): 2.708994e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.315861e+06
+
+H_2(x):
+--------------------
+
+F(x): -3.501420e+01
+Cond(Lambda(x)): 5.735402e+00
+Cond(L): 2.394870e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.255474e+06
+
+H_3(x):
+--------------------
+
+F(x): -3.504059e+01
+Cond(Lambda(x)): 5.658464e+00
+Cond(L): 2.378753e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.113626e+06
+
+H_4(x):
+--------------------
+
+F(x): -3.510620e+01
+Cond(Lambda(x)): 5.707664e+00
+Cond(L): 2.389072e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  9.342921e+05
+
+H_5(x):
+--------------------
+
+F(x): -3.502976e+01
+Cond(Lambda(x)): 5.702586e+00
+Cond(L): 2.388009e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  7.205386e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.626471e+01
+Cond(L): 5.124911e+00
+Cond(H_i(x)): 9.020410e+05
+H_1(x):
+--------------------
+
+F(x): -5.237950e+01
+Cond(Lambda(x)): 1.895523e+00
+Cond(L): 1.376780e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.578124e+05
+
+H_2(x):
+--------------------
+
+F(x): -5.068507e+01
+Cond(Lambda(x)): 1.932948e+00
+Cond(L): 1.390305e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.359207e+05
+
+H_3(x):
+--------------------
+
+F(x): -5.073304e+01
+Cond(Lambda(x)): 1.945731e+00
+Cond(L): 1.394895e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.254550e+05
+
+H_4(x):
+--------------------
+
+F(x): -5.076703e+01
+Cond(Lambda(x)): 1.922937e+00
+Cond(L): 1.386700e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  6.848520e+05
+
+H_5(x):
+--------------------
+
+F(x): -5.086958e+01
+Cond(Lambda(x)): 1.916449e+00
+Cond(L): 1.384359e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.327760e+05
+
+Cond(H(x)) total: 7.909050e+05
+Cond(L) total: 8.893284e+02
+
+11: pObj=0 pIn=8.511156e-02 dIn=2.948982e-04 gap=1.097330e-02 tau=4.247608e+01 kap=1.135863e-02 mu=4.825689e-01
+
+ans = 
+
+  datetime
+
+   29-Mar-2019 12:04:38
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 1.826461e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 6.450735e+18
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.134299e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 187)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.711420e+01
+Cond(L): 5.207130e+00
+Cond(H_i(x)): 1.416993e+06
+H_1(x):
+--------------------
+
+F(x): -3.768567e+01
+Cond(Lambda(x)): 9.792184e+00
+Cond(L): 3.129247e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.458998e+06
+
+H_2(x):
+--------------------
+
+F(x): -3.991128e+01
+Cond(Lambda(x)): 7.316395e+00
+Cond(L): 2.704884e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.388961e+06
+
+H_3(x):
+--------------------
+
+F(x): -3.995177e+01
+Cond(Lambda(x)): 7.219247e+00
+Cond(L): 2.686866e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.239330e+06
+
+H_4(x):
+--------------------
+
+F(x): -4.002404e+01
+Cond(Lambda(x)): 7.285604e+00
+Cond(L): 2.699186e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.046805e+06
+
+H_5(x):
+--------------------
+
+F(x): -3.994124e+01
+Cond(Lambda(x)): 7.277544e+00
+Cond(L): 2.697692e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  8.137232e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.631612e+01
+Cond(L): 5.129924e+00
+Cond(H_i(x)): 9.299990e+05
+H_1(x):
+--------------------
+
+F(x): -6.185829e+01
+Cond(Lambda(x)): 1.989629e+00
+Cond(L): 1.410542e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.713350e+05
+
+H_2(x):
+--------------------
+
+F(x): -5.918484e+01
+Cond(Lambda(x)): 2.148266e+00
+Cond(L): 1.465696e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.480376e+05
+
+H_3(x):
+--------------------
+
+F(x): -5.924464e+01
+Cond(Lambda(x)): 2.164161e+00
+Cond(L): 1.471109e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.374787e+05
+
+H_4(x):
+--------------------
+
+F(x): -5.928123e+01
+Cond(Lambda(x)): 2.137671e+00
+Cond(L): 1.462078e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  6.975626e+05
+
+H_5(x):
+--------------------
+
+F(x): -5.939464e+01
+Cond(Lambda(x)): 2.126627e+00
+Cond(L): 1.458296e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.466615e+05
+
+Cond(H(x)) total: 8.972894e+05
+Cond(L) total: 9.472536e+02
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.733331e+01
+Cond(L): 5.228127e+00
+Cond(H_i(x)): 1.507933e+06
+H_1(x):
+--------------------
+
+F(x): -3.979790e+01
+Cond(Lambda(x)): 1.110440e+01
+Cond(L): 3.332326e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.532847e+06
+
+H_2(x):
+--------------------
+
+F(x): -4.218458e+01
+Cond(Lambda(x)): 8.103950e+00
+Cond(L): 2.846744e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.457782e+06
+
+H_3(x):
+--------------------
+
+F(x): -4.223093e+01
+Cond(Lambda(x)): 7.995771e+00
+Cond(L): 2.827679e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.304115e+06
+
+H_4(x):
+--------------------
+
+F(x): -4.230600e+01
+Cond(Lambda(x)): 8.070577e+00
+Cond(L): 2.840876e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.104724e+06
+
+H_5(x):
+--------------------
+
+F(x): -4.222037e+01
+Cond(Lambda(x)): 8.061080e+00
+Cond(L): 2.839204e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  8.618408e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.634367e+01
+Cond(L): 5.132609e+00
+Cond(H_i(x)): 9.443881e+05
+H_1(x):
+--------------------
+
+F(x): -6.615942e+01
+Cond(Lambda(x)): 2.036215e+00
+Cond(L): 1.426960e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.780977e+05
+
+H_2(x):
+--------------------
+
+F(x): -6.303126e+01
+Cond(Lambda(x)): 2.253877e+00
+Cond(L): 1.501292e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.540597e+05
+
+H_3(x):
+--------------------
+
+F(x): -6.309658e+01
+Cond(Lambda(x)): 2.271331e+00
+Cond(L): 1.507094e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.434457e+05
+
+H_4(x):
+--------------------
+
+F(x): -6.313427e+01
+Cond(Lambda(x)): 2.243045e+00
+Cond(L): 1.497680e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  7.038534e+05
+
+H_5(x):
+--------------------
+
+F(x): -6.325268e+01
+Cond(Lambda(x)): 2.229672e+00
+Cond(L): 1.493209e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.535052e+05
+
+Cond(H(x)) total: 9.501963e+05
+Cond(L) total: 9.747801e+02
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 2.123712e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 7.408314e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.538126e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 208)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.712018e+01
+Cond(L): 5.207704e+00
+Cond(H_i(x)): 1.423280e+06
+H_1(x):
+--------------------
+
+F(x): -3.732105e+01
+Cond(Lambda(x)): 9.840859e+00
+Cond(L): 3.137014e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.465356e+06
+
+H_2(x):
+--------------------
+
+F(x): -3.955985e+01
+Cond(Lambda(x)): 7.389170e+00
+Cond(L): 2.718303e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.394953e+06
+
+H_3(x):
+--------------------
+
+F(x): -3.960185e+01
+Cond(Lambda(x)): 7.291636e+00
+Cond(L): 2.700303e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.245152e+06
+
+H_4(x):
+--------------------
+
+F(x): -3.967415e+01
+Cond(Lambda(x)): 7.358998e+00
+Cond(L): 2.712747e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.052137e+06
+
+H_5(x):
+--------------------
+
+F(x): -3.959168e+01
+Cond(Lambda(x)): 7.350537e+00
+Cond(L): 2.711187e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  8.183095e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.631175e+01
+Cond(L): 5.129498e+00
+Cond(H_i(x)): 9.294743e+05
+H_1(x):
+--------------------
+
+F(x): -6.183667e+01
+Cond(Lambda(x)): 1.983226e+00
+Cond(L): 1.408270e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.721173e+05
+
+H_2(x):
+--------------------
+
+F(x): -5.909553e+01
+Cond(Lambda(x)): 2.150781e+00
+Cond(L): 1.466554e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.486386e+05
+
+H_3(x):
+--------------------
+
+F(x): -5.915546e+01
+Cond(Lambda(x)): 2.166599e+00
+Cond(L): 1.471937e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.379751e+05
+
+H_4(x):
+--------------------
+
+F(x): -5.919186e+01
+Cond(Lambda(x)): 2.140290e+00
+Cond(L): 1.462973e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  6.980540e+05
+
+H_5(x):
+--------------------
+
+F(x): -5.930497e+01
+Cond(Lambda(x)): 2.129079e+00
+Cond(L): 1.459136e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.471606e+05
+
+Cond(H(x)) total: 9.037991e+05
+Cond(L) total: 9.506835e+02
+
+12: pObj=0 pIn=7.767229e-02 dIn=2.691223e-04 gap=8.292837e-03 tau=5.165195e+01 kap=8.524898e-03 mu=4.403861e-01
+
+ans = 
+
+  datetime
+
+   29-Mar-2019 13:21:18
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 2.126688e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 8.157955e+18
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.382672e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 187)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.768497e+01
+Cond(L): 5.261651e+00
+Cond(H_i(x)): 1.647047e+06
+H_1(x):
+--------------------
+
+F(x): -4.127037e+01
+Cond(Lambda(x)): 1.299625e+01
+Cond(L): 3.605032e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.648283e+06
+
+H_2(x):
+--------------------
+
+F(x): -4.387882e+01
+Cond(Lambda(x)): 9.322166e+00
+Cond(L): 3.053222e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.565580e+06
+
+H_3(x):
+--------------------
+
+F(x): -4.393604e+01
+Cond(Lambda(x)): 9.197745e+00
+Cond(L): 3.032778e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.406227e+06
+
+H_4(x):
+--------------------
+
+F(x): -4.401388e+01
+Cond(Lambda(x)): 9.286046e+00
+Cond(L): 3.047301e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.196359e+06
+
+H_5(x):
+--------------------
+
+F(x): -4.392633e+01
+Cond(Lambda(x)): 9.273531e+00
+Cond(L): 3.045247e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  9.386697e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.636643e+01
+Cond(L): 5.134825e+00
+Cond(H_i(x)): 9.608530e+05
+H_1(x):
+--------------------
+
+F(x): -7.114687e+01
+Cond(Lambda(x)): 2.075653e+00
+Cond(L): 1.440713e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.889936e+05
+
+H_2(x):
+--------------------
+
+F(x): -6.726836e+01
+Cond(Lambda(x)): 2.392743e+00
+Cond(L): 1.546849e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.635037e+05
+
+H_3(x):
+--------------------
+
+F(x): -6.734061e+01
+Cond(Lambda(x)): 2.411830e+00
+Cond(L): 1.553007e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.524962e+05
+
+H_4(x):
+--------------------
+
+F(x): -6.737900e+01
+Cond(Lambda(x)): 2.381949e+00
+Cond(L): 1.543356e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  7.132667e+05
+
+H_5(x):
+--------------------
+
+F(x): -6.750230e+01
+Cond(Lambda(x)): 2.365301e+00
+Cond(L): 1.537954e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.635891e+05
+
+Cond(H(x)) total: 1.037401e+06
+Cond(L) total: 1.018529e+03
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.805052e+01
+Cond(L): 5.296274e+00
+Cond(H_i(x)): 1.764526e+06
+H_1(x):
+--------------------
+
+F(x): -4.311652e+01
+Cond(Lambda(x)): 1.469106e+01
+Cond(L): 3.832892e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.743248e+06
+
+H_2(x):
+--------------------
+
+F(x): -4.589152e+01
+Cond(Lambda(x)): 1.028473e+01
+Cond(L): 3.206981e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.653941e+06
+
+H_3(x):
+--------------------
+
+F(x): -4.595511e+01
+Cond(Lambda(x)): 1.014665e+01
+Cond(L): 3.185381e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.489519e+06
+
+H_4(x):
+--------------------
+
+F(x): -4.603522e+01
+Cond(Lambda(x)): 1.024536e+01
+Cond(L): 3.200837e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.270823e+06
+
+H_5(x):
+--------------------
+
+F(x): -4.594540e+01
+Cond(Lambda(x)): 1.023086e+01
+Cond(L): 3.198571e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  1.000988e+06
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.639623e+01
+Cond(L): 5.137726e+00
+Cond(H_i(x)): 9.768856e+05
+H_1(x):
+--------------------
+
+F(x): -7.536849e+01
+Cond(Lambda(x)): 2.122230e+00
+Cond(L): 1.456787e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.973885e+05
+
+H_2(x):
+--------------------
+
+F(x): -7.096195e+01
+Cond(Lambda(x)): 2.510973e+00
+Cond(L): 1.584605e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.708650e+05
+
+H_3(x):
+--------------------
+
+F(x): -7.103994e+01
+Cond(Lambda(x)): 2.531690e+00
+Cond(L): 1.591129e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.596735e+05
+
+H_4(x):
+--------------------
+
+F(x): -7.107914e+01
+Cond(Lambda(x)): 2.500053e+00
+Cond(L): 1.581156e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  7.207656e+05
+
+H_5(x):
+--------------------
+
+F(x): -7.120708e+01
+Cond(Lambda(x)): 2.480838e+00
+Cond(L): 1.575068e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.716615e+05
+
+Cond(H(x)) total: 1.104014e+06
+Cond(L) total: 1.050721e+03
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 2.622257e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.975636e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.453446e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 208)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.769873e+01
+Cond(L): 5.262959e+00
+Cond(H_i(x)): 1.653965e+06
+H_1(x):
+--------------------
+
+F(x): -4.090781e+01
+Cond(Lambda(x)): 1.302139e+01
+Cond(L): 3.608516e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.655195e+06
+
+H_2(x):
+--------------------
+
+F(x): -4.353182e+01
+Cond(Lambda(x)): 9.401692e+00
+Cond(L): 3.066218e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.572209e+06
+
+H_3(x):
+--------------------
+
+F(x): -4.359048e+01
+Cond(Lambda(x)): 9.276402e+00
+Cond(L): 3.045719e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.412717e+06
+
+H_4(x):
+--------------------
+
+F(x): -4.366830e+01
+Cond(Lambda(x)): 9.365674e+00
+Cond(L): 3.060339e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.202374e+06
+
+H_5(x):
+--------------------
+
+F(x): -4.358111e+01
+Cond(Lambda(x)): 9.352725e+00
+Cond(L): 3.058223e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  9.439912e+05
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.636285e+01
+Cond(L): 5.134477e+00
+Cond(H_i(x)): 9.605208e+05
+H_1(x):
+--------------------
+
+F(x): -7.111846e+01
+Cond(Lambda(x)): 2.070227e+00
+Cond(L): 1.438828e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  9.898496e+05
+
+H_2(x):
+--------------------
+
+F(x): -6.718028e+01
+Cond(Lambda(x)): 2.396086e+00
+Cond(L): 1.547930e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.641854e+05
+
+H_3(x):
+--------------------
+
+F(x): -6.725265e+01
+Cond(Lambda(x)): 2.415062e+00
+Cond(L): 1.554047e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.530570e+05
+
+H_4(x):
+--------------------
+
+F(x): -6.729085e+01
+Cond(Lambda(x)): 2.385368e+00
+Cond(L): 1.544464e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  7.137932e+05
+
+H_5(x):
+--------------------
+
+F(x): -6.741385e+01
+Cond(Lambda(x)): 2.368629e+00
+Cond(L): 1.539035e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.640799e+05
+
+Cond(H(x)) total: 1.044948e+06
+Cond(L) total: 1.022227e+03
+
+13: pObj=0 pIn=7.088326e-02 dIn=2.455994e-04 gap=6.418292e-03 tau=6.120741e+01 kap=6.565452e-03 mu=4.018908e-01
+
+ans = 
+
+  datetime
+
+   29-Mar-2019 14:37:39
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 2.611748e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.479005e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.239727e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 187)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.873798e+01
+Cond(L): 5.360782e+00
+Cond(H_i(x)): 1.939446e+06
+H_1(x):
+--------------------
+
+F(x): -4.427332e+01
+Cond(Lambda(x)): 1.691953e+01
+Cond(L): 4.113335e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.888132e+06
+
+H_2(x):
+--------------------
+
+F(x): -4.729701e+01
+Cond(Lambda(x)): 1.174352e+01
+Cond(L): 3.426882e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.789391e+06
+
+H_3(x):
+--------------------
+
+F(x): -4.737159e+01
+Cond(Lambda(x)): 1.158507e+01
+Cond(L): 3.403685e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.617920e+06
+
+H_4(x):
+--------------------
+
+F(x): -4.745424e+01
+Cond(Lambda(x)): 1.169959e+01
+Cond(L): 3.420467e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.386294e+06
+
+H_5(x):
+--------------------
+
+F(x): -4.736267e+01
+Cond(Lambda(x)): 1.168130e+01
+Cond(L): 3.417792e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  1.098952e+06
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.642608e+01
+Cond(L): 5.140631e+00
+Cond(H_i(x)): 9.961339e+05
+H_1(x):
+--------------------
+
+F(x): -8.022821e+01
+Cond(Lambda(x)): 2.167145e+00
+Cond(L): 1.472123e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.010524e+06
+
+H_2(x):
+--------------------
+
+F(x): -7.501964e+01
+Cond(Lambda(x)): 2.667464e+00
+Cond(L): 1.633237e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.822136e+05
+
+H_3(x):
+--------------------
+
+F(x): -7.510480e+01
+Cond(Lambda(x)): 2.689761e+00
+Cond(L): 1.640049e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.704197e+05
+
+H_4(x):
+--------------------
+
+F(x): -7.514425e+01
+Cond(Lambda(x)): 2.656584e+00
+Cond(L): 1.629903e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  7.317796e+05
+
+H_5(x):
+--------------------
+
+F(x): -7.527674e+01
+Cond(Lambda(x)): 2.634339e+00
+Cond(L): 1.623065e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.832357e+05
+
+Cond(H(x)) total: 1.212225e+06
+Cond(L) total: 1.101011e+03
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.953900e+01
+Cond(L): 5.434979e+00
+Cond(H_i(x)): 2.089600e+06
+H_1(x):
+--------------------
+
+F(x): -4.585491e+01
+Cond(Lambda(x)): 1.900257e+01
+Cond(L): 4.359193e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  2.009770e+06
+
+H_2(x):
+--------------------
+
+F(x): -4.905993e+01
+Cond(Lambda(x)): 1.291041e+01
+Cond(L): 3.593105e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.902293e+06
+
+H_3(x):
+--------------------
+
+F(x): -4.914121e+01
+Cond(Lambda(x)): 1.273537e+01
+Cond(L): 3.568665e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.724337e+06
+
+H_4(x):
+--------------------
+
+F(x): -4.922579e+01
+Cond(Lambda(x)): 1.286245e+01
+Cond(L): 3.586425e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.481502e+06
+
+H_5(x):
+--------------------
+
+F(x): -4.913222e+01
+Cond(Lambda(x)): 1.284150e+01
+Cond(L): 3.583504e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  1.179362e+06
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.646152e+01
+Cond(L): 5.144076e+00
+Cond(H_i(x)): 1.014234e+06
+H_1(x):
+--------------------
+
+F(x): -8.435541e+01
+Cond(Lambda(x)): 2.220057e+00
+Cond(L): 1.489985e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.020780e+06
+
+H_2(x):
+--------------------
+
+F(x): -7.855775e+01
+Cond(Lambda(x)): 2.799617e+00
+Cond(L): 1.673206e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.911217e+05
+
+H_3(x):
+--------------------
+
+F(x): -7.864882e+01
+Cond(Lambda(x)): 2.823520e+00
+Cond(L): 1.680333e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.789775e+05
+
+H_4(x):
+--------------------
+
+F(x): -7.868876e+01
+Cond(Lambda(x)): 2.788635e+00
+Cond(L): 1.669921e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  7.406201e+05
+
+H_5(x):
+--------------------
+
+F(x): -7.882552e+01
+Cond(Lambda(x)): 2.764057e+00
+Cond(L): 1.662545e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.926249e+05
+
+Cond(H(x)) total: 1.295763e+06
+Cond(L) total: 1.138316e+03
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 3.261405e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.301686e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.352307e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In corr (line 32)
+  In alfonso (line 208)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.877593e+01
+Cond(L): 5.364320e+00
+Cond(H_i(x)): 1.947175e+06
+H_1(x):
+--------------------
+
+F(x): -4.391720e+01
+Cond(Lambda(x)): 1.691988e+01
+Cond(L): 4.113378e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.895570e+06
+
+H_2(x):
+--------------------
+
+F(x): -4.695672e+01
+Cond(Lambda(x)): 1.182945e+01
+Cond(L): 3.439396e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.796658e+06
+
+H_3(x):
+--------------------
+
+F(x): -4.703258e+01
+Cond(Lambda(x)): 1.166985e+01
+Cond(L): 3.416116e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.625079e+06
+
+H_4(x):
+--------------------
+
+F(x): -4.711516e+01
+Cond(Lambda(x)): 1.178530e+01
+Cond(L): 3.432972e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.392992e+06
+
+H_5(x):
+--------------------
+
+F(x): -4.702397e+01
+Cond(Lambda(x)): 1.176659e+01
+Cond(L): 3.430246e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  1.105020e+06
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.642352e+01
+Cond(L): 5.140381e+00
+Cond(H_i(x)): 9.959977e+05
+H_1(x):
+--------------------
+
+F(x): -8.019348e+01
+Cond(Lambda(x)): 2.163351e+00
+Cond(L): 1.470833e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.011484e+06
+
+H_2(x):
+--------------------
+
+F(x): -7.493258e+01
+Cond(Lambda(x)): 2.671766e+00
+Cond(L): 1.634554e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  9.830019e+05
+
+H_3(x):
+--------------------
+
+F(x): -7.501787e+01
+Cond(Lambda(x)): 2.693925e+00
+Cond(L): 1.641318e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.710670e+05
+
+H_4(x):
+--------------------
+
+F(x): -7.505714e+01
+Cond(Lambda(x)): 2.660940e+00
+Cond(L): 1.631239e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  7.323556e+05
+
+H_5(x):
+--------------------
+
+F(x): -7.518930e+01
+Cond(Lambda(x)): 2.638718e+00
+Cond(L): 1.624413e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  5.837211e+05
+
+Cond(H(x)) total: 1.220870e+06
+Cond(L) total: 1.104930e+03
+
+14: pObj=0 pIn=6.468763e-02 dIn=2.241325e-04 gap=5.061303e-03 tau=7.109400e+01 kap=5.158485e-03 mu=3.667609e-01
+
+ans = 
+
+  datetime
+
+   29-Mar-2019 15:54:37
+
+cond(At) = 1.931391e+09
+cond(HiAt) = 3.240543e+10
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.898000e+17
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.792237e-19.] 
+[> In linSolve3 (line 42)
+  In linSolveMain (line 24)
+  In pred (line 45)
+  In alfonso (line 187)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_serialize (line 63)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 3.120135e+01
+Cond(L): 5.585817e+00
+Cond(H_i(x)): 2.310459e+06
+H_1(x):
+--------------------
+
+F(x): -4.672628e+01
+Cond(Lambda(x)): 2.168601e+01
+Cond(L): 4.656824e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  2.191311e+06
+
+H_2(x):
+--------------------
+
+F(x): -5.019228e+01
+Cond(Lambda(x)): 1.464487e+01
+Cond(L): 3.826862e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  2.071681e+06
+
+H_3(x):
+--------------------
+
+F(x): -5.028473e+01
+Cond(Lambda(x)): 1.444534e+01
+Cond(L): 3.800702e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  1.884843e+06
+
+H_4(x):
+--------------------
+
+F(x): -5.037083e+01
+Cond(Lambda(x)): 1.459056e+01
+Cond(L): 3.819759e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.625949e+06
+
+H_5(x):
+--------------------
+
+F(x): -5.027613e+01
+Cond(Lambda(x)): 1.456501e+01
+Cond(L): 3.816413e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  1.303010e+06
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.650366e+01
+Cond(L): 5.148170e+00
+Cond(H_i(x)): 1.036624e+06
+H_1(x):
+--------------------
+
+F(x): -8.908936e+01
+Cond(Lambda(x)): 2.303103e+00
+Cond(L): 1.517598e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  1.036593e+06
+
+H_2(x):
+--------------------
+
+F(x): -8.243383e+01
+Cond(Lambda(x)): 2.976079e+00
+Cond(L): 1.725132e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  1.004741e+06
+
+H_3(x):
+--------------------
+
+F(x): -8.253218e+01
+Cond(Lambda(x)): 3.001290e+00
+Cond(L): 1.732423e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  8.917053e+05
+
+H_4(x):
+--------------------
+
+F(x): -8.257225e+01
+Cond(Lambda(x)): 2.965030e+00
+Cond(L): 1.721926e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  7.534399e+05
+
+H_5(x):
+--------------------
+
+F(x): -8.271288e+01
+Cond(Lambda(x)): 2.938502e+00
+Cond(L): 1.714206e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  6.057957e+05
+
+Cond(H(x)) total: 1.428738e+06
+Cond(L) total: 1.195298e+03
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Decision Polynomial 1:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 3.298112e+01
+Cond(L): 5.742919e+00
+Cond(H_i(x)): 2.501891e+06
+H_1(x):
+--------------------
+
+F(x): -4.805562e+01
+Cond(Lambda(x)): 2.422606e+01
+Cond(L): 4.921998e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..1}(x)):  2.346536e+06
+
+H_2(x):
+--------------------
+
+F(x): -5.171621e+01
+Cond(Lambda(x)): 1.604883e+01
+Cond(L): 4.006099e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..2}(x)):  2.215105e+06
+
+H_3(x):
+--------------------
+
+F(x): -5.181566e+01
+Cond(Lambda(x)): 1.582942e+01
+Cond(L): 3.978620e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..3}(x)):  2.019908e+06
+
+H_4(x):
+--------------------
+
+F(x): -5.190310e+01
+Cond(Lambda(x)): 1.598936e+01
+Cond(L): 3.998670e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..4}(x)):  1.746842e+06
+
+H_5(x):
+--------------------
+
+F(x): -5.180674e+01
+Cond(Lambda(x)): 1.596039e+01
+Cond(L): 3.995046e+00
+Cond(H_i(x)):   Inf
+Cond(H_{1..5}(x)):  1.405960e+06
+
+Decision Polynomial 2:
+-----------------------
+
+H_1(x):
+--------------------
+
+F(x):   Inf
+Cond(Lambda(x)): 2.655028e+01
+Cond(L): 5.152697e+00
+Cond(H_i(x)): 1.057190e+06
+H_1(x):
+--------------------
+
+F(x): -9.311613e+01
+Cond(Lambda(x)): 2.396923e+00
+Cond(L): 1.548200e+00
+Cond(H_
