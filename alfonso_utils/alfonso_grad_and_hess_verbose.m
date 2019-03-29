@@ -60,29 +60,29 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
     % x_1 corresponds to the 1st approximated polynomial, x_2 to the 2nd,...
     off = 0;
     for polyId = 1:numPolys
-        fprintf("Decision Polynomial %d:\n", polyId);
-        fprintf("-----------------------\n\n");
+        %fprintf("Decision Polynomial %d:\n", polyId);
+        %fprintf("-----------------------\n\n");
         n = params.n_arr(polyId);
         U = params.U_arr(polyId);
         P = params.P_cell{polyId};
         PWts = params.PWts_cell{polyId};
         xPoly = x(off+(1:U));
         % for the weight 1
-        fprintf("H_1(x):\n");
-        fprintf("--------------------\n\n");
+        %fprintf("H_1(x):\n");
+        %fprintf("--------------------\n\n");
         [inPoly, gPoly, HPoly] = gH_SOSWt(xPoly,P);
 
         if inPoly == 1
             for j = 1:n
-                fprintf("H_%d(x):\n", j);
-                fprintf("--------------------\n\n");
+                %fprintf("H_%d(x):\n", j);
+                %fprintf("--------------------\n\n");
                 % for the weight 1-t_j^2
                 [inPolyWt, gPolyWt, HPolyWt] = gH_SOSWt(xPoly,PWts{j});
                 inPoly  = inPoly & inPolyWt;
                 if inPoly == 1
                     gPoly   = gPoly+gPolyWt;
                     HPoly   = HPoly+HPolyWt;
-                    fprintf("Cond(H_{1..%d}(x)):  %d\n\n", j, cond(HPoly));
+                    %fprintf("Cond(H_{1..%d}(x)):  %d\n\n", j, cond(HPoly));
                 else
                     gPoly   = NaN;
                     HPoly   = NaN;
@@ -144,11 +144,11 @@ function [in, g, H] = gH_SOSWt(x, P)
 % -------------------------------------------------------------------------
 
     Y = P'*diag(x)*P;
-    fprintf("F(x): %5d\n", log(det(Y)));
+    %fprintf("F(x): %5d\n", log(det(Y)));
     if ~issymmetric(Y)
         Y = (Y+Y')/2;
     end
-    fprintf("Cond(Lambda(x)): %5d\n", cond(Y));
+    %fprintf("Cond(Lambda(x)): %5d\n", cond(Y));
     [L, err] = chol(Y, 'lower');
     if err > 0
         in = 0;
@@ -156,12 +156,12 @@ function [in, g, H] = gH_SOSWt(x, P)
         H = NaN;
     else
         in = 1;
-        fprintf("Cond(L): %5d\n", cond(L));
+        %fprintf("Cond(L): %5d\n", cond(L));
         V = L\P';
         VtV = V'*V;
 
         g = -diag(VtV);
         H = VtV.^2;
-        fprintf("Cond(H_i(x)): %5d\n", cond(H));
+        %fprintf("Cond(H_i(x)): %5d\n", cond(H));
     end
 end
