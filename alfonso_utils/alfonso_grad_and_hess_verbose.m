@@ -151,6 +151,7 @@ function [in, g, H] = gH_SOSWt(x, P)
     %fprintf("Cond(Lambda(x)): %5d\n", cond(Y));
     [L, err] = chol(Y, 'lower');
     if err > 0
+        fprintf("ERROR IN CHOLESKY, LOWEST EIGENVALUE: %d", min(eig(Y)))
         in = 0;
         g = NaN;
         H = NaN;
