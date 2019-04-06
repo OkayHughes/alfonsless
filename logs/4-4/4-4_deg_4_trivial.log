@@ -1,0 +1,942 @@
+min int_{T times X} v d mu s.t. v geq 0 on Z 
+Running alfonso
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 1
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 4
+ Dimension: 126
+
+Total number of SOS constraints: 1
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 4
+
+ size(A) for Decision Poly 1: 126x126
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 4.738156e+03
+
+ Constraint A size: 126x126
+
+ Cond(A): 4.738156e+03
+
+
+size(A): 126x126
+
+ans =
+
+     1   126
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.191717e+02
+Cond(L) total: 2.047368e+01
+
+1: pObj=0 pIn=6.122994e-01 dIn=1.910860e-02 gap=0 tau=1 kap=1 mu=1
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:43
+
+Entering Corrector
+
+cond(H) = 4.191717e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.486184e+04
+cond(Hmat) = 1.486184e+04
+cond(hmat product) =   Inf
+cond(LHS) = 7.548647e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.796730e+02
+Cond(L) total: 2.792263e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.621290e+02
+Cond(L) total: 2.370926e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.925700e+02
+Cond(L) total: 2.219392e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.614478e+02
+Cond(L) total: 2.148134e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.451573e+02
+Cond(L) total: 2.109875e+01
+
+Entering Corrector
+
+cond(H) = 4.451573e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.399165e+04
+cond(Hmat) = 1.399165e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.995562e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.505523e+02
+Cond(L) total: 2.122622e+01
+
+2: pObj=0 pIn=5.130588e-01 dIn=1.601150e-02 gap=1.536296e-01 tau=1.450804e+00 kap=5.745775e-01 mu=8.376993e-01
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:43
+
+Entering Corrector
+
+cond(H) = 4.505523e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.385861e+04
+cond(Hmat) = 1.385861e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.914746e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.012872e+02
+Cond(L) total: 2.238944e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.315810e+02
+Cond(L) total: 2.305604e+01
+
+Entering Corrector
+
+cond(H) = 5.012872e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.299082e+04
+cond(Hmat) = 1.299082e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.409601e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.076332e+02
+Cond(L) total: 2.253072e+01
+
+3: pObj=0 pIn=4.299030e-01 dIn=1.341638e-02 gap=1.495969e-01 tau=2.006209e+00 kap=3.491943e-01 mu=7.017784e-01
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:44
+
+Entering Corrector
+
+cond(H) = 5.076332e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.291466e+04
+cond(Hmat) = 1.291466e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.366809e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.885752e+02
+Cond(L) total: 2.426057e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.352752e+02
+Cond(L) total: 2.520467e+01
+
+Entering Corrector
+
+cond(H) = 5.885752e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.227536e+04
+cond(Hmat) = 1.227536e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.008189e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.944127e+02
+Cond(L) total: 2.438058e+01
+
+4: pObj=0 pIn=3.602249e-01 dIn=1.124187e-02 gap=1.222805e-01 tau=2.601112e+00 kap=2.259382e-01 mu=5.879810e-01
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:45
+
+Entering Corrector
+
+cond(H) = 5.944127e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.224626e+04
+cond(Hmat) = 1.224626e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.991241e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.083096e+02
+Cond(L) total: 2.661409e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.725969e+02
+Cond(L) total: 2.779563e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 8.877176e+02
+Cond(L) total: 2.979459e+01
+
+Entering Corrector
+
+cond(H) = 7.725969e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.192096e+04
+cond(Hmat) = 1.192096e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.718127e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.843920e+02
+Cond(L) total: 2.800700e+01
+
+5: pObj=0 pIn=2.768182e-01 dIn=8.638922e-03 gap=8.482310e-02 tau=3.476544e+00 kap=1.298729e-01 mu=4.517699e-01
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:45
+
+Entering Corrector
+
+cond(H) = 7.843920e+02
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.192527e+04
+cond(Hmat) = 1.192527e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.709769e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.045152e+03
+Cond(L) total: 3.232882e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.208869e+03
+Cond(L) total: 3.476880e+01
+
+Entering Corrector
+
+cond(H) = 1.045152e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.241801e+04
+cond(Hmat) = 1.241801e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.636495e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.055875e+03
+Cond(L) total: 3.249424e+01
+
+6: pObj=0 pIn=2.127235e-01 dIn=6.638659e-03 gap=5.850079e-02 tau=4.288850e+00 kap=8.092634e-02 mu=3.471389e-01
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:46
+
+Entering Corrector
+
+cond(H) = 1.055875e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.244912e+04
+cond(Hmat) = 1.244912e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.636113e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.408481e+03
+Cond(L) total: 3.752973e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.623792e+03
+Cond(L) total: 4.029630e+01
+
+Entering Corrector
+
+cond(H) = 1.408481e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.367929e+04
+cond(Hmat) = 1.367929e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.661095e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.418462e+03
+Cond(L) total: 3.766248e+01
+
+7: pObj=0 pIn=1.634693e-01 dIn=5.101539e-03 gap=4.088380e-02 tau=5.015517e+00 kap=5.318199e-02 mu=2.667513e-01
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:47
+
+Entering Corrector
+
+cond(H) = 1.418462e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.371768e+04
+cond(Hmat) = 1.371768e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.662352e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.867696e+03
+Cond(L) total: 4.321685e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.133680e+03
+Cond(L) total: 4.619177e+01
+
+Entering Corrector
+
+cond(H) = 1.867696e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.551924e+04
+cond(Hmat) = 1.551924e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.723001e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.877000e+03
+Cond(L) total: 4.332436e+01
+
+8: pObj=0 pIn=1.256195e-01 dIn=3.920324e-03 gap=2.900913e-02 tau=5.653528e+00 kap=3.625658e-02 mu=2.049828e-01
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:47
+
+Entering Corrector
+
+cond(H) = 1.877000e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.555748e+04
+cond(Hmat) = 1.555748e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.724235e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.418867e+03
+Cond(L) total: 4.918198e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.729508e+03
+Cond(L) total: 5.224469e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.298273e+03
+Cond(L) total: 5.743059e+01
+
+Entering Corrector
+
+cond(H) = 2.729508e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.916328e+04
+cond(Hmat) = 1.916328e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.818222e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.748355e+03
+Cond(L) total: 5.242475e+01
+
+9: pObj=0 pIn=8.406802e-02 dIn=2.623589e-03 gap=1.763755e-02 tau=6.465556e+00 kap=2.121486e-02 mu=1.371719e-01
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:48
+
+Entering Corrector
+
+cond(H) = 2.748355e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 1.924564e+04
+cond(Hmat) = 1.924564e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.819906e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.758602e+03
+Cond(L) total: 6.130744e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.384109e+03
+Cond(L) total: 6.621260e+01
+
+Entering Corrector
+
+cond(H) = 3.758602e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 2.389563e+04
+cond(Hmat) = 2.389563e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.895258e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.772668e+03
+Cond(L) total: 6.142205e+01
+
+10: pObj=0 pIn=5.626063e-02 dIn=1.755778e-03 gap=1.099202e-02 tau=7.104794e+00 kap=1.292020e-02 mu=9.179655e-02
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:48
+
+Entering Corrector
+
+cond(H) = 3.772668e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 2.396399e+04
+cond(Hmat) = 2.396399e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.896183e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.849153e+03
+Cond(L) total: 6.963586e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.472487e+03
+Cond(L) total: 7.397626e+01
+
+Entering Corrector
+
+cond(H) = 4.849153e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 2.951630e+04
+cond(Hmat) = 2.951630e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.966681e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.858151e+03
+Cond(L) total: 6.970044e+01
+
+11: pObj=0 pIn=3.765116e-02 dIn=1.175015e-03 gap=6.981676e-03 tau=7.595724e+00 kap=8.087688e-03 mu=6.143206e-02
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:49
+
+Entering Corrector
+
+cond(H) = 4.858151e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 2.956540e+04
+cond(Hmat) = 2.956540e+04
+cond(hmat product) =   Inf
+cond(LHS) = 5.967298e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.905241e+03
+Cond(L) total: 7.684557e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.476987e+03
+Cond(L) total: 8.047973e+01
+
+Entering Corrector
+
+cond(H) = 5.905241e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 3.557645e+04
+cond(Hmat) = 3.557645e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.046426e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.910202e+03
+Cond(L) total: 7.687784e+01
+
+12: pObj=0 pIn=2.519719e-02 dIn=7.863521e-04 gap=4.499162e-03 tau=7.963037e+00 kap=5.162832e-03 mu=4.111186e-02
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:50
+
+Entering Corrector
+
+cond(H) = 5.910202e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 3.560630e+04
+cond(Hmat) = 3.560630e+04
+cond(hmat product) =   Inf
+cond(LHS) = 6.046846e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.852906e+03
+Cond(L) total: 8.278228e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.341774e+03
+Cond(L) total: 8.568415e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 8.162487e+03
+Cond(L) total: 9.034648e+01
+
+Entering Corrector
+
+cond(H) = 7.341774e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 4.471998e+04
+cond(Hmat) = 4.471998e+04
+cond(hmat product) =   Inf
+cond(LHS) = 8.661870e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.346262e+03
+Cond(L) total: 8.571034e+01
+
+13: pObj=0 pIn=1.329071e-02 dIn=4.147754e-04 gap=2.282724e-03 tau=8.352457e+00 kap=2.596248e-03 mu=2.168507e-02
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:50
+
+Entering Corrector
+
+cond(H) = 7.346262e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 4.475004e+04
+cond(Hmat) = 4.475004e+04
+cond(hmat product) =   Inf
+cond(LHS) = 8.742183e+06
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 8.383515e+03
+Cond(L) total: 9.156154e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 8.917077e+03
+Cond(L) total: 9.443027e+01
+
+Entering Corrector
+
+cond(H) = 8.383515e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 5.191987e+04
+cond(Hmat) = 5.191987e+04
+cond(hmat product) =   Inf
+cond(LHS) = 3.124934e+07
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 8.384586e+03
+Cond(L) total: 9.156738e+01
+
+14: pObj=0 pIn=7.010419e-03 dIn=2.187807e-04 gap=1.178031e-03 tau=8.576860e+00 kap=1.333608e-03 mu=1.143817e-02
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:51
+
+Entering Corrector
+
+cond(H) = 8.384586e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 5.192749e+04
+cond(Hmat) = 5.192749e+04
+cond(hmat product) =   Inf
+cond(LHS) = 3.135142e+07
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.051059e+03
+Cond(L) total: 9.513705e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.369044e+03
+Cond(L) total: 9.679382e+01
+
+Entering Corrector
+
+cond(H) = 9.051059e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 5.675051e+04
+cond(Hmat) = 5.675051e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.122812e+08
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.051270e+03
+Cond(L) total: 9.513816e+01
+
+15: pObj=0 pIn=3.697771e-03 dIn=1.153998e-04 gap=6.139705e-04 tau=8.701592e+00 kap=6.933517e-04 mu=6.033264e-03
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:52
+
+Entering Corrector
+
+cond(H) = 9.051270e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 5.675206e+04
+cond(Hmat) = 5.675206e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.123997e+08
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.445815e+03
+Cond(L) total: 9.718958e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.625407e+03
+Cond(L) total: 9.810916e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.894033e+03
+Cond(L) total: 9.946876e+01
+
+Entering Corrector
+
+cond(H) = 9.625407e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 6.102667e+04
+cond(Hmat) = 6.102667e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.061091e+09
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.625455e+03
+Cond(L) total: 9.810940e+01
+
+16: pObj=0 pIn=1.201605e-03 dIn=3.749961e-05 gap=1.976718e-04 tau=8.798860e+00 kap=2.228167e-04 mu=1.960533e-03
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:52
+
+Entering Corrector
+
+cond(H) = 9.625455e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 6.102703e+04
+cond(Hmat) = 6.102703e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.061791e+09
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.827753e+03
+Cond(L) total: 9.913503e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.917056e+03
+Cond(L) total: 9.958442e+01
+
+Entering Corrector
+
+cond(H) = 9.827753e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 6.255751e+04
+cond(Hmat) = 6.255751e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.004548e+10
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.827755e+03
+Cond(L) total: 9.913504e+01
+
+17: pObj=0 pIn=3.904665e-04 dIn=1.218565e-05 gap=6.403810e-05 tau=8.831121e+00 kap=7.214069e-05 mu=6.370831e-04
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:53
+
+Entering Corrector
+
+cond(H) = 9.827755e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 6.255752e+04
+cond(Hmat) = 6.255752e+04
+cond(hmat product) =   Inf
+cond(LHS) = 1.004623e+10
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.895319e+03
+Cond(L) total: 9.947522e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.924558e+03
+Cond(L) total: 9.962207e+01
+
+18: pObj=0 pIn=1.268836e-04 dIn=3.959776e-06 gap=2.079527e-05 tau=8.841658e+00 kap=2.335633e-05 mu=2.070227e-04
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:53
+
+Entering Corrector
+
+cond(H) = 9.895319e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 6.307135e+04
+cond(Hmat) = 6.307135e+04
+cond(hmat product) =   Inf
+cond(LHS) = 9.510957e+10
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.917473e+03
+Cond(L) total: 9.958651e+01
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.926997e+03
+Cond(L) total: 9.963432e+01
+
+Entering Corrector
+
+cond(H) = 9.926997e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 6.331273e+04
+cond(Hmat) = 6.331273e+04
+cond(hmat product) =   Inf
+cond(LHS) = 7.483058e+13
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.926997e+03
+Cond(L) total: 9.963432e+01
+
+19: pObj=0 pIn=4.523221e-06 dIn=1.411604e-07 gap=7.407434e-07 tau=8.846571e+00 kap=8.342273e-07 mu=7.380051e-06
+
+ans = 
+
+  datetime
+
+   05-Apr-2019 16:19:54
+
+Entering Corrector
+
+cond(H) = 9.926997e+03
+cond(At) = 4.738156e+03
+cond(HiAt) = 6.331273e+04
+cond(Hmat) = 6.331273e+04
+cond(hmat product) =   Inf
+cond(LHS) = 7.483073e+13
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.928131e+03
+Cond(L) total: 9.964000e+01
+
+Done in 19 iterations.
+Status = Feasible and approximate optimal solution found.
+
+ans =
+
+    'Done'
+
