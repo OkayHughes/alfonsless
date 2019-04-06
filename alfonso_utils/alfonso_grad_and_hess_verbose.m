@@ -44,8 +44,8 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
 % -------------------------------------------------------------------------
 
 
-    fprintf("\nENTERING GRADIENT AND HESSIAN CALCULATION\n");
-    fprintf("=========================================\n\n");
+    %fprintf("\nENTERING GRADIENT AND HESSIAN CALCULATION\n");
+    %fprintf("=========================================\n\n");
     
     U_arr = params.U_arr;
     in = 1;
@@ -113,8 +113,8 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
             return;
         end
     end
-    fprintf("Cond(H(x)) total: %5d\n", cond(H));
-    fprintf("Cond(L) total: %5d\n\n", cond(L));
+    %fprintf("Cond(H(x)) total: %5d\n", cond(H));
+    %fprintf("Cond(L) total: %5d\n\n", cond(L));
 end
 
 function [in, g, H] = gH_SOSWt(x, P)
