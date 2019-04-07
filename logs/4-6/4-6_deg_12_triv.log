@@ -1,0 +1,1669 @@
+min int_{T times X} v d mu s.t. v geq 0 on Z 
+Running alfonso
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 1
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 12
+ Dimension: 6188
+
+Total number of SOS constraints: 1
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 12
+
+ size(A) for Decision Poly 1: 6188x6188
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 8.264870e+11
+
+ Constraint A size: 6188x6188
+
+ Cond(A): 8.264870e+11
+
+
+size(A): 6188x6188
+
+ans =
+
+           1        6188
+
+Termination criteria: P=7.169179e-02 D=3.351235e-04 G=9.999990e-01 A=-1.000000e-06 T=1.000000e+00 K=1.000000e+00 M=1.000000e+00
+1: pObj=0 pIn=7.169279e-02 dIn=3.361235e-04 gap=0 tau=1 kap=1 mu=1
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 23:30:27
+
+Entering Predictor
+==================
+
+cond(H) = 2.587413e+06
+Hic residual:     0
+HiAt residual: 9.118950e-10
+Hirxrs residual:     0
+Hic_alt residual:     0
+HiAt_alt residual: 4.618664e-11
+Hirxrs_alt residual:     0
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.045377e+12
+cond(Hmat) = 1.045376e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.223836e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 8.406174e-04
+
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -8.445424e-02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 73)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+Entering Corrector
+==================
+
+cond(H) = 2.556181e+06
+Hic residual:     0
+HiAt residual: 8.794504e-10
+Hirxrs residual: 6.770689e-14
+Hic_alt residual:     0
+HiAt_alt residual: 4.515670e-11
+Hirxrs_alt residual: 1.489374e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.323198e+12
+cond(Hmat) = 2.323196e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.389576e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 6.628119e-06
+
+Entering Corrector
+==================
+
+cond(H) = 2.569017e+06
+Hic residual:     0
+HiAt residual: 8.909143e-10
+Hirxrs residual: 8.745947e-15
+Hic_alt residual:     0
+HiAt_alt residual: 4.573712e-11
+Hirxrs_alt residual: 3.475400e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.648018e+12
+cond(Hmat) = 1.648019e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+7.323467e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 6.871638e-06
+
+Termination criteria: P=6.725222e-02 D=3.143091e-04 G=9.380741e-01 A=1.395854e-01 T=1.284794e+00 K=1.284794e+00 M=9.374311e-01
+2: pObj=0 pIn=6.725322e-02 dIn=3.153091e-04 gap=1.395864e-01 tau=1.284794e+00 kap=7.296408e-01 mu=9.374311e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 23:50:27
+
+Entering Predictor
+==================
+
+cond(H) = 2.572137e+06
+Hic residual:     0
+HiAt residual: 8.804412e-10
+Hirxrs residual: 1.661398e-12
+Hic_alt residual:     0
+HiAt_alt residual: 4.726924e-11
+Hirxrs_alt residual: 6.290057e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.559269e+12
+cond(Hmat) = 1.559269e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.091973e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 3.958347e-05
+
+Entering Corrector
+==================
+
+cond(H) = 2.577933e+06
+Hic residual:     0
+HiAt residual: 8.616589e-10
+Hirxrs residual: 6.236282e-15
+Hic_alt residual:     0
+HiAt_alt residual: 4.720806e-11
+Hirxrs_alt residual: 7.655451e-17
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.518931e+12
+cond(Hmat) = 1.518931e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.905247e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 2.312120e-07
+
+Entering Corrector
+==================
+
+cond(H) = 2.580398e+06
+Hic residual:     0
+HiAt residual: 8.913065e-10
+Hirxrs residual: 6.295689e-16
+Hic_alt residual:     0
+HiAt_alt residual: 4.680924e-11
+Hirxrs_alt residual: 1.429359e-18
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.508421e+12
+cond(Hmat) = 1.508421e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+3.127690e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 6.705966e-08
+
+Termination criteria: P=6.130272e-02 D=2.864156e-04 G=8.550881e-01 A=1.749412e-01 T=2.216364e+00 K=2.216364e+00 M=8.544787e-01
+3: pObj=0 pIn=6.130372e-02 dIn=2.874156e-04 gap=1.749422e-01 tau=2.216364e+00 kap=3.851395e-01 mu=8.544787e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 00:14:47
+
+Entering Predictor
+==================
+
+cond(H) = 2.580827e+06
+Hic residual:     0
+HiAt residual: 8.718295e-10
+Hirxrs residual: 3.822968e-12
+Hic_alt residual:     0
+HiAt_alt residual: 4.624838e-11
+Hirxrs_alt residual: 9.419083e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.508823e+12
+cond(Hmat) = 1.508822e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.546438e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 6.121019e-05
+
+Entering Corrector
+==================
+
+cond(H) = 2.590303e+06
+Hic residual:     0
+HiAt residual: 8.852311e-10
+Hirxrs residual: 6.590948e-15
+Hic_alt residual:     0
+HiAt_alt residual: 4.660255e-11
+Hirxrs_alt residual: 3.814641e-17
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.483171e+12
+cond(Hmat) = 1.483171e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.293293e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 7.852442e-07
+
+Entering Corrector
+==================
+
+cond(H) = 2.594681e+06
+Hic residual:     0
+HiAt residual: 9.160823e-10
+Hirxrs residual: 9.566814e-16
+Hic_alt residual:     0
+HiAt_alt residual: 4.787152e-11
+Hirxrs_alt residual: 1.747537e-18
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.486736e+12
+cond(Hmat) = 1.486736e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.357790e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.723726e-08
+
+Termination criteria: P=5.750649e-02 D=2.686174e-04 G=8.021368e-01 A=1.314168e-01 T=3.966843e+00 K=3.966843e+00 M=8.015363e-01
+4: pObj=0 pIn=5.750749e-02 dIn=2.696174e-04 gap=1.314178e-01 tau=3.966843e+00 kap=2.019486e-01 mu=8.015363e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 00:38:57
+
+Entering Predictor
+==================
+
+cond(H) = 2.595348e+06
+Hic residual:     0
+HiAt residual: 9.333460e-10
+Hirxrs residual: 4.900625e-12
+Hic_alt residual:     0
+HiAt_alt residual: 4.573001e-11
+Hirxrs_alt residual: 1.183659e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.486667e+12
+cond(Hmat) = 1.486666e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.355686e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 5.555495e-05
+
+Entering Corrector
+==================
+
+cond(H) = 2.611360e+06
+Hic residual:     0
+HiAt residual: 9.104166e-10
+Hirxrs residual: 4.883100e-15
+Hic_alt residual:     0
+HiAt_alt residual: 4.570909e-11
+Hirxrs_alt residual: 1.627364e-17
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.484854e+12
+cond(Hmat) = 1.484853e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.032465e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.103322e-07
+
+Termination criteria: P=5.501369e-02 D=2.569302e-04 G=7.673662e-01 A=9.243121e-02 T=6.364293e+00 K=6.364293e+00 M=7.667794e-01
+5: pObj=0 pIn=5.501469e-02 dIn=2.579302e-04 gap=9.243221e-02 tau=6.364293e+00 kap=1.191890e-01 mu=7.667794e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 00:55:39
+
+Entering Predictor
+==================
+
+cond(H) = 2.616259e+06
+Hic residual:     0
+HiAt residual: 9.078430e-10
+Hirxrs residual: 6.020630e-12
+Hic_alt residual:     0
+HiAt_alt residual: 4.683245e-11
+Hirxrs_alt residual: 1.250237e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.483421e+12
+cond(Hmat) = 1.483420e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.869863e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 3.891358e-05
+
+Entering Corrector
+==================
+
+cond(H) = 2.645524e+06
+Hic residual:     0
+HiAt residual: 9.257240e-10
+Hirxrs residual: 1.044040e-14
+Hic_alt residual:     0
+HiAt_alt residual: 4.886896e-11
+Hirxrs_alt residual: 1.726685e-17
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.467913e+12
+cond(Hmat) = 1.467913e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.277958e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.840490e-07
+
+Termination criteria: P=5.262895e-02 D=2.457496e-04 G=7.341028e-01 A=6.248270e-02 T=9.908475e+00 K=9.908475e+00 M=7.335307e-01
+6: pObj=0 pIn=5.262995e-02 dIn=2.467496e-04 gap=6.248370e-02 tau=9.908475e+00 kap=7.372256e-02 mu=7.335308e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 01:11:28
+
+Entering Predictor
+==================
+
+cond(H) = 2.651109e+06
+Hic residual:     0
+HiAt residual: 8.900523e-10
+Hirxrs residual: 6.698814e-12
+Hic_alt residual:     0
+HiAt_alt residual: 4.822377e-11
+Hirxrs_alt residual: 1.279396e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.466688e+12
+cond(Hmat) = 1.466689e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+3.219094e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.381381e-04
+
+Entering Corrector
+==================
+
+cond(H) = 2.694681e+06
+Hic residual:     0
+HiAt residual: 9.354636e-10
+Hirxrs residual: 1.695538e-14
+Hic_alt residual:     0
+HiAt_alt residual: 4.889623e-11
+Hirxrs_alt residual: 5.324884e-17
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.490282e+12
+cond(Hmat) = 1.490283e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.465567e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.081169e-07
+
+Termination criteria: P=5.034757e-02 D=2.350536e-04 G=7.022813e-01 A=4.399978e-02 T=1.418447e+01 K=1.418447e+01 M=7.017188e-01
+7: pObj=0 pIn=5.034857e-02 dIn=2.360536e-04 gap=4.400078e-02 tau=1.418447e+01 kap=4.942874e-02 mu=7.017188e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 01:27:25
+
+Entering Predictor
+==================
+
+cond(H) = 2.699114e+06
+Hic residual:     0
+HiAt residual: 9.466695e-10
+Hirxrs residual: 7.275074e-12
+Hic_alt residual:     0
+HiAt_alt residual: 4.904889e-11
+Hirxrs_alt residual: 1.513200e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.482297e+12
+cond(Hmat) = 1.482297e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.648789e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 2.997409e-05
+
+Entering Corrector
+==================
+
+cond(H) = 2.781521e+06
+Hic residual:     0
+HiAt residual: 1.011504e-09
+Hirxrs residual: 4.045694e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.073899e-11
+Hirxrs_alt residual: 6.661907e-17
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.471315e+12
+cond(Hmat) = 1.471316e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+3.322215e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.600198e-07
+
+Termination criteria: P=4.722974e-02 D=2.204360e-04 G=6.587926e-01 A=2.892776e-02 T=2.106604e+01 K=2.106604e+01 M=6.582591e-01
+8: pObj=0 pIn=4.723074e-02 dIn=2.214360e-04 gap=2.892876e-02 tau=2.106604e+01 kap=3.122436e-02 mu=6.582591e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 01:44:04
+
+Entering Predictor
+==================
+
+cond(H) = 2.788123e+06
+Hic residual:     0
+HiAt residual: 1.000715e-09
+Hirxrs residual: 8.519369e-12
+Hic_alt residual:     0
+HiAt_alt residual: 5.054749e-11
+Hirxrs_alt residual: 1.830923e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.469904e+12
+cond(Hmat) = 1.469905e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.192500e-22.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 2.683110e-03
+
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.220362e+02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 73)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.525452e-01[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 73)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+Entering Corrector
+==================
+
+cond(H) = 2.801043e+06
+Hic residual:     0
+HiAt residual: 1.012898e-09
+Hirxrs residual: 3.081103e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.112031e-11
+Hirxrs_alt residual: 1.178655e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.127346e+12
+cond(Hmat) = 2.127345e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.029518e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.778902e-06
+
+Termination criteria: P=4.652751e-02 D=2.171437e-04 G=6.489975e-01 A=2.657282e-02 T=2.272888e+01 K=2.272888e+01 M=6.481524e-01
+9: pObj=0 pIn=4.652851e-02 dIn=2.181437e-04 gap=2.657382e-02 tau=2.272888e+01 kap=2.851687e-02 mu=6.481524e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 01:59:58
+
+Entering Predictor
+==================
+
+cond(H) = 2.809071e+06
+Hic residual:     0
+HiAt residual: 9.754173e-10
+Hirxrs residual: 8.802880e-12
+Hic_alt residual:     0
+HiAt_alt residual: 5.203294e-11
+Hirxrs_alt residual: 1.914454e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.775127e+12
+cond(Hmat) = 1.775127e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.786468e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.470387e-04
+
+Entering Corrector
+==================
+
+cond(H) = 2.918099e+06
+Hic residual:     0
+HiAt residual: 9.969821e-10
+Hirxrs residual: 4.231217e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.449832e-11
+Hirxrs_alt residual: 1.931247e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.838748e+12
+cond(Hmat) = 1.838748e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+9.709224e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 2.866712e-07
+
+Termination criteria: P=4.364623e-02 D=2.036351e-04 G=6.088083e-01 A=1.912197e-02 T=3.019515e+01 K=3.019515e+01 M=6.079823e-01
+10: pObj=0 pIn=4.364723e-02 dIn=2.046351e-04 gap=1.912297e-02 tau=3.019515e+01 kap=2.013123e-02 mu=6.079823e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 02:16:20
+
+Entering Predictor
+==================
+
+cond(H) = 2.925010e+06
+Hic residual:     0
+HiAt residual: 1.025828e-09
+Hirxrs residual: 9.658190e-12
+Hic_alt residual:     0
+HiAt_alt residual: 5.568197e-11
+Hirxrs_alt residual: 2.009119e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.782883e+12
+cond(Hmat) = 1.782882e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.083214e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.326926e-04
+
+Entering Corrector
+==================
+
+cond(H) = 3.119580e+06
+Hic residual:     0
+HiAt residual: 1.089056e-09
+Hirxrs residual: 7.880571e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.897544e-11
+Hirxrs_alt residual: 2.480931e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.934003e+12
+cond(Hmat) = 1.934005e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+7.068113e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.483616e-06
+
+Termination criteria: P=3.978501e-02 D=1.855323e-04 G=5.549506e-01 A=1.287450e-02 T=4.152361e+01 K=4.152361e+01 M=5.541433e-01
+11: pObj=0 pIn=3.978601e-02 dIn=1.865323e-04 gap=1.287550e-02 tau=4.152361e+01 kap=1.334069e-02 mu=5.541433e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 02:32:30
+
+Entering Predictor
+==================
+
+cond(H) = 3.132189e+06
+Hic residual:     0
+HiAt residual: 1.075674e-09
+Hirxrs residual: 1.199454e-11
+Hic_alt residual:     0
+HiAt_alt residual: 5.999519e-11
+Hirxrs_alt residual: 2.126963e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.889370e+12
+cond(Hmat) = 1.889370e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.050872e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 6.612712e-05
+
+Entering Corrector
+==================
+
+cond(H) = 3.384248e+06
+Hic residual:     0
+HiAt residual: 1.172226e-09
+Hirxrs residual: 7.108344e-14
+Hic_alt residual:     0
+HiAt_alt residual: 6.443017e-11
+Hirxrs_alt residual: 1.768012e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.897433e+12
+cond(Hmat) = 1.897434e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.298362e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 7.801600e-07
+
+Termination criteria: P=3.626538e-02 D=1.690309e-04 G=5.058572e-01 A=9.231403e-03 T=5.326835e+01 K=5.326835e+01 M=5.051051e-01
+12: pObj=0 pIn=3.626638e-02 dIn=1.700309e-04 gap=9.232403e-03 tau=5.326835e+01 kap=9.480651e-03 mu=5.051051e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 02:49:56
+
+Entering Predictor
+==================
+
+cond(H) = 3.396936e+06
+Hic residual:     0
+HiAt residual: 1.173848e-09
+Hirxrs residual: 1.404691e-11
+Hic_alt residual:     0
+HiAt_alt residual: 6.454225e-11
+Hirxrs_alt residual: 2.173895e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.880939e+12
+cond(Hmat) = 1.880939e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.437230e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 5.963181e-05
+
+Entering Corrector
+==================
+
+cond(H) = 3.707901e+06
+Hic residual:     0
+HiAt residual: 1.261613e-09
+Hirxrs residual: 7.185786e-14
+Hic_alt residual:     0
+HiAt_alt residual: 7.118306e-11
+Hirxrs_alt residual: 1.481674e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.919103e+12
+cond(Hmat) = 1.919103e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.641574e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 4.456558e-07
+
+Termination criteria: P=3.305710e-02 D=1.539892e-04 G=4.611069e-01 A=6.903709e-03 T=6.530667e+01 K=6.530667e+01 M=4.604106e-01
+13: pObj=0 pIn=3.305810e-02 dIn=1.549892e-04 gap=6.904709e-03 tau=6.530667e+01 kap=7.049284e-03 mu=4.604106e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 03:07:00
+
+Entering Predictor
+==================
+
+cond(H) = 3.721278e+06
+Hic residual:     0
+HiAt residual: 1.361295e-09
+Hirxrs residual: 1.552019e-11
+Hic_alt residual:     0
+HiAt_alt residual: 7.022264e-11
+Hirxrs_alt residual: 2.185701e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.908053e+12
+cond(Hmat) = 1.908052e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.284519e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.001862e-04
+
+Entering Corrector
+==================
+
+cond(H) = 4.102328e+06
+Hic residual:     0
+HiAt residual: 1.442214e-09
+Hirxrs residual: 6.929766e-14
+Hic_alt residual:     0
+HiAt_alt residual: 7.994578e-11
+Hirxrs_alt residual: 2.061701e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.934956e+12
+cond(Hmat) = 1.934957e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.563716e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 4.183994e-07
+
+Termination criteria: P=3.013265e-02 D=1.402782e-04 G=4.203154e-01 A=5.323114e-03 T=7.751410e+01 K=7.751410e+01 M=4.196489e-01
+14: pObj=0 pIn=3.013365e-02 dIn=1.412782e-04 gap=5.324114e-03 tau=7.751410e+01 kap=5.413503e-03 mu=4.196489e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 03:24:32
+
+Entering Predictor
+==================
+
+cond(H) = 4.117170e+06
+Hic residual:     0
+HiAt residual: 1.423055e-09
+Hirxrs residual: 1.699033e-11
+Hic_alt residual:     0
+HiAt_alt residual: 7.983593e-11
+Hirxrs_alt residual: 2.237414e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.900570e+12
+cond(Hmat) = 1.900569e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.354568e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 3.246077e-05
+
+Entering Corrector
+==================
+
+cond(H) = 4.565698e+06
+Hic residual:     0
+HiAt residual: 1.565471e-09
+Hirxrs residual: 7.141037e-14
+Hic_alt residual:     0
+HiAt_alt residual: 8.919863e-11
+Hirxrs_alt residual: 1.334418e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.057714e+12
+cond(Hmat) = 2.057714e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.231033e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 7.919632e-07
+
+Termination criteria: P=2.746690e-02 D=1.277802e-04 G=3.831325e-01 A=4.196769e-03 T=8.987804e+01 K=8.987804e+01 M=3.825156e-01
+15: pObj=0 pIn=2.746790e-02 dIn=1.287802e-04 gap=4.197769e-03 tau=8.987804e+01 kap=4.255768e-03 mu=3.825156e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 03:41:20
+
+Entering Predictor
+==================
+
+cond(H) = 4.580844e+06
+Hic residual:     0
+HiAt residual: 1.568356e-09
+Hirxrs residual: 1.810567e-11
+Hic_alt residual:     0
+HiAt_alt residual: 9.096716e-11
+Hirxrs_alt residual: 2.307672e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.050138e+12
+cond(Hmat) = 2.050139e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.665843e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.549944e-04
+
+Entering Corrector
+==================
+
+cond(H) = 5.107941e+06
+Hic residual:     0
+HiAt residual: 1.778590e-09
+Hirxrs residual: 7.429223e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.020184e-10
+Hirxrs_alt residual: 3.516068e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.609994e+12
+cond(Hmat) = 2.609994e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.019242e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.512916e-06
+
+Termination criteria: P=2.503697e-02 D=1.163878e-04 G=3.492389e-01 A=3.367839e-03 T=1.023105e+02 K=1.023105e+02 M=3.486115e-01
+16: pObj=0 pIn=2.503797e-02 dIn=1.173878e-04 gap=3.368839e-03 tau=1.023105e+02 kap=3.407301e-03 mu=3.486115e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 03:57:29
+
+Entering Predictor
+==================
+
+cond(H) = 5.128073e+06
+Hic residual:     0
+HiAt residual: 1.761039e-09
+Hirxrs residual: 2.236645e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.013619e-10
+Hirxrs_alt residual: 2.344489e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.445301e+12
+cond(Hmat) = 2.445301e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.325722e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 5.665066e-05
+
+Entering Corrector
+==================
+
+cond(H) = 5.754401e+06
+Hic residual:     0
+HiAt residual: 1.952555e-09
+Hirxrs residual: 7.883871e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.173490e-10
+Hirxrs_alt residual: 1.242921e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.696563e+12
+cond(Hmat) = 2.696558e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.368938e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 5.815251e-07
+
+Termination criteria: P=2.282201e-02 D=1.060031e-04 G=3.183437e-01 A=2.741955e-03 T=1.147338e+02 K=1.147338e+02 M=3.177632e-01
+17: pObj=0 pIn=2.282301e-02 dIn=1.070031e-04 gap=2.742955e-03 tau=1.147338e+02 kap=2.769516e-03 mu=3.177632e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 04:11:46
+
+Entering Predictor
+==================
+
+cond(H) = 5.771054e+06
+Hic residual:     0
+HiAt residual: 1.890321e-09
+Hirxrs residual: 2.280287e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.166051e-10
+Hirxrs_alt residual: 2.496977e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.692144e+12
+cond(Hmat) = 2.692142e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.235953e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.175530e-03
+
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.121323e-01[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 73)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+Entering Corrector
+==================
+
+cond(H) = 5.966858e+06
+Hic residual:     0
+HiAt residual: 1.965502e-09
+Hirxrs residual: 9.024194e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.232786e-10
+Hirxrs_alt residual: 8.330487e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 4.624611e+12
+cond(Hmat) = 4.624613e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.184409e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 2.539536e-06
+
+Termination criteria: P=2.212948e-02 D=1.027563e-04 G=3.086841e-01 A=2.567950e-03 T=1.188453e+02 K=1.188453e+02 M=3.079264e-01
+18: pObj=0 pIn=2.213048e-02 dIn=1.037563e-04 gap=2.568950e-03 tau=1.188453e+02 kap=2.591034e-03 mu=3.079264e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 04:30:14
+
+Entering Predictor
+==================
+
+cond(H) = 5.985452e+06
+Hic residual:     0
+HiAt residual: 2.085465e-09
+Hirxrs residual: 2.494550e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.229388e-10
+Hirxrs_alt residual: 2.537012e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 3.534932e+12
+cond(Hmat) = 3.534930e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.880862e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.887646e-04
+
+Entering Corrector
+==================
+
+cond(H) = 6.728437e+06
+Hic residual:     0
+HiAt residual: 2.351806e-09
+Hirxrs residual: 8.642845e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.407731e-10
+Hirxrs_alt residual: 3.077261e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 5.148836e+12
+cond(Hmat) = 5.148841e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.290621e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 3.068314e-06
+
+Termination criteria: P=2.017173e-02 D=9.357762e-05 G=2.813766e-01 A=2.121946e-03 T=1.312547e+02 K=1.312547e+02 M=2.806245e-01
+19: pObj=0 pIn=2.017273e-02 dIn=9.457762e-05 gap=2.122946e-03 tau=1.312547e+02 kap=2.138009e-03 mu=2.806245e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 04:47:37
+
+Entering Predictor
+==================
+
+cond(H) = 6.753313e+06
+Hic residual:     0
+HiAt residual: 2.340827e-09
+Hirxrs residual: 2.853915e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.408439e-10
+Hirxrs_alt residual: 2.663823e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 4.648554e+12
+cond(Hmat) = 4.648555e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.054864e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 5.015483e-05
+
+Entering Corrector
+==================
+
+cond(H) = 8.088745e+06
+Hic residual:     0
+HiAt residual: 2.756215e-09
+Hirxrs residual: 1.764284e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.706477e-10
+Hirxrs_alt residual: 2.456327e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 5.641145e+12
+cond(Hmat) = 5.641134e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.505341e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.403466e-06
+
+Termination criteria: P=1.762235e-02 D=8.162515e-05 G=2.458168e-01 A=1.635389e-03 T=1.489700e+02 K=1.489700e+02 M=2.451359e-01
+20: pObj=0 pIn=1.762335e-02 dIn=8.262515e-05 gap=1.636389e-03 tau=1.489700e+02 kap=1.645484e-03 mu=2.451359e-01
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 05:06:29
+
+Entering Predictor
+==================
+
+cond(H) = 8.131331e+06
+Hic residual:     0
+HiAt residual: 2.935321e-09
+Hirxrs residual: 3.256239e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.776343e-10
+Hirxrs_alt residual: 2.985226e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 5.498388e+12
+cond(Hmat) = 5.498397e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.760565e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 3.964446e-04
+
+Entering Corrector
+==================
+
+cond(H) = 8.833172e+06
+Hic residual:     0
+HiAt residual: 3.023118e-09
+Hirxrs residual: 1.164239e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.849437e-10
+Hirxrs_alt residual: 4.500319e-16
+cond(At) = 8.264870e+11
+cond(HiAt) = 8.792906e+12
+cond(Hmat) = 8.792898e+12
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.561293e-23.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 5.836418e-05
+
+Entering Corrector
+==================
+
+cond(H) = 1.003995e+07
+Hic residual:     0
+HiAt residual: 2.861352e-09
+Hirxrs residual: 2.004725e-12
+Hic_alt residual:     0
+HiAt_alt residual: 1.882234e-10
+Hirxrs_alt residual: 1.564231e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.865197e+14
+cond(Hmat) = 1.865270e+14
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.472445e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.619881e-04
+
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.923024e+02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -2.992506e-02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+Entering Corrector
+==================
+
+cond(H) = 1.444613e+07
+Hic residual:     0
+HiAt residual: 2.990761e-09
+Hirxrs residual: 3.822806e-12
+Hic_alt residual:     0
+HiAt_alt residual: 1.902707e-10
+Hirxrs_alt residual: 2.457558e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 5.015435e+14
+cond(Hmat) = 5.015690e+14
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.628504e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.617848e-04
+
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.094253e+02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -3.091312e-02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+Entering Corrector
+==================
+
+cond(H) = 4.331467e+07
+Hic residual:     0
+HiAt residual: 4.070532e-09
+Hirxrs residual: 8.338867e-12
+Hic_alt residual:     0
+HiAt_alt residual: 2.194422e-10
+Hirxrs_alt residual: 4.119196e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.167773e+15
+cond(Hmat) = 2.169632e+15
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.471279e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 3.382100e-05
+
+Entering Corrector
+==================
+
+cond(H) = 3.640576e+07
+Hic residual:     0
+HiAt residual: 3.403053e-09
+Hirxrs residual: 7.012598e-12
+Hic_alt residual:     0
+HiAt_alt residual: 2.161373e-10
+Hirxrs_alt residual: 3.889901e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.839412e+15
+cond(Hmat) = 1.839076e+15
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.026096e-22.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 5.227200e-03
+
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.819867e+04[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -8.552286e+03[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -3.784184e+03[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.484789e+03[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -4.436170e+02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -3.642326e+01[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.681967e-02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+Entering Corrector
+==================
+
+cond(H) = 2.100560e+08
+Hic residual:     0
+HiAt residual: 2.177909e-08
+Hirxrs residual: 2.106049e-11
+Hic_alt residual:     0
+HiAt_alt residual: 6.505498e-10
+Hirxrs_alt residual: 1.024960e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.244565e+16
+cond(Hmat) = 1.243474e+16
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+9.947554e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 4.070394e-05
+
+Entering Corrector
+==================
+
+cond(H) = 2.207248e+08
+Hic residual:     0
+HiAt residual: 2.515279e-08
+Hirxrs residual: 7.278123e-11
+Hic_alt residual:     0
+HiAt_alt residual: 7.665402e-10
+Hirxrs_alt residual: 7.753815e-15
+cond(At) = 8.264870e+11
+cond(HiAt) = 1.300525e+16
+cond(Hmat) = 1.302571e+16
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.718694e-21.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 1.191841e-04
+
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -2.396125e-02[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+ERROR IN CHOLESKY, LOWEST EIGENVALUE: -1.822967e-03[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 50)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)] 
+Entering Corrector
+==================
+
+cond(H) = 3.727161e+08
+Hic residual:     0
+HiAt residual: 4.251037e-08
+Hirxrs residual: 2.651980e-10
+Hic_alt residual:     0
+HiAt_alt residual: 1.209616e-09
+Hirxrs_alt residual: 1.036329e-14
+cond(At) = 8.264870e+11
+cond(HiAt) = 2.211328e+16
+cond(Hmat) = 2.234798e+16
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.181401e-20.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_trivial (line 65)
+] 
+LHS residual: 5.692884e-05
+
+Corrector phase finished outside the eta-neighborhood.
+Termination criteria: P=1.653104e-02 D=7.650860e-05 G=2.305946e-01 A=1.457306e-03 T=1.569029e+02 K=1.569029e+02 M=2.267117e-01
+Done in 20 iterations.
+Status = UNKNOWN
+
+ans =
+
+    'Done'
+

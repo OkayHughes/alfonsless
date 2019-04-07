@@ -1,0 +1,2100 @@
+min int_{T times X} v d mu s.t. v geq 0 on Z, v) geq 0 on Z0 
+Running alfonso
+[Warning: Condition number of polynomial basis is large (cond(M) = 1.010043e+13)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 128)
+  In AlfonsoSOSProgFekete/problem_chars (line 162)
+  In FRS_one_poly_worse (line 72)] 
+[Warning: Condition number of polynomial basis is large (cond(M) = 3.523438e+10)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 128)
+  In AlfonsoSOSProgFekete/problem_chars (line 162)
+  In FRS_one_poly_worse (line 72)] 
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 1
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 8
+ Dimension: 1287
+
+Total number of SOS constraints: 3
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 8
+
+ size(A) for Decision Poly 1: 1287x1287
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 7.279972e+07
+
+ Constraint A size: 1287x1287
+
+ Cond(A): 7.279972e+07
+
+* Constraint 2
+
+ Variables / bounds :
+
+ t1 [0.00, 0.10]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 8
+
+ size(A) for Decision Poly 1: 1287x1287
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 6.249408e+14
+
+ Constraint A size: 1287x1287
+
+ Cond(A): 6.249408e+14
+
+* Constraint 3
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-0.10, 0.10]
+ z2 [-1.00, 1.00]
+ k1 [-0.10, 0.10]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 8
+
+ size(A) for Decision Poly 1: 1287x1287
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 9.874297e+12
+
+ Constraint A size: 1287x1287
+
+ Cond(A): 9.874297e+12
+
+
+size(A): 3861x1287
+
+ans =
+
+           1        1287
+
+[Warning: Condition number of polynomial basis is large (cond(M) = 1.010043e+13)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 128)
+  In AlfonsoSOSProgFekete/minimize (line 59)
+  In FRS_one_poly_worse (line 73)] 
+[Warning: Condition number of polynomial basis is large (cond(M) = 3.523438e+10)
+COB matrices may be inaccurate.] 
+[> In monomial_to_interpolant (line 27)
+  In FeketeBasis/inter_to_mon (line 128)
+  In AlfonsoSOSProgFekete/minimize (line 59)
+  In FRS_one_poly_worse (line 73)] 
+Termination criteria: P=3.851133e-01 D=1.362573e-03 G=9.999990e-01 A=-1.000000e-06 T=1.000000e+00 K=1.000000e+00 M=1.000000e+00
+1: pObj=0 pIn=3.851143e-01 dIn=1.363573e-03 gap=0 tau=1 kap=1 mu=1
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:32:36
+
+Entering Predictor
+==================
+
+cond(H) = 7.848891e+04
+Hic residual:     0
+HiAt residual: 1.177001e-11
+Hirxrs residual:     0
+Hic_alt residual:     0
+HiAt_alt residual: 1.899130e-12
+Hirxrs_alt residual:     0
+cond(At) = 2.372009e+07
+cond(HiAt) = 9.788958e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.174524e-07
+
+Entering Corrector
+==================
+
+cond(H) = 7.994510e+04
+Hic residual:     0
+HiAt residual: 1.186153e-11
+Hirxrs residual: 1.952199e-15
+Hic_alt residual:     0
+HiAt_alt residual: 1.902309e-12
+Hirxrs_alt residual: 4.773821e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 9.838259e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.428136e-11
+
+Entering Corrector
+==================
+
+cond(H) = 7.992950e+04
+Hic residual:     0
+HiAt residual: 1.165148e-11
+Hirxrs residual: 4.943558e-17
+Hic_alt residual:     0
+HiAt_alt residual: 1.971633e-12
+Hirxrs_alt residual: 1.000233e-18
+cond(At) = 2.372009e+07
+cond(HiAt) = 9.850927e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.447398e-11
+
+Termination criteria: P=3.446155e-01 D=1.219182e-03 G=8.948410e-01 A=1.790070e-01 T=1.718785e+00 K=1.718785e+00 M=8.948062e-01
+2: pObj=0 pIn=3.446165e-01 dIn=1.220182e-03 gap=1.790080e-01 tau=1.718785e+00 kap=5.200802e-01 mu=8.948062e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:36:40
+
+Entering Predictor
+==================
+
+cond(H) = 7.994219e+04
+Hic residual:     0
+HiAt residual: 1.188927e-11
+Hirxrs residual: 1.164662e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.951149e-12
+Hirxrs_alt residual: 2.085131e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 9.853897e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.695268e-08
+
+Entering Corrector
+==================
+
+cond(H) = 8.099243e+04
+Hic residual:     0
+HiAt residual: 1.219994e-11
+Hirxrs residual: 9.195001e-16
+Hic_alt residual:     0
+HiAt_alt residual: 1.917533e-12
+Hirxrs_alt residual: 2.127102e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 9.956499e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.135756e-10
+
+Termination criteria: P=3.192481e-01 D=1.129364e-03 G=8.289711e-01 A=1.585403e-01 T=2.962277e+00 K=2.962277e+00 M=8.289062e-01
+3: pObj=0 pIn=3.192491e-01 dIn=1.130364e-03 gap=1.585413e-01 tau=2.962277e+00 kap=2.708424e-01 mu=8.289062e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:39:32
+
+Entering Predictor
+==================
+
+cond(H) = 8.108150e+04
+Hic residual:     0
+HiAt residual: 1.220137e-11
+Hirxrs residual: 1.942828e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.069093e-12
+Hirxrs_alt residual: 3.757097e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 9.980000e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 7.195576e-08
+
+Entering Corrector
+==================
+
+cond(H) = 8.200212e+04
+Hic residual:     0
+HiAt residual: 1.222909e-11
+Hirxrs residual: 5.078340e-16
+Hic_alt residual:     0
+HiAt_alt residual: 1.971267e-12
+Hirxrs_alt residual: 1.143814e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.011919e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.605193e-10
+
+Termination criteria: P=3.027980e-01 D=1.071119e-03 G=7.862563e-01 A=1.167866e-01 T=4.695570e+00 K=4.695570e+00 M=7.861664e-01
+4: pObj=0 pIn=3.027990e-01 dIn=1.072119e-03 gap=1.167876e-01 tau=4.695570e+00 kap=1.653597e-01 mu=7.861664e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:42:53
+
+Entering Predictor
+==================
+
+cond(H) = 8.242955e+04
+Hic residual:     0
+HiAt residual: 1.275827e-11
+Hirxrs residual: 2.539528e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.999398e-12
+Hirxrs_alt residual: 4.111403e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.014775e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.933927e-08
+
+Entering Corrector
+==================
+
+cond(H) = 8.485731e+04
+Hic residual:     0
+HiAt residual: 1.263351e-11
+Hirxrs residual: 5.995672e-16
+Hic_alt residual:     0
+HiAt_alt residual: 2.018629e-12
+Hirxrs_alt residual: 1.853743e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.036883e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.832085e-10
+
+Termination criteria: P=2.871955e-01 D=1.015876e-03 G=7.457425e-01 A=8.294425e-02 T=7.085393e+00 K=7.085393e+00 M=7.456446e-01
+5: pObj=0 pIn=2.871965e-01 dIn=1.016876e-03 gap=8.294525e-02 tau=7.085393e+00 kap=1.048879e-01 mu=7.456446e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:45:21
+
+Entering Predictor
+==================
+
+cond(H) = 8.532539e+04
+Hic residual:     0
+HiAt residual: 1.213185e-11
+Hirxrs residual: 2.916843e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.114321e-12
+Hirxrs_alt residual: 4.267349e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.039520e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.172294e-08
+
+Entering Corrector
+==================
+
+cond(H) = 8.869072e+04
+Hic residual:     0
+HiAt residual: 1.246246e-11
+Hirxrs residual: 8.201125e-16
+Hic_alt residual:     0
+HiAt_alt residual: 2.210518e-12
+Hirxrs_alt residual: 2.762559e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.070653e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.417402e-10
+
+Termination criteria: P=2.723970e-01 D=9.634786e-04 G=7.073163e-01 A=6.026117e-02 T=9.918999e+00 K=9.918999e+00 M=7.072189e-01
+6: pObj=0 pIn=2.723980e-01 dIn=9.644786e-04 gap=6.026217e-02 tau=9.918999e+00 kap=7.124593e-02 mu=7.072189e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:48:34
+
+Entering Predictor
+==================
+
+cond(H) = 8.908175e+04
+Hic residual:     0
+HiAt residual: 1.269264e-11
+Hirxrs residual: 3.191480e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.109594e-12
+Hirxrs_alt residual: 5.372797e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.072700e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.233091e-08
+
+Entering Corrector
+==================
+
+cond(H) = 9.518913e+04
+Hic residual:     0
+HiAt residual: 1.408907e-11
+Hirxrs residual: 2.122837e-15
+Hic_alt residual:     0
+HiAt_alt residual: 2.291397e-12
+Hirxrs_alt residual: 7.589766e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.132969e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.030480e-10
+
+Termination criteria: P=2.523457e-01 D=8.924828e-04 G=6.552502e-01 A=4.044300e-02 T=1.447304e+01 K=1.447304e+01 M=6.551521e-01
+7: pObj=0 pIn=2.523467e-01 dIn=8.934828e-04 gap=4.044400e-02 tau=1.447304e+01 kap=4.523201e-02 mu=6.551521e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:51:12
+
+Entering Predictor
+==================
+
+cond(H) = 9.594272e+04
+Hic residual:     0
+HiAt residual: 1.363331e-11
+Hirxrs residual: 3.852682e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.259727e-12
+Hirxrs_alt residual: 6.788301e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.136622e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.410015e-08
+
+Entering Corrector
+==================
+
+cond(H) = 1.038442e+05
+Hic residual:     0
+HiAt residual: 1.416771e-11
+Hirxrs residual: 2.776030e-15
+Hic_alt residual:     0
+HiAt_alt residual: 2.369739e-12
+Hirxrs_alt residual: 9.365578e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.218001e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.724442e-10
+
+Termination criteria: P=2.337703e-01 D=8.267129e-04 G=6.070168e-01 A=2.884504e-02 T=1.938246e+01 K=1.938246e+01 M=6.069196e-01
+8: pObj=0 pIn=2.337713e-01 dIn=8.277129e-04 gap=2.884604e-02 tau=1.938246e+01 kap=3.130358e-02 mu=6.069196e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:53:52
+
+Entering Predictor
+==================
+
+cond(H) = 1.046572e+05
+Hic residual:     0
+HiAt residual: 1.395991e-11
+Hirxrs residual: 4.297020e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.362213e-12
+Hirxrs_alt residual: 7.327415e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.221741e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.988960e-08
+
+Entering Corrector
+==================
+
+cond(H) = 1.146481e+05
+Hic residual:     0
+HiAt residual: 1.481530e-11
+Hirxrs residual: 2.531805e-15
+Hic_alt residual:     0
+HiAt_alt residual: 2.606971e-12
+Hirxrs_alt residual: 9.688966e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.326622e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.727621e-10
+
+Termination criteria: P=2.165622e-01 D=7.657845e-04 G=5.623339e-01 A=2.149587e-02 T=2.455449e+01 K=2.455449e+01 M=5.622387e-01
+9: pObj=0 pIn=2.165632e-01 dIn=7.667845e-04 gap=2.149687e-02 tau=2.455449e+01 kap=2.289399e-02 mu=5.622387e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:56:35
+
+Entering Predictor
+==================
+
+cond(H) = 1.155545e+05
+Hic residual:     0
+HiAt residual: 1.471624e-11
+Hirxrs residual: 4.907469e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.636803e-12
+Hirxrs_alt residual: 7.883091e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.330811e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.298866e-08
+
+Entering Corrector
+==================
+
+cond(H) = 1.280868e+05
+Hic residual:     0
+HiAt residual: 1.660119e-11
+Hirxrs residual: 3.291809e-15
+Hic_alt residual:     0
+HiAt_alt residual: 3.009921e-12
+Hirxrs_alt residual: 1.054362e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.461073e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.853786e-10
+
+Termination criteria: P=2.006209e-01 D=7.093410e-04 G=5.209401e-01 A=1.653276e-02 T=2.995255e+01 K=2.995255e+01 M=5.208475e-01
+10: pObj=0 pIn=2.006219e-01 dIn=7.103410e-04 gap=1.653376e-02 tau=2.995255e+01 kap=1.738737e-02 mu=5.208475e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 19:59:15
+
+Entering Predictor
+==================
+
+cond(H) = 1.290913e+05
+Hic residual:     0
+HiAt residual: 1.661464e-11
+Hirxrs residual: 5.388949e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.954581e-12
+Hirxrs_alt residual: 8.140181e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.465980e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.645410e-08
+
+Entering Corrector
+==================
+
+cond(H) = 1.447239e+05
+Hic residual:     0
+HiAt residual: 1.782143e-11
+Hirxrs residual: 3.475407e-15
+Hic_alt residual:     0
+HiAt_alt residual: 3.174685e-12
+Hirxrs_alt residual: 1.072030e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.622100e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.144599e-10
+
+Termination criteria: P=1.858530e-01 D=6.570524e-04 G=4.825933e-01 A=1.301968e-02 T=3.555240e+01 K=3.555240e+01 M=4.825038e-01
+11: pObj=0 pIn=1.858540e-01 dIn=6.580524e-04 gap=1.302068e-02 tau=3.555240e+01 kap=1.357073e-02 mu=4.825039e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:02:16
+
+Entering Predictor
+==================
+
+cond(H) = 1.458118e+05
+Hic residual:     0
+HiAt residual: 1.723032e-11
+Hirxrs residual: 5.988341e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.398684e-12
+Hirxrs_alt residual: 9.150746e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.627956e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 9.458415e-09
+
+Entering Corrector
+==================
+
+cond(H) = 1.651908e+05
+Hic residual:     0
+HiAt residual: 2.081954e-11
+Hirxrs residual: 3.540939e-15
+Hic_alt residual:     0
+HiAt_alt residual: 3.554862e-12
+Hirxrs_alt residual: 1.124802e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.809907e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.388517e-10
+
+Termination criteria: P=1.721722e-01 D=6.086128e-04 G=4.470692e-01 A=1.044430e-02 T=4.132949e+01 K=4.132949e+01 M=4.469833e-01
+12: pObj=0 pIn=1.721732e-01 dIn=6.096128e-04 gap=1.044530e-02 tau=4.132949e+01 kap=1.081463e-02 mu=4.469833e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:04:46
+
+Entering Predictor
+==================
+
+cond(H) = 1.663361e+05
+Hic residual:     0
+HiAt residual: 2.058780e-11
+Hirxrs residual: 7.146503e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.548715e-12
+Hirxrs_alt residual: 9.913209e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.816570e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.002502e-09
+
+Entering Corrector
+==================
+
+cond(H) = 2.020035e+05
+Hic residual:     0
+HiAt residual: 2.462845e-11
+Hirxrs residual: 1.022365e-14
+Hic_alt residual:     0
+HiAt_alt residual: 4.524028e-12
+Hirxrs_alt residual: 2.356650e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.122719e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.951594e-10
+
+Termination criteria: P=1.540668e-01 D=5.445071e-04 G=4.000562e-01 A=7.782915e-03 T=4.997525e+01 K=4.997525e+01 M=3.999690e-01
+13: pObj=0 pIn=1.540678e-01 dIn=5.455071e-04 gap=7.783915e-03 tau=4.997525e+01 kap=8.002399e-03 mu=3.999690e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:07:25
+
+Entering Predictor
+==================
+
+cond(H) = 2.043304e+05
+Hic residual:     0
+HiAt residual: 2.454570e-11
+Hirxrs residual: 7.726948e-13
+Hic_alt residual:     0
+HiAt_alt residual: 4.443993e-12
+Hirxrs_alt residual: 1.189885e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.136724e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 7.397611e-09
+
+Entering Corrector
+==================
+
+cond(H) = 2.521971e+05
+Hic residual:     0
+HiAt residual: 2.872973e-11
+Hirxrs residual: 1.273956e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.829970e-12
+Hirxrs_alt residual: 2.439810e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.496085e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.353391e-10
+
+Termination criteria: P=1.378653e-01 D=4.871427e-04 G=3.579870e-01 A=5.944883e-03 T=5.883275e+01 K=5.883275e+01 M=3.579003e-01
+14: pObj=0 pIn=1.378663e-01 dIn=4.881427e-04 gap=5.945883e-03 tau=5.883275e+01 kap=6.082936e-03 mu=3.579003e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:10:37
+
+Entering Predictor
+==================
+
+cond(H) = 2.543309e+05
+Hic residual:     0
+HiAt residual: 3.086064e-11
+Hirxrs residual: 8.953566e-13
+Hic_alt residual:     0
+HiAt_alt residual: 5.586154e-12
+Hirxrs_alt residual: 1.456265e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.508507e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.794862e-08
+
+Entering Corrector
+==================
+
+cond(H) = 3.230675e+05
+Hic residual:     0
+HiAt residual: 3.634855e-11
+Hirxrs residual: 1.844776e-14
+Hic_alt residual:     0
+HiAt_alt residual: 6.838485e-12
+Hirxrs_alt residual: 2.457036e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.908399e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.129930e-09
+
+Termination criteria: P=1.233676e-01 D=4.358106e-04 G=3.203417e-01 A=4.633461e-03 T=6.778688e+01 K=6.778688e+01 M=3.202574e-01
+15: pObj=0 pIn=1.233686e-01 dIn=4.368106e-04 gap=4.634461e-03 tau=6.778688e+01 kap=4.724300e-03 mu=3.202574e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:13:43
+
+Entering Predictor
+==================
+
+cond(H) = 3.193439e+05
+Hic residual:     0
+HiAt residual: 3.907322e-11
+Hirxrs residual: 1.092482e-12
+Hic_alt residual:     0
+HiAt_alt residual: 6.199973e-12
+Hirxrs_alt residual: 1.637449e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.918048e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.274181e-08
+
+Entering Corrector
+==================
+
+cond(H) = 4.312320e+05
+Hic residual:     0
+HiAt residual: 4.762462e-11
+Hirxrs residual: 2.409912e-14
+Hic_alt residual:     0
+HiAt_alt residual: 9.011567e-12
+Hirxrs_alt residual: 2.425750e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 3.337863e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.566554e-10
+
+Termination criteria: P=1.103944e-01 D=3.898764e-04 G=2.866551e-01 A=3.672563e-03 T=7.673263e+01 K=7.673263e+01 M=2.865743e-01
+16: pObj=0 pIn=1.103954e-01 dIn=3.908764e-04 gap=3.673563e-03 tau=7.673263e+01 kap=3.734644e-03 mu=2.865743e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:16:21
+
+Entering Predictor
+==================
+
+cond(H) = 4.143076e+05
+Hic residual:     0
+HiAt residual: 4.642737e-11
+Hirxrs residual: 1.280690e-12
+Hic_alt residual:     0
+HiAt_alt residual: 8.344840e-12
+Hirxrs_alt residual: 1.964549e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 3.345142e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.159288e-08
+
+Entering Corrector
+==================
+
+cond(H) = 5.833456e+05
+Hic residual:     0
+HiAt residual: 5.466054e-11
+Hirxrs residual: 2.947047e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.047405e-11
+Hirxrs_alt residual: 2.204286e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 3.762133e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 7.556412e-10
+
+Termination criteria: P=9.878542e-02 D=3.487727e-04 G=2.565109e-01 A=2.952497e-03 T=8.558222e+01 K=8.558222e+01 M=2.564342e-01
+17: pObj=0 pIn=9.878642e-02 dIn=3.497727e-04 gap=2.953497e-03 tau=8.558222e+01 kap=2.996328e-03 mu=2.564342e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:18:55
+
+Entering Predictor
+==================
+
+cond(H) = 5.492567e+05
+Hic residual:     0
+HiAt residual: 5.675647e-11
+Hirxrs residual: 1.434551e-12
+Hic_alt residual:     0
+HiAt_alt residual: 1.030807e-11
+Hirxrs_alt residual: 2.552001e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 3.767700e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.991642e-08
+
+Entering Corrector
+==================
+
+cond(H) = 7.959176e+05
+Hic residual:     0
+HiAt residual: 7.269687e-11
+Hirxrs residual: 4.497759e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.428317e-11
+Hirxrs_alt residual: 2.323521e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 4.161888e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.787854e-10
+
+Termination criteria: P=8.839723e-02 D=3.119913e-04 G=2.295366e-01 A=2.402332e-03 T=9.426817e+01 K=9.426817e+01 M=2.294642e-01
+18: pObj=0 pIn=8.839823e-02 dIn=3.129913e-04 gap=2.403332e-03 tau=9.426817e+01 kap=2.434164e-03 mu=2.294642e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:21:48
+
+Entering Predictor
+==================
+
+cond(H) = 7.338468e+05
+Hic residual:     0
+HiAt residual: 6.917423e-11
+Hirxrs residual: 1.584282e-12
+Hic_alt residual:     0
+HiAt_alt residual: 1.443402e-11
+Hirxrs_alt residual: 2.863396e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 4.165953e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.799346e-08
+
+Entering Corrector
+==================
+
+cond(H) = 1.089015e+06
+Hic residual:     0
+HiAt residual: 8.795665e-11
+Hirxrs residual: 4.685747e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.857775e-11
+Hirxrs_alt residual: 2.192474e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 4.522696e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.541059e-10
+
+Termination criteria: P=7.910145e-02 D=2.790777e-04 G=2.053989e-01 A=1.974829e-03 T=1.027414e+02 K=1.027414e+02 M=2.053309e-01
+19: pObj=0 pIn=7.910245e-02 dIn=2.800777e-04 gap=1.975829e-03 tau=1.027414e+02 kap=1.998528e-03 mu=2.053309e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:24:32
+
+Entering Predictor
+==================
+
+cond(H) = 9.853178e+05
+Hic residual:     0
+HiAt residual: 7.839916e-11
+Hirxrs residual: 1.703908e-12
+Hic_alt residual:     0
+HiAt_alt residual: 1.700957e-11
+Hirxrs_alt residual: 3.770355e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 4.525110e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 9.612685e-08
+
+Entering Corrector
+==================
+
+cond(H) = 1.485649e+06
+Hic residual:     0
+HiAt residual: 1.248874e-10
+Hirxrs residual: 7.372260e-14
+Hic_alt residual:     0
+HiAt_alt residual: 2.582833e-11
+Hirxrs_alt residual: 2.477029e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 4.835493e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.987903e-10
+
+Termination criteria: P=7.078320e-02 D=2.496253e-04 G=1.837995e-01 A=1.637730e-03 T=1.109678e+02 K=1.109678e+02 M=1.837359e-01
+20: pObj=0 pIn=7.078420e-02 dIn=2.506253e-04 gap=1.638730e-03 tau=1.109678e+02 kap=1.655770e-03 mu=1.837359e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:27:21
+
+Entering Predictor
+==================
+
+cond(H) = 1.324822e+06
+Hic residual:     0
+HiAt residual: 1.030049e-10
+Hirxrs residual: 2.286546e-12
+Hic_alt residual:     0
+HiAt_alt residual: 2.190524e-11
+Hirxrs_alt residual: 4.230557e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 4.835950e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.001900e-07
+
+Entering Corrector
+==================
+
+cond(H) = 2.010728e+06
+Hic residual:     0
+HiAt residual: 1.898606e-10
+Hirxrs residual: 9.283892e-14
+Hic_alt residual:     0
+HiAt_alt residual: 3.370628e-11
+Hirxrs_alt residual: 1.956403e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.096329e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.521893e-10
+
+Termination criteria: P=6.333967e-02 D=2.232701e-04 G=1.644714e-01 A=1.368506e-03 T=1.189236e+02 K=1.189236e+02 M=1.644123e-01
+21: pObj=0 pIn=6.334067e-02 dIn=2.242701e-04 gap=1.369506e-03 tau=1.189236e+02 kap=1.382514e-03 mu=1.644124e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:30:08
+
+Entering Predictor
+==================
+
+cond(H) = 1.776873e+06
+Hic residual:     0
+HiAt residual: 1.657711e-10
+Hirxrs residual: 2.285647e-12
+Hic_alt residual:     0
+HiAt_alt residual: 2.937818e-11
+Hirxrs_alt residual: 4.700967e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.094803e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.166232e-07
+
+Entering Corrector
+==================
+
+cond(H) = 2.689579e+06
+Hic residual:     0
+HiAt residual: 2.470449e-10
+Hirxrs residual: 1.072994e-13
+Hic_alt residual:     0
+HiAt_alt residual: 4.503634e-11
+Hirxrs_alt residual: 2.279742e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.306657e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.330554e-10
+
+Termination criteria: P=5.667889e-02 D=1.996863e-04 G=1.471758e-01 A=1.151091e-03 T=1.265928e+02 K=1.265928e+02 M=1.471213e-01
+22: pObj=0 pIn=5.667989e-02 dIn=2.006863e-04 gap=1.152091e-03 tau=1.265928e+02 kap=1.162170e-03 mu=1.471213e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:32:51
+
+Entering Predictor
+==================
+
+cond(H) = 2.368295e+06
+Hic residual:     0
+HiAt residual: 2.040066e-10
+Hirxrs residual: 3.787981e-12
+Hic_alt residual:     0
+HiAt_alt residual: 3.746875e-11
+Hirxrs_alt residual: 5.309367e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.303477e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.163827e-07
+
+Entering Corrector
+==================
+
+cond(H) = 3.546321e+06
+Hic residual:     0
+HiAt residual: 2.912033e-10
+Hirxrs residual: 1.679795e-13
+Hic_alt residual:     0
+HiAt_alt residual: 5.297045e-11
+Hirxrs_alt residual: 2.152567e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.473260e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.156854e-10
+
+Termination criteria: P=5.071855e-02 D=1.785825e-04 G=1.316990e-01 A=9.738095e-04 T=1.339645e+02 K=1.339645e+02 M=1.316489e-01
+23: pObj=0 pIn=5.071955e-02 dIn=1.795825e-04 gap=9.748095e-04 tau=1.339645e+02 kap=9.827218e-04 mu=1.316489e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:35:44
+
+Entering Predictor
+==================
+
+cond(H) = 3.126771e+06
+Hic residual:     0
+HiAt residual: 3.339596e-10
+Hirxrs residual: 4.285549e-12
+Hic_alt residual:     0
+HiAt_alt residual: 5.155323e-11
+Hirxrs_alt residual: 6.180615e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.469095e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.329810e-07
+
+Entering Corrector
+==================
+
+cond(H) = 4.602475e+06
+Hic residual:     0
+HiAt residual: 3.814146e-10
+Hirxrs residual: 1.382827e-13
+Hic_alt residual:     0
+HiAt_alt residual: 7.564500e-11
+Hirxrs_alt residual: 2.151426e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.606984e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 9.782215e-11
+
+Termination criteria: P=4.538498e-02 D=1.596980e-04 G=1.178497e-01 A=8.280269e-04 T=1.410308e+02 K=1.410308e+02 M=1.178039e-01
+24: pObj=0 pIn=4.538598e-02 dIn=1.606980e-04 gap=8.290269e-04 tau=1.410308e+02 kap=8.353110e-04 mu=1.178039e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:38:30
+
+Entering Predictor
+==================
+
+cond(H) = 4.079208e+06
+Hic residual:     0
+HiAt residual: 3.395031e-10
+Hirxrs residual: 4.384521e-12
+Hic_alt residual:     0
+HiAt_alt residual: 6.859258e-11
+Hirxrs_alt residual: 7.157630e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.602704e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.094999e-07
+
+Entering Corrector
+==================
+
+cond(H) = 5.876147e+06
+Hic residual:     0
+HiAt residual: 4.736865e-10
+Hirxrs residual: 1.712079e-13
+Hic_alt residual:     0
+HiAt_alt residual: 9.180855e-11
+Hirxrs_alt residual: 2.244976e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.721915e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.799522e-10
+
+Termination criteria: P=4.061228e-02 D=1.427993e-04 G=1.054567e-01 A=7.072515e-04 T=1.477868e+02 K=1.477868e+02 M=1.054151e-01
+25: pObj=0 pIn=4.061328e-02 dIn=1.437993e-04 gap=7.082515e-04 tau=1.477868e+02 kap=7.132951e-04 mu=1.054151e-01
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:41:16
+
+Entering Predictor
+==================
+
+cond(H) = 5.250221e+06
+Hic residual:     0
+HiAt residual: 4.611558e-10
+Hirxrs residual: 5.837089e-12
+Hic_alt residual:     0
+HiAt_alt residual: 9.187427e-11
+Hirxrs_alt residual: 8.032247e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.718321e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.100141e-07
+
+Entering Corrector
+==================
+
+cond(H) = 9.312250e+06
+Hic residual:     0
+HiAt residual: 7.160204e-10
+Hirxrs residual: 4.023369e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.470458e-10
+Hirxrs_alt residual: 4.902440e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.889266e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 9.753447e-10
+
+Termination criteria: P=3.451112e-02 D=1.211969e-04 G=8.961426e-02 A=5.654323e-04 T=1.571144e+02 K=1.571144e+02 M=8.957684e-02
+26: pObj=0 pIn=3.451212e-02 dIn=1.221969e-04 gap=5.664323e-04 tau=1.571144e+02 kap=5.701476e-04 mu=8.957685e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:43:55
+
+Entering Predictor
+==================
+
+cond(H) = 7.581116e+06
+Hic residual:     0
+HiAt residual: 5.879345e-10
+Hirxrs residual: 8.854282e-12
+Hic_alt residual:     0
+HiAt_alt residual: 1.177557e-10
+Hirxrs_alt residual: 9.976732e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 5.882460e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.160735e-07
+
+Entering Corrector
+==================
+
+cond(H) = 1.256790e+07
+Hic residual:     0
+HiAt residual: 1.054102e-09
+Hirxrs residual: 5.200222e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.016828e-10
+Hirxrs_alt residual: 4.523965e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 6.080424e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.359492e-09
+
+Termination criteria: P=2.932652e-02 D=1.028398e-04 G=7.615175e-02 A=4.554186e-04 T=1.657667e+02 K=1.657667e+02 M=7.611848e-02
+27: pObj=0 pIn=2.932752e-02 dIn=1.038398e-04 gap=4.564186e-04 tau=1.657667e+02 kap=4.591979e-04 mu=7.611849e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:47:04
+
+Entering Predictor
+==================
+
+cond(H) = 1.035376e+07
+Hic residual:     0
+HiAt residual: 8.444901e-10
+Hirxrs residual: 1.021852e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.686300e-10
+Hirxrs_alt residual: 1.055733e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 6.078720e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.035721e-07
+
+Entering Corrector
+==================
+
+cond(H) = 1.608112e+07
+Hic residual:     0
+HiAt residual: 1.217598e-09
+Hirxrs residual: 4.637511e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.674121e-10
+Hirxrs_alt residual: 4.475699e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 6.326660e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.771898e-09
+
+Termination criteria: P=2.492077e-02 D=8.724040e-05 G=6.471165e-02 A=3.691704e-04 T=1.737485e+02 K=1.737485e+02 M=6.468252e-02
+28: pObj=0 pIn=2.492177e-02 dIn=8.824040e-05 gap=3.701704e-04 tau=1.737485e+02 kap=3.722813e-04 mu=6.468253e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:49:44
+
+Entering Predictor
+==================
+
+cond(H) = 1.369002e+07
+Hic residual:     0
+HiAt residual: 1.098549e-09
+Hirxrs residual: 1.349323e-11
+Hic_alt residual:     0
+HiAt_alt residual: 2.060499e-10
+Hirxrs_alt residual: 1.428721e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 6.327643e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.618443e-08
+
+Entering Corrector
+==================
+
+cond(H) = 2.010761e+07
+Hic residual:     0
+HiAt residual: 1.556964e-09
+Hirxrs residual: 4.616893e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.479264e-10
+Hirxrs_alt residual: 4.668927e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 6.637607e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.900171e-09
+
+Termination criteria: P=2.117688e-02 D=7.398442e-05 G=5.499014e-02 A=3.009297e-04 T=1.810722e+02 K=1.810722e+02 M=5.496495e-02
+29: pObj=0 pIn=2.117788e-02 dIn=7.498442e-05 gap=3.019297e-04 tau=1.810722e+02 kap=3.035553e-04 mu=5.496496e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:52:25
+
+Entering Predictor
+==================
+
+cond(H) = 1.773227e+07
+Hic residual:     0
+HiAt residual: 1.380851e-09
+Hirxrs residual: 1.239375e-11
+Hic_alt residual:     0
+HiAt_alt residual: 2.875248e-10
+Hirxrs_alt residual: 1.225782e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 6.638900e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.786507e-08
+
+Entering Corrector
+==================
+
+cond(H) = 2.494651e+07
+Hic residual:     0
+HiAt residual: 1.909969e-09
+Hirxrs residual: 4.565313e-13
+Hic_alt residual:     0
+HiAt_alt residual: 4.154691e-10
+Hirxrs_alt residual: 3.649428e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 7.014697e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.009623e-09
+
+Termination criteria: P=1.799542e-02 D=6.271984e-05 G=4.672906e-02 A=2.464979e-04 T=1.877583e+02 K=1.877583e+02 M=4.670745e-02
+30: pObj=0 pIn=1.799642e-02 dIn=6.371984e-05 gap=2.474979e-04 tau=1.877583e+02 kap=2.487652e-04 mu=4.670746e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:55:01
+
+Entering Predictor
+==================
+
+cond(H) = 2.270684e+07
+Hic residual:     0
+HiAt residual: 1.719210e-09
+Hirxrs residual: 1.831665e-11
+Hic_alt residual:     0
+HiAt_alt residual: 3.737129e-10
+Hirxrs_alt residual: 1.721547e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 7.015093e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.564212e-08
+
+Entering Corrector
+==================
+
+cond(H) = 3.105089e+07
+Hic residual:     0
+HiAt residual: 2.496721e-09
+Hirxrs residual: 2.258458e-13
+Hic_alt residual:     0
+HiAt_alt residual: 5.052467e-10
+Hirxrs_alt residual: 3.256193e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 7.461508e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.851700e-09
+
+Termination criteria: P=1.529189e-02 D=5.314748e-05 G=3.970900e-02 A=2.027674e-04 T=1.938347e+02 K=1.938347e+02 M=3.969058e-02
+31: pObj=0 pIn=1.529289e-02 dIn=5.414748e-05 gap=2.037674e-04 tau=1.938347e+02 kap=2.047660e-04 mu=3.969059e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 20:58:00
+
+Entering Predictor
+==================
+
+cond(H) = 2.900714e+07
+Hic residual:     0
+HiAt residual: 2.231962e-09
+Hirxrs residual: 1.418038e-11
+Hic_alt residual:     0
+HiAt_alt residual: 4.526131e-10
+Hirxrs_alt residual: 1.567056e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 7.460978e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.471150e-08
+
+Entering Corrector
+==================
+
+cond(H) = 3.908749e+07
+Hic residual:     0
+HiAt residual: 3.087072e-09
+Hirxrs residual: 2.814144e-13
+Hic_alt residual:     0
+HiAt_alt residual: 6.536710e-10
+Hirxrs_alt residual: 2.945819e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 7.988890e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.745749e-09
+
+Termination criteria: P=1.299451e-02 D=4.501313e-05 G=3.374354e-02 A=1.674085e-04 T=1.993348e+02 K=1.993348e+02 M=3.372790e-02
+32: pObj=0 pIn=1.299551e-02 dIn=4.601313e-05 gap=1.684085e-04 tau=1.993348e+02 kap=1.692029e-04 mu=3.372791e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:00:36
+
+Entering Predictor
+==================
+
+cond(H) = 3.721388e+07
+Hic residual:     0
+HiAt residual: 2.767126e-09
+Hirxrs residual: 1.476192e-11
+Hic_alt residual:     0
+HiAt_alt residual: 6.010036e-10
+Hirxrs_alt residual: 1.671322e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 7.987621e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.850669e-08
+
+Entering Corrector
+==================
+
+cond(H) = 4.978169e+07
+Hic residual:     0
+HiAt residual: 3.589674e-09
+Hirxrs residual: 3.559981e-13
+Hic_alt residual:     0
+HiAt_alt residual: 7.785676e-10
+Hirxrs_alt residual: 2.644497e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 8.613534e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.873727e-09
+
+Termination criteria: P=1.104225e-02 D=3.810078e-05 G=2.867424e-02 A=1.386554e-04 T=2.042954e+02 K=2.042954e+02 M=2.866102e-02
+33: pObj=0 pIn=1.104325e-02 dIn=3.910078e-05 gap=1.396554e-04 tau=2.042954e+02 kap=1.402924e-04 mu=2.866103e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:03:14
+
+Entering Predictor
+==================
+
+cond(H) = 4.796074e+07
+Hic residual:     0
+HiAt residual: 3.654808e-09
+Hirxrs residual: 2.769190e-11
+Hic_alt residual:     0
+HiAt_alt residual: 7.237313e-10
+Hirxrs_alt residual: 1.704595e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 8.611217e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.610755e-08
+
+Entering Corrector
+==================
+
+cond(H) = 7.451535e+07
+Hic residual:     0
+HiAt residual: 6.286912e-09
+Hirxrs residual: 4.052322e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.022227e-09
+Hirxrs_alt residual: 4.988671e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 9.741304e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.019524e-09
+
+Termination criteria: P=8.672276e-03 D=2.970943e-05 G=2.252030e-02 A=1.053481e-04 T=2.107429e+02 K=2.107429e+02 M=2.250994e-02
+34: pObj=0 pIn=8.673276e-03 dIn=3.070943e-05 gap=1.063481e-04 tau=2.107429e+02 kap=1.068131e-04 mu=2.250995e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:06:12
+
+Entering Predictor
+==================
+
+cond(H) = 6.981338e+07
+Hic residual:     0
+HiAt residual: 5.173394e-09
+Hirxrs residual: 2.553580e-11
+Hic_alt residual:     0
+HiAt_alt residual: 9.010305e-10
+Hirxrs_alt residual: 1.734019e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 9.730531e+08
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.036830e-08
+
+Entering Corrector
+==================
+
+cond(H) = 1.045453e+08
+Hic residual:     0
+HiAt residual: 7.747653e-09
+Hirxrs residual: 5.872435e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.282820e-09
+Hirxrs_alt residual: 4.272194e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.105374e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.532474e-09
+
+Termination criteria: P=6.810920e-03 D=2.311894e-05 G=1.768705e-02 A=8.042544e-05 T=2.162081e+02 K=2.162081e+02 M=1.767903e-02
+35: pObj=0 pIn=6.811920e-03 dIn=2.411894e-05 gap=8.142544e-05 tau=2.162081e+02 kap=8.176900e-05 mu=1.767904e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:08:59
+
+Entering Predictor
+==================
+
+cond(H) = 9.900424e+07
+Hic residual:     0
+HiAt residual: 6.979464e-09
+Hirxrs residual: 2.383591e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.295810e-09
+Hirxrs_alt residual: 1.853053e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.104367e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 7.395485e-08
+
+Entering Corrector
+==================
+
+cond(H) = 1.413463e+08
+Hic residual:     0
+HiAt residual: 1.069782e-08
+Hirxrs residual: 2.878063e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.929882e-09
+Hirxrs_alt residual: 3.191213e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.250360e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.926507e-09
+
+Termination criteria: P=5.349026e-03 D=1.794282e-05 G=1.389105e-02 A=6.162626e-05 T=2.208067e+02 K=2.208067e+02 M=1.388493e-02
+36: pObj=0 pIn=5.350026e-03 dIn=1.894282e-05 gap=6.262626e-05 tau=2.208067e+02 kap=6.288293e-05 mu=1.388494e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:11:39
+
+Entering Predictor
+==================
+
+cond(H) = 1.354220e+08
+Hic residual:     0
+HiAt residual: 9.831682e-09
+Hirxrs residual: 2.551743e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.709526e-09
+Hirxrs_alt residual: 1.575623e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.249486e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.226644e-07
+
+Entering Corrector
+==================
+
+cond(H) = 1.834592e+08
+Hic residual:     0
+HiAt residual: 1.272104e-08
+Hirxrs residual: 2.039905e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.106649e-09
+Hirxrs_alt residual: 2.803636e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.402916e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.846238e-09
+
+Termination criteria: P=4.200867e-03 D=1.387753e-05 G=1.090970e-02 A=4.735000e-05 T=2.246460e+02 K=2.246460e+02 M=1.090509e-02
+37: pObj=0 pIn=4.201867e-03 dIn=1.487753e-05 gap=4.835000e-05 tau=2.246460e+02 kap=4.854356e-05 mu=1.090510e-02
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:14:17
+
+Entering Predictor
+==================
+
+cond(H) = 1.776567e+08
+Hic residual:     0
+HiAt residual: 1.395832e-08
+Hirxrs residual: 2.026896e-11
+Hic_alt residual:     0
+HiAt_alt residual: 1.951647e-09
+Hirxrs_alt residual: 1.504322e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.401947e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.604142e-07
+
+Entering Corrector
+==================
+
+cond(H) = 2.286602e+08
+Hic residual:     0
+HiAt residual: 1.645902e-08
+Hirxrs residual: 6.306691e-14
+Hic_alt residual:     0
+HiAt_alt residual: 2.586992e-09
+Hirxrs_alt residual: 1.893798e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.554519e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.046936e-09
+
+Termination criteria: P=3.299112e-03 D=1.068469e-05 G=8.568175e-03 A=3.644639e-05 T=2.278260e+02 K=2.278260e+02 M=8.564762e-03
+38: pObj=0 pIn=3.300112e-03 dIn=1.168469e-05 gap=3.744639e-05 tau=2.278260e+02 kap=3.759350e-05 mu=8.564772e-03
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:17:12
+
+Entering Predictor
+==================
+
+cond(H) = 2.234277e+08
+Hic residual:     0
+HiAt residual: 1.589069e-08
+Hirxrs residual: 2.856640e-11
+Hic_alt residual:     0
+HiAt_alt residual: 2.366107e-09
+Hirxrs_alt residual: 1.475193e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.553431e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.053588e-07
+
+Entering Corrector
+==================
+
+cond(H) = 2.745659e+08
+Hic residual:     0
+HiAt residual: 1.808493e-08
+Hirxrs residual: 1.632016e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.161918e-09
+Hirxrs_alt residual: 1.305512e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.697909e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.865991e-09
+
+Termination criteria: P=2.590881e-03 D=8.177063e-06 G=6.729160e-03 A=2.807820e-05 T=2.304398e+02 K=2.304398e+02 M=6.726690e-03
+39: pObj=0 pIn=2.591881e-03 dIn=9.177063e-06 gap=2.907820e-05 tau=2.304398e+02 kap=2.919071e-05 mu=6.726700e-03
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:19:40
+
+Entering Predictor
+==================
+
+cond(H) = 2.701689e+08
+Hic residual:     0
+HiAt residual: 1.892764e-08
+Hirxrs residual: 2.830442e-11
+Hic_alt residual:     0
+HiAt_alt residual: 2.712912e-09
+Hirxrs_alt residual: 1.573906e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.696823e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.358527e-07
+
+Entering Corrector
+==================
+
+cond(H) = 3.457729e+08
+Hic residual:     0
+HiAt residual: 2.441099e-08
+Hirxrs residual: 2.522044e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.684683e-09
+Hirxrs_alt residual: 1.986835e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.890593e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.148912e-08
+
+Termination criteria: P=1.796254e-03 D=5.363530e-06 G=4.665807e-03 A=1.889952e-05 T=2.335101e+02 K=2.335101e+02 M=4.664395e-03
+40: pObj=0 pIn=1.797254e-03 dIn=6.363530e-06 gap=1.989952e-05 tau=2.335101e+02 kap=1.997519e-05 mu=4.664405e-03
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:22:37
+
+Entering Predictor
+==================
+
+cond(H) = 3.378861e+08
+Hic residual:     0
+HiAt residual: 2.400038e-08
+Hirxrs residual: 2.346811e-11
+Hic_alt residual:     0
+HiAt_alt residual: 3.544327e-09
+Hirxrs_alt residual: 1.152103e-13
+cond(At) = 2.372009e+07
+cond(HiAt) = 1.888456e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.029582e-07
+
+Entering Corrector
+==================
+
+cond(H) = 4.019014e+08
+Hic residual:     0
+HiAt residual: 3.433942e-08
+Hirxrs residual: 2.220449e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.964427e-09
+Hirxrs_alt residual: 1.107851e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.045275e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.851822e-09
+
+Termination criteria: P=1.245246e-03 D=3.412579e-06 G=3.235043e-03 A=1.266909e-05 T=2.357346e+02 K=2.357346e+02 M=3.234366e-03
+41: pObj=0 pIn=1.246246e-03 dIn=4.412579e-06 gap=1.366909e-05 tau=2.357346e+02 kap=1.372042e-05 mu=3.234376e-03
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:25:49
+
+Entering Predictor
+==================
+
+cond(H) = 3.968710e+08
+Hic residual:     0
+HiAt residual: 2.754068e-08
+Hirxrs residual: 1.961009e-11
+Hic_alt residual:     0
+HiAt_alt residual: 4.128195e-09
+Hirxrs_alt residual: 9.091195e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.043748e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.496246e-07
+
+Entering Corrector
+==================
+
+cond(H) = 4.479161e+08
+Hic residual:     0
+HiAt residual: 3.060296e-08
+Hirxrs residual: 1.802155e-13
+Hic_alt residual:     0
+HiAt_alt residual: 4.221109e-09
+Hirxrs_alt residual: 6.089506e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.164457e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.875103e-09
+
+Termination criteria: P=8.631683e-04 D=2.059757e-06 G=2.242927e-03 A=8.415066e-06 T=2.373277e+02 K=2.373277e+02 M=2.242761e-03
+42: pObj=0 pIn=8.641683e-04 dIn=3.059757e-06 gap=9.415066e-06 tau=2.373277e+02 kap=9.450106e-06 mu=2.242771e-03
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:28:12
+
+Entering Predictor
+==================
+
+cond(H) = 4.450353e+08
+Hic residual:     0
+HiAt residual: 3.169396e-08
+Hirxrs residual: 1.087225e-11
+Hic_alt residual:     0
+HiAt_alt residual: 4.077295e-09
+Hirxrs_alt residual: 6.606919e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.163548e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.067724e-07
+
+Entering Corrector
+==================
+
+cond(H) = 5.031274e+08
+Hic residual:     0
+HiAt residual: 3.355396e-08
+Hirxrs residual: 1.108528e-13
+Hic_alt residual:     0
+HiAt_alt residual: 4.513769e-09
+Hirxrs_alt residual: 6.517990e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.294959e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.474893e-08
+
+Termination criteria: P=4.846835e-04 D=7.196575e-07 G=1.260141e-03 A=4.255744e-06 T=2.389499e+02 K=2.389499e+02 M=1.260482e-03
+43: pObj=0 pIn=4.856835e-04 dIn=1.719657e-06 gap=5.255744e-06 tau=2.389499e+02 kap=5.275130e-06 mu=1.260492e-03
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:30:01
+
+Entering Predictor
+==================
+
+cond(H) = 4.997470e+08
+Hic residual:     0
+HiAt residual: 3.400088e-08
+Hirxrs residual: 1.195405e-11
+Hic_alt residual:     0
+HiAt_alt residual: 5.018434e-09
+Hirxrs_alt residual: 3.859927e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.293848e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.283030e-07
+
+Entering Corrector
+==================
+
+cond(H) = 5.350909e+08
+Hic residual:     0
+HiAt residual: 3.665551e-08
+Hirxrs residual: 4.900353e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.892679e-09
+Hirxrs_alt residual: 2.379553e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.372419e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.234927e-09
+
+Termination criteria: P=2.719658e-04 D=-3.351098e-08 G=7.077917e-04 A=1.942433e-06 T=2.398819e+02 K=2.398819e+02 M=7.084167e-04
+44: pObj=0 pIn=2.729658e-04 dIn=9.664890e-07 gap=2.942433e-06 tau=2.398819e+02 kap=2.953231e-06 mu=7.084267e-04
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:31:36
+
+Entering Predictor
+==================
+
+cond(H) = 5.338883e+08
+Hic residual:     0
+HiAt residual: 3.522910e-08
+Hirxrs residual: 3.634340e-12
+Hic_alt residual:     0
+HiAt_alt residual: 5.827018e-09
+Hirxrs_alt residual: 2.836650e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.371987e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.465080e-07
+
+Entering Corrector
+==================
+
+cond(H) = 5.641432e+08
+Hic residual:     0
+HiAt residual: 4.447209e-08
+Hirxrs residual: 6.378716e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.274184e-09
+Hirxrs_alt residual: 1.530837e-17
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.438273e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.621906e-08
+
+Termination criteria: P=1.011765e-04 D=-6.382236e-07 G=2.643151e-04 A=9.795262e-08 T=2.406413e+02 K=2.406413e+02 M=2.651684e-04
+45: pObj=0 pIn=1.021765e-04 dIn=3.617764e-07 gap=1.097953e-06 tau=2.406413e+02 kap=1.101965e-06 mu=2.651784e-04
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:33:24
+
+Entering Predictor
+==================
+
+cond(H) = 5.633017e+08
+Hic residual:     0
+HiAt residual: 3.912953e-08
+Hirxrs residual: 1.540927e-12
+Hic_alt residual:     0
+HiAt_alt residual: 5.728352e-09
+Hirxrs_alt residual: 1.037510e-14
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.437943e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.334396e-07
+
+Entering Corrector
+==================
+
+cond(H) = 5.748771e+08
+Hic residual:     0
+HiAt residual: 4.237449e-08
+Hirxrs residual: 6.337661e-15
+Hic_alt residual:     0
+HiAt_alt residual: 6.045101e-09
+Hirxrs_alt residual: 2.620441e-18
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.462931e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.085870e-17.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_worse (line 73)
+] 
+LHS residual: 5.362976e-09
+
+Termination criteria: P=3.724688e-05 D=-8.645798e-07 G=9.831279e-05 A=-5.895011e-07 T=2.409281e+02 K=2.409281e+02 M=9.925165e-05
+46: pObj=0 pIn=3.824688e-05 dIn=1.354202e-07 gap=4.104989e-07 tau=2.409281e+02 kap=4.119969e-07 mu=9.926165e-05
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:35:07
+
+Entering Predictor
+==================
+
+cond(H) = 5.747541e+08
+Hic residual:     0
+HiAt residual: 3.832201e-08
+Hirxrs residual: 1.515035e-12
+Hic_alt residual:     0
+HiAt_alt residual: 5.400691e-09
+Hirxrs_alt residual: 3.632666e-15
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.462873e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.086037e-17.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_worse (line 73)
+] 
+LHS residual: 4.444585e-07
+
+Entering Corrector
+==================
+
+cond(H) = 5.810407e+08
+Hic residual:     0
+HiAt residual: 4.049561e-08
+Hirxrs residual: 1.373686e-15
+Hic_alt residual:     0
+HiAt_alt residual: 5.818609e-09
+Hirxrs_alt residual: 6.431428e-19
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.476445e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.218951e-19.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_worse (line 73)
+] 
+LHS residual: 1.468220e-08
+
+Termination criteria: P=3.060770e-06 D=-9.856222e-07 G=9.544211e-06 A=-9.564443e-07 T=2.410822e+02 K=2.410822e+02 M=1.052878e-05
+47: pObj=0 pIn=4.060770e-06 dIn=1.437780e-08 gap=4.355567e-08 tau=2.410822e+02 kap=4.371448e-08 mu=1.053878e-05
+
+ans = 
+
+  datetime
+
+   06-Apr-2019 21:36:52
+
+Entering Predictor
+==================
+
+cond(H) = 5.810047e+08
+Hic residual:     0
+HiAt residual: 4.315813e-08
+Hirxrs residual: 4.788362e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.627658e-09
+Hirxrs_alt residual: 3.966420e-16
+cond(At) = 2.372009e+07
+cond(HiAt) = 2.476419e+09
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.218945e-19.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly_worse (line 73)
+] 
+LHS residual: 4.899527e-07
+
+Termination criteria: P=-5.688820e-07 D=-9.984735e-07 G=1.194972e-07 A=-9.953759e-07 T=2.410987e+02 K=2.410987e+02 M=1.108921e-06
+Done in 47 iterations.
+Status = Feasible and approximate optimal solution found.
+
+ans =
+
+    'Done'
+
