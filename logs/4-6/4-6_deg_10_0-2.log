@@ -11890,4 +11890,1629 @@ ENTERING GRADIENT AND HESSIAN CALCULATION
   In FRS_one_poly (line 66)] 
 
 ENTERING GRADIENT AND HESSIAN CALCULATION
-=================
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.190700e+13
+Cond(L) total: 4.680511e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.890414e+12
+Cond(L) total: 2.427017e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.858406e+12
+Cond(L) total: 1.964282e+06
+
+Entering Corrector
+
+cond(H) = 3.858403e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 3.718152e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 7.475075e+18
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.687065e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.890018e+12
+Cond(L) total: 1.700005e+06
+
+120: pObj=0 pIn=4.059369e-05 dIn=1.649476e-07 gap=1.201290e-07 tau=2.269296e+03 kap=1.046731e-07 mu=2.375308e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 11:33:18
+
+Entering Corrector
+
+cond(H) = 2.890019e+12
+Hic residual:     0
+HiAt residual: 2.992017e-04
+Hirxrs residual: 6.668219e-09
+Hic_alt residual:     0
+HiAt_alt residual: 3.169738e-05
+Hirxrs_alt residual: 2.426854e-11
+Hic exp:     0
+HiAt exp: 1.937749e+02
+Hirxrs exp: 1.348921e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 3.591737e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 8.080066e+18
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.693810e-20.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 7.338289e-03
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.893545e+12
+Cond(L) total: 1.701042e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.895091e+12
+Cond(L) total: 1.701496e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.897340e+12
+Cond(L) total: 1.702158e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.900625e+12
+Cond(L) total: 1.703122e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.905477e+12
+Cond(L) total: 1.704547e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.912724e+12
+Cond(L) total: 1.706670e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.923728e+12
+Cond(L) total: 1.709891e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.940794e+12
+Cond(L) total: 1.714874e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.967962e+12
+Cond(L) total: 1.722778e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.012616e+12
+Cond(L) total: 1.735689e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.088868e+12
+Cond(L) total: 1.757518e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.225344e+12
+Cond(L) total: 1.795924e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.485208e+12
+Cond(L) total: 1.866872e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.028207e+12
+Cond(L) total: 2.007040e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.369531e+12
+Cond(L) total: 2.317225e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.022072e+13
+Cond(L) total: 3.196988e+06
+
+Entering Corrector
+
+cond(H) = 5.369531e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.257810e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 2.333943e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.060246e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.707027e+12
+Cond(L) total: 1.925363e+06
+
+Entering Corrector
+
+cond(H) = 3.707029e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.118071e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.313159e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.653677e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.337718e+12
+Cond(L) total: 1.826942e+06
+
+121: pObj=0 pIn=4.019253e-05 dIn=1.632514e-07 gap=1.106354e-07 tau=2.438756e+03 kap=9.588130e-08 mu=2.338304e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 11:54:30
+
+Entering Corrector
+
+cond(H) = 3.337718e+12
+Hic residual:     0
+HiAt residual: 3.915545e-04
+Hirxrs residual: 1.622526e-09
+Hic_alt residual:     0
+HiAt_alt residual: 3.791715e-05
+Hirxrs_alt residual: 3.106264e-11
+Hic exp:     0
+HiAt exp: 1.984828e+02
+Hirxrs exp: 9.442550e-05
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.073153e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.081476e+20
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+3.983467e-21.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 2.991785e-02
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.109331e+14
+Cond(L) total: 2.026936e+07
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.193394e+13
+Cond(L) total: 3.454558e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.851096e+12
+Cond(L) total: 2.418902e+06
+
+Entering Corrector
+
+cond(H) = 5.851088e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.505157e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.175848e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.402693e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.939775e+12
+Cond(L) total: 1.984885e+06
+
+Entering Corrector
+
+cond(H) = 3.939768e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.301655e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.186288e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.967844e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.616417e+12
+Cond(L) total: 1.901688e+06
+
+122: pObj=0 pIn=4.004779e-05 dIn=1.626757e-07 gap=1.073069e-07 tau=2.505558e+03 kap=9.289089e-08 mu=2.327395e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 12:03:55
+
+Entering Corrector
+
+cond(H) = 3.616416e+12
+Hic residual:     0
+HiAt residual: 3.377258e-04
+Hirxrs residual: 2.881906e-09
+Hic_alt residual:     0
+HiAt_alt residual: 3.959416e-05
+Hirxrs_alt residual: 3.521839e-11
+Hic exp:     0
+HiAt exp: 2.737748e+02
+Hirxrs exp: 1.397951e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.260968e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.197666e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.954356e-22.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 3.784991e-01
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.015847e+14
+Cond(L) total: 1.007891e+07
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.011956e+13
+Cond(L) total: 3.181130e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.653604e+12
+Cond(L) total: 2.377730e+06
+
+Entering Corrector
+
+cond(H) = 5.653601e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.501530e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.194946e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.383708e-20.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.907834e+12
+Cond(L) total: 1.976825e+06
+
+Entering Corrector
+
+cond(H) = 3.907831e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.312476e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.200142e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.986691e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.601012e+12
+Cond(L) total: 1.897634e+06
+
+123: pObj=0 pIn=4.007521e-05 dIn=1.626081e-07 gap=1.069650e-07 tau=2.512526e+03 kap=9.255691e-08 mu=2.325514e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 12:12:44
+
+Entering Corrector
+
+cond(H) = 3.601013e+12
+Hic residual:     0
+HiAt residual: 3.703311e-04
+Hirxrs residual: 2.348444e-08
+Hic_alt residual:     0
+HiAt_alt residual: 3.957496e-05
+Hirxrs_alt residual: 3.163916e-11
+Hic exp:     0
+HiAt exp: 3.356993e+02
+Hirxrs exp: 1.656660e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.273334e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.204929e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.304079e-21.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 1.966032e-02
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.639355e+12
+Cond(L) total: 1.907711e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.660451e+12
+Cond(L) total: 1.913230e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.695531e+12
+Cond(L) total: 1.922376e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.756112e+12
+Cond(L) total: 1.938070e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.865195e+12
+Cond(L) total: 1.966011e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.072061e+12
+Cond(L) total: 2.017935e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.493596e+12
+Cond(L) total: 2.119809e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.462820e+12
+Cond(L) total: 2.337266e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 8.325831e+12
+Cond(L) total: 2.885449e+06
+
+Entering Corrector
+
+cond(H) = 5.462831e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.735295e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.089574e+21
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.629176e-22.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 49)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In corr (line 49)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.286243e+13
+Cond(L) total: 3.586422e+06
+
+Entering Corrector
+
+cond(H) = 1.286236e+13
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.353549e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.398390e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.305073e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.268976e+12
+Cond(L) total: 2.503794e+06
+
+Entering Corrector
+
+cond(H) = 6.268963e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.822486e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.435570e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.137577e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.331316e+12
+Cond(L) total: 2.081182e+06
+
+Entering Corrector
+
+cond(H) = 4.331318e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.627082e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 2.525977e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.297829e-22.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.162735e+13
+Cond(L) total: 3.409896e+06
+
+Entering Corrector
+
+cond(H) = 1.162735e+13
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.290132e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.455738e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+3.906628e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.950782e+12
+Cond(L) total: 2.439424e+06
+
+Entering Corrector
+
+cond(H) = 5.950790e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.806340e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.423037e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.182118e-20.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.276090e+12
+Cond(L) total: 2.067871e+06
+
+Entering Corrector
+
+cond(H) = 4.276087e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.634291e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 2.337396e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.801995e-20.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 3.979742e+12
+Cond(L) total: 1.994930e+06
+
+124: pObj=0 pIn=3.987980e-05 dIn=1.617888e-07 gap=1.021990e-07 tau=2.616485e+03 kap=8.810344e-08 mu=2.305211e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 12:36:04
+
+Entering Corrector
+
+cond(H) = 3.979737e+12
+Hic residual:     0
+HiAt residual: 4.805265e-04
+Hirxrs residual: 9.510960e-09
+Hic_alt residual:     0
+HiAt_alt residual: 4.411492e-05
+Hirxrs_alt residual: 3.321482e-11
+Hic exp:     0
+HiAt exp: 2.943114e+02
+Hirxrs exp: 1.431530e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 4.603117e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 2.495126e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.217749e-20.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 1.230107e-02
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.387223e+12
+Cond(L) total: 2.321039e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.067304e+12
+Cond(L) total: 2.658444e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.306292e+13
+Cond(L) total: 3.614274e+06
+
+Entering Corrector
+
+cond(H) = 7.067320e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.314862e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.851855e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.539690e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.020991e+12
+Cond(L) total: 2.240758e+06
+
+Entering Corrector
+
+cond(H) = 5.020994e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.150769e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.880535e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.099792e-20.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.620818e+12
+Cond(L) total: 2.149609e+06
+
+125: pObj=0 pIn=3.956343e-05 dIn=1.606242e-07 gap=9.555547e-08 tau=2.778310e+03 kap=8.206997e-08 mu=2.280155e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 12:44:35
+
+Entering Corrector
+
+cond(H) = 4.620817e+12
+Hic residual:     0
+HiAt residual: 4.992861e-04
+Hirxrs residual: 2.317658e-09
+Hic_alt residual:     0
+HiAt_alt residual: 5.548248e-05
+Hirxrs_alt residual: 3.800270e-11
+Hic exp:     0
+HiAt exp: 2.577736e+02
+Hirxrs exp: 1.431492e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.108187e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.912998e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.161988e-21.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 1.974405e-01
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.096726e+14
+Cond(L) total: 1.448025e+07
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.373423e+13
+Cond(L) total: 3.705970e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.356590e+12
+Cond(L) total: 2.712302e+06
+
+Entering Corrector
+
+cond(H) = 7.356568e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.401057e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.913940e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.641296e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.073968e+12
+Cond(L) total: 2.252546e+06
+
+Entering Corrector
+
+cond(H) = 5.073963e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.181929e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.907822e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+6.581444e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.672694e+12
+Cond(L) total: 2.161642e+06
+
+126: pObj=0 pIn=3.955128e-05 dIn=1.605289e-07 gap=9.503186e-08 tau=2.791967e+03 kap=8.158505e-08 mu=2.277825e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 12:53:06
+
+Entering Corrector
+
+cond(H) = 4.672691e+12
+Hic residual:     0
+HiAt residual: 4.308587e-04
+Hirxrs residual: 8.592752e-09
+Hic_alt residual:     0
+HiAt_alt residual: 5.195572e-05
+Hirxrs_alt residual: 4.332519e-11
+Hic exp:     0
+HiAt exp: 4.301273e+02
+Hirxrs exp: 3.746000e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.141702e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 1.949947e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+8.287759e-21.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 1.533172e-02
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.745812e+12
+Cond(L) total: 2.178490e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.784588e+12
+Cond(L) total: 2.187370e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.848011e+12
+Cond(L) total: 2.201819e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 4.955589e+12
+Cond(L) total: 2.226117e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.146469e+12
+Cond(L) total: 2.268585e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.505120e+12
+Cond(L) total: 2.346299e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.237713e+12
+Cond(L) total: 2.497542e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.966159e+12
+Cond(L) total: 2.822440e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.352286e+13
+Cond(L) total: 3.677345e+06
+
+Entering Corrector
+
+cond(H) = 7.966129e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.968490e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 2.560202e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.926434e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.842392e+12
+Cond(L) total: 2.417104e+06
+
+127: pObj=0 pIn=3.926485e-05 dIn=1.593734e-07 gap=8.829713e-08 tau=2.983352e+03 kap=7.547215e-08 mu=2.251550e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 13:03:26
+
+Entering Corrector
+
+cond(H) = 5.842392e+12
+Hic residual:     0
+HiAt residual: 5.602934e-04
+Hirxrs residual: 2.815789e-08
+Hic_alt residual:     0
+HiAt_alt residual: 6.362676e-05
+Hirxrs_alt residual: 4.853299e-11
+Hic exp:     0
+HiAt exp: 5.005051e+02
+Hirxrs exp: 3.161395e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.814274e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 2.603512e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.312687e-21.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 2.086657e-01
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 2.919326e+13
+Cond(L) total: 5.403121e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.111686e+13
+Cond(L) total: 3.334197e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.852225e+12
+Cond(L) total: 2.802182e+06
+
+Entering Corrector
+
+cond(H) = 7.852256e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 6.042087e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 2.641458e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+5.797403e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.862301e+12
+Cond(L) total: 2.421220e+06
+
+128: pObj=0 pIn=3.921987e-05 dIn=1.592789e-07 gap=8.776477e-08 tau=2.999674e+03 kap=7.499526e-08 mu=2.249579e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 13:09:44
+
+Entering Corrector
+
+cond(H) = 5.862299e+12
+Hic residual:     0
+HiAt residual: 6.110935e-04
+Hirxrs residual: 4.173944e-09
+Hic_alt residual:     0
+HiAt_alt residual: 6.335580e-05
+Hirxrs_alt residual: 4.770861e-11
+Hic exp:     0
+HiAt exp: 6.933301e+02
+Hirxrs exp: 3.505367e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 5.857945e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 2.831534e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+3.411577e-20.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 2.867692e-02
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.970016e+12
+Cond(L) total: 2.443361e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.034753e+12
+Cond(L) total: 2.456571e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.147477e+12
+Cond(L) total: 2.479408e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.352579e+12
+Cond(L) total: 2.520433e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.746729e+12
+Cond(L) total: 2.597449e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.566582e+12
+Cond(L) total: 2.750744e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.525874e+12
+Cond(L) total: 3.086398e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.587483e+13
+Cond(L) total: 3.984322e+06
+
+Entering Corrector
+
+cond(H) = 9.525852e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 6.600734e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.695396e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+3.188394e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.001799e+12
+Cond(L) total: 2.646089e+06
+
+Entering Corrector
+
+cond(H) = 7.001803e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 6.423453e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.310699e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+3.703106e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.315622e+12
+Cond(L) total: 2.513090e+06
+
+129: pObj=0 pIn=3.898331e-05 dIn=1.584764e-07 gap=8.309300e-08 tau=3.152407e+03 kap=7.081655e-08 mu=2.232421e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 13:21:42
+
+Entering Corrector
+
+cond(H) = 6.315609e+12
+Hic residual:     0
+HiAt residual: 5.618843e-04
+Hirxrs residual: 1.542024e-08
+Hic_alt residual:     0
+HiAt_alt residual: 6.784938e-05
+Hirxrs_alt residual: 5.523438e-11
+Hic exp:     0
+HiAt exp: 8.127887e+02
+Hirxrs exp: 6.030105e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 6.362168e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.284792e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.055444e-21.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 3.240422e-02
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.882598e+13
+Cond(L) total: 4.338896e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.051614e+13
+Cond(L) total: 3.242862e+06
+
+Entering Corrector
+
+cond(H) = 1.051612e+13
+cond(At) = 1.770373e+09
+cond(HiAt) = 7.062383e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.792887e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.295761e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.497732e+12
+Cond(L) total: 2.738202e+06
+
+Entering Corrector
+
+cond(H) = 7.497757e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 6.833399e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.795372e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+4.832989e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 6.887287e+12
+Cond(L) total: 2.624365e+06
+
+130: pObj=0 pIn=3.884030e-05 dIn=1.579174e-07 gap=7.979151e-08 tau=3.271297e+03 kap=6.789163e-08 mu=2.220934e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 13:29:23
+
+Entering Corrector
+
+cond(H) = 6.887289e+12
+Hic residual:     0
+HiAt residual: 8.071824e-04
+Hi
