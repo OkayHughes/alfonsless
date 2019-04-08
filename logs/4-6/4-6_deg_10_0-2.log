@@ -13515,4 +13515,152 @@ Entering Corrector
 cond(H) = 6.887289e+12
 Hic residual:     0
 HiAt residual: 8.071824e-04
-Hi
+Hirxrs residual: 2.197744e-08
+Hic_alt residual:     0
+HiAt_alt residual: 8.007669e-05
+Hirxrs_alt residual: 5.703998e-11
+Hic exp:     0
+HiAt exp: 1.009980e+03
+Hirxrs exp: 2.798041e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 6.791032e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 3.870273e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.764524e-21.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 1.160188e-01
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+[Warning: Cholesky factorization failed for a polynomial!] 
+[> In alfonso_grad_and_hess_verbose (line 112)
+  In pred (line 72)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 5.705806e+13
+Cond(L) total: 7.553637e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 1.533821e+13
+Cond(L) total: 3.916398e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 9.937141e+12
+Cond(L) total: 3.152322e+06
+
+Entering Corrector
+
+cond(H) = 9.937177e+12
+cond(At) = 1.770373e+09
+cond(HiAt) = 7.160181e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 5.600021e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.879144e-21.] 
+[> In linSolve3 (line 53)
+  In linSolveMain (line 24)
+  In corr (line 36)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 7.427889e+12
+Cond(L) total: 2.725418e+06
+
+131: pObj=0 pIn=3.879253e-05 dIn=1.577263e-07 gap=7.867239e-08 tau=3.313829e+03 kap=6.691010e-08 mu=2.217252e-04
+
+ans = 
+
+  datetime
+
+   07-Apr-2019 13:35:48
+
+Entering Corrector
+
+cond(H) = 7.427898e+12
+Hic residual:     0
+HiAt residual: 7.108619e-04
+Hirxrs residual: 3.927092e-08
+Hic_alt residual:     0
+HiAt_alt residual: 8.425064e-05
+Hirxrs_alt residual: 5.961249e-11
+Hic exp:     0
+HiAt exp: 1.046523e+03
+Hirxrs exp: 7.172785e-04
+cond(At) = 1.770373e+09
+cond(HiAt) = 6.945472e+14
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+cond(LHS) = 4.153398e+19
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+2.975280e-21.] 
+[> In linSolveIsolate (line 80)
+  In linSolveMain (line 24)
+  In pred (line 51)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 113)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 4.562459e-02
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+Cond(H(x)) total: 8.130195e+12
+Cond(L) total: 2.851350e+06
+
+
+ENTERING GRADIENT AND HESSIAN CALCULATION
+=========================================
+
+{Operation terminated by user during cond (line 35)
+
+
+In alfonso_grad_and_hess_verbose (line 116)
+    %fprintf("Cond(H(x)) total: %5d\n", cond(H));
+
+In pred (line 72)
+
+
+In alfonso (line 188)
+            pred(soln, probData, gH, gH_Params, @linSolveIsolate, algParams, opts);
+
+In AlfonsoSOSProg/solve_alfonso (line 113)
+            res = alfonso(prob_data, x0, @alfonso_grad_and_hess_verbose, g_h_params, opts);
+
+In AlfonsoSOSProgFekete/minimize (line 85)
+                results = prog.solve_alfonso(g_h_params, opts);
+
+In FRS_one_poly (line 66)
+res = prog.minimize(obj, struct());
+} 
+exit
