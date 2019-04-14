@@ -44,8 +44,8 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
 % -------------------------------------------------------------------------
 
 
-    %fprintf("\nENTERING GRADIENT AND HESSIAN CALCULATION\n");
-    %fprintf("=========================================\n\n");
+    fprintf("\nENTERING GRADIENT AND HESSIAN CALCULATION\n");
+    fprintf("=========================================\n\n");
     
     U_arr = params.U_arr;
     in = 1;
@@ -74,6 +74,7 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
 
         if inPoly == 1
             for j = 1:n
+                fprintf("Polynomial weight %d\n", j)
                 %fprintf("H_%d(x):\n", j);
                 %fprintf("--------------------\n\n");
                 % for the weight 1-t_j^2
@@ -151,7 +152,7 @@ function [in, g, H] = gH_SOSWt(x, P)
     %fprintf("Cond(Lambda(x)): %5d\n", cond(Y));
     [L, err] = chol(Y, 'lower');
     if err > 0
-        fprintf("ERROR IN CHOLESKY, LOWEST EIGENVALUE: %d", min(eig(Y)))
+        fprintf("ERROR IN CHOLESKY, LOWEST EIGENVALUE: %d\n", min(eig(Y)))
         in = 0;
         g = NaN;
         H = NaN;
@@ -159,6 +160,7 @@ function [in, g, H] = gH_SOSWt(x, P)
         in = 1;
         %fprintf("Cond(L): %5d\n", cond(L));
         V = L\P';
+        fprintf("HESSIAN RESIDUAL: %4e\n", norm(L * V - P'));
         VtV = V'*V;
 
         g = -diag(VtV);
