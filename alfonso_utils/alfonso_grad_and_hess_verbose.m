@@ -74,7 +74,7 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
 
         if inPoly == 1
             for j = 1:n
-                fprintf("Polynomial weight %d\n", j)
+                %fprintf("Polynomial weight %d\n", j)
                 %fprintf("H_%d(x):\n", j);
                 %fprintf("--------------------\n\n");
                 % for the weight 1-t_j^2
