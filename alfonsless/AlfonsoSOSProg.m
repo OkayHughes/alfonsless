@@ -105,6 +105,7 @@ classdef AlfonsoSOSProg < handle
 
             % run alfonso
             opts.optimTol = 1e-6 ;
+            opts.maxItRefineSteps = 5;
             if isfield(in_opts, "verbose")
                 opts.verbose = in_opts.verbose;
             end

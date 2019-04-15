@@ -44,8 +44,8 @@ function [in, g, H, L] = alfonso_grad_and_hess_verbose(x, params)
 % -------------------------------------------------------------------------
 
 
-    fprintf("\nENTERING GRADIENT AND HESSIAN CALCULATION\n");
-    fprintf("=========================================\n\n");
+    %fprintf("\nENTERING GRADIENT AND HESSIAN CALCULATION\n");
+    %fprintf("=========================================\n\n");
     
     U_arr = params.U_arr;
     in = 1;
@@ -160,7 +160,7 @@ function [in, g, H] = gH_SOSWt(x, P)
         in = 1;
         %fprintf("Cond(L): %5d\n", cond(L));
         V = L\P';
-        fprintf("HESSIAN RESIDUAL: %4e\n", norm(L * V - P'));
+        %fprintf("HESSIAN RESIDUAL: %4e\n", norm(L * V - P'));
         VtV = V'*V;
 
         g = -diag(VtV);
