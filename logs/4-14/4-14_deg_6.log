@@ -1,0 +1,2565 @@
+min int_{T times X} v d mu s.t. v geq 0 on Z, v) geq 0 on Z0 
+{Error using AlfonsoSOSProgFekete/sos_on_K (line 108)
+Degree should be even
+
+Error in FRS_one_poly (line 55)
+prog.sos_on_K(v, Z_vars, Z_bounds, degree);
+} 
+FRS_one_poly(6, 0.1, "4-14_deg_6.log")
+min int_{T times X} v d mu s.t. v geq 0 on Z, v) geq 0 on Z0 
+Running alfonso
+
+Program Details:
+================
+
+Total number of indeterminates: 5
+-------------------------------
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+Total number of decision polynomials: 1
+-----------------------------------
+
+* Polynomial 1:
+
+ Variables:
+
+[   t1  ]
+[   z1  ]
+[   z2  ]
+[   k1  ]
+[   k2  ]
+
+ Degree: 6
+ Dimension: 462
+
+Total number of SOS constraints: 2
+--------------------------------
+
+* Constraint 1
+
+ Variables / bounds :
+
+ t1 [0.00, 1.00]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 6
+
+ size(A) for Decision Poly 1: 462x462
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 6.302465e+05
+
+ Constraint A size: 462x462
+
+ Cond(A): 6.302465e+05
+
+* Constraint 2
+
+ Variables / bounds :
+
+ t1 [0.00, 0.10]
+ z1 [-1.00, 1.00]
+ z2 [-1.00, 1.00]
+ k1 [-1.00, 1.00]
+ k2 [-1.00, 1.00]
+
+ SOS Cone Degree: 6
+
+ size(A) for Decision Poly 1: 462x462
+ Cond(A) for Decision Poly 1: 1
+ Cond(A_interp) for Decision Poly 1: 1.167810e+11
+
+ Constraint A size: 462x462
+
+ Cond(A): 1.167810e+11
+
+
+size(A): 924x462
+
+ans =
+
+     1   462
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=3.734073e-01 D=4.026565e-03 G=5.389568e-01 A=-1.000000e-06 T=1.000000e+00 K=1.000000e+00 M=1.000000e+00
+1: pObj=0 pIn=3.734083e-01 dIn=4.027565e-03 gap=0 tau=1 kap=1 mu=1.000000e+00
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:15
+
+Entering Predictor
+==================
+
+cond(H) = 7.227045e+03
+Hic residual:     0
+HiAt residual: 1.070159e-12
+Hirxrs residual:     0
+Hic_alt residual:     0
+HiAt_alt residual: 1.598841e-13
+Hirxrs_alt residual:     0
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.583512e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.706566e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 7.367539e+03
+Hic residual:     0
+HiAt residual: 1.142294e-12
+Hirxrs residual: 7.878967e-17
+Hic_alt residual:     0
+HiAt_alt residual: 1.498087e-13
+Hirxrs_alt residual: 6.167758e-18
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.560687e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.118012e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=3.360623e-01 D=3.623763e-03 G=4.850549e-01 A=1.608818e-01 T=1.424163e+00 K=1.424163e+00 M=8.999542e-01
+2: pObj=0 pIn=3.360633e-01 dIn=3.624763e-03 gap=1.608828e-01 tau=1.424163e+00 kap=6.269358e-01 mu=8.999542e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:21
+
+Entering Predictor
+==================
+
+cond(H) = 7.402862e+03
+Hic residual:     0
+HiAt residual: 1.185709e-12
+Hirxrs residual: 8.797626e-15
+Hic_alt residual:     0
+HiAt_alt residual: 1.592595e-13
+Hirxrs_alt residual: 5.509167e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.571723e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.218986e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 7.669577e+03
+Hic residual:     0
+HiAt residual: 1.161416e-12
+Hirxrs residual: 9.964596e-17
+Hic_alt residual:     0
+HiAt_alt residual: 1.564179e-13
+Hirxrs_alt residual: 7.381713e-18
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.576618e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.271716e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=3.024521e-01 D=3.261246e-03 G=4.365439e-01 A=1.689419e-01 T=2.134025e+00 K=2.134025e+00 M=8.098909e-01
+3: pObj=0 pIn=3.024531e-01 dIn=3.262246e-03 gap=1.689429e-01 tau=2.134025e+00 kap=3.761606e-01 mu=8.098909e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:26
+
+Entering Predictor
+==================
+
+cond(H) = 7.739014e+03
+Hic residual:     0
+HiAt residual: 1.184784e-12
+Hirxrs residual: 1.717744e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.507067e-13
+Hirxrs_alt residual: 1.021358e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.590088e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.366072e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 8.214988e+03
+Hic residual:     0
+HiAt residual: 1.123833e-12
+Hirxrs residual: 1.522526e-16
+Hic_alt residual:     0
+HiAt_alt residual: 1.572464e-13
+Hirxrs_alt residual: 9.291627e-18
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.633119e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.136443e-13
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=2.722034e-01 D=2.934984e-03 G=3.928844e-01 A=1.361464e-01 T=3.177609e+00 K=3.177609e+00 M=7.288397e-01
+4: pObj=0 pIn=2.722044e-01 dIn=2.935984e-03 gap=1.361474e-01 tau=3.177609e+00 kap=2.281659e-01 mu=7.288397e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:30
+
+Entering Predictor
+==================
+
+cond(H) = 8.315266e+03
+Hic residual:     0
+HiAt residual: 1.190450e-12
+Hirxrs residual: 2.146794e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.679343e-13
+Hirxrs_alt residual: 1.248766e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.646602e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.333208e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 9.084628e+03
+Hic residual:     0
+HiAt residual: 1.313295e-12
+Hirxrs residual: 2.061480e-16
+Hic_alt residual:     0
+HiAt_alt residual: 1.789130e-13
+Hirxrs_alt residual: 1.524488e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.737175e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.103017e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=2.449799e-01 D=2.641352e-03 G=3.535914e-01 A=1.014269e-01 T=4.533678e+00 K=4.533678e+00 M=6.559107e-01
+5: pObj=0 pIn=2.449809e-01 dIn=2.642352e-03 gap=1.014279e-01 tau=4.533678e+00 kap=1.443201e-01 mu=6.559107e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:34
+
+Entering Predictor
+==================
+
+cond(H) = 9.207518e+03
+Hic residual:     0
+HiAt residual: 1.326167e-12
+Hirxrs residual: 2.768487e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.791982e-13
+Hirxrs_alt residual: 1.775877e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.747726e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.977493e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 1.035168e+04
+Hic residual:     0
+HiAt residual: 1.513586e-12
+Hirxrs residual: 2.940035e-16
+Hic_alt residual:     0
+HiAt_alt residual: 2.112361e-13
+Hirxrs_alt residual: 2.077929e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.891723e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.485847e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=2.204790e-01 D=2.377087e-03 G=3.182282e-01 A=7.429692e-02 T=6.165164e+00 K=6.165164e+00 M=5.902872e-01
+6: pObj=0 pIn=2.204800e-01 dIn=2.378087e-03 gap=7.429792e-02 tau=6.165164e+00 kap=9.562969e-02 mu=5.902873e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:39
+
+Entering Predictor
+==================
+
+cond(H) = 1.049546e+04
+Hic residual:     0
+HiAt residual: 1.459146e-12
+Hirxrs residual: 3.772943e-14
+Hic_alt residual:     0
+HiAt_alt residual: 2.141843e-13
+Hirxrs_alt residual: 2.059870e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.898582e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.443723e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 1.210158e+04
+Hic residual:     0
+HiAt residual: 1.728570e-12
+Hirxrs residual: 2.629703e-16
+Hic_alt residual:     0
+HiAt_alt residual: 2.416726e-13
+Hirxrs_alt residual: 2.549394e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.098560e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.954830e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.984285e-01 D=2.139252e-03 G=2.864017e-01 A=5.476129e-02 T=8.031381e+00 K=8.031381e+00 M=5.312348e-01
+7: pObj=0 pIn=1.984295e-01 dIn=2.140252e-03 gap=5.476229e-02 tau=8.031381e+00 kap=6.610339e-02 mu=5.312348e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:43
+
+Entering Predictor
+==================
+
+cond(H) = 1.226413e+04
+Hic residual:     0
+HiAt residual: 1.721736e-12
+Hirxrs residual: 3.959642e-14
+Hic_alt residual:     0
+HiAt_alt residual: 2.239187e-13
+Hirxrs_alt residual: 2.104946e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.101658e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 9.913176e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 1.442182e+04
+Hic residual:     0
+HiAt residual: 1.659150e-12
+Hirxrs residual: 2.446542e-16
+Hic_alt residual:     0
+HiAt_alt residual: 2.697260e-13
+Hirxrs_alt residual: 2.843546e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.354422e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.856384e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.785833e-01 D=1.925202e-03 G=2.577582e-01 A=4.097854e-02 T=1.008304e+01 K=1.008304e+01 M=4.780939e-01
+8: pObj=0 pIn=1.785843e-01 dIn=1.926202e-03 gap=4.097954e-02 tau=1.008304e+01 kap=4.740013e-02 mu=4.780940e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:47
+
+Entering Predictor
+==================
+
+cond(H) = 1.459884e+04
+Hic residual:     0
+HiAt residual: 1.824927e-12
+Hirxrs residual: 5.301595e-14
+Hic_alt residual:     0
+HiAt_alt residual: 2.658401e-13
+Hirxrs_alt residual: 2.368978e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.353607e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.330397e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 1.880008e+04
+Hic residual:     0
+HiAt residual: 2.200172e-12
+Hirxrs residual: 5.693181e-16
+Hic_alt residual:     0
+HiAt_alt residual: 3.326376e-13
+Hirxrs_alt residual: 6.617674e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.796691e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.010611e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.530684e-01 D=1.649999e-03 G=2.209313e-01 A=2.771078e-02 T=1.330242e+01 K=1.330242e+01 M=4.097611e-01
+9: pObj=0 pIn=1.530694e-01 dIn=1.650999e-03 gap=2.771178e-02 tau=1.330242e+01 kap=3.078460e-02 mu=4.097611e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:52
+
+Entering Predictor
+==================
+
+cond(H) = 1.920761e+04
+Hic residual:     0
+HiAt residual: 2.538443e-12
+Hirxrs residual: 5.587181e-14
+Hic_alt residual:     0
+HiAt_alt residual: 3.604703e-13
+Hirxrs_alt residual: 2.536675e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.784883e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.901365e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 2.506146e+04
+Hic residual:     0
+HiAt residual: 3.015434e-12
+Hirxrs residual: 5.621761e-16
+Hic_alt residual:     0
+HiAt_alt residual: 4.562900e-13
+Hirxrs_alt residual: 6.621126e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 3.265332e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.638618e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.311989e-01 D=1.414116e-03 G=1.893659e-01 A=1.945094e-02 T=1.664838e+01 K=1.664838e+01 M=3.512010e-01
+10: pObj=0 pIn=1.311999e-01 dIn=1.415116e-03 gap=1.945194e-02 tau=1.664838e+01 kap=2.108984e-02 mu=3.512010e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:14:56
+
+Entering Predictor
+==================
+
+cond(H) = 2.550927e+04
+Hic residual:     0
+HiAt residual: 3.134210e-12
+Hirxrs residual: 7.495465e-14
+Hic_alt residual:     0
+HiAt_alt residual: 4.749228e-13
+Hirxrs_alt residual: 2.897990e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 3.240301e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.819449e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 3.338615e+04
+Hic residual:     0
+HiAt residual: 4.526862e-12
+Hirxrs residual: 6.246189e-16
+Hic_alt residual:     0
+HiAt_alt residual: 5.640017e-13
+Hirxrs_alt residual: 6.339226e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 3.712119e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.757595e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.124539e-01 D=1.211933e-03 G=1.623105e-01 A=1.410713e-02 T=1.999325e+01 K=1.999325e+01 M=3.010149e-01
+11: pObj=0 pIn=1.124549e-01 dIn=1.212933e-03 gap=1.410813e-02 tau=1.999325e+01 kap=1.505420e-02 mu=3.010149e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:00
+
+Entering Predictor
+==================
+
+cond(H) = 3.387990e+04
+Hic residual:     0
+HiAt residual: 4.570135e-12
+Hirxrs residual: 9.735873e-14
+Hic_alt residual:     0
+HiAt_alt residual: 5.910748e-13
+Hirxrs_alt residual: 3.238111e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 3.675803e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.211169e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 4.517162e+04
+Hic residual:     0
+HiAt residual: 5.457486e-12
+Hirxrs residual: 6.498373e-16
+Hic_alt residual:     0
+HiAt_alt residual: 7.550734e-13
+Hirxrs_alt residual: 5.965381e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.118941e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 7.028280e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=9.638710e-02 D=1.038638e-03 G=1.391205e-01 A=1.051123e-02 T=2.325278e+01 K=2.325278e+01 M=2.580027e-01
+12: pObj=0 pIn=9.638810e-02 dIn=1.039638e-03 gap=1.051223e-02 tau=2.325278e+01 kap=1.109503e-02 mu=2.580027e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:05
+
+Entering Predictor
+==================
+
+cond(H) = 4.540413e+04
+Hic residual:     0
+HiAt residual: 5.912547e-12
+Hirxrs residual: 1.224229e-13
+Hic_alt residual:     0
+HiAt_alt residual: 7.723707e-13
+Hirxrs_alt residual: 3.863152e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.073709e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.168422e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 6.326812e+04
+Hic residual:     0
+HiAt residual: 9.307320e-12
+Hirxrs residual: 6.393649e-16
+Hic_alt residual:     0
+HiAt_alt residual: 1.073435e-12
+Hirxrs_alt residual: 5.581186e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.487778e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.742919e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=8.261581e-02 D=8.901011e-04 G=1.192437e-01 A=8.005231e-03 T=2.637471e+01 K=2.637471e+01 M=2.211376e-01
+13: pObj=0 pIn=8.261681e-02 dIn=8.911011e-04 gap=8.006231e-03 tau=2.637471e+01 kap=8.384269e-03 mu=2.211376e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:09
+
+Entering Predictor
+==================
+
+cond(H) = 6.342202e+04
+Hic residual:     0
+HiAt residual: 7.256517e-12
+Hirxrs residual: 1.684477e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.128688e-12
+Hirxrs_alt residual: 4.991951e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.438272e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 7.618707e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 8.895359e+04
+Hic residual:     0
+HiAt residual: 1.024221e-11
+Hirxrs residual: 7.523201e-16
+Hic_alt residual:     0
+HiAt_alt residual: 1.457083e-12
+Hirxrs_alt residual: 5.120058e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.841274e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.071335e-12
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=7.081207e-02 D=7.627865e-04 G=1.022068e-01 A=6.205725e-03 T=2.932955e+01 K=2.932955e+01 M=1.895406e-01
+14: pObj=0 pIn=7.081307e-02 dIn=7.637865e-04 gap=6.206725e-03 tau=2.932955e+01 kap=6.462382e-03 mu=1.895406e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:14
+
+Entering Predictor
+==================
+
+cond(H) = 8.895245e+04
+Hic residual:     0
+HiAt residual: 1.361989e-11
+Hirxrs residual: 1.974632e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.384091e-12
+Hirxrs_alt residual: 5.385024e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.793394e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.069431e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 1.488461e+05
+Hic residual:     0
+HiAt residual: 1.855649e-11
+Hirxrs residual: 2.018009e-15
+Hic_alt residual:     0
+HiAt_alt residual: 2.141524e-12
+Hirxrs_alt residual: 1.219049e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 5.513947e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.640568e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=5.635879e-02 D=6.068941e-04 G=8.134574e-02 A=4.367591e-03 T=3.336846e+01 K=3.336846e+01 M=1.508473e-01
+15: pObj=0 pIn=5.635979e-02 dIn=6.078941e-04 gap=4.368591e-03 tau=3.336846e+01 kap=4.520620e-03 mu=1.508473e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:19
+
+Entering Predictor
+==================
+
+cond(H) = 1.477636e+05
+Hic residual:     0
+HiAt residual: 1.643767e-11
+Hirxrs residual: 3.316300e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.336031e-12
+Hirxrs_alt residual: 5.703307e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 5.430211e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.043478e-09
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 2.511988e+05
+Hic residual:     0
+HiAt residual: 2.894652e-11
+Hirxrs residual: 2.101160e-15
+Hic_alt residual:     0
+HiAt_alt residual: 3.749880e-12
+Hirxrs_alt residual: 1.244206e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 6.570842e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.907295e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=4.485549e-02 D=4.828200e-04 G=6.474248e-02 A=3.147891e-03 T=3.700178e+01 K=3.700178e+01 M=1.200536e-01
+16: pObj=0 pIn=4.485649e-02 dIn=4.838200e-04 gap=3.148891e-03 tau=3.700178e+01 kap=3.244572e-03 mu=1.200536e-01
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:23
+
+Entering Predictor
+==================
+
+cond(H) = 2.472850e+05
+Hic residual:     0
+HiAt residual: 2.680933e-11
+Hirxrs residual: 3.487513e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.363163e-12
+Hirxrs_alt residual: 9.631231e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 6.500912e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.825732e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 4.274939e+05
+Hic residual:     0
+HiAt residual: 5.585637e-11
+Hirxrs residual: 3.757677e-15
+Hic_alt residual:     0
+HiAt_alt residual: 6.988351e-12
+Hirxrs_alt residual: 1.391966e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.534762e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.729548e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=3.570007e-02 D=3.840701e-04 G=5.152803e-02 A=2.310409e-03 T=4.024338e+01 K=4.024338e+01 M=9.554655e-02
+17: pObj=0 pIn=3.570107e-02 dIn=3.850701e-04 gap=2.311409e-03 tau=4.024338e+01 kap=2.374264e-03 mu=9.554656e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:27
+
+Entering Predictor
+==================
+
+cond(H) = 4.167574e+05
+Hic residual:     0
+HiAt residual: 3.830237e-11
+Hirxrs residual: 5.096665e-13
+Hic_alt residual:     0
+HiAt_alt residual: 5.816671e-12
+Hirxrs_alt residual: 9.106789e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.438113e+06
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.991585e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 7.327166e+05
+Hic residual:     0
+HiAt residual: 6.610903e-11
+Hirxrs residual: 8.041670e-15
+Hic_alt residual:     0
+HiAt_alt residual: 8.967720e-12
+Hirxrs_alt residual: 1.208664e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.181293e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.287317e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=2.841331e-02 D=3.054755e-04 G=4.101071e-02 A=1.719767e-03 T=4.312210e+01 K=4.312210e+01 M=7.604247e-02
+18: pObj=0 pIn=2.841431e-02 dIn=3.064755e-04 gap=1.720767e-03 tau=4.312210e+01 kap=1.763464e-03 mu=7.604248e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:32
+
+Entering Predictor
+==================
+
+cond(H) = 7.058824e+05
+Hic residual:     0
+HiAt residual: 6.125612e-11
+Hirxrs residual: 9.974982e-13
+Hic_alt residual:     0
+HiAt_alt residual: 8.796624e-12
+Hirxrs_alt residual: 1.551882e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.161698e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.097065e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 1.258689e+06
+Hic residual:     0
+HiAt residual: 1.089278e-10
+Hirxrs residual: 1.356903e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.628281e-11
+Hirxrs_alt residual: 1.197821e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.647567e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.134020e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=2.261382e-02 D=2.429224e-04 G=3.264003e-02 A=1.294236e-03 T=4.567621e+01 K=4.567621e+01 M=6.051998e-02
+19: pObj=0 pIn=2.261482e-02 dIn=2.439224e-04 gap=1.295236e-03 tau=4.567621e+01 kap=1.325011e-03 mu=6.051999e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:37
+
+Entering Predictor
+==================
+
+cond(H) = 1.195937e+06
+Hic residual:     0
+HiAt residual: 1.059597e-10
+Hirxrs residual: 9.433815e-13
+Hic_alt residual:     0
+HiAt_alt residual: 1.775815e-11
+Hirxrs_alt residual: 1.800881e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 1.612677e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.175912e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 2.137846e+06
+Hic residual:     0
+HiAt residual: 1.891196e-10
+Hirxrs residual: 1.929759e-14
+Hic_alt residual:     0
+HiAt_alt residual: 2.376437e-11
+Hirxrs_alt residual: 1.350946e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.210611e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.183630e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.799802e-02 D=1.931367e-04 G=2.597784e-02 A=9.823908e-04 T=4.794736e+01 K=4.794736e+01 M=4.816632e-02
+20: pObj=0 pIn=1.799902e-02 dIn=1.941367e-04 gap=9.833908e-04 tau=4.794736e+01 kap=1.004589e-03 mu=4.816633e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:41
+
+Entering Predictor
+==================
+
+cond(H) = 2.006503e+06
+Hic residual:     0
+HiAt residual: 1.481996e-10
+Hirxrs residual: 1.236626e-12
+Hic_alt residual:     0
+HiAt_alt residual: 2.444446e-11
+Hirxrs_alt residual: 1.929408e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.163900e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.302824e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 3.504045e+06
+Hic residual:     0
+HiAt residual: 3.980075e-10
+Hirxrs residual: 2.034404e-14
+Hic_alt residual:     0
+HiAt_alt residual: 4.414400e-11
+Hirxrs_alt residual: 1.430845e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.812180e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 6.356661e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.432434e-02 D=1.535124e-04 G=2.067544e-02 A=7.507715e-04 T=4.997310e+01 K=4.997310e+01 M=3.833463e-02
+21: pObj=0 pIn=1.432534e-02 dIn=1.545124e-04 gap=7.517715e-04 tau=4.997310e+01 kap=7.671180e-04 mu=3.833464e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:46
+
+Entering Predictor
+==================
+
+cond(H) = 3.274493e+06
+Hic residual:     0
+HiAt residual: 2.399490e-10
+Hirxrs residual: 1.511616e-12
+Hic_alt residual:     0
+HiAt_alt residual: 4.276274e-11
+Hirxrs_alt residual: 2.355869e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 2.762948e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.584733e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 5.421818e+06
+Hic residual:     0
+HiAt residual: 7.222944e-10
+Hirxrs residual: 8.258804e-15
+Hic_alt residual:     0
+HiAt_alt residual: 5.695079e-11
+Hirxrs_alt residual: 1.237290e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 3.416023e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.041882e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.140047e-02 D=1.219757e-04 G=1.645528e-02 A=5.769495e-04 T=5.178133e+01 K=5.178133e+01 M=3.050998e-02
+22: pObj=0 pIn=1.140147e-02 dIn=1.229757e-04 gap=5.779495e-04 tau=5.178133e+01 kap=5.892144e-04 mu=3.050999e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:51
+
+Entering Predictor
+==================
+
+cond(H) = 5.096346e+06
+Hic residual:     0
+HiAt residual: 3.344614e-10
+Hirxrs residual: 1.896717e-12
+Hic_alt residual:     0
+HiAt_alt residual: 5.460059e-11
+Hirxrs_alt residual: 2.152131e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 3.371020e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.013254e-09
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 7.856431e+06
+Hic residual:     0
+HiAt residual: 8.387432e-10
+Hirxrs residual: 1.080981e-14
+Hic_alt residual:     0
+HiAt_alt residual: 8.431675e-11
+Hirxrs_alt residual: 1.157300e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.006573e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.256366e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=9.073375e-03 D=9.687580e-05 G=1.309647e-02 A=4.454554e-04 T=5.338946e+01 K=5.338946e+01 M=2.428258e-02
+23: pObj=0 pIn=9.074375e-03 dIn=9.787580e-05 gap=4.464554e-04 tau=5.338946e+01 kap=4.548224e-04 mu=2.428259e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:15:55
+
+Entering Predictor
+==================
+
+cond(H) = 7.474098e+06
+Hic residual:     0
+HiAt residual: 9.045417e-10
+Hirxrs residual: 1.065205e-12
+Hic_alt residual:     0
+HiAt_alt residual: 9.211399e-11
+Hirxrs_alt residual: 2.787612e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 3.968291e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.961047e-09
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 1.069461e+07
+Hic residual:     0
+HiAt residual: 9.444438e-10
+Hirxrs residual: 6.377711e-15
+Hic_alt residual:     0
+HiAt_alt residual: 1.131263e-10
+Hirxrs_alt residual: 9.910148e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.574039e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.378330e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=7.221252e-03 D=7.689888e-05 G=1.042322e-02 A=3.453402e-04 T=5.480807e+01 K=5.480807e+01 M=1.932631e-02
+24: pObj=0 pIn=7.222252e-03 dIn=7.789888e-05 gap=3.463402e-04 tau=5.480807e+01 kap=3.526192e-04 mu=1.932632e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:00
+
+Entering Predictor
+==================
+
+cond(H) = 1.030676e+07
+Hic residual:     0
+HiAt residual: 9.636932e-10
+Hirxrs residual: 3.958847e-12
+Hic_alt residual:     0
+HiAt_alt residual: 9.571711e-11
+Hirxrs_alt residual: 3.143162e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 4.542794e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.379576e-09
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 1.594123e+07
+Hic residual:     0
+HiAt residual: 1.077885e-09
+Hirxrs residual: 1.735259e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.504343e-10
+Hirxrs_alt residual: 1.668079e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 5.401250e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.144516e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=5.115401e-03 D=5.418527e-05 G=7.383743e-03 A=2.367118e-04 T=5.660992e+01 K=5.660992e+01 M=1.369105e-02
+25: pObj=0 pIn=5.116401e-03 dIn=5.518527e-05 gap=2.377118e-04 tau=5.660992e+01 kap=2.418506e-04 mu=1.369106e-02
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:04
+
+Entering Predictor
+==================
+
+cond(H) = 1.508523e+07
+Hic residual:     0
+HiAt residual: 1.537822e-09
+Hirxrs residual: 2.954788e-12
+Hic_alt residual:     0
+HiAt_alt residual: 1.400692e-10
+Hirxrs_alt residual: 3.000005e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 5.344922e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 5.644006e-09
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 2.048928e+07
+Hic residual:     0
+HiAt residual: 1.650668e-09
+Hirxrs residual: 1.499131e-14
+Hic_alt residual:     0
+HiAt_alt residual: 1.772474e-10
+Hirxrs_alt residual: 1.054812e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 6.074577e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.649184e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=3.623570e-03 D=3.809445e-05 G=5.230513e-03 A=1.633464e-04 T=5.803614e+01 K=5.803614e+01 M=9.699011e-03
+26: pObj=0 pIn=3.624570e-03 dIn=3.909445e-05 gap=1.643464e-04 tau=5.803614e+01 kap=1.671207e-04 mu=9.699021e-03
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:08
+
+Entering Predictor
+==================
+
+cond(H) = 1.984991e+07
+Hic residual:     0
+HiAt residual: 1.605235e-09
+Hirxrs residual: 2.343488e-12
+Hic_alt residual:     0
+HiAt_alt residual: 1.806205e-10
+Hirxrs_alt residual: 2.358006e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 6.036517e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.501560e-09
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 2.458143e+07
+Hic residual:     0
+HiAt residual: 2.391946e-09
+Hirxrs residual: 3.841274e-14
+Hic_alt residual:     0
+HiAt_alt residual: 2.693574e-10
+Hirxrs_alt residual: 7.213751e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 6.628566e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.433494e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=2.566725e-03 D=2.669536e-05 G=3.705118e-03 A=1.133043e-04 T=5.913592e+01 K=5.913592e+01 M=6.870982e-03
+27: pObj=0 pIn=2.567725e-03 dIn=2.769536e-05 gap=1.143043e-04 tau=5.913592e+01 kap=1.161899e-04 mu=6.870992e-03
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:12
+
+Entering Predictor
+==================
+
+cond(H) = 2.417576e+07
+Hic residual:     0
+HiAt residual: 2.354712e-09
+Hirxrs residual: 1.913113e-12
+Hic_alt residual:     0
+HiAt_alt residual: 2.407652e-10
+Hirxrs_alt residual: 1.889120e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 6.605924e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 8.142660e-09
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 2.806709e+07
+Hic residual:     0
+HiAt residual: 1.742183e-09
+Hirxrs residual: 1.530588e-14
+Hic_alt residual:     0
+HiAt_alt residual: 2.663359e-10
+Hirxrs_alt residual: 3.804059e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 7.068625e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.921612e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.818032e-03 D=1.862000e-05 G=2.624495e-03 A=7.887698e-05 T=5.996564e+01 K=5.996564e+01 M=4.867549e-03
+28: pObj=0 pIn=1.819032e-03 dIn=1.962000e-05 gap=7.987698e-05 tau=5.996564e+01 kap=8.117249e-05 mu=4.867559e-03
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:16
+
+Entering Predictor
+==================
+
+cond(H) = 2.782733e+07
+Hic residual:     0
+HiAt residual: 2.185933e-09
+Hirxrs residual: 3.057110e-12
+Hic_alt residual:     0
+HiAt_alt residual: 2.783161e-10
+Hirxrs_alt residual: 1.811294e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 7.055796e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 7.435147e-09
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 3.239820e+07
+Hic residual:     0
+HiAt residual: 5.661813e-09
+Hirxrs residual: 6.155991e-14
+Hic_alt residual:     0
+HiAt_alt residual: 3.191701e-10
+Hirxrs_alt residual: 4.404991e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 7.570100e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.325055e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.060332e-03 D=1.044748e-05 G=1.530870e-03 A=4.493892e-05 T=6.085218e+01 K=6.085218e+01 M=2.840014e-03
+29: pObj=0 pIn=1.061332e-03 dIn=1.144748e-05 gap=4.593892e-05 tau=6.085218e+01 kap=4.667087e-05 mu=2.840024e-03
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:20
+
+Entering Predictor
+==================
+
+cond(H) = 3.210471e+07
+Hic residual:     0
+HiAt residual: 2.033971e-09
+Hirxrs residual: 5.893333e-13
+Hic_alt residual:     0
+HiAt_alt residual: 2.895674e-10
+Hirxrs_alt residual: 1.074434e-14
+cond(At) = 3.891585e+05
+cond(HiAt) = 7.555016e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.082259e-08
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 3.501367e+07
+Hic residual:     0
+HiAt residual: 2.866455e-09
+Hirxrs residual: 1.104303e-14
+Hic_alt residual:     0
+HiAt_alt residual: 3.740272e-10
+Hirxrs_alt residual: 1.763565e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 7.873864e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 2.478271e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=6.182445e-04 D=5.679142e-06 G=8.927847e-04 A=2.557192e-05 T=6.139276e+01 K=6.139276e+01 M=1.657030e-03
+30: pObj=0 pIn=6.192445e-04 dIn=6.679142e-06 gap=2.657192e-05 tau=6.139276e+01 kap=2.699080e-05 mu=1.657040e-03
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:25
+
+Entering Predictor
+==================
+
+cond(H) = 3.490220e+07
+Hic residual:     0
+HiAt residual: 2.525689e-09
+Hirxrs residual: 5.257990e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.620991e-10
+Hirxrs_alt residual: 6.933204e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 7.868259e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.222492e-08
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 3.750665e+07
+Hic residual:     0
+HiAt residual: 3.529276e-09
+Hirxrs residual: 9.966452e-15
+Hic_alt residual:     0
+HiAt_alt residual: 3.610911e-10
+Hirxrs_alt residual: 1.340356e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.146746e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 3.666056e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=2.497584e-04 D=1.704668e-06 G=3.609314e-04 A=9.680805e-06 T=6.185720e+01 K=6.185720e+01 M=6.709957e-04
+31: pObj=0 pIn=2.507584e-04 dIn=2.704668e-06 gap=1.068080e-05 tau=6.185720e+01 kap=1.084766e-05 mu=6.710057e-04
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:29
+
+Entering Predictor
+==================
+
+cond(H) = 3.742301e+07
+Hic residual:     0
+HiAt residual: 4.057481e-09
+Hirxrs residual: 1.053399e-13
+Hic_alt residual:     0
+HiAt_alt residual: 3.804260e-10
+Hirxrs_alt residual: 3.000781e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.142619e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.419966e-08
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 3.850953e+07
+Hic residual:     0
+HiAt residual: 4.135242e-09
+Hirxrs residual: 1.446788e-15
+Hic_alt residual:     0
+HiAt_alt residual: 3.433097e-10
+Hirxrs_alt residual: 2.482355e-18
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.257968e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.710239e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.005427e-04 D=9.523515e-08 G=1.455614e-04 A=3.311990e-06 T=6.204897e+01 K=6.204897e+01 M=2.717087e-04
+32: pObj=0 pIn=1.015427e-04 dIn=1.095235e-06 gap=4.311990e-06 tau=6.204897e+01 kap=4.379101e-06 mu=2.717187e-04
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:34
+
+Entering Predictor
+==================
+
+cond(H) = 3.849534e+07
+Hic residual:     0
+HiAt residual: 5.184199e-09
+Hirxrs residual: 2.218687e-13
+Hic_alt residual:     0
+HiAt_alt residual: 4.063037e-10
+Hirxrs_alt residual: 1.478582e-15
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.257273e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.173108e-08
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 3.913464e+07
+Hic residual:     0
+HiAt residual: 2.434910e-09
+Hirxrs residual: 4.586616e-16
+Hic_alt residual:     0
+HiAt_alt residual: 3.947084e-10
+Hirxrs_alt residual: 6.690922e-19
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.324797e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 4.062482e-10
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.422307e-05 D=-8.358047e-07 G=2.097217e-05 A=-3.546985e-07 T=6.216091e+01 K=6.216091e+01 M=4.072547e-05
+33: pObj=0 pIn=1.522307e-05 dIn=1.641953e-07 gap=6.453015e-07 tau=6.216091e+01 kap=6.553230e-07 mu=4.073547e-05
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:38
+
+Entering Predictor
+==================
+
+cond(H) = 3.912983e+07
+Hic residual:     0
+HiAt residual: 3.112156e-09
+Hirxrs residual: 1.787972e-14
+Hic_alt residual:     0
+HiAt_alt residual: 4.179674e-10
+Hirxrs_alt residual: 1.975617e-16
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.324563e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+LHS residual: 1.361622e-08
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Entering Corrector
+==================
+
+cond(H) = 3.922591e+07
+Hic residual:     0
+HiAt residual: 4.340384e-09
+Hirxrs residual: 1.040040e-17
+Hic_alt residual:     0
+HiAt_alt residual: 3.568976e-10
+Hirxrs_alt residual: 1.849948e-20
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.334703e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.307936e-17.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In corr (line 37)
+  In alfonso (line 209)
+  In AlfonsoSOSProg/solve_alfonso (line 114)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 6.042264e-11
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=1.282226e-06 D=-9.753842e-07 G=2.294019e-06 A=-9.032835e-07 T=6.217775e+01 K=6.217775e+01 M=6.096974e-06
+34: pObj=0 pIn=2.282226e-06 dIn=2.461580e-08 gap=9.671647e-08 tau=6.217775e+01 kap=9.821799e-08 mu=6.106974e-06
+
+ans = 
+
+  datetime
+
+   14-Apr-2019 22:16:42
+
+Entering Predictor
+==================
+
+cond(H) = 3.922580e+07
+Hic residual:     0
+HiAt residual: 2.818103e-09
+Hirxrs residual: 3.741626e-15
+Hic_alt residual:     0
+HiAt_alt residual: 3.538632e-10
+Hirxrs_alt residual: 2.729293e-17
+cond(At) = 3.891585e+05
+cond(HiAt) = 8.334698e+07
+cond(Hmat) =   Inf
+cond(hmat product) =   Inf
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.307935e-17.] 
+[> In linSolveIsolate (line 77)
+  In linSolveMain (line 24)
+  In pred (line 52)
+  In alfonso (line 188)
+  In AlfonsoSOSProg/solve_alfonso (line 114)
+  In AlfonsoSOSProgFekete/minimize (line 85)
+  In FRS_one_poly (line 66)
+] 
+LHS residual: 1.349930e-08
+
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Polynomial weight 1
+Polynomial weight 2
+Polynomial weight 3
+Polynomial weight 4
+Polynomial weight 5
+Termination criteria: P=-6.578450e-07 D=-9.963097e-07 G=-5.061678e-07 A=-9.855010e-07 T=6.218028e+01 K=6.218028e+01 M=9.055442e-07
+Done in 34 iterations.
+Status = Feasible and approximate optimal solution found.
+
+ans =
+
+    'Done'
+
